@@ -1,0 +1,148 @@
+# Ejemplos para escuchar cada término del glosario.
+# Cada ejemplo es uno de estos:
+#   dict(o=<id de obra>, t=<segundo>, txt=...)  -> suena ese momento en el reproductor (t debe ser
+#                                                  el inicio de un capítulo de esa obra, o 0)
+#   dict(o=<id de obra>, txt=...)               -> enlace a la ficha (cuando no hay minuto exacto)
+#   dict(x=<id de REFERENCIAS>, t=<segundo>, txt=...) -> obra de fuera del diario (src/referencias.py)
+#   dict(url=..., quien=..., txt=...)           -> enlace externo sin reproductor
+#   dict(txt=...)                               -> ejemplo escrito (para términos que no se oyen)
+# build_data.py comprueba que las obras existen y que los segundos son capítulos reales.
+
+CE = "cuatro-estaciones"   # Vivaldi, Voices of Music
+SU = "suite-chelo-2"       # Bach, Maisky
+BA = "balada-1-chopin"     # Chopin, Zimerman (sin capítulos: solo t=0)
+AOB = "https://www.bachvereniging.nl/en/bwv/bwv-"
+
+EJEMPLOS = {
+ "allemande": [
+  dict(o=SU, t=278, txt="Paso moderado, en cuatro tiempos, que avanza con calma. Fíjate en las notas dobles que lo frenan de vez en cuando."),
+ ],
+ "bajo-continuo": [
+  dict(o=CE, t=0, txt="Debajo del estribillo, los instrumentos graves llevan el bajo y un instrumento de acordes lo rellena. No paran ni un momento: ese suelo es el continuo."),
+  dict(o=CE, t=1574, txt="Aquí el instrumento de acordes del continuo pasa al primer plano: Vivaldi escribe en la partitura «il cembalo arpeggio», que el clave toque los acordes nota a nota, mientras las cuerdas tocan con sordina."),
+  dict(o=SU, t=16, txt="El contraste: en la suite de Bach no hay continuo. El violonchelo, solo, hace a la vez de melodía y de bajo."),
+ ],
+ "catalogo": [
+  dict(txt="<b>BWV 1008</b> es la Suite n.º 2 para violonchelo de Bach; <b>RV 269</b>, la Primavera de Vivaldi; <b>Op. 23</b>, la Balada n.º 1 de Chopin."),
+ ],
+ "clave": [
+  dict(o=CE, t=1574, txt="Escucha el clave arpegiando acordes, nota a nota, sobre las cuerdas veladas: un sonido punteado y brillante, que no crece ni se apaga como el del piano."),
+ ],
+ "concierto": [
+  dict(o=CE, t=0, txt="El grupo toca un estribillo y, entre medias, el violín solista se separa para pintar escenas: los pájaros, las fuentes que murmuran, la tormenta."),
+  dict(o=CE, t=212, txt="El segundo movimiento, lento. Tras él vendrá otro rápido: rápido, lento, rápido."),
+ ],
+ "contrapunto": [
+  dict(o=SU, t=16, txt="Contrapunto escondido: una sola línea que tu oído separa en dos voces."),
+  dict(x="bwv-1065", t=0, txt="Contrapunto a la vista: cuatro claves, cada uno con su línea, que encajan entre sí. Es su versión del concierto para cuatro violines RV 580 de Vivaldi."),
+ ],
+ "courante": [
+  dict(o=SU, t=527, txt="Rápida, de notas cortas sin parar, como si alguien te persiguiera."),
+ ],
+ "da-capo": [
+  dict(o=SU, t=1127, txt="En la partitura, al acabar el Minueto II pone «Menuet I da capo»: hay que volver al primero. Escucha desde aquí y comprueba si el chelista repite el Minueto I antes de la giga."),
+ ],
+ "dinamica-terrazas": [
+  dict(o=CE, t=609, txt="El verano empieza con frases cansadas, cortadas por silencios, y de golpe el viento del norte entra a todo volumen. No hay crescendo: se pasa de un bloque a otro."),
+  dict(x="haydn-94-ii", t=0, txt="Para no confundirte: un golpe de volumen no basta para decir «Barroco». Este Andante de Haydn, del Clasicismo, empieza muy suave y al final de la segunda frase suelta un acorde fortísimo, por sorpresa."),
+ ],
+ "crescendo": [
+  dict(o=BA, txt="En la balada, el paso 5 de la guía: el primer tema crece y crece hasta que el segundo vuelve, convertido en una declaración apasionada a pleno volumen."),
+  dict(txt="En el Barroco no busques crescendos largos: los cambios van por bloques. Compáralo con el <a href=\"#g-dinamica-terrazas\">Verano de Vivaldi</a>."),
+ ],
+ "doble-cuerda": [
+  dict(o=SU, t=649, txt="La zarabanda está llena de acordes de dos y tres notas: un solo chelo suena más lleno, casi como varios."),
+  dict(o=SU, t=1048, txt="El Minueto I arranca con un acorde de re menor tocado de golpe."),
+ ],
+ "forma-sonata": [
+  dict(o=BA, t=0, txt="La balada juega con este molde: dos temas que se presentan, se transforman y vuelven en otro orden. Síguelos con los pasos 2, 4 y 6 de la guía de la ficha."),
+ ],
+ "fuga": [
+  dict(x="bwv-565", t=0, txt="Tras la tocata del principio empieza la fuga: un tema suena solo y las demás voces entran después, una a una, imitándolo."),
+ ],
+ "galanterias": [
+  dict(o=SU, t=1048, txt="Los dos minuetos de esta suite son sus galanterías: danzas de moda, más ligeras, entre la zarabanda y la giga."),
+ ],
+ "giga": [
+  dict(o=SU, t=1256, txt="Saltos grandes y ritmo saltarín: así se cierra la suite, con energía."),
+ ],
+ "minueto": [
+  dict(o=SU, t=1048, txt="Cuenta 1-2-3 mientras suena: es un baile elegante, de salón."),
+ ],
+ "movimiento": [
+  dict(o=CE, t=212, txt="Aquí acaba el primer movimiento de la Primavera y empieza el segundo: hay una pausa y cambian el tempo y el ambiente. En concierto, no se aplaude aquí."),
+ ],
+ "musica-programatica": [
+  dict(o=CE, t=0, txt="Pájaros, fuentes que murmuran y una tormenta. Todo está descrito en un soneto impreso junto a la música."),
+  dict(o=CE, t=1916, txt="El invierno: tiritar, pisotones para entrar en calor y dientes que castañetean."),
+ ],
+ "opus": [
+  dict(txt="El <b>Op. 23</b> de Chopin es una sola balada; su <b>Op. 28</b> son veinticuatro preludios. La Primavera de Vivaldi es el <b>Op. 8 n.º 1</b>: el primero de los doce conciertos de su Op. 8."),
+ ],
+ "pizzicato": [
+  dict(o=CE, t=2129, txt="Los violines pellizcan las cuerdas: son las gotas de lluvia que caen fuera mientras el solista canta tranquilo junto al fuego."),
+ ],
+ "polifonia-implicita": [
+  dict(o=SU, t=16, txt="Una sola línea que salta entre notas graves y agudas. Al rato, tu oído la oye como dos voces."),
+ ],
+ "preludio": [
+  dict(o=SU, t=16, txt="Abre la suite antes de las danzas, con aire libre, como si el chelista pensara en voz alta. Al final, cinco acordes largos."),
+ ],
+ "ritornello": [
+  dict(o=CE, t=0, txt="El estribillo del principio vuelve una y otra vez entre las escenas del solista. Después de la tormenta, regresa en menor."),
+ ],
+ "sordina": [
+  dict(o=CE, t=1574, txt="La partitura pide las cuerdas «con sordino»: el sonido se vuelve velado, de duermevela. Son los borrachos dormidos tras la fiesta."),
+ ],
+ "suite": [
+  dict(o=SU, t=16, txt="La suite entera: un preludio y luego las danzas seguidas, todas girando en torno a la misma nota, el re."),
+ ],
+ "balada": [
+  dict(o=BA, t=0, txt="Diez minutos que suenan a historia contada: un comienzo que duda, dos temas que se transforman y un final desbocado."),
+ ],
+ "coda": [
+  dict(o=BA, txt="La coda de la balada es el paso 7 de la guía, «Presto con fuoco»: el final rapidísimo y salvaje."),
+ ],
+ "compas": [
+  dict(o=SU, t=1048, txt="Minueto: compás de tres. Cuenta 1-2-3, con el apoyo en el 1."),
+  dict(o=SU, t=1256, txt="Giga: también de tres (3/8), pero mucho más rápido y saltarín."),
+  dict(o=BA, t=0, txt="Tras la introducción lenta, la balada se mece en 6/4: dos grupos de tres, como una barca."),
+ ],
+ "pedal": [
+  dict(o=BA, t=0, txt="Desde la introducción, fíjate en cómo las notas siguen sonando unas sobre otras después de soltar las teclas."),
+ ],
+ "pieza-de-caracter": [
+  dict(o=BA, t=0, txt="Una sola pieza para piano que retrata un mundo entero, sin palabras."),
+ ],
+ "rubato": [
+  dict(o=BA, t=0, txt="Escucha cómo el pulso respira: el pianista se demora en unas notas y avanza en otras, con libertad. Nunca suena a metrónomo."),
+ ],
+ "tema": [
+  dict(o=CE, t=0, txt="El estribillo de la Primavera es un tema: apréndetelo en los primeros segundos y reconócelo cada vez que vuelve."),
+  dict(o=BA, txt="En la balada hay dos temas: uno melancólico que se mece y otro suave, como una canción de amor. La guía de la ficha te dice cuándo llega cada uno (pasos 2 y 4)."),
+ ],
+ "tocata": [
+  dict(x="bwv-565", t=0, txt="El comienzo es la tocata: arranques libres, como improvisados, para lucir el órgano."),
+ ],
+ "tonalidad": [
+  dict(o=CE, t=0, txt="La Primavera, en mi mayor: luminosa."),
+  dict(o=CE, t=609, txt="El Verano, en sol menor: el mismo tipo de concierto, pero sombrío y agobiante. Compara los dos comienzos."),
+ ],
+ "transportar": [
+  dict(txt="Muchas canciones se publican en tres versiones, para voz aguda, media y grave: es la misma música, transportada."),
+ ],
+ "tremolo": [
+  dict(o=CE, t=1916, txt="En el invierno, trémolos fuertes de las cuerdas interrumpen al violín: ráfagas de viento helado."),
+  dict(o=CE, t=1066, txt="En el verano, el granizo: notas repetidas rapidísimas."),
+ ],
+ "trino": [
+  dict(o=CE, t=0, txt="Los pájaros de la Primavera cantan con trinos."),
+  dict(o=CE, t=1916, txt="El invierno empieza con notas repetidas y adornadas con trinos: es el tiritar de frío."),
+ ],
+ "tutti": [
+  dict(o=CE, t=0, txt="El principio: todo el grupo a la vez tocando el estribillo, antes de que el solista se separe."),
+ ],
+ "zarabanda": [
+  dict(o=SU, t=649, txt="Lenta, grave, con acordes: el centro emocional de la suite."),
+ ],
+}

@@ -145,6 +145,28 @@ details.son i{font-family:var(--rd);font-weight:400}
 .son-c p:not([lang]){color:var(--mute)}
 @media(max-width:600px){.son-c{grid-template-columns:minmax(0,1fr)}}
 @media(max-width:900px){.m-only{display:block}.d-only{display:none}}
+/* ejemplos para escuchar */
+a.ej{display:grid;grid-template-columns:30px minmax(0,1fr);gap:10px;align-items:start;text-decoration:none;padding:9px 0}
+a.ej .pl{width:30px;height:30px;border-radius:50%;background:var(--acc);color:#fff;display:grid;place-items:center;margin-top:1px}
+a.ej .pl svg{width:12px;height:12px;fill:currentColor}
+a.ej.ext .pl{background:var(--ink);color:var(--on)}
+a.ej b{font:700 15px var(--ui);color:var(--acc)}
+a.ej:hover b{text-decoration:underline}
+a.ej .q{display:block;font-size:16px;color:var(--ink)}
+ul.ejs{list-style:none;margin:2px 0 6px;padding:0}
+ul.ejs li{border-top:1px solid var(--line)}
+ul.ejs li.tx{padding:9px 0 9px 40px;font-size:16px}
+.ej-h{font:700 13px var(--ui);letter-spacing:.04em;text-transform:uppercase;color:var(--mute);margin:10px 0 0}
+a.oir{white-space:nowrap;font:700 .9em var(--ui);color:var(--acc);text-decoration:none;border-bottom:1.5px solid currentColor}
+a.oir::before{content:"▶ ";font-size:.8em}
+#mini{position:fixed;right:16px;bottom:16px;width:min(420px,calc(100vw - 32px));background:var(--bg);border:1.5px solid var(--ink);border-radius:12px;box-shadow:0 10px 30px rgb(0 0 0/.25);z-index:20;padding:10px 10px 4px}
+#mini[hidden]{display:none}
+body.mini-on{padding-bottom:min(62vh,340px)}
+#mini .mh{display:flex;gap:10px;align-items:start;justify-content:space-between;font:600 14px/1.35 var(--ui);margin-bottom:6px}
+#mini .mh b{color:var(--acc)}
+#mini button{flex:none;min-width:36px;min-height:36px;border:0;border-radius:50%;background:var(--card);color:var(--ink);font:700 20px/1 var(--ui);cursor:pointer}
+#mini .player{margin:0 0 6px}
+@media(max-width:600px){#mini{right:8px;left:8px;bottom:8px;width:auto}}
 /* cómo leer el título */
 details.decode{border:1.5px solid var(--ink);border-radius:10px;padding:4px 18px 8px;margin:4px 0 26px;max-width:860px}
 details.decode summary{cursor:pointer;min-height:44px;display:flex;align-items:center;gap:8px;font:700 15px var(--ui);color:var(--acc)}
@@ -186,6 +208,7 @@ footer{border-top:3px double var(--ink);padding:18px 0 40px;font:14px var(--ui);
   <a href="#portada">Portada</a><a href="#obras">Obras</a><a href="#compositores">Compositores</a><a href="#interpretes">Intérpretes</a><a href="#epocas">Épocas</a><a href="#escuela">Escuela</a><a href="#glosario">Glosario</a>
  </nav>
  <main id="app"><p class="ui mute">Cargando el diario…</p></main>
+ <aside id="mini" hidden aria-label="Ejemplo sonando"><div class="mh"><span id="mini-t"></span><button type="button" id="mini-x" aria-label="Cerrar el reproductor">×</button></div><div class="player"><iframe id="mini-f" title="Ejemplo" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div></aside>
  <footer><p>Cada ficha se escribe a partir de fuentes consultadas (biografías, notas de programa, análisis y la descripción de los vídeos). Los minutos de escucha salen de los capítulos del vídeo de referencia: al tocarlos, el reproductor de la ficha salta a ese punto. Las imágenes son obras de dominio público tomadas de Wikimedia Commons; cada pie enlaza a su ficha original.</p></footer>
 </div>
 <script>
@@ -197,7 +220,7 @@ const fecha=s=>{const[y,m,d]=s.split('-').map(Number);return `${d} de ${MESES[m-
 const mmss=s=>{const h=Math.floor(s/3600),m=Math.floor(s%3600/60),x=String(s%60).padStart(2,'0');return h?`${h}:${String(m).padStart(2,'0')}:${x}`:`${m}:${x}`};
 const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 let D=null;
-const EP={},P={},O={},A={},G={};
+const EP={},P={},O={},A={},G={};let XR={};
 
 const ytId=u=>(String(u).match(/(?:youtu\.be\/|v=|embed\/)([\w-]{11})/)||[])[1];
 const YTE=(id,q='')=>`https://www.youtube-nocookie.com/embed/${id}?rel=0${q}`;
@@ -206,6 +229,33 @@ const cfile=f=>`https://commons.wikimedia.org/wiki/File:${encodeURIComponent(f)}
 const fig=(im,cls='')=>im?`<figure class="fig ${cls}"><img src="${cimg(im.archivo,960)}" alt="${esc(im.alt)}" loading="lazy" decoding="async" onerror="this.closest('figure').hidden=true"><figcaption>${im.pie} <a href="${cfile(im.archivo)}" rel="noopener">Imagen: Wikimedia Commons</a></figcaption></figure>`:'';
 const thumb=(im,href)=>im?`<a class="thumb" href="${href}" tabindex="-1" aria-hidden="true"><img src="${cimg(im.archivo,500)}" alt="" loading="lazy" decoding="async" onerror="this.parentNode.hidden=true"></a>`:'';
 const imgObra=o=>o.imagen||P[o.compositor]?.imagen;
+const apellido=pid=>(P[pid]?.nombre||'').split(' ').slice(-1)[0];
+function momento(oid,t){const o=O[oid];if(!o)return '';const x=t!=null?o.escucha.find(e=>e.t===t):null;return `${apellido(o.compositor)} · ${x?x.mov:o.titulo}${t!=null?' · '+mmss(t):''}`}
+function ejemplos(list){
+  if(!list?.length)return '';
+  return `<p class="ej-h">Escúchalo</p><ul class="ejs">${list.map(e=>{
+    if(e.o&&e.t!=null)return `<li><a class="ej" href="#o-${e.o}@${e.t}"><span class="pl">${PLAY}</span><span><b>${esc(momento(e.o,e.t))}</b><span class="q">${e.txt}</span></span></a></li>`;
+    if(e.x){const r=XR[e.x];return `<li><a class="ej" href="#x-${e.x}${e.t?'@'+e.t:''}"><span class="pl">${PLAY}</span><span><b>${esc(r.compositor+' · '+r.titulo+(e.t?' · '+mmss(e.t):''))}</b><span class="q">${e.txt}</span></span></a></li>`}
+    if(e.o)return `<li><a class="ej ext" href="#o-${e.o}"><span class="pl">→</span><span><b>${esc(momento(e.o,null))}</b><span class="q">${e.txt}</span></span></a></li>`;
+    if(e.url)return `<li><a class="ej ext" href="${e.url}" rel="noopener" target="_blank"><span class="pl">↗</span><span><b>${esc(e.quien)}</b><span class="q">${e.txt}</span></span></a></li>`;
+    return `<li class="tx">${e.txt}</li>`}).join('')}</ul>`;
+}
+const mini=document.getElementById('mini'),miniF=document.getElementById('mini-f'),miniT=document.getElementById('mini-t');
+function oir(oid,t){
+  const o=O[oid];if(!o)return;const vid=ytId(o.grabacion.url);if(!vid){location.hash='#o-'+oid;return}
+  const yt=document.getElementById('yt');
+  if(yt&&yt.dataset.id===vid){yt.src=YTE(vid,`&autoplay=1&start=${t}`);yt.closest('.player').scrollIntoView({behavior:'smooth',block:'nearest'});return}
+  miniF.src=YTE(vid,`&autoplay=1&start=${t}`);miniT.innerHTML=`<b>Escuchando</b><br>${esc(momento(oid,t))} · <a href="#o-${oid}">ficha</a>`;mini.hidden=false;document.body.classList.add('mini-on');
+}
+function miniPlay(vid,t,lbl,auto=true){miniF.src=YTE(vid,`${auto?'&autoplay=1':''}${t?`&start=${t}`:''}`);miniT.innerHTML=`<b>Escuchando</b><br>${lbl}`;mini.hidden=false;document.body.classList.add('mini-on')}
+function oirX(xid,t){const r=XR[xid];if(!r)return;const c=t&&r.caps?.[t];miniPlay(ytId(r.url),t,`${esc(r.compositor)} · ${esc(r.titulo)}${c?' · '+esc(c):''}${t?' · '+mmss(t):''}<br><span class="mute">${esc(r.fuente)}</span>`)}
+document.getElementById('mini-x').addEventListener('click',()=>{mini.hidden=true;miniF.src='about:blank';document.body.classList.remove('mini-on')});
+document.addEventListener('click',ev=>{
+  const y=ev.target.closest('a[data-yt]');if(y){ev.preventDefault();miniPlay(y.dataset.yt,0,esc(y.dataset.lbl||''));return}
+  const a=ev.target.closest('a[href^="#o-"],a[href^="#x-"]');if(!a)return;const h=a.getAttribute('href');
+  let m=h.match(/^#o-([a-z0-9-]+)@(\d+)$/);if(m){ev.preventDefault();oir(m[1],+m[2]);return}
+  m=h.match(/^#x-([a-z0-9-]+)(?:@(\d+))?$/);if(m){ev.preventDefault();oirX(m[1],m[2]?+m[2]:0)}
+});
 function ytAt(url,t){if(!t)return url;const id=(url.match(/(?:youtu\.be\/|v=)([\w-]{11})/)||[])[1];return id?`https://youtu.be/${id}?t=${t}`:url}
 const epo=id=>EP[id]||{nombre:id,color:'var(--ink)'};
 const pLink=id=>P[id]?`<a href="#${P[id].tipo==='compositor'?'c':'i'}-${id}">${esc(P[id].nombre)}</a>`:esc(id);
@@ -255,7 +305,7 @@ const V={
   return `<p class="kick">Archivo</p><h1>Obras</h1><input class="search" id="q" type="search" placeholder="Buscar por obra, compositor o intérprete" aria-label="Buscar obras">
    <ul class="olist" id="ol">${os.map(o=>`<li data-s="${esc((o.titulo+' '+o.catalogo+' '+(P[o.compositor]?.nombre||'')+' '+(o.interpretes||[]).map(i=>P[i]?.nombre||'').join(' ')).toLowerCase())}"><span class="n">${o.n}</span><div><a href="#o-${o.id}">${esc(o.titulo)}</a><small><span class="dot" style="--c:${epo(o.epoca).color}"></span>${esc(P[o.compositor]?.nombre||'')} · ${esc(o.catalogo)} · ${esc(o.origen)} · ${fecha(o.fecha)}</small></div></li>`).join('')}</ul>`;
  },
- obra(id){
+ obra(id,t0){
   const o=O[id];if(!o)return V.nada();
   const e=epo(o.epoca),g=o.grabacion,vid=ytId(g.url),im=imgObra(o);
   const facts=[['Compositor',pLink(o.compositor)],['Fecha',esc(o.fechaComp)],['Época',`<a href="#e-${o.epoca}"><span class="dot" style="--c:${e.color}"></span>${esc(e.nombre)}</a>`],['Género',esc(o.genero)],['Plantilla',esc(o.plantilla)],['Tonalidad',esc(o.tonalidad)],['Catálogo',esc(o.catalogo)],['Duración',esc(o.duracion)],['En el diario',`N.º ${o.n} · ${fecha(o.fecha)}`]];
@@ -266,7 +316,7 @@ const V={
    <div class="ficha"><div>
     <dl class="facts m-only">${facts.map(([k,v])=>`<div><dt>${k}</dt><dd>${v}</dd></div>`).join('')}</dl>
     <section class="listen"><h2>Escúchala</h2><p class="rec"><b>${esc(g.titulo)}</b><br><span class="mute">${esc(g.fuente)}</span></p>
-     ${vid?`<div class="player"><iframe id="yt" data-id="${vid}" src="${YTE(vid)}" title="Vídeo: ${esc(g.titulo)}" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>`:''}
+     ${vid?`<div class="player"><iframe id="yt" data-id="${vid}" src="${YTE(vid,t0?`&start=${t0}`:'')}" title="Vídeo: ${esc(g.titulo)}" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>`:''}
      <p><a class="btn${vid?'':' solid'}" href="${g.url}" rel="noopener">${PLAY}${vid?'Ver en YouTube':'Abrir el vídeo'}</a></p>
      ${vid&&o.escucha.some(x=>x.t!=null)?'<p class="hint">Toca un minuto de la guía y el vídeo salta a ese punto.</p>':''}
      <ul class="tracks">${o.escucha.map(x=>x.t!=null?`<li><a href="${ytAt(g.url,x.t)}" data-t="${x.t}" rel="noopener"><span class="t">${mmss(x.t)}</span><span><b>${esc(x.mov)}</b><span class="x">${x.txt}</span></span></a></li>`:`<li><div class="row"><span class="t">${esc(x.cuando||'')}</span><span><b>${esc(x.mov)}</b><span class="x">${x.txt}</span></span></div></li>`).join('')}</ul>
@@ -277,7 +327,7 @@ const V={
    <aside>
     <dl class="facts d-only">${facts.map(([k,v])=>`<div><dt>${k}</dt><dd>${v}</dd></div>`).join('')}</dl>
     ${fig(im,'d-only')}
-    ${o.versiones?.length?`<section><p class="aside-h">Otras versiones para comparar</p><ul class="vers">${o.versiones.map(v=>`<li><b>${v.p?pLink(v.p):esc(v.quien)}</b>${v.det?` · ${esc(v.det)}`:''}<br><span class="mute">${v.nota}</span>${v.url?`<br><a class="ui" href="${v.url}" rel="noopener">Ver vídeo</a>`:''}</li>`).join('')}</ul>${o.idagio?`<p class="note">En Idagio, busca: <b>${esc(o.idagio)}</b></p>`:''}</section>`:''}
+    ${o.versiones?.length?`<section><p class="aside-h">Otras versiones para comparar</p><ul class="vers">${o.versiones.map(v=>`<li><b>${v.p?pLink(v.p):esc(v.quien)}</b>${v.det?` · ${esc(v.det)}`:''}<br><span class="mute">${v.nota}</span>${v.url?(ytId(v.url)?`<br><a class="oir" href="${v.url}" data-yt="${ytId(v.url)}" data-lbl="${esc((v.p?P[v.p]?.nombre:v.quien)+' · '+o.titulo)}">Escuchar aquí</a>`:`<br><a class="ui" href="${v.url}" rel="noopener">Ver vídeo</a>`):''}</li>`).join('')}</ul>${o.idagio?`<p class="note">En Idagio, busca: <b>${esc(o.idagio)}</b></p>`:''}</section>`:''}
     ${o.conceptos?.length?`<section><p class="aside-h">Conceptos de esta obra</p><div class="chips">${o.conceptos.map(gLink).join('')}</div></section>`:''}
     ${o.interpretes?.length?`<section><p class="aside-h">Intérpretes en esta ficha</p><ul class="mini">${o.interpretes.map(i=>`<li>${pLink(i)}<small>${esc(P[i]?.rol||'')}</small></li>`).join('')}</ul></section>`:''}
    </aside></div>`;
@@ -301,7 +351,7 @@ const V={
   return `<p class="kick">${p.tipo==='compositor'?`<span class="dot" style="--c:${e.color}"></span>Compositor · ${esc(e.nombre)}`:esc(p.rol)}</p>
    <h1>${esc(p.nombre)}</h1><p class="ui mute" style="margin-top:-4px">${esc(p.vida||'')}${p.lugar?' · '+esc(p.lugar):''}</p>
    <p class="stand read">${p.entradilla}</p>
-   <div class="ficha"><article class="body read">${fig(p.imagen,'m-only')}${p.h}${p.ruta?.length?`<h2>Ruta de escucha</h2><ul class="vers">${p.ruta.map(r=>`<li><b>${r.obra?`<a href="#o-${r.obra}">${esc(r.titulo)}</a>`:esc(r.titulo)}</b><br><span class="mute">${r.nota}</span>${r.url?`<br><a class="ui" href="${r.url}" rel="noopener">${esc(r.enlace||'Ver vídeo')}</a>`:''}</li>`).join('')}</ul>`:''}</article>
+   <div class="ficha"><article class="body read">${fig(p.imagen,'m-only')}${p.h}${p.ruta?.length?`<h2>Ruta de escucha</h2><ul class="vers">${p.ruta.map(r=>`<li><b>${r.obra?`<a href="#o-${r.obra}">${esc(r.titulo)}</a>`:esc(r.titulo)}</b><br><span class="mute">${r.nota}</span>${r.url?(ytId(r.url)?`<br><a class="oir" href="${r.url}" data-yt="${ytId(r.url)}" data-lbl="${esc(p.nombre+' · '+r.titulo)}">Escuchar aquí</a>`:`<br><a class="ui" href="${r.url}" rel="noopener">${esc(r.enlace||'Ver vídeo')}</a>`):''}</li>`).join('')}</ul>`:''}</article>
    <aside>${fig(p.imagen,'d-only')}${p.claves?.length?`<section><p class="aside-h">En pocas palabras</p><dl class="facts">${p.claves.map(([k,v])=>`<div><dt>${esc(k)}</dt><dd>${v}</dd></div>`).join('')}</dl></section>`:''}
     <section><p class="aside-h">En el diario</p>${os.length?`<ul class="mini">${os.map(o=>`<li><a href="#o-${o.id}">${esc(o.titulo)}</a><small>N.º ${o.n}</small></li>`).join('')}</ul>`:'<p class="mute ui">Aún no hay obras suyas.</p>'}</section>
    </aside></div>`;
@@ -328,7 +378,7 @@ const V={
  },
  glosario(hl){
   const gs=[...D.glosario].sort((a,b)=>a.termino.localeCompare(b.termino,'es'));
-  return `<p class="kick">Fundamentos</p><h1>Glosario</h1><p class="mute ui">${gs.length} términos. Cada obra nueva añade los suyos.</p><dl class="gl read">${gs.map(g=>`<dt id="g-${g.id}"${g.id===hl?' class="hl"':''}>${esc(g.termino)}</dt><dd>${g.def}</dd>`).join('')}</dl>`;
+  return `<p class="kick">Fundamentos</p><h1>Glosario</h1><p class="mute ui">${gs.length} términos. Cada obra nueva añade los suyos.</p><dl class="gl read">${gs.map(g=>`<dt id="g-${g.id}"${g.id===hl?' class="hl"':''}>${esc(g.termino)}</dt><dd>${g.def}${ejemplos(g.ejemplos)}</dd>`).join('')}</dl>`;
  },
  nada(){return `<h1>No encontrado</h1><p class="ui"><a href="#portada">Volver a la portada</a></p>`}
 };
@@ -339,15 +389,17 @@ function route(){
   const m=h.match(/^([a-z])-(.+)$/);
   if(V[h]&&!['obra','persona','epoca','articulo','nada'].includes(h))html=V[h]();
   else if(m){const[,k,id]=m;
-    if(k==='o'){html=V.obra(id);sec='obras'}
+    if(k==='o'){const[oid,tt]=id.split('@');html=V.obra(oid,tt?+tt:0);sec='obras'}
     else if(k==='c'){html=V.persona(id);sec='compositores'}
     else if(k==='i'){html=V.persona(id);sec='interpretes'}
     else if(k==='e'){html=V.epoca(id);sec='epocas'}
     else if(k==='a'){html=V.articulo(id);sec='escuela'}
     else if(k==='g'){html=V.glosario(id);sec='glosario';hl=id}
+    else if(k==='x'){const[xid,tt]=id.split('@');html=V.portada();sec='portada';const r=XR[xid];if(r)setTimeout(()=>miniPlay(ytId(r.url),tt?+tt:0,`${esc(r.compositor)} · ${esc(r.titulo)}`,false),0)}
     else html=V.nada();
   } else html=V.nada();
   app.innerHTML=html;
+  app.querySelectorAll('a[href^="#o-"],a[href^="#x-"]').forEach(x=>{const h=x.getAttribute('href');if((/@\d+$/.test(h)||h.startsWith('#x-'))&&!x.classList.contains('ej'))x.classList.add('oir')});
   document.querySelectorAll('nav.sec a').forEach(a=>a.setAttribute('aria-current',a.getAttribute('href')==='#'+sec?'page':'false'));
   if(hl){const t=document.getElementById('g-'+hl);if(t)t.scrollIntoView({block:'start'})}else window.scrollTo(0,0);
   const yt=document.getElementById('yt');
@@ -363,7 +415,7 @@ function route(){
 Promise.all(['data/obras.json','data/personas.json','data/escuela.json'].map(u=>fetch(u).then(r=>{if(!r.ok)throw new Error(u);return r.json()})))
 .then(([obras,personas,esc_])=>{
   D={obras,personas,...esc_};
-  D.epocas.forEach(e=>EP[e.id]=e);D.personas.forEach(p=>P[p.id]=p);D.obras.forEach(o=>O[o.id]=o);D.articulos.forEach(a=>A[a.id]=a);D.glosario.forEach(g=>G[g.id]=g);
+  XR=D.referencias||{};D.epocas.forEach(e=>EP[e.id]=e);D.personas.forEach(p=>P[p.id]=p);D.obras.forEach(o=>O[o.id]=o);D.articulos.forEach(a=>A[a.id]=a);D.glosario.forEach(g=>G[g.id]=g);
   const t=new Date();document.getElementById('hoy').textContent=`${t.getDate()} de ${MESES[t.getMonth()]} de ${t.getFullYear()}`;
   document.getElementById('num').textContent=`${D.obras.length} obras · ${D.personas.length} personajes`;
   addEventListener('hashchange',route);route();

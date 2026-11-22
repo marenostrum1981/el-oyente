@@ -31,11 +31,11 @@
 "entradilla": "Desde el nacimiento de la ópera, hacia 1600, hasta la muerte de Bach en 1750. Todo descansa sobre el bajo continuo.",
 "h": "<p>El Barroco empieza hacia 1600, cuando en Italia nace la ópera con Peri y Monteverdi, y se suele cerrar en 1750, el año en que muere Bach. Es la época en que se asientan las tonalidades mayor y menor y nacen o se consolidan géneros que todavía escuchamos: la ópera, el oratorio, el concierto, la sonata, la suite y la fuga.</p>\n<p>Lo que lo une todo es el <a href=\"#g-bajo-continuo\">bajo continuo</a>: debajo de casi cualquier obra barroca hay un bajo que no se detiene y un instrumento de acordes (clave, órgano, laúd o tiorba) que improvisa la armonía.</p>\n<p>Dentro del Barroco hay acentos nacionales. El italiano (Vivaldi, Corelli) es brillante, virtuoso y teatral; el francés (Lully, Rameau), elegante y lleno de danzas y adornos; el alemán (Bach) mezcla todo eso con un contrapunto muy denso.</p>",
 "rasgos": [
-"Un bajo continuo que suena de principio a fin: escucha si hay un clave o un laúd rellenando acordes.",
-"Ritmo constante e impulso que no decae, sobre todo en los movimientos rápidos.",
-"Dinámica en terrazas: fuerte y piano en bloques, como ecos, más que crescendos.",
-"Contraste entre solista y grupo, con estribillos (ritornello) en los conciertos.",
-"Melodías muy adornadas; los músicos improvisaban parte de los adornos."
+"Un bajo continuo que suena de principio a fin: escucha si hay un clave o un laúd rellenando acordes. Ejemplo: <a href=\"#o-cuatro-estaciones@1574\">Vivaldi, Otoño II</a>.",
+"Ritmo constante e impulso que no decae, sobre todo en los movimientos rápidos. Ejemplo: <a href=\"#o-cuatro-estaciones@1066\">Vivaldi, Verano III</a>.",
+"<a href=\"#g-dinamica-terrazas\">Dinámica en terrazas</a>: fuerte y piano en bloques, como ecos, sin crescendos largos. Ejemplo: <a href=\"#o-cuatro-estaciones@609\">Vivaldi, Verano I</a>.",
+"Contraste entre solista y grupo, con estribillos (<a href=\"#g-ritornello\">ritornello</a>) en los conciertos. Ejemplo: <a href=\"#o-cuatro-estaciones@0\">Vivaldi, Primavera I</a>.",
+"Melodías muy adornadas, con trinos y floreos; los músicos improvisaban parte de los adornos. Ejemplo: <a href=\"#o-suite-chelo-2@649\">Bach, Zarabanda</a>."
 ],
 "nombres": "Claudio Monteverdi, Arcangelo Corelli, Antonio Vivaldi, Georg Friedrich Händel, Johann Sebastian Bach, Jean-Philippe Rameau",
 "imagen": {
@@ -77,8 +77,8 @@
 "entradilla": "La emoción personal, la imaginación y las historias se adueñan de la música. El piano se convierte en el instrumento estrella y la orquesta crece.",
 "h": "<p>El Romanticismo nace como reacción a la razón de la Ilustración: frente al orden y el equilibrio del Clasicismo, pone por delante los sentimientos, la imaginación y al individuo. Los compositores dependen menos de un mecenas y escriben más para expresarse.</p>\n<p>La música se estira hacia los dos extremos. Por un lado, piezas breves para piano y canciones que retratan un estado de ánimo, las llamadas <a href=\"#g-pieza-de-caracter\">piezas de carácter</a>. Por otro, sinfonías y óperas cada vez más grandes, y poemas sinfónicos que cuentan una historia con la orquesta. El piano se vuelve el instrumento más popular del siglo, y aparecen músicas inspiradas en el folclore de cada país.</p>",
 "rasgos": [
-"Tempo flexible: el intérprete se adelanta y se retrasa (<a href=\"#g-rubato\">rubato</a>).",
-"Contrastes enormes de volumen y mucho pedal en el piano.",
+"Tempo flexible: el intérprete se adelanta y se retrasa (<a href=\"#g-rubato\">rubato</a>). Ejemplo: <a href=\"#o-balada-1-chopin@0\">Chopin, Balada n.º 1</a>, desde el primer tema.",
+"Contrastes enormes de volumen, del casi silencio al estruendo, a veces de golpe y a veces con crescendos muy largos; y mucho pedal en el piano. Ejemplo: la <a href=\"#o-balada-1-chopin\">Balada n.º 1 de Chopin</a>, pasos 5 y 7 de su guía.",
 "Melodías largas y expresivas, con frases menos simétricas que en el Clasicismo.",
 "Música que narra o pinta: baladas, poemas sinfónicos, títulos evocadores.",
 "Menos adorno añadido y más color: armonías atrevidas y orquestas más grandes."
@@ -118,7 +118,7 @@
 "tema": "Estilos",
 "titulo": "¿Por qué Vivaldi es barroco si parece tener una sola voz?",
 "entradilla": "La pregunta tiene trampa: el Barroco no se define por el número de voces. Lo que une a Vivaldi y a Bach está debajo: el bajo continuo.",
-"h": "<h2>Lo que comparten</h2>\n<p>Es fácil pensar que Bach son muchas voces y Vivaldi una sola, y que por eso Vivaldi sería ya clásico. Pero la frontera no está ahí. Escucha lo que pasa <b>debajo</b> de la melodía: en los dos hay un <a href=\"#g-bajo-continuo\">bajo continuo</a>, un bajo que no para y un clave (u órgano, o laúd) que va rellenando acordes. Ese motor desaparece en el Clasicismo.</p>\n<p>Comparten más cosas: un ritmo que avanza sin frenar, cambios de volumen en bloques (fuerte, piano, como ecos) y el contraste entre solista y grupo.</p>\n<h2>Dos acentos del mismo idioma</h2>\n<p><b>Vivaldi habla italiano:</b> una melodía brillante arriba, un bajo que empuja y, a menudo, toda la orquesta tocando la misma línea al unísono, un recurso del que fue pionero con <i lang=\"it\">L'estro armonico</i> (1711). Le importan el efecto, el virtuosismo y el teatro.</p>\n<p><b>Bach habla alemán con acento italiano:</b> unió la riqueza armónica del norte de Alemania con la energía del estilo italiano, y llenó cada hueco de contrapunto, varias melodías independientes a la vez. Lo curioso es que aprendió ese acento italiano copiando a Vivaldi: en Weimar, en 1713–1714, transcribió conciertos suyos para clave y para órgano.</p>\n<p>Y Vivaldi también tiene más de una voz: en sus movimientos lentos superpone personajes, como el perro, las hojas y el cabrero de la Primavera.</p>\n<h2>¿Y qué cambia en el Clasicismo?</h2>\n<p>Con Haydn y Mozart desaparece el continuo, la textura se aclara, las frases se vuelven simétricas (pregunta y respuesta) y los cambios de volumen pasan a ser graduales, con crescendos. El piano sustituye al clave.</p>\n<h2>Cinco pistas para no confundirte</h2>\n<ol>\n<li><b>¿Oyes un clave o un laúd rellenando acordes debajo?</b> Casi seguro, Barroco.</li>\n<li><b>¿El ritmo avanza como un motor, sin frenar?</b> Barroco.</li>\n<li><b>¿El volumen cambia de golpe, como un eco, o crece poco a poco?</b> De golpe, Barroco; poco a poco, Clasicismo.</li>\n<li><b>¿Las frases son simétricas, como una canción de pregunta y respuesta?</b> Clasicismo.</li>\n<li><b>¿El piano acompaña con acordes partidos que se repiten?</b> Es el bajo Alberti: Clasicismo.</li>\n</ol>\n<h2>Escúchalo tú</h2>\n<p>Pon el concierto para cuatro violines RV 580 de Vivaldi y después la versión de Bach para cuatro claves, BWV 1065. Es la misma música con dos acentos. La tienes en la ficha de <a href=\"#c-bach\">Bach</a>, en su ruta de escucha.</p>"
+"h": "<h2>Lo que comparten: el bajo continuo</h2>\n<p>Es fácil pensar que Bach son muchas voces y Vivaldi una sola, y que por eso Vivaldi sería ya clásico. Pero la frontera no está ahí. Escucha lo que pasa <b>debajo</b> de la melodía: en el Barroco casi siempre hay un <a href=\"#g-bajo-continuo\">bajo continuo</a>, unos instrumentos graves que no paran y un instrumento de acordes (clave, órgano o laúd) que va rellenando. Ese motor desaparece en el Clasicismo.</p>\n<ul>\n<li><a href=\"#o-cuatro-estaciones@0\">Vivaldi, Primavera, 0:00</a>. Debajo del estribillo, el bajo y los acordes no paran ni un momento.</li>\n<li><a href=\"#o-cuatro-estaciones@1574\">Vivaldi, Otoño II, 26:14</a>. Aquí el clave del continuo pasa al primer plano: la partitura le pide arpegiar los acordes mientras las cuerdas tocan con sordina.</li>\n<li><a href=\"#x-bwv-1065\">Bach, Concierto para cuatro claves, BWV 1065</a>. Bach también escribe con continuo: debajo de los cuatro solistas, los graves y los acordes no se detienen.</li>\n</ul>\n<p>La suite para violonchelo del diario es un caso especial: un chelo solo, sin continuo, que hace a la vez de melodía y de bajo (<a href=\"#o-suite-chelo-2@16\">Bach, Preludio, 0:16</a>). Pero casi toda la música de conjunto de Bach lleva continuo, igual que la de Vivaldi.</p>\n<h2>Vivaldi también tiene varias voces</h2>\n<p>En sus movimientos lentos, Vivaldi superpone personajes. Escucha la <a href=\"#o-cuatro-estaciones@212\">Primavera II, 3:32</a>: el violín solista canta tranquilo (el cabrero que duerme), los violines susurran como hojas y la viola ladra dos notas ásperas (el perro). Son tres capas a la vez.</p>\n<h2>Dos acentos del mismo idioma</h2>\n<p><b>Vivaldi habla italiano:</b> una melodía brillante arriba, un bajo que empuja y, a menudo, toda la orquesta tocando la misma línea al unísono, un recurso del que fue pionero con <i lang=\"it\">L'estro armonico</i> (1711). Le importan el efecto, el virtuosismo y el teatro. Escucha la tempestad del <a href=\"#o-cuatro-estaciones@1066\">Verano III, 17:46</a>.</p>\n<p><b>Bach habla alemán con acento italiano:</b> unió la riqueza armónica del norte de Alemania con la energía del estilo italiano, y llenó cada hueco de contrapunto, varias melodías independientes a la vez. Incluso con un solo chelo sugiere dos voces (<a href=\"#o-suite-chelo-2@16\">Preludio, 0:16</a>). Lo curioso es que aprendió ese acento italiano copiando a Vivaldi: en Weimar, en 1713–1714, transcribió conciertos suyos para clave y para órgano.</p>\n<h2>La prueba: la misma música con dos acentos</h2>\n<p>Bach tomó el concierto para cuatro violines de Vivaldi y lo convirtió en un concierto para cuatro claves, bajándolo de si menor a la menor. Escúchalos seguidos:</p>\n<ol>\n<li><a href=\"#x-rv-580\">Vivaldi, Concierto para cuatro violines, RV 580</a>. Cuatro violines que se pasan la melodía, brillantes y directos.</li>\n<li><a href=\"#x-bwv-1065\">Bach, Concierto para cuatro claves, BWV 1065</a>. La misma música, con más notas por dentro: Bach rellena y entrelaza las líneas.</li>\n</ol>\n<h2>¿Y qué cambia en el Clasicismo?</h2>\n<p>Con Haydn y Mozart desaparece el continuo, la textura se aclara, las frases se vuelven simétricas (pregunta y respuesta) y el piano sustituye al clave. En el volumen aparece algo nuevo: el <a href=\"#g-crescendo\">crescendo</a>, el sonido que crece poco a poco. La orquesta de Mannheim lo convirtió en un efecto famoso en toda Europa.</p>\n<h2>Cinco pistas para no confundirte</h2>\n<ol>\n<li><b>¿Oyes un instrumento de acordes rellenando debajo (clave, órgano o laúd)?</b> Casi seguro, Barroco. Ejemplo: <a href=\"#o-cuatro-estaciones@1574\">Otoño II, 26:14</a>.</li>\n<li><b>¿El ritmo avanza como un motor, sin frenar?</b> Barroco. Ejemplo: <a href=\"#o-cuatro-estaciones@1066\">Verano III, 17:46</a>.</li>\n<li><b>¿Cómo cambia el volumen?</b> Ojo: aquí no basta con «de golpe» o «poco a poco», porque los golpes de volumen existen en todas las épocas.\n<ul>\n<li><b>Barroco:</b> casi todo va por bloques, fuerte y piano, como ecos, y <b>sin crescendos largos</b>. El clave, por ejemplo, solo tiene dos niveles de volumen. Ejemplo: <a href=\"#o-cuatro-estaciones@609\">Verano I, 10:09</a>, donde de las frases cansadas se pasa de golpe al viento del norte.</li>\n<li><b>Clasicismo:</b> llegan los crescendos, y también los sustos calculados. Ejemplo: <a href=\"#x-haydn-94-ii\">Haydn, Sinfonía «La sorpresa», II</a>: un tema muy suave y, al final de la segunda frase, un acorde fortísimo.</li>\n<li><b>Romanticismo:</b> los contrastes se vuelven <b>enormes</b>, del casi silencio al estruendo, a veces de golpe y a veces creciendo durante mucho rato. Ejemplo: la <a href=\"#o-balada-1-chopin\">Balada n.º 1 de Chopin</a>, en el paso 5 de su guía, donde el primer tema crece hasta que el segundo vuelve a pleno volumen.</li>\n</ul>\nLa pregunta útil es otra: <b>¿hay crescendos largos?</b> y <b>¿cuánta distancia hay entre lo más suave y lo más fuerte?</b> Si todo va por bloques y no hay crescendos, piensa en Barroco.</li>\n<li><b>¿Las frases son simétricas, como una canción de pregunta y respuesta?</b> Clasicismo. Escúchalo en el tema del <a href=\"#x-haydn-94-ii\">Andante de Haydn</a>: sencillo como una canción infantil, de frases cortas y regulares.</li>\n<li><b>¿El piano acompaña con acordes partidos que se repiten?</b> Es el bajo Alberti: Clasicismo. Todavía no hay ninguna obra para piano del Clasicismo en el diario.</li>\n</ol>"
 },
 {
 "id": "instrumentos-epoca",
@@ -153,192 +153,529 @@
 {
 "id": "allemande",
 "termino": "Allemande",
-"def": "Danza de origen alemán, de paso moderado y compás binario. Abre la serie de danzas en las suites de Bach."
+"def": "Danza de origen alemán, de paso moderado y compás binario. Abre la serie de danzas en las suites de Bach.",
+"ejemplos": [
+{
+"o": "suite-chelo-2",
+"t": 278,
+"txt": "Paso moderado, en cuatro tiempos, que avanza con calma. Fíjate en las notas dobles que lo frenan de vez en cuando."
+}
+]
 },
 {
 "id": "bajo-continuo",
 "termino": "Bajo continuo",
-"def": "El cimiento de la música barroca: una línea de bajo (violonchelo, contrabajo, fagot…) más un instrumento de acordes (clave, órgano, laúd o tiorba) que improvisa la armonía a partir de esa línea. Desaparece hacia 1800."
+"def": "El cimiento de la música barroca: una línea de bajo (violonchelo, contrabajo, fagot…) más un instrumento de acordes (clave, órgano, laúd o tiorba) que improvisa la armonía a partir de esa línea. Desaparece hacia 1800.",
+"ejemplos": [
+{
+"o": "cuatro-estaciones",
+"t": 0,
+"txt": "Debajo del estribillo, los instrumentos graves llevan el bajo y un instrumento de acordes lo rellena. No paran ni un momento: ese suelo es el continuo."
+},
+{
+"o": "cuatro-estaciones",
+"t": 1574,
+"txt": "Aquí el instrumento de acordes del continuo pasa al primer plano: Vivaldi escribe en la partitura «il cembalo arpeggio», que el clave toque los acordes nota a nota, mientras las cuerdas tocan con sordina."
+},
+{
+"o": "suite-chelo-2",
+"t": 16,
+"txt": "El contraste: en la suite de Bach no hay continuo. El violonchelo, solo, hace a la vez de melodía y de bajo."
+}
+]
 },
 {
 "id": "catalogo",
 "termino": "Catálogo (BWV, RV, K., Op.)",
-"def": "Los números que identifican una obra. <b>BWV</b> es el catálogo de las obras de Bach (Bach-Werke-Verzeichnis), de Wolfgang Schmieder; <b>RV</b>, el de Vivaldi, de Peter Ryom; <b>K.</b> o <b>KV</b>, el de Mozart, de Ludwig von Köchel; <b>Hob.</b>, el de Haydn, de Anthony van Hoboken, y <b>D.</b>, el de Schubert, de Otto Erich Deutsch. <b>Op.</b> (<a href=\"#g-opus\">opus</a>) es el número de publicación. Más en <a href=\"#a-titulos\">Cómo leer el título de una obra</a>."
+"def": "Los números que identifican una obra. <b>BWV</b> es el catálogo de las obras de Bach (Bach-Werke-Verzeichnis), de Wolfgang Schmieder; <b>RV</b>, el de Vivaldi, de Peter Ryom; <b>K.</b> o <b>KV</b>, el de Mozart, de Ludwig von Köchel; <b>Hob.</b>, el de Haydn, de Anthony van Hoboken, y <b>D.</b>, el de Schubert, de Otto Erich Deutsch. <b>Op.</b> (<a href=\"#g-opus\">opus</a>) es el número de publicación. Más en <a href=\"#a-titulos\">Cómo leer el título de una obra</a>.",
+"ejemplos": [
+{
+"txt": "<b>BWV 1008</b> es la Suite n.º 2 para violonchelo de Bach; <b>RV 269</b>, la Primavera de Vivaldi; <b>Op. 23</b>, la Balada n.º 1 de Chopin."
+}
+]
 },
 {
 "id": "clave",
 "termino": "Clave",
-"def": "Instrumento de teclado en el que las cuerdas se pellizcan con una púa, en lugar de golpearse con macillos como en el piano. Sonido brillante, sin crescendos. Es el corazón del continuo barroco."
+"def": "Instrumento de teclado en el que las cuerdas se pellizcan con una púa, en lugar de golpearse con macillos como en el piano. Sonido brillante, sin crescendos. Es el corazón del continuo barroco.",
+"ejemplos": [
+{
+"o": "cuatro-estaciones",
+"t": 1574,
+"txt": "Escucha el clave arpegiando acordes, nota a nota, sobre las cuerdas veladas: un sonido punteado y brillante, que no crece ni se apaga como el del piano."
+}
+]
 },
 {
 "id": "concierto",
 "termino": "Concierto",
-"def": "Obra en la que uno o varios solistas dialogan con el grupo. En el Barroco suele tener tres movimientos: rápido, lento y rápido."
+"def": "Obra en la que uno o varios solistas dialogan con el grupo. En el Barroco suele tener tres movimientos: rápido, lento y rápido.",
+"ejemplos": [
+{
+"o": "cuatro-estaciones",
+"t": 0,
+"txt": "El grupo toca un estribillo y, entre medias, el violín solista se separa para pintar escenas: los pájaros, las fuentes que murmuran, la tormenta."
+},
+{
+"o": "cuatro-estaciones",
+"t": 212,
+"txt": "El segundo movimiento, lento. Tras él vendrá otro rápido: rápido, lento, rápido."
+}
+]
 },
 {
 "id": "contrapunto",
 "termino": "Contrapunto",
-"def": "El arte de combinar varias melodías independientes que suenan a la vez y encajan entre sí."
+"def": "El arte de combinar varias melodías independientes que suenan a la vez y encajan entre sí.",
+"ejemplos": [
+{
+"o": "suite-chelo-2",
+"t": 16,
+"txt": "Contrapunto escondido: una sola línea que tu oído separa en dos voces."
+},
+{
+"x": "bwv-1065",
+"t": 0,
+"txt": "Contrapunto a la vista: cuatro claves, cada uno con su línea, que encajan entre sí. Es su versión del concierto para cuatro violines RV 580 de Vivaldi."
+}
+]
 },
 {
 "id": "courante",
 "termino": "Courante",
-"def": "Danza rápida de origen francés, en compás ternario."
+"def": "Danza rápida de origen francés, en compás ternario.",
+"ejemplos": [
+{
+"o": "suite-chelo-2",
+"t": 527,
+"txt": "Rápida, de notas cortas sin parar, como si alguien te persiguiera."
+}
+]
 },
 {
 "id": "da-capo",
 "termino": "Da capo",
-"def": "«Desde el principio»: volver a tocar una sección ya escuchada. En los minuetos de las suites: Minueto I, Minueto II y otra vez Minueto I."
+"def": "«Desde el principio»: volver a tocar una sección ya escuchada. En los minuetos de las suites: Minueto I, Minueto II y otra vez Minueto I.",
+"ejemplos": [
+{
+"o": "suite-chelo-2",
+"t": 1127,
+"txt": "En la partitura, al acabar el Minueto II pone «Menuet I da capo»: hay que volver al primero. Escucha desde aquí y comprueba si el chelista repite el Minueto I antes de la giga."
+}
+]
 },
 {
 "id": "dinamica-terrazas",
 "termino": "Dinámica en terrazas",
-"def": "Cambios de volumen por bloques, de fuerte a piano de golpe, en vez de crescendos graduales. Muy barroca."
+"def": "Cambios de volumen por bloques, de fuerte a piano y al revés, sin pasos intermedios, en vez de crescendos graduales. Es lo típico del Barroco: el clave solo tiene dos niveles de volumen, y para tocar más fuerte se suman instrumentos. Ojo: los golpes de volumen existen en todas las épocas; lo barroco es que casi todo vaya por bloques y no haya crescendos largos.",
+"ejemplos": [
+{
+"o": "cuatro-estaciones",
+"t": 609,
+"txt": "El verano empieza con frases cansadas, cortadas por silencios, y de golpe el viento del norte entra a todo volumen. No hay crescendo: se pasa de un bloque a otro."
+},
+{
+"x": "haydn-94-ii",
+"t": 0,
+"txt": "Para no confundirte: un golpe de volumen no basta para decir «Barroco». Este Andante de Haydn, del Clasicismo, empieza muy suave y al final de la segunda frase suelta un acorde fortísimo, por sorpresa."
+}
+]
+},
+{
+"id": "crescendo",
+"termino": "Crescendo y diminuendo",
+"def": "Hacer crecer el volumen poco a poco (crescendo) o apagarlo poco a poco (diminuendo). En el Barroco casi no se escriben. En el Clasicismo, la orquesta de Mannheim los convirtió en un efecto famoso, y en el Romanticismo llegan a durar tramos muy largos, de un susurro a un estruendo.",
+"ejemplos": [
+{
+"o": "balada-1-chopin",
+"txt": "En la balada, el paso 5 de la guía: el primer tema crece y crece hasta que el segundo vuelve, convertido en una declaración apasionada a pleno volumen."
+},
+{
+"txt": "En el Barroco no busques crescendos largos: los cambios van por bloques. Compáralo con el <a href=\"#g-dinamica-terrazas\">Verano de Vivaldi</a>."
+}
+]
 },
 {
 "id": "doble-cuerda",
 "termino": "Doble cuerda",
-"def": "Tocar dos cuerdas a la vez con el arco para que suenen dos notas, o acordes si son más."
+"def": "Tocar dos cuerdas a la vez con el arco para que suenen dos notas, o acordes si son más.",
+"ejemplos": [
+{
+"o": "suite-chelo-2",
+"t": 649,
+"txt": "La zarabanda está llena de acordes de dos y tres notas: un solo chelo suena más lleno, casi como varios."
+},
+{
+"o": "suite-chelo-2",
+"t": 1048,
+"txt": "El Minueto I arranca con un acorde de re menor tocado de golpe."
+}
+]
 },
 {
 "id": "forma-sonata",
 "termino": "Forma sonata",
-"def": "El molde más importante del Clasicismo: se presentan dos temas contrastados (exposición), se transforman (desarrollo) y vuelven (reexposición)."
+"def": "El molde más importante del Clasicismo: se presentan dos temas contrastados (exposición), se transforman (desarrollo) y vuelven (reexposición).",
+"ejemplos": [
+{
+"o": "balada-1-chopin",
+"t": 0,
+"txt": "La balada juega con este molde: dos temas que se presentan, se transforman y vuelven en otro orden. Síguelos con los pasos 2, 4 y 6 de la guía de la ficha."
+}
+]
 },
 {
 "id": "fuga",
 "termino": "Fuga",
-"def": "Pieza de contrapunto en la que un tema entra sucesivamente en cada voz, que lo imitan y lo desarrollan."
+"def": "Pieza de contrapunto en la que un tema entra sucesivamente en cada voz, que lo imitan y lo desarrollan.",
+"ejemplos": [
+{
+"x": "bwv-565",
+"t": 0,
+"txt": "Tras la tocata del principio empieza la fuga: un tema suena solo y las demás voces entran después, una a una, imitándolo."
+}
+]
 },
 {
 "id": "galanterias",
 "termino": "Galanterías",
-"def": "Las danzas «de moda» (minuetos, bourrées o gavotas) que Bach coloca entre la zarabanda y la giga en sus suites."
+"def": "Las danzas «de moda» (minuetos, bourrées o gavotas) que Bach coloca entre la zarabanda y la giga en sus suites.",
+"ejemplos": [
+{
+"o": "suite-chelo-2",
+"t": 1048,
+"txt": "Los dos minuetos de esta suite son sus galanterías: danzas de moda, más ligeras, entre la zarabanda y la giga."
+}
+]
 },
 {
 "id": "giga",
 "termino": "Giga",
-"def": "Danza rápida y saltarina de origen inglés (la <i>jig</i>). Cierra las suites."
+"def": "Danza rápida y saltarina de origen inglés (la <i>jig</i>). Cierra las suites.",
+"ejemplos": [
+{
+"o": "suite-chelo-2",
+"t": 1256,
+"txt": "Saltos grandes y ritmo saltarín: así se cierra la suite, con energía."
+}
+]
 },
 {
 "id": "minueto",
 "termino": "Minueto",
-"def": "Danza elegante en compás de tres, de origen francés. En las suites se toca en pareja: I, II y vuelta al I."
+"def": "Danza elegante en compás de tres, de origen francés. En las suites se toca en pareja: I, II y vuelta al I.",
+"ejemplos": [
+{
+"o": "suite-chelo-2",
+"t": 1048,
+"txt": "Cuenta 1-2-3 mientras suena: es un baile elegante, de salón."
+}
+]
 },
 {
 "id": "movimiento",
 "termino": "Movimiento",
-"def": "Cada una de las partes de una obra larga, separadas por una pausa. La costumbre es no aplaudir entre ellos."
+"def": "Cada una de las partes de una obra larga, separadas por una pausa. La costumbre es no aplaudir entre ellos.",
+"ejemplos": [
+{
+"o": "cuatro-estaciones",
+"t": 212,
+"txt": "Aquí acaba el primer movimiento de la Primavera y empieza el segundo: hay una pausa y cambian el tempo y el ambiente. En concierto, no se aplaude aquí."
+}
+]
 },
 {
 "id": "musica-programatica",
 "termino": "Música programática",
-"def": "Música instrumental que cuenta o describe algo de fuera de la música (una historia, un paisaje), a menudo con un texto que la acompaña."
+"def": "Música instrumental que cuenta o describe algo de fuera de la música (una historia, un paisaje), a menudo con un texto que la acompaña.",
+"ejemplos": [
+{
+"o": "cuatro-estaciones",
+"t": 0,
+"txt": "Pájaros, fuentes que murmuran y una tormenta. Todo está descrito en un soneto impreso junto a la música."
+},
+{
+"o": "cuatro-estaciones",
+"t": 1916,
+"txt": "El invierno: tiritar, pisotones para entrar en calor y dientes que castañetean."
+}
+]
 },
 {
 "id": "pizzicato",
 "termino": "Pizzicato",
-"def": "Pellizcar las cuerdas con el dedo en lugar de frotarlas con el arco. Da notas cortas, como gotas."
+"def": "Pellizcar las cuerdas con el dedo en lugar de frotarlas con el arco. Da notas cortas, como gotas.",
+"ejemplos": [
+{
+"o": "cuatro-estaciones",
+"t": 2129,
+"txt": "Los violines pellizcan las cuerdas: son las gotas de lluvia que caen fuera mientras el solista canta tranquilo junto al fuego."
+}
+]
 },
 {
 "id": "polifonia-implicita",
 "termino": "Polifonía implícita",
-"def": "Cuando una sola línea melódica, saltando entre notas graves y agudas, se oye como dos o más voces a la vez."
+"def": "Cuando una sola línea melódica, saltando entre notas graves y agudas, se oye como dos o más voces a la vez.",
+"ejemplos": [
+{
+"o": "suite-chelo-2",
+"t": 16,
+"txt": "Una sola línea que salta entre notas graves y agudas. Al rato, tu oído la oye como dos voces."
+}
+]
 },
 {
 "id": "preludio",
 "termino": "Preludio",
-"def": "Pieza de introducción, a menudo libre, que abre una suite o va delante de una fuga."
+"def": "Pieza de introducción, a menudo libre, que abre una suite o va delante de una fuga.",
+"ejemplos": [
+{
+"o": "suite-chelo-2",
+"t": 16,
+"txt": "Abre la suite antes de las danzas, con aire libre, como si el chelista pensara en voz alta. Al final, cinco acordes largos."
+}
+]
 },
 {
 "id": "ritornello",
 "termino": "Ritornello",
-"def": "El estribillo de los movimientos rápidos del concierto barroco: el grupo lo repite, a veces solo un trozo, entre las intervenciones del solista."
+"def": "El estribillo de los movimientos rápidos del concierto barroco: el grupo lo repite, a veces solo un trozo, entre las intervenciones del solista.",
+"ejemplos": [
+{
+"o": "cuatro-estaciones",
+"t": 0,
+"txt": "El estribillo del principio vuelve una y otra vez entre las escenas del solista. Después de la tormenta, regresa en menor."
+}
+]
 },
 {
 "id": "sordina",
 "termino": "Sordina",
-"def": "Pieza que se coloca sobre el puente de un instrumento de cuerda para velar su sonido."
+"def": "Pieza que se coloca sobre el puente de un instrumento de cuerda para velar su sonido.",
+"ejemplos": [
+{
+"o": "cuatro-estaciones",
+"t": 1574,
+"txt": "La partitura pide las cuerdas «con sordino»: el sonido se vuelve velado, de duermevela. Son los borrachos dormidos tras la fiesta."
+}
+]
 },
 {
 "id": "suite",
 "termino": "Suite",
-"def": "Serie de danzas en la misma tonalidad, a menudo con un preludio delante. En las de Bach: preludio, allemande, courante, zarabanda, galanterías y giga."
+"def": "Serie de danzas en la misma tonalidad, a menudo con un preludio delante. En las de Bach: preludio, allemande, courante, zarabanda, galanterías y giga.",
+"ejemplos": [
+{
+"o": "suite-chelo-2",
+"t": 16,
+"txt": "La suite entera: un preludio y luego las danzas seguidas, todas girando en torno a la misma nota, el re."
+}
+]
 },
 {
 "id": "balada",
 "termino": "Balada",
-"def": "En literatura, un poema que cuenta una historia. Chopin fue el primero en dar el nombre a una pieza solo instrumental, sin palabras, de carácter narrativo."
+"def": "En literatura, un poema que cuenta una historia. Chopin fue el primero en dar el nombre a una pieza solo instrumental, sin palabras, de carácter narrativo.",
+"ejemplos": [
+{
+"o": "balada-1-chopin",
+"t": 0,
+"txt": "Diez minutos que suenan a historia contada: un comienzo que duda, dos temas que se transforman y un final desbocado."
+}
+]
 },
 {
 "id": "coda",
 "termino": "Coda",
-"def": "«Cola»: la sección final que cierra una obra o un movimiento, a menudo con un último arranque de energía."
+"def": "«Cola»: la sección final que cierra una obra o un movimiento, a menudo con un último arranque de energía.",
+"ejemplos": [
+{
+"o": "balada-1-chopin",
+"txt": "La coda de la balada es el paso 7 de la guía, «Presto con fuoco»: el final rapidísimo y salvaje."
+}
+]
 },
 {
 "id": "compas",
 "termino": "Compás",
-"def": "La forma en que se agrupan los pulsos. En 3/4 se cuenta 1-2-3, como en un vals; en 6/4 o 6/8, en dos grupos de tres, con un balanceo que suena a narración."
+"def": "La forma en que se agrupan los pulsos. En 3/4 se cuenta 1-2-3, como en un vals; en 6/4 o 6/8, en dos grupos de tres, con un balanceo que suena a narración.",
+"ejemplos": [
+{
+"o": "suite-chelo-2",
+"t": 1048,
+"txt": "Minueto: compás de tres. Cuenta 1-2-3, con el apoyo en el 1."
+},
+{
+"o": "suite-chelo-2",
+"t": 1256,
+"txt": "Giga: también de tres (3/8), pero mucho más rápido y saltarín."
+},
+{
+"o": "balada-1-chopin",
+"t": 0,
+"txt": "Tras la introducción lenta, la balada se mece en 6/4: dos grupos de tres, como una barca."
+}
+]
 },
 {
 "id": "opus",
 "termino": "Opus (Op.)",
-"def": "«Obra» en latín. El número que recibe una obra, o un grupo de obras, al publicarse. <b>No dice cuántas piezas hay</b>: el Op. 23 de Chopin es una sola balada, y su Op. 28, veinticuatro preludios. Cuando un opus reúne varias obras, se añade otro número: Op. 8 n.º 1. Tampoco indica siempre el orden en que se compusieron."
+"def": "«Obra» en latín. El número que recibe una obra, o un grupo de obras, al publicarse. <b>No dice cuántas piezas hay</b>: el Op. 23 de Chopin es una sola balada, y su Op. 28, veinticuatro preludios. Cuando un opus reúne varias obras, se añade otro número: Op. 8 n.º 1. Tampoco indica siempre el orden en que se compusieron.",
+"ejemplos": [
+{
+"txt": "El <b>Op. 23</b> de Chopin es una sola balada; su <b>Op. 28</b> son veinticuatro preludios. La Primavera de Vivaldi es el <b>Op. 8 n.º 1</b>: el primero de los doce conciertos de su Op. 8."
+}
+]
 },
 {
 "id": "pedal",
 "termino": "Pedal",
-"def": "En el piano, el pedal derecho deja vibrar las cuerdas al soltar las teclas. Une los sonidos y crea resonancia; los románticos lo usan muchísimo."
+"def": "En el piano, el pedal derecho deja vibrar las cuerdas al soltar las teclas. Une los sonidos y crea resonancia; los románticos lo usan muchísimo.",
+"ejemplos": [
+{
+"o": "balada-1-chopin",
+"t": 0,
+"txt": "Desde la introducción, fíjate en cómo las notas siguen sonando unas sobre otras después de soltar las teclas."
+}
+]
 },
 {
 "id": "pieza-de-caracter",
 "termino": "Pieza de carácter",
-"def": "Pieza breve para piano que retrata un estado de ánimo o una escena: nocturnos, baladas, intermezzos. Es uno de los grandes géneros del Romanticismo."
+"def": "Pieza breve para piano que retrata un estado de ánimo o una escena: nocturnos, baladas, intermezzos. Es uno de los grandes géneros del Romanticismo.",
+"ejemplos": [
+{
+"o": "balada-1-chopin",
+"t": 0,
+"txt": "Una sola pieza para piano que retrata un mundo entero, sin palabras."
+}
+]
 },
 {
 "id": "rubato",
 "termino": "Rubato",
-"def": "«Tiempo robado»: el intérprete se adelanta o se retrasa a propósito para dar expresión. Chopin pedía mantener firme la mano izquierda y dejar libre la derecha."
+"def": "«Tiempo robado»: el intérprete se adelanta o se retrasa a propósito para dar expresión. Chopin pedía mantener firme la mano izquierda y dejar libre la derecha.",
+"ejemplos": [
+{
+"o": "balada-1-chopin",
+"t": 0,
+"txt": "Escucha cómo el pulso respira: el pianista se demora en unas notas y avanza en otras, con libertad. Nunca suena a metrónomo."
+}
+]
 },
 {
 "id": "tema",
 "termino": "Tema",
-"def": "Una melodía o idea musical reconocible que la obra presenta y luego repite, transforma o desarrolla. Reconocer los temas es la mejor brújula para no perderse."
+"def": "Una melodía o idea musical reconocible que la obra presenta y luego repite, transforma o desarrolla. Reconocer los temas es la mejor brújula para no perderse.",
+"ejemplos": [
+{
+"o": "cuatro-estaciones",
+"t": 0,
+"txt": "El estribillo de la Primavera es un tema: apréndetelo en los primeros segundos y reconócelo cada vez que vuelve."
+},
+{
+"o": "balada-1-chopin",
+"txt": "En la balada hay dos temas: uno melancólico que se mece y otro suave, como una canción de amor. La guía de la ficha te dice cuándo llega cada uno (pasos 2 y 4)."
+}
+]
 },
 {
 "id": "tocata",
 "termino": "Tocata",
-"def": "Pieza de teclado de carácter libre, como improvisada, pensada para lucir al intérprete."
+"def": "Pieza de teclado de carácter libre, como improvisada, pensada para lucir al intérprete.",
+"ejemplos": [
+{
+"x": "bwv-565",
+"t": 0,
+"txt": "El comienzo es la tocata: arranques libres, como improvisados, para lucir el órgano."
+}
+]
 },
 {
 "id": "tonalidad",
 "termino": "Tonalidad (mayor y menor)",
-"def": "La «casa» de una obra: la nota a la que la música quiere volver para descansar (en «sol menor», el sol) y el tipo de escala que se usa a su alrededor. Hay dos modos: simplificando, el <b>mayor</b> suena luminoso y el <b>menor</b>, sombrío. La música se aleja de su tonalidad y vuelve: ese ir y volver es lo que se oye como tensión y reposo. En inglés y alemán las notas van con letras: C do, D re, E mi, F fa, G sol, A la, B si (en alemán, H es si y B es si bemol)."
+"def": "La «casa» de una obra: la nota a la que la música quiere volver para descansar (en «sol menor», el sol) y el tipo de escala que se usa a su alrededor. Hay dos modos: simplificando, el <b>mayor</b> suena luminoso y el <b>menor</b>, sombrío. La música se aleja de su tonalidad y vuelve: ese ir y volver es lo que se oye como tensión y reposo. En inglés y alemán las notas van con letras: C do, D re, E mi, F fa, G sol, A la, B si (en alemán, H es si y B es si bemol).",
+"ejemplos": [
+{
+"o": "cuatro-estaciones",
+"t": 0,
+"txt": "La Primavera, en mi mayor: luminosa."
+},
+{
+"o": "cuatro-estaciones",
+"t": 609,
+"txt": "El Verano, en sol menor: el mismo tipo de concierto, pero sombrío y agobiante. Compara los dos comienzos."
+}
+]
 },
 {
 "id": "transportar",
 "termino": "Transportar",
-"def": "Tocar o cantar una obra en otra tonalidad, más aguda o más grave. Los cantantes lo hacen a menudo para ajustarla a su voz, y muchas canciones se publicaban para voz aguda, media y grave. En el piano casi nunca se hace con obras de repertorio: cambia la posición de la mano sobre las teclas y el sonido del instrumento."
+"def": "Tocar o cantar una obra en otra tonalidad, más aguda o más grave. Los cantantes lo hacen a menudo para ajustarla a su voz, y muchas canciones se publicaban para voz aguda, media y grave. En el piano casi nunca se hace con obras de repertorio: cambia la posición de la mano sobre las teclas y el sonido del instrumento.",
+"ejemplos": [
+{
+"txt": "Muchas canciones se publican en tres versiones, para voz aguda, media y grave: es la misma música, transportada."
+}
+]
 },
 {
 "id": "tremolo",
 "termino": "Trémolo",
-"def": "Repetir muy rápido la misma nota, o alternar dos, creando un temblor sonoro. Vivaldi lo usa para los truenos."
+"def": "Repetir muy rápido la misma nota, o alternar dos, creando un temblor sonoro. Vivaldi lo usa para los truenos.",
+"ejemplos": [
+{
+"o": "cuatro-estaciones",
+"t": 1916,
+"txt": "En el invierno, trémolos fuertes de las cuerdas interrumpen al violín: ráfagas de viento helado."
+},
+{
+"o": "cuatro-estaciones",
+"t": 1066,
+"txt": "En el verano, el granizo: notas repetidas rapidísimas."
+}
+]
 },
 {
 "id": "trino",
 "termino": "Trino",
-"def": "Alternancia rapidísima entre dos notas vecinas. Es un adorno, y también el canto de pájaro más usado en música."
+"def": "Alternancia rapidísima entre dos notas vecinas. Es un adorno, y también el canto de pájaro más usado en música.",
+"ejemplos": [
+{
+"o": "cuatro-estaciones",
+"t": 0,
+"txt": "Los pájaros de la Primavera cantan con trinos."
+},
+{
+"o": "cuatro-estaciones",
+"t": 1916,
+"txt": "El invierno empieza con notas repetidas y adornadas con trinos: es el tiritar de frío."
+}
+]
 },
 {
 "id": "tutti",
 "termino": "Tutti",
-"def": "«Todos»: el grupo entero tocando, frente al solista."
+"def": "«Todos»: el grupo entero tocando, frente al solista.",
+"ejemplos": [
+{
+"o": "cuatro-estaciones",
+"t": 0,
+"txt": "El principio: todo el grupo a la vez tocando el estribillo, antes de que el solista se separe."
+}
+]
 },
 {
 "id": "zarabanda",
 "termino": "Zarabanda",
-"def": "Danza lenta de origen español, en compás de tres, con el apoyo en el segundo tiempo."
+"def": "Danza lenta de origen español, en compás de tres, con el apoyo en el segundo tiempo.",
+"ejemplos": [
+{
+"o": "suite-chelo-2",
+"t": 649,
+"txt": "Lenta, grave, con acordes: el centro emocional de la suite."
+}
+]
 }
 ],
 "curiosidades": [
@@ -387,5 +724,45 @@
 "l": "#o-cuatro-estaciones"
 }
 ],
-"destacado": "titulos"
+"destacado": "titulos",
+"referencias": {
+"rv-580": {
+"compositor": "Vivaldi",
+"titulo": "Concierto para cuatro violines en si menor, RV 580",
+"url": "https://youtu.be/fABaPU8e40c",
+"fuente": "Voices of Music",
+"caps": {}
+},
+"bwv-1065": {
+"compositor": "Bach",
+"titulo": "Concierto para cuatro claves en la menor, BWV 1065",
+"url": "https://youtu.be/emkJ0A7IfkY",
+"fuente": "Netherlands Bach Society",
+"caps": {
+"246": "II. Largo",
+"377": "III. Allegro"
+}
+},
+"bwv-565": {
+"compositor": "Bach",
+"titulo": "Tocata y fuga en re menor, BWV 565",
+"url": "https://youtu.be/Pi0IuyTS_ic",
+"fuente": "Leo van Doeselaar, órgano · Netherlands Bach Society",
+"caps": {}
+},
+"chopin-op28-15": {
+"compositor": "Chopin",
+"titulo": "Preludio «Gota de agua», Op. 28 n.º 15",
+"url": "https://youtu.be/R2d2spnXyLA",
+"fuente": "Lang Lang · Steinway & Sons",
+"caps": {}
+},
+"haydn-94-ii": {
+"compositor": "Haydn",
+"titulo": "Sinfonía n.º 94 «La sorpresa», II. Andante",
+"url": "https://youtu.be/ydh8yp1pkg0",
+"fuente": "Filarmónica de Berlín",
+"caps": {}
+}
+}
 }

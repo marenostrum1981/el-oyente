@@ -9,6 +9,8 @@ Un diario web para aprender a escuchar música clásica. Cada día entra una obr
 - `index.html`: la app completa (una sola página, con rutas por hash). Rutas: `#portada`, `#obras`, `#o-ID`, `#compositores`, `#c-ID`, `#interpretes`, `#i-ID`, `#epocas`, `#e-ID`, `#escuela`, `#a-ID`, `#glosario` y `#g-ID`.
 - `src/obras.py`, `src/personas.py` y `src/escuela.py`: **la fuente de verdad** del contenido. Se edita aquí.
 - `src/build_data.py`: genera `data/*.json` y comprueba todos los enlaces internos (`#o-…`, `#c-…`, `#g-…`…). Si algo apunta a un id que no existe, falla.
+- `src/ejemplos.py`: ejemplos para escuchar cada término del glosario.
+- `src/referencias.py`: obras de fuera del diario que se mencionan, con su grabación comprobada.
 - `src/imagenes.py`: imágenes de obras, compositores y épocas (Wikimedia Commons). `build_data.py` las añade a cada ficha.
 - `data/*.json`: archivos generados. No se editan a mano.
 - `manifest.webmanifest`, `sw.js` e `icons/`: la parte de app instalable. Si cambias `index.html` o los iconos, sube la versión de `CACHE` en `sw.js` (`oyente-v1` → `oyente-v2`…).
@@ -55,6 +57,8 @@ Un diario web para aprender a escuchar música clásica. Cada día entra una obr
 - **Nunca sonidos sintetizados ni MIDI.** Solo grabaciones reales: YouTube, Idagio o la web del intérprete.
 - Versiones para comparar: solo grabaciones que existan y estén comprobadas. Se enlazan únicamente si el enlace existe.
 - Orden recomendado de secciones: «Quién era X cuando la escribió», «Para quién», «El instrumento» o «Quién la toca», «Cómo está hecha», «Cómo reconocer aquí el [época]», «[Intérprete] y esta grabación», «Curiosidades» y «Para el concierto».
+- **Todo con ejemplos que se oigan.** Cada término del glosario lleva ejemplos en `src/ejemplos.py`, y cada explicación (artículos, rasgos de época, fichas) señala un momento concreto para escuchar. Los enlaces de escucha son `#o-ID@SEG` (un momento de una obra del diario: `SEG` tiene que ser el inicio de un capítulo de su `escucha`, o 0) y `#x-ID` o `#x-ID@SEG` (una obra de fuera del diario, registrada en `src/referencias.py`). Suenan en un reproductor flotante sin salir de la página. `build_data.py` rechaza segundos que no sean capítulos.
+- **Si mencionas una obra, que se pueda escuchar.** Una obra del diario se enlaza con `#o-ID`; una de fuera se añade a `src/referencias.py` con una grabación real de un canal fiable (orquesta, sello, institución), comprobada con oEmbed, y se enlaza con `#x-ID`. En las rutas de escucha y versiones, un enlace de YouTube de un vídeo concreto suena aquí mismo; evita enlaces de búsqueda.
 - HTML permitido en los textos: `<p>`, `<b>`, `<i lang="…">`, `<a href="#…">`, `<ul>`, `<ol>`, `<li>` y `<blockquote>`.
 
 ## Publicación

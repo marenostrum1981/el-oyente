@@ -14,8 +14,8 @@ dict(id="vivaldi", tipo="compositor", nombre="Antonio Vivaldi", vida="1678–174
  claves=[["Nació","Venecia, 1678"],["Murió","Viena, 1741"],["Apodo","<i lang=\"it\">Il prete rosso</i>"],["Trabajo","Ospedale della Pietà"],["Obra","Más de 400 conciertos, óperas, música sacra"],["Catálogo","RV (catálogo Ryom)"]],
  ruta=[
   dict(titulo="Las Cuatro Estaciones", obra="cuatro-estaciones", nota="Por donde empezar: cuatro conciertos con guion."),
-  dict(titulo="Concierto para cuatro violines, RV 580", nota="De <i lang=\"it\">L'estro armonico</i> (1711). Cuatro solistas que se pasan la palabra.", url="https://www.youtube.com/results?search_query=Vivaldi+RV+580+four+violins", enlace="Buscar en YouTube"),
-  dict(titulo="El mismo concierto, en manos de Bach (BWV 1065)", nota="Bach lo pasó a cuatro claves. Escucha los dos seguidos y oirás los dos acentos del Barroco.", url=ALLOFBACH+"1065", enlace="Ver en All of Bach"),
+  dict(titulo="Concierto para cuatro violines, RV 580", nota="De <i lang=\"it\">L'estro armonico</i> (1711). Cuatro solistas que se pasan la palabra.", url="https://youtu.be/fABaPU8e40c", enlace="Buscar en YouTube"),
+  dict(titulo="El mismo concierto, en manos de Bach (BWV 1065)", nota="Bach lo pasó a cuatro claves. Escucha los dos seguidos y oirás los dos acentos del Barroco.", url="https://youtu.be/emkJ0A7IfkY", enlace="Ver en All of Bach"),
  ]),
 dict(id="bach", tipo="compositor", nombre="Johann Sebastian Bach", vida="1685–1750", nace=1685, lugar="Eisenach → Leipzig", epoca="barroco",
  entradilla="El gran arquitecto del contrapunto. Unió la riqueza armónica alemana con la energía del estilo italiano.",
@@ -30,8 +30,8 @@ dict(id="bach", tipo="compositor", nombre="Johann Sebastian Bach", vida="1685–
  ruta=[
   dict(titulo="Suite n.º 2 para violonchelo", obra="suite-chelo-2", nota="Un solo instrumento que suena a varias voces."),
   dict(titulo="Concierto de Brandeburgo n.º 3, BWV 1048", nota="De la época de Köthen. Un concierto sin solista: todos los instrumentos son importantes.", url=ALLOFBACH+"1048", enlace="Ver en All of Bach"),
-  dict(titulo="Concierto para cuatro claves, BWV 1065", nota="Su versión del concierto RV 580 de Vivaldi.", url=ALLOFBACH+"1065", enlace="Ver en All of Bach"),
-  dict(titulo="Tocata y fuga en re menor, BWV 565", nota="La pieza de órgano más famosa del mundo, aunque algunos expertos dudan de que sea suya.", url=ALLOFBACH+"565", enlace="Ver en All of Bach"),
+  dict(titulo="Concierto para cuatro claves, BWV 1065", nota="Su versión del concierto RV 580 de Vivaldi.", url="https://youtu.be/emkJ0A7IfkY", enlace="Ver en All of Bach"),
+  dict(titulo="Tocata y fuga en re menor, BWV 565", nota="La pieza de órgano más famosa del mundo, aunque algunos expertos dudan de que sea suya.", url="https://youtu.be/Pi0IuyTS_ic", enlace="Ver en All of Bach"),
  ]),
 dict(id="chopin", tipo="compositor", nombre="Frédéric Chopin", vida="1810–1849", nace=1810, lugar="Varsovia → París", epoca="romanticismo",
  entradilla="El poeta del piano. Polaco exiliado en París, escribió casi todo para su instrumento y cambió para siempre lo que un piano podía decir.",
@@ -45,7 +45,7 @@ dict(id="chopin", tipo="compositor", nombre="Frédéric Chopin", vida="1810–18
  claves=[["Nació","Żelazowa Wola (Polonia), 1810"],["Murió","París, 1849"],["Instrumento","El piano: todas sus obras lo incluyen"],["Vivió en","Varsovia, Viena, París y un invierno en Mallorca"],["Catálogo","Números de opus (Op.)"],["Su corazón","En la iglesia de la Santa Cruz de Varsovia"]],
  ruta=[
   dict(titulo="Balada n.º 1 en sol menor, Op. 23", obra="balada-1-chopin", nota="Su obra más querida, según él mismo."),
-  dict(titulo="Preludio «Gota de agua», Op. 28 n.º 15", nota="De los Preludios que terminó en Valldemossa. Una nota que se repite como lluvia.", url="https://www.youtube.com/results?search_query=Chopin+Prelude+Op+28+No+15+Raindrop", enlace="Buscar en YouTube"),
+  dict(titulo="Preludio «Gota de agua», Op. 28 n.º 15", nota="De los Preludios que terminó en Valldemossa. Una nota que se repite como lluvia.", url="https://youtu.be/R2d2spnXyLA", enlace="Lang Lang (Steinway & Sons)"),
   dict(titulo="Nocturno en do sostenido menor (póstumo)", nota="El que abre <i>El pianista</i> y el que Szpilman tocó de verdad para Hosenfeld.", url="https://www.youtube.com/results?search_query=Chopin+Nocturne+C+sharp+minor+posthumous", enlace="Buscar en YouTube"),
  ]),
 dict(id="zimerman", tipo="solista", rol="Pianista", nombre="Krystian Zimerman", vida="Nacido en 1956", lugar="Zabrze (Polonia)",

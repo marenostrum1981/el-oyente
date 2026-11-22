@@ -9,7 +9,7 @@ dict(id="barroco", nombre="Barroco", fechas="1600–1750", ini=1600, fin=1750, c
  h="""<p>El Barroco empieza hacia 1600, cuando en Italia nace la ópera con Peri y Monteverdi, y se suele cerrar en 1750, el año en que muere Bach. Es la época en que se asientan las tonalidades mayor y menor y nacen o se consolidan géneros que todavía escuchamos: la ópera, el oratorio, el concierto, la sonata, la suite y la fuga.</p>
 <p>Lo que lo une todo es el <a href="#g-bajo-continuo">bajo continuo</a>: debajo de casi cualquier obra barroca hay un bajo que no se detiene y un instrumento de acordes (clave, órgano, laúd o tiorba) que improvisa la armonía.</p>
 <p>Dentro del Barroco hay acentos nacionales. El italiano (Vivaldi, Corelli) es brillante, virtuoso y teatral; el francés (Lully, Rameau), elegante y lleno de danzas y adornos; el alemán (Bach) mezcla todo eso con un contrapunto muy denso.</p>""",
- rasgos=["Un bajo continuo que suena de principio a fin: escucha si hay un clave o un laúd rellenando acordes.","Ritmo constante e impulso que no decae, sobre todo en los movimientos rápidos.","Dinámica en terrazas: fuerte y piano en bloques, como ecos, más que crescendos.","Contraste entre solista y grupo, con estribillos (ritornello) en los conciertos.","Melodías muy adornadas; los músicos improvisaban parte de los adornos."],
+ rasgos=["Un bajo continuo que suena de principio a fin: escucha si hay un clave o un laúd rellenando acordes. Ejemplo: <a href=\"#o-cuatro-estaciones@1574\">Vivaldi, Otoño II</a>.","Ritmo constante e impulso que no decae, sobre todo en los movimientos rápidos. Ejemplo: <a href=\"#o-cuatro-estaciones@1066\">Vivaldi, Verano III</a>.","<a href=\"#g-dinamica-terrazas\">Dinámica en terrazas</a>: fuerte y piano en bloques, como ecos, sin crescendos largos. Ejemplo: <a href=\"#o-cuatro-estaciones@609\">Vivaldi, Verano I</a>.","Contraste entre solista y grupo, con estribillos (<a href=\"#g-ritornello\">ritornello</a>) en los conciertos. Ejemplo: <a href=\"#o-cuatro-estaciones@0\">Vivaldi, Primavera I</a>.","Melodías muy adornadas, con trinos y floreos; los músicos improvisaban parte de los adornos. Ejemplo: <a href=\"#o-suite-chelo-2@649\">Bach, Zarabanda</a>."],
  nombres="Claudio Monteverdi, Arcangelo Corelli, Antonio Vivaldi, Georg Friedrich Händel, Johann Sebastian Bach, Jean-Philippe Rameau"),
 dict(id="clasicismo", nombre="Clasicismo", fechas="c. 1750–1820", ini=1750, fin=1820, color="var(--cla)",
  entradilla="Haydn, Mozart y el primer Beethoven: textura más clara, melodía con acompañamiento y formas equilibradas.",
@@ -21,7 +21,7 @@ dict(id="romanticismo", nombre="Romanticismo", fechas="c. 1820–1900", ini=1820
  entradilla="La emoción personal, la imaginación y las historias se adueñan de la música. El piano se convierte en el instrumento estrella y la orquesta crece.",
  h="""<p>El Romanticismo nace como reacción a la razón de la Ilustración: frente al orden y el equilibrio del Clasicismo, pone por delante los sentimientos, la imaginación y al individuo. Los compositores dependen menos de un mecenas y escriben más para expresarse.</p>
 <p>La música se estira hacia los dos extremos. Por un lado, piezas breves para piano y canciones que retratan un estado de ánimo, las llamadas <a href="#g-pieza-de-caracter">piezas de carácter</a>. Por otro, sinfonías y óperas cada vez más grandes, y poemas sinfónicos que cuentan una historia con la orquesta. El piano se vuelve el instrumento más popular del siglo, y aparecen músicas inspiradas en el folclore de cada país.</p>""",
- rasgos=["Tempo flexible: el intérprete se adelanta y se retrasa (<a href=\"#g-rubato\">rubato</a>).","Contrastes enormes de volumen y mucho pedal en el piano.","Melodías largas y expresivas, con frases menos simétricas que en el Clasicismo.","Música que narra o pinta: baladas, poemas sinfónicos, títulos evocadores.","Menos adorno añadido y más color: armonías atrevidas y orquestas más grandes."],
+ rasgos=["Tempo flexible: el intérprete se adelanta y se retrasa (<a href=\"#g-rubato\">rubato</a>). Ejemplo: <a href=\"#o-balada-1-chopin@0\">Chopin, Balada n.º 1</a>, desde el primer tema.","Contrastes enormes de volumen, del casi silencio al estruendo, a veces de golpe y a veces con crescendos muy largos; y mucho pedal en el piano. Ejemplo: la <a href=\"#o-balada-1-chopin\">Balada n.º 1 de Chopin</a>, pasos 5 y 7 de su guía.","Melodías largas y expresivas, con frases menos simétricas que en el Clasicismo.","Música que narra o pinta: baladas, poemas sinfónicos, títulos evocadores.","Menos adorno añadido y más color: armonías atrevidas y orquestas más grandes."],
  nombres="Franz Schubert, Frédéric Chopin, Robert Schumann, Franz Liszt, Richard Wagner, Giuseppe Verdi, Johannes Brahms, Piotr Chaikovski"),
 dict(id="siglo-xx", nombre="Siglo XX y XXI", fechas="1900–hoy", ini=1900, fin=2000, color="var(--xx)",
  entradilla="Se rompen las reglas: nuevos colores, nuevos ritmos y nuevas formas de ordenar los sonidos.",
@@ -33,25 +33,41 @@ dict(id="siglo-xx", nombre="Siglo XX y XXI", fechas="1900–hoy", ini=1900, fin=
 ARTICULOS = [
 dict(id="vivaldi-barroco", tema="Estilos", titulo="¿Por qué Vivaldi es barroco si parece tener una sola voz?",
  entradilla="La pregunta tiene trampa: el Barroco no se define por el número de voces. Lo que une a Vivaldi y a Bach está debajo: el bajo continuo.",
- h="""<h2>Lo que comparten</h2>
-<p>Es fácil pensar que Bach son muchas voces y Vivaldi una sola, y que por eso Vivaldi sería ya clásico. Pero la frontera no está ahí. Escucha lo que pasa <b>debajo</b> de la melodía: en los dos hay un <a href="#g-bajo-continuo">bajo continuo</a>, un bajo que no para y un clave (u órgano, o laúd) que va rellenando acordes. Ese motor desaparece en el Clasicismo.</p>
-<p>Comparten más cosas: un ritmo que avanza sin frenar, cambios de volumen en bloques (fuerte, piano, como ecos) y el contraste entre solista y grupo.</p>
+ h="""<h2>Lo que comparten: el bajo continuo</h2>
+<p>Es fácil pensar que Bach son muchas voces y Vivaldi una sola, y que por eso Vivaldi sería ya clásico. Pero la frontera no está ahí. Escucha lo que pasa <b>debajo</b> de la melodía: en el Barroco casi siempre hay un <a href="#g-bajo-continuo">bajo continuo</a>, unos instrumentos graves que no paran y un instrumento de acordes (clave, órgano o laúd) que va rellenando. Ese motor desaparece en el Clasicismo.</p>
+<ul>
+<li><a href="#o-cuatro-estaciones@0">Vivaldi, Primavera, 0:00</a>. Debajo del estribillo, el bajo y los acordes no paran ni un momento.</li>
+<li><a href="#o-cuatro-estaciones@1574">Vivaldi, Otoño II, 26:14</a>. Aquí el clave del continuo pasa al primer plano: la partitura le pide arpegiar los acordes mientras las cuerdas tocan con sordina.</li>
+<li><a href="#x-bwv-1065">Bach, Concierto para cuatro claves, BWV 1065</a>. Bach también escribe con continuo: debajo de los cuatro solistas, los graves y los acordes no se detienen.</li>
+</ul>
+<p>La suite para violonchelo del diario es un caso especial: un chelo solo, sin continuo, que hace a la vez de melodía y de bajo (<a href="#o-suite-chelo-2@16">Bach, Preludio, 0:16</a>). Pero casi toda la música de conjunto de Bach lleva continuo, igual que la de Vivaldi.</p>
+<h2>Vivaldi también tiene varias voces</h2>
+<p>En sus movimientos lentos, Vivaldi superpone personajes. Escucha la <a href="#o-cuatro-estaciones@212">Primavera II, 3:32</a>: el violín solista canta tranquilo (el cabrero que duerme), los violines susurran como hojas y la viola ladra dos notas ásperas (el perro). Son tres capas a la vez.</p>
 <h2>Dos acentos del mismo idioma</h2>
-<p><b>Vivaldi habla italiano:</b> una melodía brillante arriba, un bajo que empuja y, a menudo, toda la orquesta tocando la misma línea al unísono, un recurso del que fue pionero con <i lang="it">L'estro armonico</i> (1711). Le importan el efecto, el virtuosismo y el teatro.</p>
-<p><b>Bach habla alemán con acento italiano:</b> unió la riqueza armónica del norte de Alemania con la energía del estilo italiano, y llenó cada hueco de contrapunto, varias melodías independientes a la vez. Lo curioso es que aprendió ese acento italiano copiando a Vivaldi: en Weimar, en 1713–1714, transcribió conciertos suyos para clave y para órgano.</p>
-<p>Y Vivaldi también tiene más de una voz: en sus movimientos lentos superpone personajes, como el perro, las hojas y el cabrero de la Primavera.</p>
+<p><b>Vivaldi habla italiano:</b> una melodía brillante arriba, un bajo que empuja y, a menudo, toda la orquesta tocando la misma línea al unísono, un recurso del que fue pionero con <i lang="it">L'estro armonico</i> (1711). Le importan el efecto, el virtuosismo y el teatro. Escucha la tempestad del <a href="#o-cuatro-estaciones@1066">Verano III, 17:46</a>.</p>
+<p><b>Bach habla alemán con acento italiano:</b> unió la riqueza armónica del norte de Alemania con la energía del estilo italiano, y llenó cada hueco de contrapunto, varias melodías independientes a la vez. Incluso con un solo chelo sugiere dos voces (<a href="#o-suite-chelo-2@16">Preludio, 0:16</a>). Lo curioso es que aprendió ese acento italiano copiando a Vivaldi: en Weimar, en 1713–1714, transcribió conciertos suyos para clave y para órgano.</p>
+<h2>La prueba: la misma música con dos acentos</h2>
+<p>Bach tomó el concierto para cuatro violines de Vivaldi y lo convirtió en un concierto para cuatro claves, bajándolo de si menor a la menor. Escúchalos seguidos:</p>
+<ol>
+<li><a href="#x-rv-580">Vivaldi, Concierto para cuatro violines, RV 580</a>. Cuatro violines que se pasan la melodía, brillantes y directos.</li>
+<li><a href="#x-bwv-1065">Bach, Concierto para cuatro claves, BWV 1065</a>. La misma música, con más notas por dentro: Bach rellena y entrelaza las líneas.</li>
+</ol>
 <h2>¿Y qué cambia en el Clasicismo?</h2>
-<p>Con Haydn y Mozart desaparece el continuo, la textura se aclara, las frases se vuelven simétricas (pregunta y respuesta) y los cambios de volumen pasan a ser graduales, con crescendos. El piano sustituye al clave.</p>
+<p>Con Haydn y Mozart desaparece el continuo, la textura se aclara, las frases se vuelven simétricas (pregunta y respuesta) y el piano sustituye al clave. En el volumen aparece algo nuevo: el <a href="#g-crescendo">crescendo</a>, el sonido que crece poco a poco. La orquesta de Mannheim lo convirtió en un efecto famoso en toda Europa.</p>
 <h2>Cinco pistas para no confundirte</h2>
 <ol>
-<li><b>¿Oyes un clave o un laúd rellenando acordes debajo?</b> Casi seguro, Barroco.</li>
-<li><b>¿El ritmo avanza como un motor, sin frenar?</b> Barroco.</li>
-<li><b>¿El volumen cambia de golpe, como un eco, o crece poco a poco?</b> De golpe, Barroco; poco a poco, Clasicismo.</li>
-<li><b>¿Las frases son simétricas, como una canción de pregunta y respuesta?</b> Clasicismo.</li>
-<li><b>¿El piano acompaña con acordes partidos que se repiten?</b> Es el bajo Alberti: Clasicismo.</li>
-</ol>
-<h2>Escúchalo tú</h2>
-<p>Pon el concierto para cuatro violines RV 580 de Vivaldi y después la versión de Bach para cuatro claves, BWV 1065. Es la misma música con dos acentos. La tienes en la ficha de <a href="#c-bach">Bach</a>, en su ruta de escucha.</p>"""),
+<li><b>¿Oyes un instrumento de acordes rellenando debajo (clave, órgano o laúd)?</b> Casi seguro, Barroco. Ejemplo: <a href="#o-cuatro-estaciones@1574">Otoño II, 26:14</a>.</li>
+<li><b>¿El ritmo avanza como un motor, sin frenar?</b> Barroco. Ejemplo: <a href="#o-cuatro-estaciones@1066">Verano III, 17:46</a>.</li>
+<li><b>¿Cómo cambia el volumen?</b> Ojo: aquí no basta con «de golpe» o «poco a poco», porque los golpes de volumen existen en todas las épocas.
+<ul>
+<li><b>Barroco:</b> casi todo va por bloques, fuerte y piano, como ecos, y <b>sin crescendos largos</b>. El clave, por ejemplo, solo tiene dos niveles de volumen. Ejemplo: <a href="#o-cuatro-estaciones@609">Verano I, 10:09</a>, donde de las frases cansadas se pasa de golpe al viento del norte.</li>
+<li><b>Clasicismo:</b> llegan los crescendos, y también los sustos calculados. Ejemplo: <a href="#x-haydn-94-ii">Haydn, Sinfonía «La sorpresa», II</a>: un tema muy suave y, al final de la segunda frase, un acorde fortísimo.</li>
+<li><b>Romanticismo:</b> los contrastes se vuelven <b>enormes</b>, del casi silencio al estruendo, a veces de golpe y a veces creciendo durante mucho rato. Ejemplo: la <a href="#o-balada-1-chopin">Balada n.º 1 de Chopin</a>, en el paso 5 de su guía, donde el primer tema crece hasta que el segundo vuelve a pleno volumen.</li>
+</ul>
+La pregunta útil es otra: <b>¿hay crescendos largos?</b> y <b>¿cuánta distancia hay entre lo más suave y lo más fuerte?</b> Si todo va por bloques y no hay crescendos, piensa en Barroco.</li>
+<li><b>¿Las frases son simétricas, como una canción de pregunta y respuesta?</b> Clasicismo. Escúchalo en el tema del <a href="#x-haydn-94-ii">Andante de Haydn</a>: sencillo como una canción infantil, de frases cortas y regulares.</li>
+<li><b>¿El piano acompaña con acordes partidos que se repiten?</b> Es el bajo Alberti: Clasicismo. Todavía no hay ninguna obra para piano del Clasicismo en el diario.</li>
+</ol>"""),
 dict(id="instrumentos-epoca", tema="Instrumentos", titulo="Instrumentos de época: cómo reconocerlos en un vídeo",
  entradilla="Muchas grabaciones de música barroca usan instrumentos antiguos o copias de ellos. Se distinguen a simple vista y suenan distinto.",
  h="""<h2>Qué son</h2>
@@ -156,7 +172,8 @@ GLOSARIO = [
  ("contrapunto","Contrapunto","El arte de combinar varias melodías independientes que suenan a la vez y encajan entre sí."),
  ("courante","Courante","Danza rápida de origen francés, en compás ternario."),
  ("da-capo","Da capo","«Desde el principio»: volver a tocar una sección ya escuchada. En los minuetos de las suites: Minueto I, Minueto II y otra vez Minueto I."),
- ("dinamica-terrazas","Dinámica en terrazas","Cambios de volumen por bloques, de fuerte a piano de golpe, en vez de crescendos graduales. Muy barroca."),
+ ("dinamica-terrazas","Dinámica en terrazas","Cambios de volumen por bloques, de fuerte a piano y al revés, sin pasos intermedios, en vez de crescendos graduales. Es lo típico del Barroco: el clave solo tiene dos niveles de volumen, y para tocar más fuerte se suman instrumentos. Ojo: los golpes de volumen existen en todas las épocas; lo barroco es que casi todo vaya por bloques y no haya crescendos largos."),
+ ("crescendo","Crescendo y diminuendo","Hacer crecer el volumen poco a poco (crescendo) o apagarlo poco a poco (diminuendo). En el Barroco casi no se escriben. En el Clasicismo, la orquesta de Mannheim los convirtió en un efecto famoso, y en el Romanticismo llegan a durar tramos muy largos, de un susurro a un estruendo."),
  ("doble-cuerda","Doble cuerda","Tocar dos cuerdas a la vez con el arco para que suenen dos notas, o acordes si son más."),
  ("forma-sonata","Forma sonata","El molde más importante del Clasicismo: se presentan dos temas contrastados (exposición), se transforman (desarrollo) y vuelven (reexposición)."),
  ("fuga","Fuga","Pieza de contrapunto en la que un tema entra sucesivamente en cada voz, que lo imitan y lo desarrollan."),
