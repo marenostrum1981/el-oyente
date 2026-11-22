@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>El Oyente · Diario</title>
+<meta name="description" content="Un diario para aprender a escuchar música clásica: una obra al día, compositores, épocas y glosario.">
+<meta name="theme-color" content="#141414">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="El Oyente">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+/* VOICE: un periódico cultural para un rato libre: claro, curioso, con criterio y sin pompa.
+   IDEA: la portada de un diario impreso: cabecera, reglas de tinta, columnas, y cada obra como noticia.
+   PICTURE: la línea del tiempo de las épocas, en sus colores, con las obras del diario marcadas encima.
+   COLOUR and TYPE: papel blanco y tinta negra; un rojo de cabecera; cada época con su color. Playfair Display en titulares, Source Serif 4 para leer, Source Sans 3 en etiquetas.
+   LAYOUT: cabecera centrada y navegación; portada a dos columnas que se apilan en el móvil; fichas de lectura a una columna con caja de datos. */
+:root{color-scheme:light dark;
+ --bg:light-dark(#ffffff,#121316);--ink:light-dark(#141414,#ecebe6);--mute:light-dark(#5b5b5b,#a7a7a1);
+ --line:light-dark(#e2e2e0,#2c2d31);--card:light-dark(#f5f5f3,#1b1c20);--acc:light-dark(#b8102b,#ff7486);--on:light-dark(#fff,#121316);
+ --ren:light-dark(#56802b,#9ccc68);--bar:light-dark(#b07d06,#e8b43c);--cla:light-dark(#2b67b0,#7db0f0);--rom:light-dark(#7a3d9e,#c491e6);--xx:light-dark(#0d847e,#5ed1c9);
+ --hd:"Playfair Display",Georgia,serif;--rd:"Source Serif 4",Georgia,serif;--ui:"Source Sans 3","Segoe UI",system-ui,sans-serif}
+:root[data-theme=light]{color-scheme:light}:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.62 var(--rd);overflow-x:clip}
+html{scroll-padding-top:16px}
+a{color:inherit;text-decoration-thickness:1px;text-underline-offset:3px}
+a:hover{color:var(--acc)}
+:focus-visible{outline:3px solid var(--cla);outline-offset:2px}
+p{margin:0 0 .85em}
+h1,h2,h3{font-family:var(--hd);line-height:1.08;text-wrap:balance;margin:0 0 .35em}
+h1{font-size:clamp(34px,5.4vw,52px);font-weight:900}
+h2{font-size:clamp(26px,3.4vw,34px);font-weight:700}
+h3{font-size:22px;font-weight:700}
+.ui{font-family:var(--ui)}
+.mute{color:var(--mute)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 max(4vw,16px)}
+.read{max-width:720px}
+/* cabecera */
+.mast{text-align:center;padding:22px 0 10px;border-bottom:3px double var(--ink)}
+.mast .top{display:flex;justify-content:space-between;gap:10px;font:600 14px var(--ui);color:var(--mute);border-bottom:1px solid var(--ink);padding-bottom:8px;margin-bottom:10px}
+.mast .name{font:900 clamp(44px,9vw,84px)/1 var(--hd);letter-spacing:-.01em;text-decoration:none;color:var(--ink);display:inline-block}
+.mast .sub{font:italic 17px var(--rd);color:var(--mute);margin:6px 0 0}
+nav.sec{display:flex;gap:4px 18px;justify-content:center;flex-wrap:wrap;padding:10px 0;border-bottom:1px solid var(--ink);font:700 15px var(--ui)}
+nav.sec a{text-decoration:none;padding:8px 2px;min-height:44px;display:inline-flex;align-items:center}
+nav.sec a[aria-current=page]{color:var(--acc);box-shadow:inset 0 -3px 0 var(--acc)}
+@media(max-width:600px){nav.sec{justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto}nav.sec a{flex:none}.mast .top span:last-child{display:none}}
+main{padding:28px 0 56px}
+.kick{font:700 14px var(--ui);color:var(--acc);margin:0 0 6px}
+.kick .dot,.dot{display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--c,var(--ink));margin-right:7px;vertical-align:0}
+.stand{font-size:clamp(18px,1.9vw,21px);line-height:1.5;color:var(--ink)}
+.rule{border:0;border-top:1px solid var(--ink);margin:26px 0}
+/* portada */
+.front{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(0,1fr);gap:0 36px}
+.front .side{border-left:1px solid var(--line);padding-left:28px}
+@media(max-width:860px){.front{grid-template-columns:minmax(0,1fr)}.front .side{border-left:0;padding-left:0;border-top:1px solid var(--ink);padding-top:22px;margin-top:10px}}
+.lead h1 a{text-decoration:none}
+.lead .meta{font:600 15px var(--ui);color:var(--mute);margin-bottom:12px}
+.btns{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0 6px}
+.btn{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:9px 16px;border-radius:999px;font:700 15px var(--ui);text-decoration:none;border:1.5px solid var(--ink)}
+.btn.solid{background:var(--ink);color:var(--on)}
+.btn.solid:hover{color:var(--on);opacity:.9}
+.btn svg{width:14px;height:14px;fill:currentColor}
+.box{border-top:3px solid var(--ink);padding-top:10px;margin-bottom:26px}
+.box h3{font-size:21px}
+.box p{font-size:16px}
+.mini{list-style:none;margin:0;padding:0}
+.mini li{border-bottom:1px solid var(--line);padding:10px 0}
+.mini a{text-decoration:none;font-weight:600}
+.mini small{display:block;font:14px var(--ui);color:var(--mute)}
+/* línea del tiempo */
+.tl{margin:8px 0 4px}
+.tl-marks{position:relative;height:30px}
+.tl-mark{position:absolute;bottom:2px;transform:translateX(-50%);width:26px;height:26px;border-radius:50%;background:var(--ink);color:var(--on);font:700 12px/26px var(--ui);text-align:center;text-decoration:none}
+.tl-mark:hover{color:var(--on);background:var(--acc)}
+.tl-bar{display:flex;height:18px;border-radius:3px;overflow:hidden}
+.tl-bar a{display:block;height:100%}
+.tl-ticks{position:relative;height:20px;font:13px var(--ui);color:var(--mute)}
+.tl-ticks span{position:absolute;transform:translateX(-50%)}
+.tl-ticks span:first-child{transform:none}.tl-ticks span:last-child{transform:translateX(-100%)}
+@media(max-width:440px){.tl-ticks .opt{display:none}}
+.tl-leg{display:flex;flex-wrap:wrap;gap:4px 16px;font:600 14px var(--ui);margin-top:6px}
+.tl-leg a{text-decoration:none}
+/* ficha */
+.ficha{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:0 40px;align-items:start}
+@media(max-width:900px){.ficha{grid-template-columns:minmax(0,1fr)}}
+.facts{border-top:3px solid var(--ink);font:15px/1.45 var(--ui);margin-bottom:24px}
+.facts div{display:grid;grid-template-columns:7.5em minmax(0,1fr);gap:10px;padding:8px 0;border-bottom:1px solid var(--line)}
+.facts dt{color:var(--mute);font-weight:600}
+.facts dd{margin:0}
+.listen{background:var(--card);border-radius:10px;padding:18px;margin:8px 0 26px}
+.listen h2{font-size:24px}
+.rec{font:15px var(--ui);margin-bottom:12px}
+.tracks{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.tracks li{border-bottom:1px solid var(--line)}
+.tracks a,.tracks .row{display:grid;grid-template-columns:3.6em minmax(0,1fr);gap:12px;padding:12px 2px;text-decoration:none;align-items:baseline}
+.tracks .t{font:700 16px var(--ui);color:var(--acc);font-variant-numeric:tabular-nums;white-space:nowrap}
+.tracks b{font-family:var(--ui)}
+.tracks span.x{display:block;font-size:16px;color:var(--ink);margin-top:2px}
+.tracks a:hover span.x{color:var(--ink)}
+.note{font:14px var(--ui);color:var(--mute);margin:10px 0 0}
+article.body h2{margin-top:1.4em;padding-top:.5em;border-top:1px solid var(--ink)}
+article.body h2:first-child{margin-top:0}
+article.body ul,article.body ol{padding-left:1.2em;margin:0 0 1em}
+article.body li{margin-bottom:.45em}
+blockquote{margin:1em 0;padding:4px 0 4px 18px;border-left:3px solid var(--acc);font-style:italic}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{display:inline-flex;align-items:center;min-height:36px;padding:6px 12px;border-radius:999px;background:var(--card);font:600 14px var(--ui);text-decoration:none}
+.vers{list-style:none;padding:0;margin:0}
+.vers li{padding:10px 0;border-bottom:1px solid var(--line);font-size:16px}
+.vers b{font-family:var(--ui)}
+.aside-h{font:700 15px var(--ui);margin:0 0 10px}
+.ficha aside>section{margin-bottom:26px}
+/* listados */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,300px),1fr));gap:0 28px}
+.card{border-top:3px solid var(--c,var(--ink));padding:12px 0 18px}
+.card h3 a{text-decoration:none}
+.card p{font-size:16px;margin:0}
+.card small{display:block;font:600 14px var(--ui);color:var(--mute);margin-bottom:4px}
+.search{width:100%;max-width:460px;font:16px var(--ui);padding:11px 14px;border:1.5px solid var(--ink);border-radius:8px;background:var(--bg);color:var(--ink);margin:6px 0 20px}
+.olist{list-style:none;margin:0;padding:0}
+.olist li{display:grid;grid-template-columns:3.2em minmax(0,1fr);gap:14px;padding:14px 0;border-bottom:1px solid var(--line)}
+.olist .n{font:900 28px/1 var(--hd);color:var(--acc)}
+.olist a{text-decoration:none;font:700 20px/1.25 var(--hd)}
+.olist small{display:block;font:14px var(--ui);color:var(--mute);margin-top:4px}
+.group-h{font:700 15px var(--ui);color:var(--mute);margin:26px 0 4px}
+.facts-list{padding-left:1.1em}
+.gl dt{font:700 19px var(--hd);margin-top:18px;scroll-margin-top:16px}
+.gl dd{margin:4px 0 0}
+.gl .hl{background:color-mix(in srgb,var(--bar) 22%,transparent);border-radius:4px;padding:0 4px}
+.err{font:16px var(--ui);color:var(--acc)}
+.m-only{display:none}
+details.son{border-top:1px solid var(--line);padding:2px 0}
+details.son:last-of-type{border-bottom:1px solid var(--line)}
+details.son summary{cursor:pointer;font:700 17px var(--ui);min-height:44px;display:flex;align-items:center;gap:6px}
+details.son i{font-family:var(--rd);font-weight:400}
+.son-h{font:700 14px var(--ui);color:var(--acc);margin:10px 0 4px}
+.son-c{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px 24px}
+.son-c p{margin:0 0 6px;font-size:16px}
+.son-c p[lang=it]{font-style:italic}
+.son-c p:not([lang]){color:var(--mute)}
+@media(max-width:600px){.son-c{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:900px){.m-only{display:block}.d-only{display:none}}
+footer{border-top:3px double var(--ink);padding:18px 0 40px;font:14px var(--ui);color:var(--mute)}
+</style>
+</head>
+<body>
+<div class="wrap">
+ <header class="mast">
+  <div class="top"><span id="hoy"></span><span id="num"></span><span>Música clásica, una obra al día</span></div>
+  <a class="name" href="#portada">El Oyente</a>
+  <p class="sub">Un diario para aprender a escuchar música clásica</p>
+ </header>
+ <nav class="sec" aria-label="Secciones">
+  <a href="#portada">Portada</a><a href="#obras">Obras</a><a href="#compositores">Compositores</a><a href="#interpretes">Intérpretes</a><a href="#epocas">Épocas</a><a href="#escuela">Escuela</a><a href="#glosario">Glosario</a>
+ </nav>
+ <main id="app"><p class="ui mute">Cargando el diario…</p></main>
+ <footer><p>Cada ficha se escribe a partir de fuentes consultadas (biografías, notas de programa, análisis y la descripción de los vídeos). Los minutos de escucha salen de los capítulos del vídeo de referencia. Si un enlace no salta al minuto, usa los capítulos del propio vídeo en YouTube.</p></footer>
+</div>
+<script>
+{
+const app=document.getElementById('app');
+const PLAY='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4.5v15l13-7.5z"/></svg>';
+const MESES=['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre'];
+const fecha=s=>{const[y,m,d]=s.split('-').map(Number);return `${d} de ${MESES[m-1]} de ${y}`};
+const mmss=s=>{const h=Math.floor(s/3600),m=Math.floor(s%3600/60),x=String(s%60).padStart(2,'0');return h?`${h}:${String(m).padStart(2,'0')}:${x}`:`${m}:${x}`};
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+let D=null;
+const EP={},P={},O={},A={},G={};
+
+function ytAt(url,t){if(!t)return url;const id=(url.match(/(?:youtu\.be\/|v=)([\w-]{11})/)||[])[1];return id?`https://youtu.be/${id}?t=${t}`:url}
+const epo=id=>EP[id]||{nombre:id,color:'var(--ink)'};
+const pLink=id=>P[id]?`<a href="#${P[id].tipo==='compositor'?'c':'i'}-${id}">${esc(P[id].nombre)}</a>`:esc(id);
+const gLink=id=>G[id]?`<a class="chip" href="#g-${id}">${esc(G[id].termino)}</a>`:'';
+const obrasDe=pid=>D.obras.filter(o=>o.compositor===pid||(o.interpretes||[]).includes(pid));
+
+function timeline(){
+  const a=1400,b=2000,pct=y=>((y-a)/(b-a)*100).toFixed(2);
+  const segs=D.epocas.map(e=>`<a href="#e-${e.id}" title="${esc(e.nombre)} (${esc(e.fechas)})" style="width:${((e.fin-e.ini)/(b-a)*100).toFixed(2)}%;background:${e.color}"></a>`).join('');
+  const bk={};D.obras.forEach(o=>{const k=Math.round(o.anio/20);(bk[k]=bk[k]||[]).push(o)});
+  let top=1;
+  const marks=Object.values(bk).flatMap(os=>{const y=os.reduce((s,o)=>s+o.anio,0)/os.length;top=Math.max(top,os.length);
+    return os.map((o,k)=>`<a class="tl-mark" href="#o-${o.id}" title="${esc(o.titulo)} (${o.anio})" style="left:${pct(y)}%;bottom:${2+k*29}px">${o.n}</a>`)}).join('');
+  const ticks=[1400,1600,1750,1820,1900,2000].map((y,i)=>`<span class="${i==3?'opt':''}" style="left:${pct(y)}%">${y}</span>`).join('');
+  const leg=D.epocas.map(e=>`<a href="#e-${e.id}"><span class="dot" style="--c:${e.color}"></span>${esc(e.nombre)}</a>`).join('');
+  return `<div class="tl" role="group" aria-label="Línea del tiempo de las épocas con las obras del diario"><div class="tl-marks" style="height:${6+top*29}px">${marks}</div><div class="tl-bar">${segs}</div><div class="tl-ticks">${ticks}</div><div class="tl-leg">${leg}</div></div>`;
+}
+
+const V={
+ portada(){
+  const os=[...D.obras].sort((x,y)=>y.n-x.n),o=os[0],c=P[o.compositor],e=epo(o.epoca);
+  const doy=Math.floor((Date.now()-new Date(new Date().getFullYear(),0,0))/864e5),cur=D.curiosidades[doy%D.curiosidades.length];
+  const art=A[D.destacado]||D.articulos[0];
+  return `<div class="front"><section class="lead">
+    <p class="kick"><span class="dot" style="--c:${e.color}"></span>${esc(o.origen)} · N.º ${o.n}</p>
+    <h1><a href="#o-${o.id}">${esc(o.titulo)}</a></h1>
+    <p class="meta">${pLink(o.compositor)} · ${esc(o.fechaComp)} · ${esc(e.nombre)}</p>
+    <p class="stand">${o.entradilla}</p>
+    <div class="btns"><a class="btn solid" href="#o-${o.id}">Leer la ficha</a><a class="btn" href="${o.grabacion.url}" rel="noopener">${PLAY}Escuchar</a></div>
+    <hr class="rule">
+    <p class="kick">Las obras del diario en la historia</p>
+    ${timeline()}
+    <hr class="rule">
+    <p class="kick">También en el diario</p>
+    <div class="grid">${os.slice(1,7).map(x=>`<article class="card" style="--c:${epo(x.epoca).color}"><small>N.º ${x.n} · ${esc(P[x.compositor]?.nombre||'')}</small><h3><a href="#o-${x.id}">${esc(x.titulo)}</a></h3><p>${x.entradilla}</p></article>`).join('')||'<p class="mute">Aquí aparecerán las obras anteriores.</p>'}</div>
+   </section>
+   <aside class="side">
+    <section class="box"><p class="kick">La pregunta</p><h3><a href="#a-${art.id}">${esc(art.titulo)}</a></h3><p>${art.entradilla}</p></section>
+    <section class="box"><p class="kick">Curiosidad del día</p><p>${cur.t}</p>${cur.l?`<p class="ui"><a href="${cur.l}">Seguir leyendo</a></p>`:''}</section>
+    <section class="box"><p class="kick">Personajes</p><ul class="mini">${D.personas.filter(p=>p.tipo==='compositor').map(p=>`<li><a href="#c-${p.id}">${esc(p.nombre)}</a><small>${esc(p.vida)} · ${esc(epo(p.epoca).nombre)}</small></li>`).join('')}${D.personas.filter(p=>p.tipo!=='compositor').slice(0,4).map(p=>`<li><a href="#i-${p.id}">${esc(p.nombre)}</a><small>${esc(p.rol)}</small></li>`).join('')}</ul><p class="ui" style="margin-top:10px"><a href="#interpretes">Todos los intérpretes</a></p></section>
+    <section class="box"><p class="kick">Escuela</p><ul class="mini">${D.articulos.map(a=>`<li><a href="#a-${a.id}">${esc(a.titulo)}</a></li>`).join('')}</ul></section>
+   </aside></div>`;
+ },
+ obras(){
+  const os=[...D.obras].sort((x,y)=>y.n-x.n);
+  return `<p class="kick">Archivo</p><h1>Obras</h1><input class="search" id="q" type="search" placeholder="Buscar por obra, compositor o intérprete" aria-label="Buscar obras">
+   <ul class="olist" id="ol">${os.map(o=>`<li data-s="${esc((o.titulo+' '+o.catalogo+' '+(P[o.compositor]?.nombre||'')+' '+(o.interpretes||[]).map(i=>P[i]?.nombre||'').join(' ')).toLowerCase())}"><span class="n">${o.n}</span><div><a href="#o-${o.id}">${esc(o.titulo)}</a><small><span class="dot" style="--c:${epo(o.epoca).color}"></span>${esc(P[o.compositor]?.nombre||'')} · ${esc(o.catalogo)} · ${esc(o.origen)} · ${fecha(o.fecha)}</small></div></li>`).join('')}</ul>`;
+ },
+ obra(id){
+  const o=O[id];if(!o)return V.nada();
+  const e=epo(o.epoca),g=o.grabacion;
+  const facts=[['Compositor',pLink(o.compositor)],['Fecha',esc(o.fechaComp)],['Época',`<a href="#e-${o.epoca}"><span class="dot" style="--c:${e.color}"></span>${esc(e.nombre)}</a>`],['Género',esc(o.genero)],['Plantilla',esc(o.plantilla)],['Tonalidad',esc(o.tonalidad)],['Catálogo',esc(o.catalogo)],['Duración',esc(o.duracion)],['En el diario',`N.º ${o.n} · ${fecha(o.fecha)}`]];
+  return `<p class="kick"><span class="dot" style="--c:${e.color}"></span>${esc(o.origen)} · ${esc(e.nombre)} · ${esc(o.genero)}</p>
+   <h1>${esc(o.titulo)}</h1><p class="ui mute" style="margin-top:-4px">${pLink(o.compositor)}${o.subtitulo?' · '+esc(o.subtitulo):''}</p>
+   <p class="stand read">${o.entradilla}</p>
+   <div class="ficha"><div>
+    <dl class="facts m-only">${facts.map(([k,v])=>`<div><dt>${k}</dt><dd>${v}</dd></div>`).join('')}</dl>
+    <section class="listen"><h2>Escúchala</h2><p class="rec"><b>${esc(g.titulo)}</b><br><span class="mute">${esc(g.fuente)}</span></p>
+     <p><a class="btn solid" href="${g.url}" rel="noopener">${PLAY}Abrir el vídeo</a></p>
+     <ul class="tracks">${o.escucha.map(x=>x.t!=null?`<li><a href="${ytAt(g.url,x.t)}" rel="noopener"><span class="t">${mmss(x.t)}</span><span><b>${esc(x.mov)}</b><span class="x">${x.txt}</span></span></a></li>`:`<li><div class="row"><span class="t">${esc(x.cuando||'')}</span><span><b>${esc(x.mov)}</b><span class="x">${x.txt}</span></span></div></li>`).join('')}</ul>
+     <p class="note">${g.nota||''}</p></section>
+    <article class="body read">${o.secciones.map(s=>`<h2>${esc(s.t)}</h2>${s.h}`).join('')}</article>
+   </div>
+   <aside>
+    <dl class="facts d-only">${facts.map(([k,v])=>`<div><dt>${k}</dt><dd>${v}</dd></div>`).join('')}</dl>
+    ${o.versiones?.length?`<section><p class="aside-h">Otras versiones para comparar</p><ul class="vers">${o.versiones.map(v=>`<li><b>${v.p?pLink(v.p):esc(v.quien)}</b>${v.det?` · ${esc(v.det)}`:''}<br><span class="mute">${v.nota}</span>${v.url?`<br><a class="ui" href="${v.url}" rel="noopener">Ver vídeo</a>`:''}</li>`).join('')}</ul>${o.idagio?`<p class="note">En Idagio, busca: <b>${esc(o.idagio)}</b></p>`:''}</section>`:''}
+    ${o.conceptos?.length?`<section><p class="aside-h">Conceptos de esta obra</p><div class="chips">${o.conceptos.map(gLink).join('')}</div></section>`:''}
+    ${o.interpretes?.length?`<section><p class="aside-h">Intérpretes en esta ficha</p><ul class="mini">${o.interpretes.map(i=>`<li>${pLink(i)}<small>${esc(P[i]?.rol||'')}</small></li>`).join('')}</ul></section>`:''}
+   </aside></div>`;
+ },
+ compositores(){
+  const cs=D.personas.filter(p=>p.tipo==='compositor').sort((a,b)=>a.nace-b.nace);
+  return `<p class="kick">Índice</p><h1>Compositores</h1><p class="mute ui">Ordenados por fecha de nacimiento. Cada obra nueva añade a su compositor.</p>
+   <div class="grid">${cs.map(p=>`<article class="card" style="--c:${epo(p.epoca).color}"><small>${esc(p.vida)} · ${esc(epo(p.epoca).nombre)}</small><h3><a href="#c-${p.id}">${esc(p.nombre)}</a></h3><p>${p.entradilla}</p></article>`).join('')}</div>`;
+ },
+ interpretes(){
+  const ip=D.personas.filter(p=>p.tipo!=='compositor');
+  const grp=(t,l)=>l.length?`<p class="group-h">${t}</p><div class="grid">${l.map(p=>`<article class="card"><small>${esc(p.rol)}</small><h3><a href="#i-${p.id}">${esc(p.nombre)}</a></h3><p>${p.entradilla}</p></article>`).join('')}</div>`:'';
+  const dirs=ip.filter(p=>p.dirige).flatMap(p=>p.dirige.map(d=>({d,p})));
+  return `<p class="kick">Índice</p><h1>Intérpretes</h1>
+   ${grp('Solistas',ip.filter(p=>p.tipo==='solista'))}${grp('Conjuntos y orquestas',ip.filter(p=>p.tipo==='conjunto'))}
+   ${dirs.length?`<p class="group-h">Directores</p><ul class="mini">${dirs.map(x=>`<li><b>${esc(x.d)}</b><small>Dirige ${pLink(x.p.id)}</small></li>`).join('')}</ul>`:''}`;
+ },
+ persona(id){
+  const p=P[id];if(!p)return V.nada();
+  const e=epo(p.epoca),os=obrasDe(id);
+  return `<p class="kick">${p.tipo==='compositor'?`<span class="dot" style="--c:${e.color}"></span>Compositor · ${esc(e.nombre)}`:esc(p.rol)}</p>
+   <h1>${esc(p.nombre)}</h1><p class="ui mute" style="margin-top:-4px">${esc(p.vida||'')}${p.lugar?' · '+esc(p.lugar):''}</p>
+   <p class="stand read">${p.entradilla}</p>
+   <div class="ficha"><article class="body read">${p.h}${p.ruta?.length?`<h2>Ruta de escucha</h2><ul class="vers">${p.ruta.map(r=>`<li><b>${r.obra?`<a href="#o-${r.obra}">${esc(r.titulo)}</a>`:esc(r.titulo)}</b><br><span class="mute">${r.nota}</span>${r.url?`<br><a class="ui" href="${r.url}" rel="noopener">${esc(r.enlace||'Ver vídeo')}</a>`:''}</li>`).join('')}</ul>`:''}</article>
+   <aside>${p.claves?.length?`<section><p class="aside-h">En pocas palabras</p><dl class="facts">${p.claves.map(([k,v])=>`<div><dt>${esc(k)}</dt><dd>${v}</dd></div>`).join('')}</dl></section>`:''}
+    <section><p class="aside-h">En el diario</p>${os.length?`<ul class="mini">${os.map(o=>`<li><a href="#o-${o.id}">${esc(o.titulo)}</a><small>N.º ${o.n}</small></li>`).join('')}</ul>`:'<p class="mute ui">Aún no hay obras suyas.</p>'}</section>
+   </aside></div>`;
+ },
+ epocas(){
+  return `<p class="kick">Índice</p><h1>Épocas</h1><p class="stand read">La música clásica se suele dividir en grandes periodos. Las fechas son aproximadas: los estilos cambian poco a poco y conviven durante años.</p>${timeline()}
+   <div class="grid" style="margin-top:20px">${D.epocas.map(e=>`<article class="card" style="--c:${e.color}"><small>${esc(e.fechas)}</small><h3><a href="#e-${e.id}">${esc(e.nombre)}</a></h3><p>${e.entradilla}</p></article>`).join('')}</div>`;
+ },
+ epoca(id){
+  const e=EP[id];if(!e)return V.nada();
+  const os=D.obras.filter(o=>o.epoca===id),cs=D.personas.filter(p=>p.tipo==='compositor'&&p.epoca===id);
+  return `<p class="kick"><span class="dot" style="--c:${e.color}"></span>Época · ${esc(e.fechas)}</p><h1>${esc(e.nombre)}</h1><p class="stand read">${e.entradilla}</p>
+   <div class="ficha"><article class="body read">${e.h}${e.rasgos?.length?`<h2>Cómo reconocerla</h2><ul>${e.rasgos.map(r=>`<li>${r}</li>`).join('')}</ul>`:''}</article>
+   <aside><section><p class="aside-h">Nombres clave</p><p>${e.nombres}</p></section>
+    <section><p class="aside-h">En el diario</p>${os.length?`<ul class="mini">${os.map(o=>`<li><a href="#o-${o.id}">${esc(o.titulo)}</a><small>${esc(P[o.compositor]?.nombre||'')}</small></li>`).join('')}${cs.map(p=>`<li><a href="#c-${p.id}">${esc(p.nombre)}</a><small>Compositor</small></li>`).join('')}</ul>`:'<p class="mute ui">Aún no hay obras de esta época.</p>'}</section></aside></div>`;
+ },
+ escuela(){
+  return `<p class="kick">Fundamentos</p><h1>Escuela</h1><p class="stand read">Artículos cortos para entender lo que escuchas. Crecen con cada obra que añadimos.</p>
+   <div class="grid">${D.articulos.map(a=>`<article class="card"><small>${esc(a.tema||'Fundamentos')}</small><h3><a href="#a-${a.id}">${esc(a.titulo)}</a></h3><p>${a.entradilla}</p></article>`).join('')}</div>`;
+ },
+ articulo(id){
+  const a=A[id];if(!a)return V.nada();
+  return `<p class="kick">Escuela · ${esc(a.tema||'Fundamentos')}</p><h1 class="read">${esc(a.titulo)}</h1><p class="stand read">${a.entradilla}</p><article class="body read">${a.h}</article>`;
+ },
+ glosario(hl){
+  const gs=[...D.glosario].sort((a,b)=>a.termino.localeCompare(b.termino,'es'));
+  return `<p class="kick">Fundamentos</p><h1>Glosario</h1><p class="mute ui">${gs.length} términos. Cada obra nueva añade los suyos.</p><dl class="gl read">${gs.map(g=>`<dt id="g-${g.id}"${g.id===hl?' class="hl"':''}>${esc(g.termino)}</dt><dd>${g.def}</dd>`).join('')}</dl>`;
+ },
+ nada(){return `<h1>No encontrado</h1><p class="ui"><a href="#portada">Volver a la portada</a></p>`}
+};
+
+function route(){
+  const h=decodeURIComponent(location.hash.slice(1))||'portada';
+  let html,sec=h,hl=null;
+  const m=h.match(/^([a-z])-(.+)$/);
+  if(V[h]&&!['obra','persona','epoca','articulo','nada'].includes(h))html=V[h]();
+  else if(m){const[,k,id]=m;
+    if(k==='o'){html=V.obra(id);sec='obras'}
+    else if(k==='c'){html=V.persona(id);sec='compositores'}
+    else if(k==='i'){html=V.persona(id);sec='interpretes'}
+    else if(k==='e'){html=V.epoca(id);sec='epocas'}
+    else if(k==='a'){html=V.articulo(id);sec='escuela'}
+    else if(k==='g'){html=V.glosario(id);sec='glosario';hl=id}
+    else html=V.nada();
+  } else html=V.nada();
+  app.innerHTML=html;
+  document.querySelectorAll('nav.sec a').forEach(a=>a.setAttribute('aria-current',a.getAttribute('href')==='#'+sec?'page':'false'));
+  if(hl){const t=document.getElementById('g-'+hl);if(t)t.scrollIntoView({block:'start'})}else window.scrollTo(0,0);
+  const q=document.getElementById('q');
+  if(q)q.addEventListener('input',()=>{const v=q.value.toLowerCase().trim();document.querySelectorAll('#ol li').forEach(li=>li.hidden=v&&!li.dataset.s.includes(v))});
+}
+
+Promise.all(['data/obras.json','data/personas.json','data/escuela.json'].map(u=>fetch(u).then(r=>{if(!r.ok)throw new Error(u);return r.json()})))
+.then(([obras,personas,esc_])=>{
+  D={obras,personas,...esc_};
+  D.epocas.forEach(e=>EP[e.id]=e);D.personas.forEach(p=>P[p.id]=p);D.obras.forEach(o=>O[o.id]=o);D.articulos.forEach(a=>A[a.id]=a);D.glosario.forEach(g=>G[g.id]=g);
+  const t=new Date();document.getElementById('hoy').textContent=`${t.getDate()} de ${MESES[t.getMonth()]} de ${t.getFullYear()}`;
+  document.getElementById('num').textContent=`${D.obras.length} obras · ${D.personas.length} personajes`;
+  addEventListener('hashchange',route);route();
+  try{if('serviceWorker' in navigator&&location.protocol==='https:'&&window.top===window.self)navigator.serviceWorker.register('sw.js').catch(()=>{})}catch(e){}
+})
+.catch(err=>{app.innerHTML=`<p class="err">No se han podido cargar los datos del diario (${esc(err.message)}). Recarga la página.</p>`;console.error(err)});
+}
+</script>
+</body>
+</html>
