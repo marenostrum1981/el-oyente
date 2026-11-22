@@ -9,6 +9,7 @@ Un diario web para aprender a escuchar música clásica. Cada día entra una obr
 - `index.html`: la app completa (una sola página, con rutas por hash). Rutas: `#portada`, `#obras`, `#o-ID`, `#compositores`, `#c-ID`, `#interpretes`, `#i-ID`, `#epocas`, `#e-ID`, `#escuela`, `#a-ID`, `#glosario` y `#g-ID`.
 - `src/obras.py`, `src/personas.py` y `src/escuela.py`: **la fuente de verdad** del contenido. Se edita aquí.
 - `src/build_data.py`: genera `data/*.json` y comprueba todos los enlaces internos (`#o-…`, `#c-…`, `#g-…`…). Si algo apunta a un id que no existe, falla.
+- `src/imagenes.py`: imágenes de obras, compositores y épocas (Wikimedia Commons). `build_data.py` las añade a cada ficha.
 - `data/*.json`: archivos generados. No se editan a mano.
 - `manifest.webmanifest`, `sw.js` e `icons/`: la parte de app instalable. Si cambias `index.html` o los iconos, sube la versión de `CACHE` en `sw.js` (`oyente-v1` → `oyente-v2`…).
 
@@ -37,10 +38,14 @@ Un diario web para aprender a escuchar música clásica. Cada día entra una obr
 6. **Glosario.** Añade a `GLOSARIO` en `src/escuela.py` cada término nuevo que use la ficha y enlázalo en `conceptos`.
 7. **Épocas.** Si es la primera obra de una época, completa su `h` y sus `rasgos` con fuentes.
 8. **Curiosidades.** Añade una o dos nuevas y comprobadas a `CURIOSIDADES`. Si escribes un artículo nuevo en `ARTICULOS`, puedes ponerlo en portada con `DESTACADO`.
-9. **Genera y valida:** `python3 src/build_data.py`. Tiene que terminar sin errores.
-10. **Comprueba en el navegador:** lanza `python3 -m http.server` y abre `#o-ID` y la portada, a ancho de móvil y de escritorio.
-11. **Publica:** `git add -A && git commit -m "N.º X: Título" && git push`. Netlify publica la web nueva en un minuto.
-12. **Responde en el chat** en 3 a 5 líneas: qué obra es, una idea clave para escucharla y qué se ha añadido al diario.
+9. **Imágenes y vídeo.**
+   - En `src/imagenes.py` añade una imagen para la obra (y el retrato del compositor si es nuevo): solo archivos de **Wikimedia Commons** de dominio público o CC0, comprobados en su página (autor, fecha, colección, licencia). `archivo` es el nombre exacto del archivo; `pie` explica qué se ve y por qué está ahí; `alt` lo describe.
+   - Mejor una portada de primera edición, un manuscrito, el instrumento o un cuadro de la época que una imagen decorativa. **Nunca fotos de intérpretes vivos.**
+   - El vídeo se incrusta solo en la ficha. Comprueba que se puede incrustar con `https://www.youtube.com/oembed?url=<url>&format=json` (si da error, la ficha mostrará solo el botón a YouTube).
+10. **Genera y valida:** `python3 src/build_data.py`. Tiene que terminar sin errores.
+11. **Comprueba en el navegador:** lanza `python3 -m http.server` y abre `#o-ID` y la portada, a ancho de móvil y de escritorio.
+12. **Publica:** `git add -A && git commit -m "N.º X: Título" && git push`. Netlify publica la web nueva en un minuto.
+13. **Responde en el chat** en 3 a 5 líneas: qué obra es, una idea clave para escucharla y qué se ha añadido al diario.
 
 ## Reglas de contenido
 

@@ -145,6 +145,20 @@ details.son i{font-family:var(--rd);font-weight:400}
 .son-c p:not([lang]){color:var(--mute)}
 @media(max-width:600px){.son-c{grid-template-columns:minmax(0,1fr)}}
 @media(max-width:900px){.m-only{display:block}.d-only{display:none}}
+/* imágenes y vídeo */
+.fig{margin:0 0 24px}
+.fig img{display:block;max-width:100%;width:auto;height:auto;max-height:440px;border-radius:4px;background:var(--card)}
+aside .fig img{width:100%;max-height:none}
+.lead .fig{margin:4px 0 16px}.lead .fig img{max-height:400px}
+.fig figcaption{font:14px/1.45 var(--ui);color:var(--mute);margin-top:8px;max-width:720px}
+.fig figcaption a{color:var(--mute);white-space:nowrap}
+.fig[hidden],.thumb[hidden]{display:none!important}
+.player{position:relative;aspect-ratio:16/9;background:#000;border-radius:8px;overflow:hidden;margin:6px 0 12px}
+.player iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.hint{font:600 14px var(--ui);color:var(--mute);margin:4px 0 8px}
+.tracks a.on{background:color-mix(in srgb,var(--acc) 9%,transparent)}
+.card .thumb{display:block;aspect-ratio:3/2;overflow:hidden;border-radius:4px;margin:0 0 10px;background:var(--card)}
+.card .thumb img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 22%}
 footer{border-top:3px double var(--ink);padding:18px 0 40px;font:14px var(--ui);color:var(--mute)}
 </style>
 </head>
@@ -159,7 +173,7 @@ footer{border-top:3px double var(--ink);padding:18px 0 40px;font:14px var(--ui);
   <a href="#portada">Portada</a><a href="#obras">Obras</a><a href="#compositores">Compositores</a><a href="#interpretes">Intérpretes</a><a href="#epocas">Épocas</a><a href="#escuela">Escuela</a><a href="#glosario">Glosario</a>
  </nav>
  <main id="app"><p class="ui mute">Cargando el diario…</p></main>
- <footer><p>Cada ficha se escribe a partir de fuentes consultadas (biografías, notas de programa, análisis y la descripción de los vídeos). Los minutos de escucha salen de los capítulos del vídeo de referencia. Si un enlace no salta al minuto, usa los capítulos del propio vídeo en YouTube.</p></footer>
+ <footer><p>Cada ficha se escribe a partir de fuentes consultadas (biografías, notas de programa, análisis y la descripción de los vídeos). Los minutos de escucha salen de los capítulos del vídeo de referencia: al tocarlos, el reproductor de la ficha salta a ese punto. Las imágenes son obras de dominio público tomadas de Wikimedia Commons; cada pie enlaza a su ficha original.</p></footer>
 </div>
 <script>
 {
@@ -172,6 +186,13 @@ const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&g
 let D=null;
 const EP={},P={},O={},A={},G={};
 
+const ytId=u=>(String(u).match(/(?:youtu\.be\/|v=|embed\/)([\w-]{11})/)||[])[1];
+const YTE=(id,q='')=>`https://www.youtube-nocookie.com/embed/${id}?rel=0${q}`;
+const cimg=(f,w)=>`https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(f)}?width=${w}`;
+const cfile=f=>`https://commons.wikimedia.org/wiki/File:${encodeURIComponent(f)}`;
+const fig=(im,cls='')=>im?`<figure class="fig ${cls}"><img src="${cimg(im.archivo,960)}" alt="${esc(im.alt)}" loading="lazy" decoding="async" onerror="this.closest('figure').hidden=true"><figcaption>${im.pie} <a href="${cfile(im.archivo)}" rel="noopener">Imagen: Wikimedia Commons</a></figcaption></figure>`:'';
+const thumb=(im,href)=>im?`<a class="thumb" href="${href}" tabindex="-1" aria-hidden="true"><img src="${cimg(im.archivo,500)}" alt="" loading="lazy" decoding="async" onerror="this.parentNode.hidden=true"></a>`:'';
+const imgObra=o=>o.imagen||P[o.compositor]?.imagen;
 function ytAt(url,t){if(!t)return url;const id=(url.match(/(?:youtu\.be\/|v=)([\w-]{11})/)||[])[1];return id?`https://youtu.be/${id}?t=${t}`:url}
 const epo=id=>EP[id]||{nombre:id,color:'var(--ink)'};
 const pLink=id=>P[id]?`<a href="#${P[id].tipo==='compositor'?'c':'i'}-${id}">${esc(P[id].nombre)}</a>`:esc(id);
@@ -199,6 +220,7 @@ const V={
     <p class="kick"><span class="dot" style="--c:${e.color}"></span>${esc(o.origen)} · N.º ${o.n}</p>
     <h1><a href="#o-${o.id}">${esc(o.titulo)}</a></h1>
     <p class="meta">${pLink(o.compositor)} · ${esc(o.fechaComp)} · ${esc(e.nombre)}</p>
+    ${fig(imgObra(o))}
     <p class="stand">${o.entradilla}</p>
     <div class="btns"><a class="btn solid" href="#o-${o.id}">Leer la ficha</a><a class="btn" href="${o.grabacion.url}" rel="noopener">${PLAY}Escuchar</a></div>
     <hr class="rule">
@@ -206,7 +228,7 @@ const V={
     ${timeline()}
     <hr class="rule">
     <p class="kick">También en el diario</p>
-    <div class="grid">${os.slice(1,7).map(x=>`<article class="card" style="--c:${epo(x.epoca).color}"><small>N.º ${x.n} · ${esc(P[x.compositor]?.nombre||'')}</small><h3><a href="#o-${x.id}">${esc(x.titulo)}</a></h3><p>${x.entradilla}</p></article>`).join('')||'<p class="mute">Aquí aparecerán las obras anteriores.</p>'}</div>
+    <div class="grid">${os.slice(1,7).map(x=>`<article class="card" style="--c:${epo(x.epoca).color}">${thumb(imgObra(x),'#o-'+x.id)}<small>N.º ${x.n} · ${esc(P[x.compositor]?.nombre||'')}</small><h3><a href="#o-${x.id}">${esc(x.titulo)}</a></h3><p>${x.entradilla}</p></article>`).join('')||'<p class="mute">Aquí aparecerán las obras anteriores.</p>'}</div>
    </section>
    <aside class="side">
     <section class="box"><p class="kick">La pregunta</p><h3><a href="#a-${art.id}">${esc(art.titulo)}</a></h3><p>${art.entradilla}</p></section>
@@ -222,7 +244,7 @@ const V={
  },
  obra(id){
   const o=O[id];if(!o)return V.nada();
-  const e=epo(o.epoca),g=o.grabacion;
+  const e=epo(o.epoca),g=o.grabacion,vid=ytId(g.url),im=imgObra(o);
   const facts=[['Compositor',pLink(o.compositor)],['Fecha',esc(o.fechaComp)],['Época',`<a href="#e-${o.epoca}"><span class="dot" style="--c:${e.color}"></span>${esc(e.nombre)}</a>`],['Género',esc(o.genero)],['Plantilla',esc(o.plantilla)],['Tonalidad',esc(o.tonalidad)],['Catálogo',esc(o.catalogo)],['Duración',esc(o.duracion)],['En el diario',`N.º ${o.n} · ${fecha(o.fecha)}`]];
   return `<p class="kick"><span class="dot" style="--c:${e.color}"></span>${esc(o.origen)} · ${esc(e.nombre)} · ${esc(o.genero)}</p>
    <h1>${esc(o.titulo)}</h1><p class="ui mute" style="margin-top:-4px">${pLink(o.compositor)}${o.subtitulo?' · '+esc(o.subtitulo):''}</p>
@@ -230,13 +252,17 @@ const V={
    <div class="ficha"><div>
     <dl class="facts m-only">${facts.map(([k,v])=>`<div><dt>${k}</dt><dd>${v}</dd></div>`).join('')}</dl>
     <section class="listen"><h2>Escúchala</h2><p class="rec"><b>${esc(g.titulo)}</b><br><span class="mute">${esc(g.fuente)}</span></p>
-     <p><a class="btn solid" href="${g.url}" rel="noopener">${PLAY}Abrir el vídeo</a></p>
-     <ul class="tracks">${o.escucha.map(x=>x.t!=null?`<li><a href="${ytAt(g.url,x.t)}" rel="noopener"><span class="t">${mmss(x.t)}</span><span><b>${esc(x.mov)}</b><span class="x">${x.txt}</span></span></a></li>`:`<li><div class="row"><span class="t">${esc(x.cuando||'')}</span><span><b>${esc(x.mov)}</b><span class="x">${x.txt}</span></span></div></li>`).join('')}</ul>
+     ${vid?`<div class="player"><iframe id="yt" data-id="${vid}" src="${YTE(vid)}" title="Vídeo: ${esc(g.titulo)}" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>`:''}
+     <p><a class="btn${vid?'':' solid'}" href="${g.url}" rel="noopener">${PLAY}${vid?'Ver en YouTube':'Abrir el vídeo'}</a></p>
+     ${vid&&o.escucha.some(x=>x.t!=null)?'<p class="hint">Toca un minuto de la guía y el vídeo salta a ese punto.</p>':''}
+     <ul class="tracks">${o.escucha.map(x=>x.t!=null?`<li><a href="${ytAt(g.url,x.t)}" data-t="${x.t}" rel="noopener"><span class="t">${mmss(x.t)}</span><span><b>${esc(x.mov)}</b><span class="x">${x.txt}</span></span></a></li>`:`<li><div class="row"><span class="t">${esc(x.cuando||'')}</span><span><b>${esc(x.mov)}</b><span class="x">${x.txt}</span></span></div></li>`).join('')}</ul>
      <p class="note">${g.nota||''}</p></section>
+    ${fig(im,'m-only')}
     <article class="body read">${o.secciones.map(s=>`<h2>${esc(s.t)}</h2>${s.h}`).join('')}</article>
    </div>
    <aside>
     <dl class="facts d-only">${facts.map(([k,v])=>`<div><dt>${k}</dt><dd>${v}</dd></div>`).join('')}</dl>
+    ${fig(im,'d-only')}
     ${o.versiones?.length?`<section><p class="aside-h">Otras versiones para comparar</p><ul class="vers">${o.versiones.map(v=>`<li><b>${v.p?pLink(v.p):esc(v.quien)}</b>${v.det?` · ${esc(v.det)}`:''}<br><span class="mute">${v.nota}</span>${v.url?`<br><a class="ui" href="${v.url}" rel="noopener">Ver vídeo</a>`:''}</li>`).join('')}</ul>${o.idagio?`<p class="note">En Idagio, busca: <b>${esc(o.idagio)}</b></p>`:''}</section>`:''}
     ${o.conceptos?.length?`<section><p class="aside-h">Conceptos de esta obra</p><div class="chips">${o.conceptos.map(gLink).join('')}</div></section>`:''}
     ${o.interpretes?.length?`<section><p class="aside-h">Intérpretes en esta ficha</p><ul class="mini">${o.interpretes.map(i=>`<li>${pLink(i)}<small>${esc(P[i]?.rol||'')}</small></li>`).join('')}</ul></section>`:''}
@@ -245,7 +271,7 @@ const V={
  compositores(){
   const cs=D.personas.filter(p=>p.tipo==='compositor').sort((a,b)=>a.nace-b.nace);
   return `<p class="kick">Índice</p><h1>Compositores</h1><p class="mute ui">Ordenados por fecha de nacimiento. Cada obra nueva añade a su compositor.</p>
-   <div class="grid">${cs.map(p=>`<article class="card" style="--c:${epo(p.epoca).color}"><small>${esc(p.vida)} · ${esc(epo(p.epoca).nombre)}</small><h3><a href="#c-${p.id}">${esc(p.nombre)}</a></h3><p>${p.entradilla}</p></article>`).join('')}</div>`;
+   <div class="grid">${cs.map(p=>`<article class="card" style="--c:${epo(p.epoca).color}">${thumb(p.imagen,'#c-'+p.id)}<small>${esc(p.vida)} · ${esc(epo(p.epoca).nombre)}</small><h3><a href="#c-${p.id}">${esc(p.nombre)}</a></h3><p>${p.entradilla}</p></article>`).join('')}</div>`;
  },
  interpretes(){
   const ip=D.personas.filter(p=>p.tipo!=='compositor');
@@ -261,21 +287,21 @@ const V={
   return `<p class="kick">${p.tipo==='compositor'?`<span class="dot" style="--c:${e.color}"></span>Compositor · ${esc(e.nombre)}`:esc(p.rol)}</p>
    <h1>${esc(p.nombre)}</h1><p class="ui mute" style="margin-top:-4px">${esc(p.vida||'')}${p.lugar?' · '+esc(p.lugar):''}</p>
    <p class="stand read">${p.entradilla}</p>
-   <div class="ficha"><article class="body read">${p.h}${p.ruta?.length?`<h2>Ruta de escucha</h2><ul class="vers">${p.ruta.map(r=>`<li><b>${r.obra?`<a href="#o-${r.obra}">${esc(r.titulo)}</a>`:esc(r.titulo)}</b><br><span class="mute">${r.nota}</span>${r.url?`<br><a class="ui" href="${r.url}" rel="noopener">${esc(r.enlace||'Ver vídeo')}</a>`:''}</li>`).join('')}</ul>`:''}</article>
-   <aside>${p.claves?.length?`<section><p class="aside-h">En pocas palabras</p><dl class="facts">${p.claves.map(([k,v])=>`<div><dt>${esc(k)}</dt><dd>${v}</dd></div>`).join('')}</dl></section>`:''}
+   <div class="ficha"><article class="body read">${fig(p.imagen,'m-only')}${p.h}${p.ruta?.length?`<h2>Ruta de escucha</h2><ul class="vers">${p.ruta.map(r=>`<li><b>${r.obra?`<a href="#o-${r.obra}">${esc(r.titulo)}</a>`:esc(r.titulo)}</b><br><span class="mute">${r.nota}</span>${r.url?`<br><a class="ui" href="${r.url}" rel="noopener">${esc(r.enlace||'Ver vídeo')}</a>`:''}</li>`).join('')}</ul>`:''}</article>
+   <aside>${fig(p.imagen,'d-only')}${p.claves?.length?`<section><p class="aside-h">En pocas palabras</p><dl class="facts">${p.claves.map(([k,v])=>`<div><dt>${esc(k)}</dt><dd>${v}</dd></div>`).join('')}</dl></section>`:''}
     <section><p class="aside-h">En el diario</p>${os.length?`<ul class="mini">${os.map(o=>`<li><a href="#o-${o.id}">${esc(o.titulo)}</a><small>N.º ${o.n}</small></li>`).join('')}</ul>`:'<p class="mute ui">Aún no hay obras suyas.</p>'}</section>
    </aside></div>`;
  },
  epocas(){
   return `<p class="kick">Índice</p><h1>Épocas</h1><p class="stand read">La música clásica se suele dividir en grandes periodos. Las fechas son aproximadas: los estilos cambian poco a poco y conviven durante años.</p>${timeline()}
-   <div class="grid" style="margin-top:20px">${D.epocas.map(e=>`<article class="card" style="--c:${e.color}"><small>${esc(e.fechas)}</small><h3><a href="#e-${e.id}">${esc(e.nombre)}</a></h3><p>${e.entradilla}</p></article>`).join('')}</div>`;
+   <div class="grid" style="margin-top:20px">${D.epocas.map(e=>`<article class="card" style="--c:${e.color}">${thumb(e.imagen,'#e-'+e.id)}<small>${esc(e.fechas)}</small><h3><a href="#e-${e.id}">${esc(e.nombre)}</a></h3><p>${e.entradilla}</p></article>`).join('')}</div>`;
  },
  epoca(id){
   const e=EP[id];if(!e)return V.nada();
   const os=D.obras.filter(o=>o.epoca===id),cs=D.personas.filter(p=>p.tipo==='compositor'&&p.epoca===id);
   return `<p class="kick"><span class="dot" style="--c:${e.color}"></span>Época · ${esc(e.fechas)}</p><h1>${esc(e.nombre)}</h1><p class="stand read">${e.entradilla}</p>
-   <div class="ficha"><article class="body read">${e.h}${e.rasgos?.length?`<h2>Cómo reconocerla</h2><ul>${e.rasgos.map(r=>`<li>${r}</li>`).join('')}</ul>`:''}</article>
-   <aside><section><p class="aside-h">Nombres clave</p><p>${e.nombres}</p></section>
+   <div class="ficha"><article class="body read">${fig(e.imagen,'m-only')}${e.h}${e.rasgos?.length?`<h2>Cómo reconocerla</h2><ul>${e.rasgos.map(r=>`<li>${r}</li>`).join('')}</ul>`:''}</article>
+   <aside>${fig(e.imagen,'d-only')}<section><p class="aside-h">Nombres clave</p><p>${e.nombres}</p></section>
     <section><p class="aside-h">En el diario</p>${os.length?`<ul class="mini">${os.map(o=>`<li><a href="#o-${o.id}">${esc(o.titulo)}</a><small>${esc(P[o.compositor]?.nombre||'')}</small></li>`).join('')}${cs.map(p=>`<li><a href="#c-${p.id}">${esc(p.nombre)}</a><small>Compositor</small></li>`).join('')}</ul>`:'<p class="mute ui">Aún no hay obras de esta época.</p>'}</section></aside></div>`;
  },
  escuela(){
@@ -310,6 +336,12 @@ function route(){
   app.innerHTML=html;
   document.querySelectorAll('nav.sec a').forEach(a=>a.setAttribute('aria-current',a.getAttribute('href')==='#'+sec?'page':'false'));
   if(hl){const t=document.getElementById('g-'+hl);if(t)t.scrollIntoView({block:'start'})}else window.scrollTo(0,0);
+  const yt=document.getElementById('yt');
+  if(yt)document.querySelectorAll('.tracks a[data-t]').forEach(a=>a.addEventListener('click',ev=>{
+    ev.preventDefault();yt.src=YTE(yt.dataset.id,`&autoplay=1&start=${a.dataset.t}`);
+    document.querySelectorAll('.tracks a.on').forEach(x=>x.classList.remove('on'));a.classList.add('on');
+    yt.closest('.player').scrollIntoView({behavior:'smooth',block:'nearest'});
+  }));
   const q=document.getElementById('q');
   if(q)q.addEventListener('input',()=>{const v=q.value.toLowerCase().trim();document.querySelectorAll('#ol li').forEach(li=>li.hidden=v&&!li.dataset.s.includes(v))});
 }

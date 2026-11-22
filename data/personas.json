@@ -53,7 +53,12 @@
 "url": "https://www.bachvereniging.nl/en/bwv/bwv-1065",
 "enlace": "Ver en All of Bach"
 }
-]
+],
+"imagen": {
+"archivo": "Vivaldi.jpg",
+"alt": "Retrato al óleo de un violinista con peluca y una partitura en la mano",
+"pie": "Retrato anónimo de un violinista veneciano (1723) que suele identificarse con Vivaldi."
+}
 },
 {
 "id": "bach",
@@ -115,7 +120,12 @@
 "url": "https://www.bachvereniging.nl/en/bwv/bwv-565",
 "enlace": "Ver en All of Bach"
 }
-]
+],
+"imagen": {
+"archivo": "Johann_Sebastian_Bach.jpg",
+"alt": "Retrato al óleo de Bach con peluca, sosteniendo una hoja de música",
+"pie": "Retrato de Bach por Elias Gottlob Haussmann (1748), hoy en el Bach-Archiv de Leipzig. En la mano sostiene un canon a seis voces compuesto por él, como muestra de su dominio del oficio."
+}
 },
 {
 "id": "chopin",
@@ -171,7 +181,12 @@
 "url": "https://www.youtube.com/results?search_query=Chopin+Nocturne+C+sharp+minor+posthumous",
 "enlace": "Buscar en YouTube"
 }
-]
+],
+"imagen": {
+"archivo": "Eugène_Ferdinand_Victor_Delacroix_043.jpg",
+"alt": "Retrato al óleo de Chopin, de medio perfil, con pinceladas sueltas",
+"pie": "Eugène Delacroix, retrato de Chopin (1838). Museo del Louvre, París."
+}
 },
 {
 "id": "zimerman",

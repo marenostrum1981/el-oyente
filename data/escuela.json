@@ -14,7 +14,12 @@
 "Polifonía: varias melodías a la vez, a menudo imitándose.",
 "Poco contraste de volumen y ritmos fluidos."
 ],
-"nombres": "Josquin des Prez, Giovanni Pierluigi da Palestrina, Tomás Luis de Victoria"
+"nombres": "Josquin des Prez, Giovanni Pierluigi da Palestrina, Tomás Luis de Victoria",
+"imagen": {
+"archivo": "Concert_by_Lorenzo_Costa.jpg",
+"alt": "Tres músicos cantan juntos alrededor de una mesa; uno toca el laúd",
+"pie": "Lorenzo Costa, <i>Un concierto</i>. National Gallery, Londres."
+}
 },
 {
 "id": "barroco",
@@ -32,7 +37,12 @@
 "Contraste entre solista y grupo, con estribillos (ritornello) en los conciertos.",
 "Melodías muy adornadas; los músicos improvisaban parte de los adornos."
 ],
-"nombres": "Claudio Monteverdi, Arcangelo Corelli, Antonio Vivaldi, Georg Friedrich Händel, Johann Sebastian Bach, Jean-Philippe Rameau"
+"nombres": "Claudio Monteverdi, Arcangelo Corelli, Antonio Vivaldi, Georg Friedrich Händel, Johann Sebastian Bach, Jean-Philippe Rameau",
+"imagen": {
+"archivo": "The_Musicians_MET_DP-687-001.jpg",
+"alt": "Jóvenes músicos con laúd y partituras, junto a un Cupido",
+"pie": "Caravaggio, <i>Los músicos</i> (hacia 1595). Metropolitan Museum of Art, Nueva York."
+}
 },
 {
 "id": "clasicismo",
@@ -50,7 +60,12 @@
 "Crescendos y diminuendos, cambios de carácter dentro de un mismo movimiento.",
 "En el piano, el bajo Alberti: acordes partidos que se repiten en la mano izquierda."
 ],
-"nombres": "Joseph Haydn, Wolfgang Amadeus Mozart, Luigi Boccherini, Ludwig van Beethoven (primera etapa)"
+"nombres": "Joseph Haydn, Wolfgang Amadeus Mozart, Luigi Boccherini, Ludwig van Beethoven (primera etapa)",
+"imagen": {
+"archivo": "Croce_MozartFamilyPortrait.jpg",
+"alt": "Mozart y su hermana tocan a cuatro manos; el padre sostiene un violín; en la pared, el retrato de la madre",
+"pie": "Johann Nepomuk della Croce, <i>La familia Mozart</i> (hacia 1780): Wolfgang y su hermana Nannerl al teclado, su padre Leopold con el violín y, en la pared, el retrato de la madre ya fallecida."
+}
 },
 {
 "id": "romanticismo",
@@ -68,7 +83,12 @@
 "Música que narra o pinta: baladas, poemas sinfónicos, títulos evocadores.",
 "Menos adorno añadido y más color: armonías atrevidas y orquestas más grandes."
 ],
-"nombres": "Franz Schubert, Frédéric Chopin, Robert Schumann, Franz Liszt, Richard Wagner, Giuseppe Verdi, Johannes Brahms, Piotr Chaikovski"
+"nombres": "Franz Schubert, Frédéric Chopin, Robert Schumann, Franz Liszt, Richard Wagner, Giuseppe Verdi, Johannes Brahms, Piotr Chaikovski",
+"imagen": {
+"archivo": "Caspar_David_Friedrich_-_Wanderer_above_the_sea_of_fog.jpg",
+"alt": "Un caminante de espaldas en lo alto de una roca contempla un mar de niebla",
+"pie": "Caspar David Friedrich, <i>El caminante sobre el mar de nubes</i> (hacia 1817). Kunsthalle de Hamburgo."
+}
 },
 {
 "id": "siglo-xx",
@@ -84,7 +104,12 @@
 "Ritmos irregulares y protagonismo de la percusión.",
 "El timbre, el color de cada instrumento, como protagonista."
 ],
-"nombres": "Claude Debussy, Maurice Ravel, Manuel de Falla, Ígor Stravinski, Dmitri Shostakóvich"
+"nombres": "Claude Debussy, Maurice Ravel, Manuel de Falla, Ígor Stravinski, Dmitri Shostakóvich",
+"imagen": {
+"archivo": "Vassily_Kandinsky,_1913_-_Composition_7.jpg",
+"alt": "Cuadro abstracto de colores y formas que se arremolinan",
+"pie": "Vasili Kandinski, <i>Composición VII</i> (1913). Galería Tretiakov, Moscú."
+}
 }
 ],
 "articulos": [
