@@ -85,6 +85,52 @@ dict(id="rubato", tema="Interpretación", titulo="El rubato: por qué Chopin no 
 </ol>
 <h2>Cuidado con el exceso</h2>
 <p>Hay quien decía que Chopin «no sabía tocar a tempo», y hay pianistas que usan muy poco rubato. Sin pulso no hay nada que robar: el rubato solo funciona si debajo sigues notando el compás.</p>"""),
+dict(id="titulos", tema="Método", titulo="Cómo leer el título de una obra",
+ entradilla="«Ballade No. 1 in G minor, Op. 23». Parece un código, pero casi todos los títulos de música clásica se leen igual: tipo de obra, número, tonalidad y catálogo.",
+ h="""<h2>Las cuatro piezas de un título</h2>
+<p>Desmontemos <b>Ballade No. 1 in G minor, Op. 23</b>, de Chopin:</p>
+<ol>
+<li><b>Ballade</b> (balada): el <b>tipo de obra</b>, también llamado género. Sinfonía, concierto, sonata, suite, nocturno o balada te dicen qué esperar: cuántos movimientos, para quién, con qué carácter.</li>
+<li><b>No. 1</b> (n.º 1): el <b>número dentro de ese tipo</b>. Chopin escribió cuatro baladas y esta es la primera.</li>
+<li><b>in G minor</b> (en sol menor): la <b>tonalidad</b>, la nota «casa» y su modo, mayor o menor.</li>
+<li><b>Op. 23</b> (opus 23): el <b>número de catálogo</b>, para que no se confunda con ninguna otra obra.</li>
+</ol>
+<p>Algunas obras llevan además un <b>apodo</b>, como <i>Las cuatro estaciones</i> o la sonata «Claro de luna» de Beethoven (Op. 27 n.º 2). El apodo ayuda a recordarla; el catálogo, a encontrarla.</p>
+<h2>El número: no siempre es el orden en que se escribió</h2>
+<p>El n.º 1 suele ser la primera obra de ese tipo, pero no siempre la primera que se compuso. Los dos conciertos para piano de Chopin son el ejemplo clásico: el <b>n.º 2</b>, en fa menor (Op. 21), lo terminó en 1829–1830 y se publicó en 1836; el <b>n.º 1</b>, en mi menor (Op. 11), es de 1830 y se publicó antes, en 1833. Se numeraron según salieron de la imprenta.</p>
+<h2>La tonalidad y los nombres de las notas</h2>
+<p>La tonalidad es la nota a la que la música quiere volver para descansar, y el modo: <b>mayor</b> (más luminoso) o <b>menor</b> (más sombrío). Como las grabaciones y las plataformas suelen usar el inglés o el alemán, conviene saber los nombres:</p>
+<ul>
+<li><b>Do</b> C · <b>Re</b> D · <b>Mi</b> E · <b>Fa</b> F · <b>Sol</b> G · <b>La</b> A · <b>Si</b> B (en alemán, H).</li>
+<li><b>Sostenido</b> sharp (♯) · <b>bemol</b> flat (♭). En alemán, B a secas es si bemol.</li>
+<li><b>Mayor</b> major, en alemán <i lang="de">Dur</i> · <b>menor</b> minor, en alemán <i lang="de">Moll</i>.</li>
+</ul>
+<p>Así, <i>G minor</i> y <i lang="de">g-Moll</i> son «sol menor», y <i>B-flat major</i> es «si bemol mayor».</p>
+<h2>¿Se puede tocar en otra tonalidad?</h2>
+<p>Se puede: se llama <a href="#g-transportar">transportar</a>. Los cantantes lo hacen a menudo para ajustar una canción a su voz, y muchas canciones se publicaban en versiones para voz aguda, media y grave.</p>
+<p>Con una obra para piano como una balada de Chopin, en cambio, no se hace, por tres razones:</p>
+<ul>
+<li><b>La mano.</b> Cada tonalidad coloca los dedos de otra forma sobre las teclas blancas y negras. Los pasajes rápidos están pensados para esas teclas, y en otro tono habría que cambiar todas las digitaciones. A Chopin le importaba tanto que enseñaba a empezar las escalas por si mayor y no por do mayor, porque así los dedos largos caen sobre las teclas negras y la mano queda cómoda.</li>
+<li><b>El sonido.</b> Toda la obra sonaría más aguda o más grave, y el piano resuena distinto en cada zona.</li>
+<li><b>El color.</b> En el siglo XIX convivían varias maneras de afinar, y en algunas cada tonalidad sonaba un poco distinta; muchos músicos de entonces atribuían un carácter a cada una. Con la afinación actual la diferencia es sobre todo de altura, y hasta qué punto se nota es un debate abierto. Aun así, el tono forma parte de la obra tal como la escribió el compositor.</li>
+</ul>
+<h2>Opus y catálogos: qué significa el número</h2>
+<p><b>Opus</b> es «obra» en latín. Desde comienzos del siglo XIX, los compositores solían dar un número de opus a cada obra al publicarla. Ese número <b>no dice cuántas piezas hay</b>:</p>
+<ul>
+<li>El <b>Op. 23</b> de Chopin es una sola balada de unos diez minutos.</li>
+<li>Su <b>Op. 24</b> son cuatro mazurcas, y su <b>Op. 28</b>, veinticuatro preludios.</li>
+<li>El <b>Op. 8</b> de Vivaldi reúne doce conciertos. Por eso la Primavera es el <b>Op. 8 n.º 1</b>: el segundo número dice cuál de ellos es.</li>
+</ul>
+<p>Muchos compositores no numeraron sus obras, o dejaron muchas sin publicar. Para ellos, los estudiosos han hecho <b>catálogos</b>, y cada uno tiene sus siglas:</p>
+<ul>
+<li><b>BWV</b>, Bach: de Wolfgang Schmieder (1950). Ordena por géneros, no por fechas: BWV 1 no es la primera obra de Bach.</li>
+<li><b>RV</b>, Vivaldi: de Peter Ryom.</li>
+<li><b>K.</b> o <b>KV</b>, Mozart: de Ludwig von Köchel (1862). Se pensó en orden cronológico, de K. 1, un minueto de niño, a K. 626, el Réquiem que dejó sin terminar.</li>
+<li><b>Hob.</b>, Haydn: de Anthony van Hoboken.</li>
+<li><b>D.</b>, Schubert: de Otto Erich Deutsch.</li>
+</ul>
+<h2>Un truco para buscar</h2>
+<p>En Idagio o en YouTube, busca por <b>compositor y catálogo</b>: «Chopin Op. 23», «Bach BWV 1008» o «Vivaldi RV 269». Es la forma más segura de dar con esa obra exacta y no con otra de título parecido.</p>"""),
 dict(id="como-escuchar", tema="Método", titulo="Cómo escuchar una obra: tres preguntas",
  entradilla="No hace falta saber solfeo. Con tres preguntas mientras suena, ya no estás perdido en ningún movimiento.",
  h="""<h2>Antes</h2>
@@ -104,7 +150,7 @@ dict(id="como-escuchar", tema="Método", titulo="Cómo escuchar una obra: tres p
 GLOSARIO = [
  ("allemande","Allemande","Danza de origen alemán, de paso moderado y compás binario. Abre la serie de danzas en las suites de Bach."),
  ("bajo-continuo","Bajo continuo","El cimiento de la música barroca: una línea de bajo (violonchelo, contrabajo, fagot…) más un instrumento de acordes (clave, órgano, laúd o tiorba) que improvisa la armonía a partir de esa línea. Desaparece hacia 1800."),
- ("catalogo","Catálogo (BWV, RV, Op.)","Los números que identifican una obra. <b>BWV</b> es el catálogo de las obras de Bach (Bach-Werke-Verzeichnis); <b>RV</b>, el de Vivaldi, elaborado por Peter Ryom; <b>Op.</b> (opus) es el número de publicación que daba el compositor o el editor."),
+ ("catalogo","Catálogo (BWV, RV, K., Op.)","Los números que identifican una obra. <b>BWV</b> es el catálogo de las obras de Bach (Bach-Werke-Verzeichnis), de Wolfgang Schmieder; <b>RV</b>, el de Vivaldi, de Peter Ryom; <b>K.</b> o <b>KV</b>, el de Mozart, de Ludwig von Köchel; <b>Hob.</b>, el de Haydn, de Anthony van Hoboken, y <b>D.</b>, el de Schubert, de Otto Erich Deutsch. <b>Op.</b> (<a href=\"#g-opus\">opus</a>) es el número de publicación. Más en <a href=\"#a-titulos\">Cómo leer el título de una obra</a>."),
  ("clave","Clave","Instrumento de teclado en el que las cuerdas se pellizcan con una púa, en lugar de golpearse con macillos como en el piano. Sonido brillante, sin crescendos. Es el corazón del continuo barroco."),
  ("concierto","Concierto","Obra en la que uno o varios solistas dialogan con el grupo. En el Barroco suele tener tres movimientos: rápido, lento y rápido."),
  ("contrapunto","Contrapunto","El arte de combinar varias melodías independientes que suenan a la vez y encajan entre sí."),
@@ -128,12 +174,14 @@ GLOSARIO = [
  ("balada","Balada","En literatura, un poema que cuenta una historia. Chopin fue el primero en dar el nombre a una pieza solo instrumental, sin palabras, de carácter narrativo."),
  ("coda","Coda","«Cola»: la sección final que cierra una obra o un movimiento, a menudo con un último arranque de energía."),
  ("compas","Compás","La forma en que se agrupan los pulsos. En 3/4 se cuenta 1-2-3, como en un vals; en 6/4 o 6/8, en dos grupos de tres, con un balanceo que suena a narración."),
+ ("opus","Opus (Op.)","«Obra» en latín. El número que recibe una obra, o un grupo de obras, al publicarse. <b>No dice cuántas piezas hay</b>: el Op. 23 de Chopin es una sola balada, y su Op. 28, veinticuatro preludios. Cuando un opus reúne varias obras, se añade otro número: Op. 8 n.º 1. Tampoco indica siempre el orden en que se compusieron."),
  ("pedal","Pedal","En el piano, el pedal derecho deja vibrar las cuerdas al soltar las teclas. Une los sonidos y crea resonancia; los románticos lo usan muchísimo."),
  ("pieza-de-caracter","Pieza de carácter","Pieza breve para piano que retrata un estado de ánimo o una escena: nocturnos, baladas, intermezzos. Es uno de los grandes géneros del Romanticismo."),
  ("rubato","Rubato","«Tiempo robado»: el intérprete se adelanta o se retrasa a propósito para dar expresión. Chopin pedía mantener firme la mano izquierda y dejar libre la derecha."),
  ("tema","Tema","Una melodía o idea musical reconocible que la obra presenta y luego repite, transforma o desarrolla. Reconocer los temas es la mejor brújula para no perderse."),
  ("tocata","Tocata","Pieza de teclado de carácter libre, como improvisada, pensada para lucir al intérprete."),
- ("tonalidad","Mayor y menor","Los dos modos de la música tonal. Simplificando, el mayor suena luminoso y el menor, sombrío."),
+ ("tonalidad","Tonalidad (mayor y menor)","La «casa» de una obra: la nota a la que la música quiere volver para descansar (en «sol menor», el sol) y el tipo de escala que se usa a su alrededor. Hay dos modos: simplificando, el <b>mayor</b> suena luminoso y el <b>menor</b>, sombrío. La música se aleja de su tonalidad y vuelve: ese ir y volver es lo que se oye como tensión y reposo. En inglés y alemán las notas van con letras: C do, D re, E mi, F fa, G sol, A la, B si (en alemán, H es si y B es si bemol)."),
+ ("transportar","Transportar","Tocar o cantar una obra en otra tonalidad, más aguda o más grave. Los cantantes lo hacen a menudo para ajustarla a su voz, y muchas canciones se publicaban para voz aguda, media y grave. En el piano casi nunca se hace con obras de repertorio: cambia la posición de la mano sobre las teclas y el sonido del instrumento."),
  ("tremolo","Trémolo","Repetir muy rápido la misma nota, o alternar dos, creando un temblor sonoro. Vivaldi lo usa para los truenos."),
  ("trino","Trino","Alternancia rapidísima entre dos notas vecinas. Es un adorno, y también el canto de pájaro más usado en música."),
  ("tutti","Tutti","«Todos»: el grupo entero tocando, frente al solista."),
@@ -154,4 +202,4 @@ CURIOSIDADES = [
  dict(t="Las Cuatro Estaciones se grabaron por primera vez en 1947. Hoy existe una cantidad enorme de versiones.", l="#o-cuatro-estaciones"),
 ]
 
-DESTACADO = "rubato"
+DESTACADO = "titulos"

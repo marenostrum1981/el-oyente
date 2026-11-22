@@ -14,6 +14,34 @@
 "plantilla": "Violín solista, cuerdas y bajo continuo",
 "tonalidad": "Mi mayor · Sol menor · Fa mayor · Fa menor",
 "catalogo": "Op. 8 n.º 1–4 · RV 269, 315, 293, 297",
+"titulo_original": "Le quattro stagioni · Il cimento dell'armonia e dell'inventione, Op. 8 n.º 1–4 · RV 269, 315, 293, 297",
+"partes": [
+{
+"p": "Le quattro stagioni",
+"es": "Las cuatro estaciones",
+"h": "Más que una obra, son <b>cuatro conciertos para violín</b>, uno por estación, de tres movimientos cada uno: doce en total. Ver <a href=\"#g-concierto\">concierto</a>."
+},
+{
+"p": "Il cimento dell'armonia e dell'inventione",
+"es": "El desafío entre la armonía y la invención",
+"h": "El nombre de la <b>colección de doce conciertos</b> que Vivaldi publicó en Ámsterdam en 1725. Las estaciones son los cuatro primeros; los otros ocho son conciertos distintos."
+},
+{
+"p": "Op. 8 n.º 1–4",
+"es": "Opus 8, números 1 a 4",
+"h": "<b>Opus</b> es «obra» en latín. La portada dice <i lang=\"it\">opera ottava</i>, «obra octava»: el número que recibió la colección al publicarse. Aquí un solo opus reúne <b>doce conciertos</b>, así que cada uno lleva además su propio número: la Primavera es el <b>Op. 8 n.º 1</b> y el Invierno, el n.º 4. Ver <a href=\"#g-opus\">opus</a>."
+},
+{
+"p": "RV 269, 315, 293, 297",
+"es": "Catálogo Ryom",
+"h": "Los números del <b>catálogo de Peter Ryom</b> (<i lang=\"de\">Ryom-Verzeichnis</i>), que identifica cada obra de Vivaldi. Primavera es RV 269; Verano, RV 315; Otoño, RV 293, e Invierno, RV 297. Fíjate en que no van en orden: el catálogo no sigue el de las estaciones."
+},
+{
+"p": "E major · G minor · F major · F minor",
+"es": "mi mayor · sol menor · fa mayor · fa menor",
+"h": "Cada concierto tiene su <b>tonalidad</b>. Primavera y otoño, en mayor, suenan luminosos; verano e invierno, en menor, más sombríos y tensos. En inglés las notas van con letras: E es mi, G es sol y F es fa. Ver <a href=\"#g-tonalidad\">tonalidad</a>."
+}
+],
 "duracion": "Unos 40 minutos, en 12 movimientos",
 "entradilla": "Cuatro conciertos para violín que cuentan el año con un soneto como guion. Vivaldi escribió en la partitura lo que pinta cada pasaje: pájaros, tormentas, un perro que ladra o el hielo que se rompe.",
 "grabacion": {
@@ -185,6 +213,34 @@
 "plantilla": "Violonchelo solo",
 "tonalidad": "Re menor",
 "catalogo": "BWV 1008",
+"titulo_original": "Cello Suite No. 2 in D minor, BWV 1008",
+"partes": [
+{
+"p": "Cello",
+"es": "para violonchelo solo",
+"h": "La <b>plantilla</b>: un solo instrumento, sin acompañamiento. La copia de Anna Magdalena Bach las titula «suites para violonchelo solo sin bajo»."
+},
+{
+"p": "Suite",
+"es": "Suite",
+"h": "El <b>tipo de obra</b>: una serie de danzas, con un preludio delante. Por eso la guía de escucha va danza a danza. Ver <a href=\"#g-suite\">suite</a>."
+},
+{
+"p": "No. 2",
+"es": "n.º 2",
+"h": "La <b>segunda de las seis suites</b> para violonchelo de Bach. En su catálogo van seguidas, de BWV 1007 a 1012."
+},
+{
+"p": "in D minor",
+"es": "en re menor",
+"h": "La <b>tonalidad</b>: la nota «casa» es el re (en inglés, <b>D</b>) y el modo es menor, de color sombrío. Todas las danzas de la suite giran en torno a ese re. Ver <a href=\"#g-tonalidad\">tonalidad</a>."
+},
+{
+"p": "BWV 1008",
+"es": "Catálogo de las obras de Bach",
+"h": "El número del <b>catálogo de las obras de Bach</b> (<i lang=\"de\">Bach-Werke-Verzeichnis</i>), que publicó Wolfgang Schmieder en 1950, dos siglos después de la muerte del compositor. No va por fechas sino <b>por géneros</b>: primero las cantatas (BWV 1 a 224) y, mucho más adelante, la música de cámara (BWV 1001 a 1040), donde están estas suites. Un número BWV bajo no quiere decir que la obra sea antigua."
+}
+],
 "duracion": "Entre 20 y 25 minutos, según el intérprete",
 "entradilla": "Un solo violonchelo, casi siempre una nota cada vez, y sin embargo oyes melodía, bajo y armonía. Un preludio y cinco danzas en re menor: la primera de las dos suites en tonalidad menor.",
 "grabacion": {
@@ -327,6 +383,29 @@
 "plantilla": "Piano solo",
 "tonalidad": "Sol menor",
 "catalogo": "Op. 23",
+"titulo_original": "Ballade No. 1 in G minor, Op. 23",
+"partes": [
+{
+"p": "Ballade",
+"es": "Balada",
+"h": "El <b>tipo de obra</b>. Chopin fue el primero en llamar así a una pieza para piano sin palabras: música que suena a historia contada. Ver <a href=\"#g-balada\">balada</a>."
+},
+{
+"p": "No. 1",
+"es": "n.º 1",
+"h": "Es la <b>primera de sus cuatro baladas</b>, y cada una es una obra independiente: n.º 1 en sol menor (Op. 23), n.º 2 en fa mayor (Op. 38), n.º 3 en la bemol mayor (Op. 47) y n.º 4 en fa menor (Op. 52). Las escribió entre 1831 y 1842; la segunda, en parte, en Mallorca."
+},
+{
+"p": "in G minor",
+"es": "en sol menor",
+"h": "La <b>tonalidad</b>. La nota «casa» de la obra es el sol (en inglés, <b>G</b>): la nota a la que la música quiere volver para descansar. El modo es <b>menor</b>, de color sombrío. Ver <a href=\"#g-tonalidad\">tonalidad</a>.</p><p><b>¿Se podría tocar en otra tonalidad?</b> Se puede, y se llama <a href=\"#g-transportar\">transportar</a>, pero con obras de piano como esta no se hace. Los pasajes están pensados para la mano sobre esas teclas blancas y negras: en otro tono habría que cambiar todas las digitaciones. Además, la obra entera sonaría más aguda o más grave, con otro brillo. Chopin eligió el sol menor, y se respeta como se respeta la letra de un poema."
+},
+{
+"p": "Op. 23",
+"es": "Opus 23",
+"h": "<b>Opus</b> significa «obra» en latín. Es el número que recibió la balada <b>al publicarse</b>, en 1836: el 23 de la lista de obras publicadas de Chopin. <b>No indica cuántas piezas hay.</b> El Op. 23 es una sola balada de unos diez minutos; en cambio, el Op. 24 son cuatro mazurcas, y el Op. 28, veinticuatro preludios. Ver <a href=\"#g-opus\">opus</a>."
+}
+],
 "duracion": "Entre 9 y 10 minutos, en un solo movimiento",
 "entradilla": "Diez minutos de piano que suenan a historia contada en voz alta: un comienzo que duda, dos temas que se transforman y un final desbocado. Chopin fue el primero en llamar «balada» a una pieza sin palabras.",
 "grabacion": {

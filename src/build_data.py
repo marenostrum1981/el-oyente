@@ -20,6 +20,7 @@ for clave, ids in (("obras", O), ("personas", P), ("epocas", E)):
         if k not in ids: errs.append(("imagen", clave, k))
         if not im.get("archivo") or not im.get("pie") or not im.get("alt"): errs.append(("imagen incompleta", k))
 for o in OBRAS:
+    if not o.get("titulo_original") or not o.get("partes"): errs.append(("falta 'cómo leer el título'", o["id"]))
     if o["compositor"] not in P: errs.append(("compositor", o["id"]))
     if o["epoca"] not in E: errs.append(("epoca", o["id"]))
     for c in o.get("conceptos", []):

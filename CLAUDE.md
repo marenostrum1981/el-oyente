@@ -28,6 +28,7 @@ Un diario web para aprender a escuchar música clásica. Cada día entra una obr
    - `versiones`: lista de `{p}` (id de persona) o `{quien}`, con `det`, `nota` y `url` opcional.
    - `idagio`: texto para buscar la obra en Idagio.
    - `interpretes` y `conceptos`: ids de personas y de términos del glosario.
+   - `titulo_original` y `partes` (**obligatorio**): el título tal como sale en YouTube o Idagio (normalmente en inglés) y su desglose, parte por parte: tipo de obra, número, plantilla, tonalidad (con la letra de la nota), catálogo u opus (qué significa y si el número agrupa varias piezas) y apodo. Cada parte es `dict(p=<fragmento original>, es=<en español>, h=<explicación para principiantes>)`. Responde a las dudas típicas: ¿qué es el n.º?, ¿se podría tocar en otra tonalidad?, ¿cuántas piezas hay en ese opus?
 4. **Guía de escucha.**
    - Si el vídeo tiene capítulos, pon `t` en segundos, sacados de esos capítulos.
    - Si no los tiene, quita `t` y usa `cuando` (`"1"`, `"2"`…) con los pasos en orden.
