@@ -22,7 +22,7 @@ dict(id="romanticismo", nombre="Romanticismo", fechas="c. 1820–1900", ini=1820
  h="""<p>El Romanticismo nace como reacción a la razón de la Ilustración: frente al orden y el equilibrio del Clasicismo, pone por delante los sentimientos, la imaginación y al individuo. Los compositores dependen menos de un mecenas y escriben más para expresarse.</p>
 <p>La música se estira hacia los dos extremos. Por un lado, piezas breves para piano y canciones que retratan un estado de ánimo, las llamadas <a href="#g-pieza-de-caracter">piezas de carácter</a>. Por otro, sinfonías y óperas cada vez más grandes, y poemas sinfónicos que cuentan una historia con la orquesta. El piano se vuelve el instrumento más popular del siglo, y aparecen músicas inspiradas en el folclore de cada país.</p>""",
  rasgos=["Tempo flexible: el intérprete se adelanta y se retrasa (<a href=\"#g-rubato\">rubato</a>). Ejemplo: <a href=\"#o-balada-1-chopin@0\">Chopin, Balada n.º 1</a>, desde el primer tema.","Contrastes enormes de volumen, del casi silencio al estruendo, a veces de golpe y a veces con crescendos muy largos; y mucho pedal en el piano. Ejemplo: la <a href=\"#o-balada-1-chopin\">Balada n.º 1 de Chopin</a>, pasos 5 y 7 de su guía.","Melodías largas y expresivas, con frases menos simétricas que en el Clasicismo.","Música que narra o pinta: baladas, poemas sinfónicos, títulos evocadores.","Menos adorno añadido y más color: armonías atrevidas y orquestas más grandes."],
- nombres="Franz Schubert, Frédéric Chopin, Robert Schumann, Franz Liszt, Richard Wagner, Giuseppe Verdi, Johannes Brahms, Piotr Chaikovski"),
+ nombres="Franz Schubert, Frédéric Chopin, Robert Schumann, Franz Liszt, Richard Wagner, Giuseppe Verdi, Johannes Brahms, Piotr Chaikovski, Gustav Mahler"),
 dict(id="siglo-xx", nombre="Siglo XX y XXI", fechas="1900–hoy", ini=1900, fin=2000, color="var(--xx)",
  entradilla="Se rompen las reglas: nuevos colores, nuevos ritmos y nuevas formas de ordenar los sonidos.",
  h="""<p>Esta sección se completará cuando llegue la primera obra del siglo XX al diario.</p>""",
@@ -164,6 +164,12 @@ dict(id="como-escuchar", tema="Método", titulo="Cómo escuchar una obra: tres p
 ]
 
 GLOSARIO = [
+ ("sinfonia","Sinfonía","Obra grande para orquesta, dividida en varios movimientos. En el Clasicismo suele tener cuatro: rápido, lento, minueto o scherzo, y rápido. Los románticos la agrandaron: la Quinta de Mahler tiene cinco movimientos y dura más de una hora."),
+ ("arpa","Arpa","Instrumento de cuerdas que se pellizcan con los dedos, tensadas en un marco triangular. En la orquesta suele acompañar con acordes desgranados (arpegios) y da un brillo suave."),
+ ("cuerda","Cuerda","La familia de instrumentos de cuerda frotada con arco de la orquesta: violines, violas, violonchelos y contrabajos. Es el núcleo de casi toda orquesta."),
+ ("tempo","Tempo","La velocidad de la música. Se indica con palabras, casi siempre en italiano: <i lang=\"it\">largo</i> y <i lang=\"it\">adagio</i> (lentos), <i lang=\"it\">andante</i> (al paso), <i lang=\"it\">allegro</i> y <i lang=\"it\">presto</i> (rápidos). Los diminutivos suavizan: un <i lang=\"it\">adagietto</i> es algo menos lento que un adagio. Mahler escribía sus indicaciones en alemán: <i lang=\"de\">sehr langsam</i>, «muy lento»."),
+ ("lied","Lied (en plural, lieder)","«Canción» en alemán. Una canción de concierto, casi siempre sobre un poema, para voz y piano o para voz y orquesta. Schubert, Schumann, Brahms y Mahler escribieron muchos."),
+ ("director","Director de orquesta","Quien dirige a la orquesta: decide el tempo, el equilibrio entre los instrumentos y el carácter, y lo transmite con gestos en los ensayos y en el concierto. La partitura es la misma, pero cada director la hace sonar distinta."),
  ("allemande","Allemande","Danza de origen alemán, de paso moderado y compás binario. Abre la serie de danzas en las suites de Bach."),
  ("bajo-continuo","Bajo continuo","El cimiento de la música barroca: una línea de bajo (violonchelo, contrabajo, fagot…) más un instrumento de acordes (clave, órgano, laúd o tiorba) que improvisa la armonía a partir de esa línea. Desaparece hacia 1800."),
  ("catalogo","Catálogo (BWV, RV, K., Op.)","Los números que identifican una obra. <b>BWV</b> es el catálogo de las obras de Bach (Bach-Werke-Verzeichnis), de Wolfgang Schmieder; <b>RV</b>, el de Vivaldi, de Peter Ryom; <b>K.</b> o <b>KV</b>, el de Mozart, de Ludwig von Köchel; <b>Hob.</b>, el de Haydn, de Anthony van Hoboken, y <b>D.</b>, el de Schubert, de Otto Erich Deutsch. <b>Op.</b> (<a href=\"#g-opus\">opus</a>) es el número de publicación. Más en <a href=\"#a-titulos\">Cómo leer el título de una obra</a>."),
@@ -206,6 +212,8 @@ GLOSARIO = [
 ]
 
 CURIOSIDADES = [
+ dict(t="Leonard Bernstein fue enterrado con una partitura de la Quinta de Mahler sobre el corazón.", l="#i-bernstein"),
+ dict(t="El Adagietto de Mahler se estrenó en el Reino Unido en 1909, 36 años antes que la sinfonía completa.", l="#o-adagietto-mahler"),
  dict(t="Chopin pasó el invierno de 1838–1839 en la Cartuja de Valldemossa, en Mallorca. El pequeño piano Pleyel en el que terminó sus Preludios todavía se conserva allí.", l="#c-chopin"),
  dict(t="La Balada n.º 1 de Chopin es la pieza que Szpilman toca para el oficial alemán en <i>El pianista</i>, de Polanski.", l="#o-balada-1-chopin"),
  dict(t="Chopin dio solo unos 30 conciertos públicos en toda su vida: prefería los salones a las grandes salas.", l="#c-chopin"),

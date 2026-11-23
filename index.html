@@ -327,7 +327,7 @@ const V={
    <aside>
     <dl class="facts d-only">${facts.map(([k,v])=>`<div><dt>${k}</dt><dd>${v}</dd></div>`).join('')}</dl>
     ${fig(im,'d-only')}
-    ${o.versiones?.length?`<section><p class="aside-h">Otras versiones para comparar</p><ul class="vers">${o.versiones.map(v=>`<li><b>${v.p?pLink(v.p):esc(v.quien)}</b>${v.det?` · ${esc(v.det)}`:''}<br><span class="mute">${v.nota}</span>${v.url?(ytId(v.url)?`<br><a class="oir" href="${v.url}" data-yt="${ytId(v.url)}" data-lbl="${esc((v.p?P[v.p]?.nombre:v.quien)+' · '+o.titulo)}">Escuchar aquí</a>`:`<br><a class="ui" href="${v.url}" rel="noopener">Ver vídeo</a>`):''}</li>`).join('')}</ul>${o.idagio?`<p class="note">En Idagio, busca: <b>${esc(o.idagio)}</b></p>`:''}</section>`:''}
+    ${o.versiones?.length?`<section><p class="aside-h">Otras versiones para comparar</p><ul class="vers">${o.versiones.map(v=>`<li><b>${v.p?pLink(v.p):esc(v.quien)}</b>${v.det?` · ${esc(v.det)}`:''}<br><span class="mute">${v.nota}</span>${v.url?(v.url[0]==='#'?`<br><a class="oir" href="${v.url}">Escuchar aquí</a>`:ytId(v.url)?`<br><a class="oir" href="${v.url}" data-yt="${ytId(v.url)}" data-lbl="${esc((v.p?P[v.p]?.nombre:v.quien)+' · '+o.titulo)}">Escuchar aquí</a>`:`<br><a class="ui" href="${v.url}" rel="noopener">Ver vídeo</a>`):''}</li>`).join('')}</ul>${o.idagio?`<p class="note">En Idagio, busca: <b>${esc(o.idagio)}</b></p>`:''}</section>`:''}
     ${o.conceptos?.length?`<section><p class="aside-h">Conceptos de esta obra</p><div class="chips">${o.conceptos.map(gLink).join('')}</div></section>`:''}
     ${o.interpretes?.length?`<section><p class="aside-h">Intérpretes en esta ficha</p><ul class="mini">${o.interpretes.map(i=>`<li>${pLink(i)}<small>${esc(P[i]?.rol||'')}</small></li>`).join('')}</ul></section>`:''}
    </aside></div>`;
@@ -342,8 +342,8 @@ const V={
   const grp=(t,l)=>l.length?`<p class="group-h">${t}</p><div class="grid">${l.map(p=>`<article class="card"><small>${esc(p.rol)}</small><h3><a href="#i-${p.id}">${esc(p.nombre)}</a></h3><p>${p.entradilla}</p></article>`).join('')}</div>`:'';
   const dirs=ip.filter(p=>p.dirige).flatMap(p=>p.dirige.map(d=>({d,p})));
   return `<p class="kick">Índice</p><h1>Intérpretes</h1>
-   ${grp('Solistas',ip.filter(p=>p.tipo==='solista'))}${grp('Conjuntos y orquestas',ip.filter(p=>p.tipo==='conjunto'))}
-   ${dirs.length?`<p class="group-h">Directores</p><ul class="mini">${dirs.map(x=>`<li><b>${esc(x.d)}</b><small>Dirige ${pLink(x.p.id)}</small></li>`).join('')}</ul>`:''}`;
+   ${grp('Solistas',ip.filter(p=>p.tipo==='solista'))}${grp('Directores de orquesta',ip.filter(p=>p.tipo==='director'))}${grp('Conjuntos y orquestas',ip.filter(p=>p.tipo==='conjunto'))}
+   ${dirs.length?`<p class="group-h">Quién dirige cada conjunto</p><ul class="mini">${dirs.map(x=>`<li><b>${esc(x.d)}</b><small>Dirige ${pLink(x.p.id)}</small></li>`).join('')}</ul>`:''}`;
  },
  persona(id){
   const p=P[id];if(!p)return V.nada();
@@ -351,7 +351,7 @@ const V={
   return `<p class="kick">${p.tipo==='compositor'?`<span class="dot" style="--c:${e.color}"></span>Compositor · ${esc(e.nombre)}`:esc(p.rol)}</p>
    <h1>${esc(p.nombre)}</h1><p class="ui mute" style="margin-top:-4px">${esc(p.vida||'')}${p.lugar?' · '+esc(p.lugar):''}</p>
    <p class="stand read">${p.entradilla}</p>
-   <div class="ficha"><article class="body read">${fig(p.imagen,'m-only')}${p.h}${p.ruta?.length?`<h2>Ruta de escucha</h2><ul class="vers">${p.ruta.map(r=>`<li><b>${r.obra?`<a href="#o-${r.obra}">${esc(r.titulo)}</a>`:esc(r.titulo)}</b><br><span class="mute">${r.nota}</span>${r.url?(ytId(r.url)?`<br><a class="oir" href="${r.url}" data-yt="${ytId(r.url)}" data-lbl="${esc(p.nombre+' · '+r.titulo)}">Escuchar aquí</a>`:`<br><a class="ui" href="${r.url}" rel="noopener">${esc(r.enlace||'Ver vídeo')}</a>`):''}</li>`).join('')}</ul>`:''}</article>
+   <div class="ficha"><article class="body read">${fig(p.imagen,'m-only')}${p.h}${p.ruta?.length?`<h2>Ruta de escucha</h2><ul class="vers">${p.ruta.map(r=>`<li><b>${r.obra?`<a href="#o-${r.obra}">${esc(r.titulo)}</a>`:esc(r.titulo)}</b><br><span class="mute">${r.nota}</span>${r.url?(r.url[0]==='#'?`<br><a class="oir" href="${r.url}">Escuchar aquí</a>`:ytId(r.url)?`<br><a class="oir" href="${r.url}" data-yt="${ytId(r.url)}" data-lbl="${esc(p.nombre+' · '+r.titulo)}">Escuchar aquí</a>`:`<br><a class="ui" href="${r.url}" rel="noopener">${esc(r.enlace||'Ver vídeo')}</a>`):''}</li>`).join('')}</ul>`:''}</article>
    <aside>${fig(p.imagen,'d-only')}${p.claves?.length?`<section><p class="aside-h">En pocas palabras</p><dl class="facts">${p.claves.map(([k,v])=>`<div><dt>${esc(k)}</dt><dd>${v}</dd></div>`).join('')}</dl></section>`:''}
     <section><p class="aside-h">En el diario</p>${os.length?`<ul class="mini">${os.map(o=>`<li><a href="#o-${o.id}">${esc(o.titulo)}</a><small>N.º ${o.n}</small></li>`).join('')}</ul>`:'<p class="mute ui">Aún no hay obras suyas.</p>'}</section>
    </aside></div>`;

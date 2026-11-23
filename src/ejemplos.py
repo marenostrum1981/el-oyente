@@ -11,6 +11,7 @@
 CE = "cuatro-estaciones"   # Vivaldi, Voices of Music
 SU = "suite-chelo-2"       # Bach, Maisky
 BA = "balada-1-chopin"     # Chopin, Zimerman (sin capítulos: solo t=0)
+MA = "adagietto-mahler"    # Mahler, Bernstein (sin capítulos: solo t=0)
 AOB = "https://www.bachvereniging.nl/en/bwv/bwv-"
 
 EJEMPLOS = {
@@ -46,7 +47,31 @@ EJEMPLOS = {
   dict(o=CE, t=609, txt="El verano empieza con frases cansadas, cortadas por silencios, y de golpe el viento del norte entra a todo volumen. No hay crescendo: se pasa de un bloque a otro."),
   dict(x="haydn-94-ii", t=0, txt="Para no confundirte: un golpe de volumen no basta para decir «Barroco». Este Andante de Haydn, del Clasicismo, empieza muy suave y al final de la segunda frase suelta un acorde fortísimo, por sorpresa."),
  ],
+ "sinfonia": [
+  dict(x="mahler-5", t=33, txt="La Quinta de Mahler empieza con una trompeta sola que abre una marcha fúnebre: más de una hora de sinfonía por delante."),
+  dict(x="haydn-94-ii", t=0, txt="El movimiento lento de una sinfonía clásica de Haydn: más corta, más ligera y con una orquesta más pequeña."),
+ ],
+ "arpa": [
+  dict(o=MA, t=0, txt="Desde el principio, el arpa sostiene la armonía por debajo de las cuerdas, casi como un bajo continuo."),
+ ],
+ "cuerda": [
+  dict(o=MA, t=0, txt="Solo cuerda y arpa: el sonido de la cuerda de una gran orquesta, sin nada más."),
+  dict(o=CE, t=0, txt="Una orquesta barroca de cuerda, con su bajo continuo."),
+ ],
+ "tempo": [
+  dict(o=CE, t=0, txt="Primavera I, <i lang=\"it\">Allegro</i>: rápido y alegre."),
+  dict(o=CE, t=212, txt="Primavera II, <i lang=\"it\">Largo</i>: muy lento."),
+  dict(o=MA, t=0, txt="Mahler, <i lang=\"de\">Sehr langsam</i>, «muy lento». Cada director lo entiende a su manera: hay versiones de 7 minutos y de casi 14."),
+ ],
+ "lied": [
+  dict(x="mahler-ich-bin", t=0, txt="Un lied de Mahler con orquesta, sobre un poema de Friedrich Rückert. Su melodía es la que cierra el Adagietto."),
+ ],
+ "director": [
+  dict(o=MA, t=0, txt="Bernstein se toma unos 12 minutos para el Adagietto. Mahler y Mengelberg lo tocaban en unos 7."),
+  dict(x="mahler-5", t=2779, txt="El mismo Adagietto con otro director y otra orquesta: compara el tempo y el carácter."),
+ ],
  "crescendo": [
+  dict(o=MA, txt="En el Adagietto de Mahler, la melodía crece y se calma varias veces, como respiraciones cada vez más hondas (paso 3 de la guía)."),
   dict(o=BA, txt="En la balada, el paso 5 de la guía: el primer tema crece y crece hasta que el segundo vuelve, convertido en una declaración apasionada a pleno volumen."),
   dict(txt="En el Barroco no busques crescendos largos: los cambios van por bloques. Compáralo con el <a href=\"#g-dinamica-terrazas\">Verano de Vivaldi</a>."),
  ],
@@ -70,6 +95,7 @@ EJEMPLOS = {
   dict(o=SU, t=1048, txt="Cuenta 1-2-3 mientras suena: es un baile elegante, de salón."),
  ],
  "movimiento": [
+  dict(x="mahler-5", t=2779, txt="El Adagietto es el cuarto de los cinco movimientos de la Quinta de Mahler: aquí empieza, justo después del Scherzo."),
   dict(o=CE, t=212, txt="Aquí acaba el primer movimiento de la Primavera y empieza el segundo: hay una pausa y cambian el tempo y el ambiente. En concierto, no se aplaude aquí."),
  ],
  "musica-programatica": [

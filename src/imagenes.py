@@ -19,6 +19,11 @@ IMAGENES = {
             alt="Cuadro de un salón: un pianista toca rodeado de escritores y músicos que escuchan",
             pie="Josef Danhauser, <i>Liszt al piano</i> (1840), Alte Nationalgalerie, Berlín. Alrededor del piano, figuras del romanticismo como George Sand, Victor Hugo, Alexandre Dumas y Paganini: el mundo de salones en el que se escuchaba a Chopin.",
         ),
+        "adagietto-mahler": dict(
+            archivo="Mahler_conducting_caricature.jpg",
+            alt="Serie de dibujos caricaturescos de un director de orquesta en posturas exageradas",
+            pie="Mahler dirigiendo, según el caricaturista Hans Schließmann, en la revista <i lang=\"de\">Fliegende Blätter</i> (marzo de 1901), el año en que empezó la Quinta. Entonces era director de la Ópera de la Corte de Viena.",
+        ),
     },
     "personas": {
         "vivaldi": dict(
@@ -35,6 +40,11 @@ IMAGENES = {
             archivo="Eugène_Ferdinand_Victor_Delacroix_043.jpg",
             alt="Retrato al óleo de Chopin, de medio perfil, con pinceladas sueltas",
             pie="Eugène Delacroix, retrato de Chopin (1838). Museo del Louvre, París.",
+        ),
+        "mahler": dict(
+            archivo="Gustav_Mahler_Emil_Orlik_1902.jpg",
+            alt="Retrato grabado de Mahler, de perfil, con gafas",
+            pie="Gustav Mahler en un aguafuerte de Emil Orlik (1902), el año en que terminó la Quinta y se casó con Alma.",
         ),
     },
     "epocas": {

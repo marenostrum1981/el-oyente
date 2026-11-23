@@ -14,4 +14,9 @@ REFERENCIAS = {
    url="https://youtu.be/R2d2spnXyLA", fuente="Lang Lang · Steinway & Sons", caps={}),
  "haydn-94-ii": dict(compositor="Haydn", titulo="Sinfonía n.º 94 «La sorpresa», II. Andante",
    url="https://youtu.be/ydh8yp1pkg0", fuente="Filarmónica de Berlín", caps={}),
+ "mahler-5": dict(compositor="Mahler", titulo="Sinfonía n.º 5",
+   url="https://youtu.be/fEGNNuEM3Fc", fuente="Orquesta Sinfónica de la Radio de Hesse · Andrés Orozco-Estrada",
+   caps={33: "I. Marcha fúnebre", 782: "II. Tempestuoso", 1716: "III. Scherzo", 2779: "IV. Adagietto", 3413: "V. Rondo-Finale"}),
+ "mahler-ich-bin": dict(compositor="Mahler", titulo="«Ich bin der Welt abhanden gekommen» (Rückert-Lieder)",
+   url="https://youtu.be/KNcx6iPT9GA", fuente="Janet Baker y John Barbirolli (Warner Classics)", caps={}),
 }

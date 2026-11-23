@@ -537,5 +537,183 @@
 "alt": "Cuadro de un salón: un pianista toca rodeado de escritores y músicos que escuchan",
 "pie": "Josef Danhauser, <i>Liszt al piano</i> (1840), Alte Nationalgalerie, Berlín. Alrededor del piano, figuras del romanticismo como George Sand, Victor Hugo, Alexandre Dumas y Paganini: el mundo de salones en el que se escuchaba a Chopin."
 }
+},
+{
+"id": "adagietto-mahler",
+"n": 4,
+"fecha": "2026-11-23",
+"origen": "Obra del día",
+"titulo": "Adagietto de la Sinfonía n.º 5",
+"subtitulo": "Cuarto movimiento · Sehr langsam (muy lento)",
+"compositor": "mahler",
+"fechaComp": "1901–1902",
+"anio": 1902,
+"epoca": "romanticismo",
+"genero": "Sinfonía (movimiento lento)",
+"plantilla": "Solo cuerda y arpa, dentro de una sinfonía para orquesta enorme",
+"tonalidad": "Fa mayor (la sinfonía empieza en do sostenido menor y acaba en re mayor)",
+"catalogo": "Sinfonía n.º 5, IV",
+"titulo_original": "Symphony No. 5 in C-sharp minor · IV. Adagietto. Sehr langsam",
+"partes": [
+{
+"p": "Symphony",
+"es": "Sinfonía",
+"h": "El <b>tipo de obra</b>: una obra grande para orquesta, dividida en varios <a href=\"#g-movimiento\">movimientos</a>. La de Mahler tiene cinco y dura más de una hora. Ver <a href=\"#g-sinfonia\">sinfonía</a>."
+},
+{
+"p": "No. 5",
+"es": "n.º 5",
+"h": "La <b>quinta de sus nueve sinfonías</b> terminadas; dejó una Décima sin acabar."
+},
+{
+"p": "in C-sharp minor",
+"es": "en do sostenido menor",
+"h": "La <b>tonalidad</b> con que se suele presentar la sinfonía: C es do y <i lang=\"en\">sharp</i> (♯), sostenido. Pero solo el primer movimiento está en do sostenido menor: la sinfonía acaba en re mayor, y el propio Mahler pidió que no se le pusiera tonalidad, porque no se podía hablar de una sola para toda la obra. Este movimiento, el Adagietto, está en <b>fa mayor</b>. Ver <a href=\"#g-tonalidad\">tonalidad</a>."
+},
+{
+"p": "IV.",
+"es": "cuarto movimiento",
+"h": "Es el <b>cuarto de los cinco movimientos</b>. Mahler los agrupó en tres partes, y el Adagietto abre la tercera, junto al Rondo-Finale que llega después."
+},
+{
+"p": "Adagietto",
+"es": "«pequeño adagio»",
+"h": "El diminutivo italiano de <i lang=\"it\">adagio</i>, «lento». Indica un tempo lento, pero algo menos que un adagio. Aquí además es el nombre por el que se conoce el movimiento. Ver <a href=\"#g-tempo\">tempo</a>."
+},
+{
+"p": "Sehr langsam",
+"es": "«muy lento», en alemán",
+"h": "La indicación de tempo, escrita en alemán. Mahler daba sus instrucciones en su idioma y no en el italiano habitual: los otros movimientos dicen, por ejemplo, <i lang=\"de\">Stürmisch bewegt</i> («tempestuoso») o <i lang=\"de\">Kräftig, nicht zu schnell</i> («enérgico, no demasiado rápido»)."
+}
+],
+"duracion": "Entre 7 y 14 minutos, según el director (aquí, unos 12)",
+"entradilla": "Unos diez minutos de cuerda y arpa en mitad de una sinfonía gigantesca: la música más famosa de Mahler. ¿Una carta de amor a Alma o una despedida del mundo? Las dos lecturas tienen defensores.",
+"grabacion": {
+"titulo": "Filarmónica de Viena · Leonard Bernstein",
+"fuente": "Película de Unitel rodada en el Musikverein de Viena el 19 de abril de 1972, restaurada en YouTube",
+"url": "https://youtu.be/Bj6KLv7kv2Q",
+"nota": "El vídeo no tiene capítulos, así que la guía va por pasos, en orden. Dura unos 12 minutos."
+},
+"escucha": [
+{
+"mov": "Comienzo",
+"cuando": "1",
+"txt": "Casi un susurro. Las cuerdas sostienen notas largas y el <a href=\"#g-arpa\">arpa</a> desgrana acordes por debajo. No hay viento ni percusión: de una orquesta enorme, Mahler se queda solo con la cuerda y el arpa."
+},
+{
+"mov": "El tema",
+"cuando": "2",
+"txt": "Los primeros violines cantan una melodía larga que sube, se detiene y vuelve a empezar, como una frase que no se atreve a terminar. Según el director Willem Mengelberg, nació de un pequeño poema de Mahler para Alma: «Cómo te quiero, sol mío, no te lo puedo decir con palabras»."
+},
+{
+"mov": "Oleadas",
+"cuando": "3",
+"txt": "La melodía crece y se calma varias veces. En la partitura, Mahler pide tocar «con sentimiento» y «con calidez». Fíjate en cómo cada <a href=\"#g-crescendo\">crescendo</a> parece una respiración más honda."
+},
+{
+"mov": "Parte central",
+"cuando": "4",
+"txt": "Cambia la luz: la música toma otro rumbo, con más tensión, antes de volver a casa. El movimiento tiene tres partes, A–B–A, y esta es la B."
+},
+{
+"mov": "Vuelve el tema",
+"cuando": "5",
+"txt": "Regresa la melodía del principio, ahora con más cuerpo. Es el mismo tema de amor, pero después de haber pasado por la tensión del centro."
+},
+{
+"mov": "Final",
+"cuando": "6",
+"txt": "El cierre, muy suave, usa la melodía de una canción del propio Mahler, <a href=\"#x-mahler-ich-bin\">«Ich bin der Welt abhanden gekommen»</a>. En ella, la voz canta justo ahí «en mi amor, en mi canción»."
+},
+{
+"mov": "Después, en la sinfonía",
+"cuando": "7",
+"txt": "En la sinfonía completa, tras el Adagietto llega el <a href=\"#x-mahler-5@3413\">Rondo-Finale</a>, alegre y rápido. A mitad del Finale, el tema del Adagietto vuelve convertido en una danza ligera y elegante."
+}
+],
+"secciones": [
+{
+"t": "Quién era Mahler cuando la escribió",
+"h": "<p>En 1901, Gustav Mahler tenía 41 años y estaba en lo más alto: era director de la Ópera de la Corte de Viena desde 1897 y había dirigido los conciertos de la Filarmónica de Viena entre 1898 y 1901. Como director no tenía tiempo para componer durante la temporada, así que escribía en verano.</p>\n<p>En febrero de 1901 sufrió una hemorragia intestinal tan grave que su médico le dijo después que había estado a una hora de morir desangrado. Ese verano estrenó su propia casa junto al lago Wörthersee, en Maiernigg (Carintia, al sur de Austria), con una cabaña para componer en el bosque. Allí empezó la Quinta.</p>\n<p>En noviembre de 1901 conoció a Alma Schindler, de 22 años, hija del pintor Emil Jakob Schindler. Se prometieron en diciembre y se casaron el 9 de marzo de 1902. El verano siguiente, ya casados, terminó la sinfonía en Maiernigg: en agosto de 1902 contaba por carta que estaba acabada. Él mismo dirigió el estreno, en Colonia, el 18 de octubre de 1904, con la Orquesta del Gürzenich, y siguió retocándola hasta 1911.</p>"
+},
+{
+"t": "Para quién: ¿una carta de amor?",
+"h": "<p>El director holandés Willem Mengelberg, amigo de Mahler, dejó escrito en su partitura que este Adagietto fue la declaración de amor de Mahler a Alma: en lugar de una carta, le mandó el manuscrito sin una palabra más; ella lo entendió y le contestó que fuera a verla. Mengelberg añadió que los dos se lo habían contado.</p>\n<p>No todos lo creen. Alma nunca lo menciona en sus escritos sobre Mahler, y el Adagietto se parece mucho a una canción que Mahler compuso ese mismo año, <a href=\"#x-mahler-ich-bin\">«Ich bin der Welt abhanden gekommen»</a> («Me he perdido para el mundo»), que habla de soledad y de retirarse del mundo. El gran biógrafo de Mahler, Henry-Louis de La Grange, dudaba de que dos obras tan parecidas pudieran significar cosas tan distintas.</p>\n<p>Lo más probable es que haya algo de las dos cosas: amor y nostalgia. Cuando lo escuches, decide tú.</p>"
+},
+{
+"t": "Quién la toca",
+"h": "<p>La Quinta pide una orquesta enorme: seis trompas, cuatro trompetas, mucha percusión… Pero en el Adagietto Mahler deja callar a casi todos y se queda solo con la <a href=\"#g-cuerda\">cuerda</a> y un <a href=\"#g-arpa\">arpa</a>. Ese contraste es parte del efecto: después del ruido, intimidad.</p>\n<p>El arpa no hace melodía: sostiene la armonía por debajo, en un papel parecido al del <a href=\"#g-bajo-continuo\">bajo continuo</a> del Barroco, que ya conoces de <a href=\"#o-cuatro-estaciones@1574\">Vivaldi</a>.</p>\n<p>La orquesta de esta grabación tiene una relación especial con Mahler: la <a href=\"#i-wiener-philharmoniker\">Filarmónica de Viena</a> fue la que él mismo dirigió entre 1898 y 1901.</p>"
+},
+{
+"t": "Cómo está hecha",
+"h": "<p>La sinfonía tiene cinco movimientos agrupados en tres partes:</p>\n<ol>\n<li><b>Parte I.</b> Una marcha fúnebre que abre una trompeta sola (<a href=\"#x-mahler-5@33\">escúchala</a>) y un movimiento tempestuoso (<a href=\"#x-mahler-5@782\">escúchalo</a>).</li>\n<li><b>Parte II.</b> Un Scherzo enorme, con aire de vals y de danza campesina (<a href=\"#x-mahler-5@1716\">escúchalo</a>).</li>\n<li><b>Parte III.</b> El Adagietto y el Rondo-Finale, alegre (<a href=\"#x-mahler-5@3413\">escúchalo</a>).</li>\n</ol>\n<p>El viaje va de la oscuridad a la luz: de un funeral a una fiesta. El Adagietto, en fa mayor y en medio de movimientos en re mayor, es el remanso antes del final, casi su introducción.</p>\n<p>Por dentro tiene tres partes (A–B–A): el tema, una sección central con más tensión y la vuelta del tema. Acaba citando la melodía de su canción <a href=\"#x-mahler-ich-bin\">«Ich bin der Welt abhanden gekommen»</a>.</p>"
+},
+{
+"t": "Cómo reconocer aquí el Romanticismo",
+"h": "<p>Mahler escribe en 1901–1902, ya en el siglo XX, pero su lenguaje es el del Romanticismo llevado al extremo: es lo que se llama Romanticismo tardío.</p>\n<ul>\n<li><b>Una sola melodía larguísima</b> que parece no acabar nunca, frente a las frases cortas y simétricas del Clasicismo.</li>\n<li><b>Tempo flexible:</b> la música se detiene y avanza con libertad (<a href=\"#g-rubato\">rubato</a>), como en la <a href=\"#o-balada-1-chopin\">Balada de Chopin</a>.</li>\n<li><b>Instrucciones de sentimiento</b> en la partitura: «con sentimiento», «con calidez». Ya no basta con decir rápido o lento.</li>\n<li><b>Orquesta gigante</b> en la sinfonía, y aquí el contraste contrario: solo cuerda y arpa.</li>\n</ul>\n<p>Compáralo con el Barroco: aquí no hay continuo que marque el paso ni cambios de volumen por bloques. Todo crece y se apaga poco a poco, en <a href=\"#g-crescendo\">crescendos</a> larguísimos.</p>"
+},
+{
+"t": "Bernstein y esta grabación",
+"h": "<p><a href=\"#i-bernstein\">Leonard Bernstein</a> fue el gran defensor de Mahler en el siglo XX y el primer director en grabar todas sus sinfonías, primero en disco con la Filarmónica de Nueva York, en los años sesenta, y luego en vídeo.</p>\n<p>Esta grabación forma parte de ese ciclo filmado: la Quinta se rodó en el Musikverein de Viena el 19 de abril de 1972, con la Filarmónica de Viena y con Humphrey Burton como director de la realización. El vídeo que escuchas es esa película restaurada.</p>\n<p>Fíjate en el tempo. El propio Mahler y Mengelberg tocaban el Adagietto en unos 7 minutos; Bernstein se toma unos 12. Con un tempo lento se acentúa la melancolía, casi de despedida; con uno más ligero, gana el impulso de la carta de amor. Bernstein lo dirigió en el funeral de Robert F. Kennedy, el 8 de junio de 1968, y eso ayudó a que mucha gente lo asocie con el duelo.</p>"
+},
+{
+"t": "Curiosidades",
+"h": "<ul>\n<li>Se hizo famosísimo con la película <i lang=\"it\">Muerte en Venecia</i> (1971) de Luchino Visconti, que lo usa como banda sonora.</li>\n<li>En el Reino Unido, el Adagietto se estrenó solo en 1909, en los Proms de Henry Wood; la sinfonía completa no llegó hasta 1945, 36 años después.</li>\n<li>Bernstein fue enterrado con una partitura de la Quinta de Mahler sobre el corazón.</li>\n<li>Los patinadores canadienses Tessa Virtue y Scott Moir lo usaron en su danza libre y ganaron con ella el oro olímpico en 2010.</li>\n</ul>"
+},
+{
+"t": "Para el concierto",
+"h": "<ul>\n<li>A menudo se toca solo, fuera de la sinfonía. Si va dentro de la Quinta completa, es el cuarto de cinco movimientos, en una obra de más de una hora: no se aplaude al acabar.</li>\n<li>Mira a la orquesta: durante el Adagietto, los vientos y la percusión se quedan quietos. Busca el arpa.</li>\n<li>Escucha el tempo que elige el director: lento y doliente, o más fluido y apasionado.</li>\n</ul>"
+}
+],
+"versiones": [
+{
+"p": "bernstein",
+"det": "Filarmónica de Viena, 1987 (Deutsche Grammophon)",
+"nota": "Su grabación en disco, en directo en la Alte Oper de Fráncfort, quince años después de esta película."
+},
+{
+"p": "bernstein",
+"det": "Filarmónica de Nueva York, 1963 (Sony)",
+"nota": "La de su primer ciclo, con el que fue el primero en grabar todas las sinfonías de Mahler."
+},
+{
+"quien": "Willem Mengelberg",
+"det": "Orquesta del Concertgebouw, 1926",
+"nota": "De las más rápidas que existen: unos 7 minutos. Mengelberg era amigo de Mahler, y Mahler lo tocaba a un tempo parecido."
+},
+{
+"quien": "Bernard Haitink",
+"det": "Filarmónica de Berlín, 1988",
+"nota": "Una de las más lentas en disco: casi 14 minutos."
+},
+{
+"quien": "Andrés Orozco-Estrada",
+"det": "Orquesta Sinfónica de la Radio de Hesse (hr), en el canal de la orquesta",
+"nota": "Dentro de la sinfonía completa, para escucharlo en su contexto.",
+"url": "#x-mahler-5@2779"
+}
+],
+"idagio": "Mahler Symphony 5 Adagietto Bernstein",
+"interpretes": [
+"bernstein",
+"wiener-philharmoniker"
+],
+"conceptos": [
+"sinfonia",
+"movimiento",
+"arpa",
+"cuerda",
+"tempo",
+"lied",
+"director",
+"crescendo",
+"rubato",
+"tonalidad"
+],
+"imagen": {
+"archivo": "Mahler_conducting_caricature.jpg",
+"alt": "Serie de dibujos caricaturescos de un director de orquesta en posturas exageradas",
+"pie": "Mahler dirigiendo, según el caricaturista Hans Schließmann, en la revista <i lang=\"de\">Fliegende Blätter</i> (marzo de 1901), el año en que empezó la Quinta. Entonces era director de la Ópera de la Corte de Viena."
+}
 }
 ]

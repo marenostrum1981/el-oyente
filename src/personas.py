@@ -48,6 +48,22 @@ dict(id="chopin", tipo="compositor", nombre="Frédéric Chopin", vida="1810–18
   dict(titulo="Preludio «Gota de agua», Op. 28 n.º 15", nota="De los Preludios que terminó en Valldemossa. Una nota que se repite como lluvia.", url="https://youtu.be/R2d2spnXyLA", enlace="Lang Lang (Steinway & Sons)"),
   dict(titulo="Nocturno en do sostenido menor (póstumo)", nota="El que abre <i>El pianista</i> y el que Szpilman tocó de verdad para Hosenfeld.", url="https://www.youtube.com/results?search_query=Chopin+Nocturne+C+sharp+minor+posthumous", enlace="Buscar en YouTube"),
  ]),
+dict(id="mahler", tipo="compositor", nombre="Gustav Mahler", vida="1860–1911", nace=1860, lugar="Kaliště (Bohemia) → Viena", epoca="romanticismo",
+ entradilla="Director de orquesta famosísimo en vida y compositor de veranos. Sus sinfonías quieren abarcar un mundo entero.",
+ h="""<h2>Vida</h2>
+<p>Nació el 7 de julio de 1860 en Kaliště (Kalischt en alemán), en Bohemia, y murió en Viena el 18 de mayo de 1911. En vida fue, sobre todo, un director de orquesta: en 1897 lo nombraron director de la Ópera de la Corte de Viena, entre 1898 y 1901 dirigió también la Filarmónica de Viena y, al final de su vida, dirigió en Nueva York la Filarmónica de esa ciudad.</p>
+<p>Con tanto trabajo, componía en verano. Desde 1901 lo hacía en su casa de Maiernigg, junto al lago Wörthersee, en una cabaña en el bosque. En 1902 se casó con Alma Schindler, con la que tuvo dos hijas.</p>
+<h2>Su música</h2>
+<p>Terminó nueve sinfonías y dejó una Décima sin acabar. Escribió también muchas canciones (<a href="#g-lied">lieder</a>) con orquesta, y a menudo metía sus melodías dentro de las sinfonías. Le gustaba mezclar lo sublime y lo popular: marchas fúnebres, valses, danzas campesinas, fanfarrias.</p>
+<p>Le contó a su amiga Natalie Bauer-Lechner que, para él, una sinfonía era «construir un mundo» con todos los medios a su alcance. Por eso sus orquestas son gigantescas y sus sinfonías duran más de una hora.</p>
+<h2>Por qué importa</h2>
+<p>Hace de puente entre el Romanticismo y la música del siglo XX. Durante décadas se tocó poco, y en los años sesenta volvió con fuerza a las salas de concierto, en buena parte gracias a <a href="#i-bernstein">Leonard Bernstein</a>.</p>""",
+ claves=[["Nació","Kaliště (Bohemia), 1860"],["Murió","Viena, 1911"],["Cargo","Director de la Ópera de la Corte de Viena desde 1897"],["Obra","Nueve sinfonías, una Décima inacabada y canciones con orquesta"],["Componía","En verano, en una cabaña junto al lago"]],
+ ruta=[
+  dict(titulo="Adagietto de la Sinfonía n.º 5", obra="adagietto-mahler", nota="Su música más famosa: cuerda y arpa, unos diez minutos."),
+  dict(titulo="Sinfonía n.º 5 completa", nota="Después del Adagietto, escúchala entera: de la marcha fúnebre del principio a la fiesta del final.", url="#x-mahler-5"),
+  dict(titulo="«Ich bin der Welt abhanden gekommen», de los Rückert-Lieder", nota="La canción de 1901 cuya melodía cierra el Adagietto.", url="#x-mahler-ich-bin"),
+ ]),
 dict(id="zimerman", tipo="solista", rol="Pianista", nombre="Krystian Zimerman", vida="Nacido en 1956", lugar="Zabrze (Polonia)",
  entradilla="Pianista polaco, ganador del Concurso Chopin con 18 años. Perfeccionista: viaja con sus propios pianos y graba muy poco.",
  h="""<p>Nació el 5 de diciembre de 1956 en Zabrze, en una familia de músicos. Empezó a tocar a los cinco años con su padre, pianista, y estudió en el conservatorio de Katowice con Andrzej Jasiński.</p>
@@ -88,4 +104,16 @@ dict(id="netherlands-bach-society", tipo="conjunto", rol="Conjunto barroco · Pa
  entradilla="Su proyecto All of Bach graba toda la obra de Bach en vídeo y la comparte gratis.",
  h="""<p>En 2013, como antesala de su centenario, la Nederlandse Bachvereniging lanzó <b>All of Bach</b>: grabar en vídeo todas las obras de Bach y publicarlas gratis. Sus vídeos están en su web y en su canal de YouTube (youtube.com/bach). Su director artístico es Shunske Sato.</p>
 <p>Para aprender, es un tesoro: casi cualquier obra de Bach que te encuentres en un concierto tiene allí una versión filmada.</p>"""),
+dict(id="bernstein", tipo="director", rol="Director de orquesta y compositor", nombre="Leonard Bernstein", vida="1918–1990", lugar="Lawrence (Massachusetts) → Nueva York",
+ entradilla="El director que devolvió a Mahler a las salas de concierto y que enseñó música clásica a toda una generación desde la televisión.",
+ h="""<p>Nació el 25 de agosto de 1918 en Lawrence (Massachusetts), hijo de inmigrantes judíos ucranianos. El 14 de noviembre de 1943, con 25 años y siendo director asistente de la Filarmónica de Nueva York, sustituyó con pocas horas de aviso a Bruno Walter, enfermo, en un concierto que se emitía por radio a todo el país. Al día siguiente salía en la portada del <i lang="en">New York Times</i>.</p>
+<p>Entre 1958 y 1969 fue director musical de la Filarmónica de Nueva York, el primero nacido y formado en Estados Unidos. Con ella hizo los <i lang="en">Young People's Concerts</i>, 53 programas de televisión para explicar música a los jóvenes, entre 1958 y 1972. También fue compositor: sinfonías, ballets y musicales de Broadway.</p>
+<p>Mahler fue una de sus grandes causas. En 1960 dedicó una temporada al centenario de Mahler, fue el primero en grabar todas sus sinfonías en disco y, entre 1971 y 1985, las filmó casi todas con la Filarmónica de Viena, a la que dirigió durante 24 temporadas, de 1966 a 1990.</p>
+<p>Murió en Nueva York el 14 de octubre de 1990. Lo enterraron con una partitura de la Quinta de Mahler sobre el corazón.</p>""",
+ claves=[["Nació","Lawrence (EE. UU.), 1918"],["Cargo","Director musical de la Filarmónica de Nueva York (1958–1969)"],["Con Viena","24 temporadas, de 1966 a 1990"],["Mahler","El primero en grabar todas sus sinfonías, en disco y en vídeo"]]),
+dict(id="wiener-philharmoniker", tipo="conjunto", rol="Orquesta · Viena", nombre="Filarmónica de Viena (Wiener Philharmoniker)", vida="Fundada en 1842", lugar="Viena",
+ entradilla="Una de las grandes orquestas del mundo, gobernada por sus propios músicos. Mahler la dirigió entre 1898 y 1901.",
+ h="""<p>Su primer concierto fue el 28 de marzo de 1842, dirigido por Otto Nicolai. Desde entonces funciona con unas reglas muy particulares: solo puede ser miembro quien toca en la orquesta de la Ópera Estatal de Viena, y después de tres años en ella. Los músicos se gobiernan a sí mismos: deciden en asamblea qué tocan y a quién invitan, y eligen un comité que lleva el día a día.</p>
+<p>Desde 1870 su casa es la Sala Dorada del Musikverein de Viena. Hasta 1933 elegía un director para toda la temporada (Gustav Mahler lo fue entre 1898 y 1901, y con él hizo su primera gira al extranjero, a la Exposición Universal de París de 1900). Desde entonces trabaja solo con directores invitados. Admite mujeres desde 1997.</p>""",
+ claves=[["Fundación","1842, con Otto Nicolai"],["Sala","Musikverein de Viena"],["Director titular","Ninguno desde 1933: trabaja con invitados"],["Mahler","Su director entre 1898 y 1901"]]),
 ]
