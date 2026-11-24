@@ -2,7 +2,7 @@
 
 ## Qué es
 
-Un diario web para aprender a escuchar música clásica. Cada día entra una obra nueva con su ficha y, a la vez, crecen los índices de compositores, intérpretes y épocas, la escuela (artículos de fundamentos) y el glosario. Está publicado en Netlify (`https://el-oyente.netlify.app`), que vuelve a publicar la web sola con cada push a `main`, y se instala como app (PWA). Lo leen principiantes hispanohablantes.
+Un diario web para aprender a escuchar música clásica. Cada día entra una obra nueva con su ficha y, a la vez, crecen los índices de compositores, intérpretes y épocas, la escuela (artículos de fundamentos) y el glosario. Está publicado en Netlify, en `https://el-oyente.com` (dominio comprado en Netlify; `el-oyente.netlify.app` sigue funcionando y lleva al dominio principal), y Netlify vuelve a publicar la web sola con cada push a `main`, y se instala como app (PWA). Lo leen principiantes hispanohablantes.
 
 ## Estructura
 
@@ -67,5 +67,5 @@ Un diario web para aprender a escuchar música clásica. Cada día entra una obr
 ## Publicación
 
 - Repositorio: `marenostrum1981/el-oyente`, rama `main`.
-- Netlify (proyecto `el-oyente`) está enlazado al repositorio: cada push a `main` publica `https://el-oyente.netlify.app`. No hay paso de build; `netlify.toml` publica la raíz tal cual.
+- Netlify (proyecto `el-oyente`) está enlazado al repositorio: cada push a `main` publica `https://el-oyente.com`. El dominio y su DNS se gestionan en Netlify (Domains); el certificado HTTPS lo pone Netlify solo. No hay paso de build; `netlify.toml` publica la raíz tal cual.
 - `data/*.json` se sube al repositorio ya generado.
