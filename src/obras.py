@@ -59,12 +59,26 @@ dict(
 <li>La grabación de Nigel Kennedy de 1989 vendió más de dos millones de copias y fue el disco clásico más vendido de su época.</li>
 <li>Il Giardino Armonico la grabó en 1994 con una pintura de escenas tan extrema que un crítico describió su perro como un rottweiler desafinado.</li>
 </ul>"""),
-  dict(t="Para el concierto", h="""<ol>
+  dict(t="Cómo saborearla: cuatro escuchas", h="""<p>Una obra se disfruta más cuando vuelves a ella buscando cada vez una cosa distinta. Prueba este plan con la Primavera, que dura unos diez minutos.</p>
+<ol>
+<li><b>Primera escucha: déjate llevar.</b> Pon la <a href="#o-cuatro-estaciones@0">Primavera</a> entera sin leer nada. Al terminar, pregúntate qué imagen te ha quedado de cada movimiento.</li>
+<li><b>Segunda escucha: con el soneto.</b> Lee la primera estrofa del soneto y vuelve a empezar. Busca los pájaros, las fuentes y la tormenta. En el <a href="#o-cuatro-estaciones@212">Largo</a>, fíjate solo en la viola: es el perro que ladra mientras el cabrero duerme.</li>
+<li><b>Tercera escucha: sigue al grupo, no al solista.</b> En el <a href="#o-cuatro-estaciones@0">primer movimiento</a>, cuenta cuántas veces vuelve el estribillo del grupo. Ese regreso es el <a href="#g-ritornello">ritornello</a>, la columna de la obra.</li>
+<li><b>Cuarta escucha: compara.</b> Elige una versión de «Otras versiones» y escucha el mismo arranque. ¿Más rápido o más lento? ¿Más adornos? ¿Más violento?</li>
+</ol>
+<p>Cuando la tengas dominada, haz lo mismo con el <a href="#o-cuatro-estaciones@1916">Invierno</a>: es la estación con escenas más fáciles de oír.</p>"""),
+ dict(t="Para el concierto", h="""<ol>
 <li>Lee el soneto de la estación antes de que empiece: sabrás qué pasa en cada movimiento.</li>
 <li>Cuenta: rápido, lento, rápido. La costumbre es aplaudir al acabar cada concierto, no entre movimientos.</li>
 <li>Si entra todo el grupo con el tema, es el estribillo. Si el solista se queda casi solo, es una escena.</li>
 <li>Elige un instrumento, la viola o el clave, y síguelo un minuto entero.</li>
 </ol>"""),
+ ],
+ contexto=[
+  dict(anio="1721", txt="Bach envía al margrave de Brandeburgo seis conciertos. El margrave coleccionaba conciertos, sobre todo italianos. <a href=\"#x-bwv-1048\">Escucha el n.º 3</a>."),
+  dict(anio="1723", txt="Bach se instala en Leipzig como cantor de Santo Tomás: tendrá que dar música a las iglesias de la ciudad cada domingo."),
+  dict(anio="1725", txt="En Viena, Johann Joseph Fux publica en latín <i lang=\"la\">Gradus ad Parnassum</i>, un manual de contrapunto."),
+  dict(anio="1725", txt="En Leipzig, Bach estrena para la fiesta de la Anunciación la cantata que hoy lleva el número 1 de su catálogo, <a href=\"#x-bwv-1\">BWV 1</a>."),
  ],
  versiones=[
   dict(p="voices-of-music", det="vídeo de referencia", nota="Instrumentos de época y el soneto como subtítulos.", url=VOM),
@@ -119,12 +133,27 @@ dict(
 <li>Maisky decidió volver a grabar las suites al no reconocer su propia grabación de 1985 mientras sonaba en una tienda de alta fidelidad.</li>
 <li>Hay quien defiende que las compuso Anna Magdalena y no Bach. Es una teoría minoritaria y muy discutida.</li>
 </ul>"""),
-  dict(t="Para el concierto", h="""<ol>
+  dict(t="Cómo saborearla: cuatro escuchas", h="""<p>Son siete movimientos cortos y un solo instrumento: perfecto para escucharla por capas.</p>
+<ol>
+<li><b>Primera escucha: solo el preludio.</b> Escucha el <a href="#o-suite-chelo-2@16">preludio</a> con los ojos cerrados y sigue la subida hasta el clímax, el silencio y los acordes finales.</li>
+<li><b>Segunda escucha: las dos voces.</b> Vuelve al preludio y trata de oír dos líneas, una grave y otra aguda, que conversan. Es la <a href="#g-polifonia-implicita">polifonía implícita</a>.</li>
+<li><b>Tercera escucha: las danzas.</b> Escucha seguidas la <a href="#o-suite-chelo-2@527">courante</a> y la <a href="#o-suite-chelo-2@649">zarabanda</a>: la primera corre y la segunda pesa en el segundo tiempo. Cuenta 1-2-3 en voz baja.</li>
+<li><b>Cuarta escucha: compara.</b> Escucha la zarabanda de Maisky y luego la de otro violonchelista de «Otras versiones». La misma partitura dura muy distinto según quien la toque.</li>
+</ol>
+<p>Si te ha gustado, sigue con otra obra de Bach que comparte esa claridad de líneas, el <a href="#x-bwv-1048">Concierto de Brandeburgo n.º 3</a>.</p>"""),
+ dict(t="Para el concierto", h="""<ol>
 <li>Antes de cada movimiento, piensa qué danza es y cómo debería «andar»: la allemande camina, la courante corre, la zarabanda pesa en el 2 y la giga salta.</li>
 <li>Busca los momentos en que una sola línea parece dividirse en dos.</li>
 <li>En los minuetos, comprueba que vuelve el primero después del segundo.</li>
 <li>Fíjate en el instrumento: ¿tiene pica apoyada en el suelo? ¿Cómo coge el arco?</li>
 </ol>"""),
+ ],
+ contexto=[
+  dict(anio="1719", txt="Bach viaja a Berlín a recoger un clave nuevo para la corte de Köthen y toca ante el margrave de Brandeburgo."),
+  dict(anio="1720", txt="Muere de repente Maria Barbara, su primera mujer, mientras Bach está en el balneario de Karlsbad con el príncipe Leopold. Cuando vuelve, ya la han enterrado."),
+  dict(anio="1721", txt="Envía al margrave los seis <a href=\"#x-bwv-1048\">Conciertos de Brandeburgo</a> y en diciembre se casa con Anna Magdalena Wilcke, cantante, que copiará estas suites."),
+  dict(anio="1721", txt="El príncipe Leopold se casa con una princesa a la que no le interesa la música, y la corte gasta menos en sus músicos."),
+  dict(anio="1723", txt="Bach se marcha a Leipzig como cantor de Santo Tomás. Allí escribirá música de iglesia para cada domingo."),
  ],
  versiones=[
   dict(p="maisky", det="vídeo de referencia", nota="Romántico, libre, con tempos lentos.", url=MAISKY2),
@@ -184,17 +213,32 @@ dict(
   dict(t="Zimerman y esta grabación", h="""<p>Krystian Zimerman ganó el Concurso Chopin de Varsovia en 1975, con 18 años. En julio de 1987 grabó las cuatro baladas en Bielefeld (Alemania) para Deutsche Grammophon. Esa grabación fue la primera elección del programa <i>Building a Library</i> de la BBC en 2013.</p>
 <p>No a todos les convence igual. Gramophone admira su acabado técnico, casi perfecto, pero lo encuentra menos cálido que el del pianista Vlado Perlemuter. Escucha las dos y decide.</p>"""),
   dict(t="Curiosidades", h="""<ul>
-<li><b>Sale en <i>El pianista</i></b> (Polanski, 2002). Es la pieza que Szpilman toca para el oficial alemán Hosenfeld entre las ruinas de Varsovia. En la vida real, Szpilman tocó otra obra de Chopin, el Nocturno en do sostenido menor.</li>
+<li><b>Sale en <i>El pianista</i></b> (Polanski, 2002). Es la pieza que Szpilman toca para el oficial alemán Hosenfeld entre las ruinas de Varsovia. En la vida real, Szpilman tocó otra obra de Chopin, el <a href="#x-chopin-nocturno-postumo">Nocturno en do sostenido menor</a>.</li>
 <li>El periodista Alan Rusbridger, director de <i>The Guardian</i>, dedicó en 2010 un año entero a aprender a tocarla y escribió un libro sobre ello.</li>
-<li><b>Chopin en Mallorca.</b> Pasó el invierno de 1838–1839 en la Cartuja de Valldemossa con la escritora George Sand. Allí terminó sus 24 Preludios, incluido el de la «Gota de agua», en un pequeño piano Pleyel que todavía se conserva en el museo de Valldemossa.</li>
+<li><b>Chopin en Mallorca.</b> Pasó el invierno de 1838–1839 en la Cartuja de Valldemossa con la escritora George Sand. Allí terminó sus <a href="#x-chopin-op28">24 Preludios</a>, incluido el de la <a href="#x-chopin-op28@1194">«Gota de agua»</a>, en un pequeño piano Pleyel que todavía se conserva en el museo de Valldemossa.</li>
 <li>Chopin está enterrado en París, pero su corazón está en la iglesia de la Santa Cruz de Varsovia, como pidió.</li>
 </ul>"""),
-  dict(t="Para el concierto", h="""<ol>
+  dict(t="Cómo saborearla: cuatro escuchas", h="""<p>Es una sola pieza de unos diez minutos que cuenta una historia. Para no perderse, conviene ir paso a paso.</p>
+<ol>
+<li><b>Primera escucha: los dos temas.</b> Escucha solo hasta que aparezca el segundo tema, el suave, en mayor (pasos 1 a 4 de la guía). Tararea los dos.</li>
+<li><b>Segunda escucha: síguelos.</b> Escúchala entera buscando esos dos temas. Fíjate en cómo el segundo vuelve convertido en grito y en cómo al final regresan en orden inverso.</li>
+<li><b>Tercera escucha: el tempo.</b> Fíjate solo en cómo se estira y se recoge la velocidad, sobre todo en el primer tema. Eso es el <a href="#g-rubato">rubato</a>.</li>
+<li><b>Cuarta escucha: compara.</b> Pon la coda de Zimerman y la de otra versión. ¿Quién arriesga más?</li>
+</ol>
+<p>Después, escucha algo más íntimo de Chopin, el <a href="#x-chopin-nocturno-postumo">Nocturno en do sostenido menor</a>, y piensa en qué se parecen y en qué no.</p>"""),
+ dict(t="Para el concierto", h="""<ol>
 <li>No esperes movimientos: es una sola pieza de unos diez minutos.</li>
 <li>Quédate con el primer tema, el del vals lento. Toda la obra gira alrededor de él.</li>
 <li>Espera el segundo tema, suave y en mayor, y fíjate en cómo vuelve después convertido en grito.</li>
 <li>La coda es el momento de máxima tensión. Se aplaude cuando el pianista levanta las manos.</li>
 </ol>"""),
+ ],
+ contexto=[
+  dict(anio="1831", txt="Robert Schumann publica su primera crítica musical, dedicada a Chopin: «¡Quítense el sombrero, señores: un genio!»."),
+  dict(anio="1832", txt="26 de febrero: primer concierto de Chopin en París, en la sala Pleyel. Toca su <a href=\"#x-chopin-concierto-1\">Concierto en mi menor</a> y Liszt está entre el público."),
+  dict(anio="1832", txt="Empieza a dar clases a la aristocracia de París, a unos 20 francos la lección, una tarifa muy alta. De eso vivirá."),
+  dict(anio="1835", txt="Se reúne con sus padres en el balneario de Karlsbad y, de vuelta, conoce en Leipzig a Schumann, a Clara Wieck y a Mendelssohn."),
+  dict(anio="1836", txt="En otra visita a Leipzig, Chopin regala a Schumann esta balada."),
  ],
  versiones=[
   dict(p="zimerman", det="1987, vídeo de referencia", nota="Perfección técnica y gran concentración.", url="https://youtu.be/BSFNl4roGlI"),
@@ -225,7 +269,7 @@ dict(
  duracion="Entre 7 y 14 minutos, según el director (aquí, unos 12)",
  entradilla="Unos diez minutos de cuerda y arpa en mitad de una sinfonía gigantesca: la música más famosa de Mahler. ¿Una carta de amor a Alma o una despedida del mundo? Las dos lecturas tienen defensores.",
  grabacion=dict(titulo="Filarmónica de Viena · Leonard Bernstein", fuente="Película de Unitel rodada en el Musikverein de Viena el 19 de abril de 1972, restaurada en YouTube", url="https://youtu.be/Bj6KLv7kv2Q",
-   nota="El vídeo no tiene capítulos, así que la guía va por pasos, en orden. Dura unos 12 minutos."),
+   nota="El vídeo no tiene capítulos, así que la guía va por pasos, en orden. Dura unos 12 minutos.", dur="12:07"),
  escucha=[
   dict(mov="Comienzo", cuando="1", txt="Casi un susurro. Las cuerdas sostienen notas largas y el <a href=\"#g-arpa\">arpa</a> desgrana acordes por debajo. No hay viento ni percusión: de una orquesta enorme, Mahler se queda solo con la cuerda y el arpa."),
   dict(mov="El tema", cuando="2", txt="Los primeros violines cantan una melodía larga que sube, se detiene y vuelve a empezar, como una frase que no se atreve a terminar. Según el director Willem Mengelberg, nació de un pequeño poema de Mahler para Alma: «Cómo te quiero, sol mío, no te lo puedo decir con palabras»."),
@@ -270,18 +314,34 @@ dict(
 <li>Bernstein fue enterrado con una partitura de la Quinta de Mahler sobre el corazón.</li>
 <li>Los patinadores canadienses Tessa Virtue y Scott Moir lo usaron en su danza libre y ganaron con ella el oro olímpico en 2010.</li>
 </ul>"""),
-  dict(t="Para el concierto", h="""<ul>
+  dict(t="Cómo saborearla: cuatro escuchas", h="""<p>Es música lenta y sin sobresaltos, así que la clave es escuchar con atención sin dejar que se convierta en música de fondo.</p>
+<ol>
+<li><b>Primera escucha: a oscuras.</b> Pon el vídeo, baja la luz y no hagas nada más durante sus doce minutos.</li>
+<li><b>Segunda escucha: el arpa.</b> Fíjate solo en el arpa del principio. ¿Cuándo calla y cuándo vuelve?</li>
+<li><b>Tercera escucha: la canción.</b> Escucha antes el lied <a href="#x-mahler-ich-bin">«Ich bin der Welt abhanden gekommen»</a> y luego el final del Adagietto. ¿Reconoces la melodía?</li>
+<li><b>Cuarta escucha: dentro de la sinfonía.</b> Escúchalo en su sitio: desde el final del <a href="#x-mahler-5@1716">Scherzo</a> hasta el <a href="#x-mahler-5@3413">Rondo-Finale</a>. Después del ruido, el silencio pesa más.</li>
+</ol>
+<p>Y compara el tempo. La misma partitura dura 7 minutos con Mengelberg y casi 14 con Haitink: lo ves en el gráfico de duraciones de esta ficha y en el artículo <a href="#a-tempo">sobre el tempo</a>.</p>"""),
+ dict(t="Para el concierto", h="""<ul>
 <li>A menudo se toca solo, fuera de la sinfonía. Si va dentro de la Quinta completa, es el cuarto de cinco movimientos, en una obra de más de una hora: no se aplaude al acabar.</li>
 <li>Mira a la orquesta: durante el Adagietto, los vientos y la percusión se quedan quietos. Busca el arpa.</li>
 <li>Escucha el tempo que elige el director: lento y doliente, o más fluido y apasionado.</li>
 </ul>"""),
  ],
+ contexto=[
+  dict(anio="1900", txt="Mahler lleva a la Filarmónica de Viena a su primera gira, a la Exposición Universal de París."),
+  dict(anio="1902", txt="En abril, Enrico Caruso graba diez arias en un hotel de Milán. Los discos se venden muchísimo: la grabación empieza a ser un negocio."),
+  dict(anio="1902", txt="También en abril, la Secesión de Viena inaugura su exposición dedicada a Beethoven, con el friso de Gustav Klimt. Mahler dirige un breve concierto en la apertura."),
+  dict(anio="1947", txt="Bruno Walter, que había sido ayudante de Mahler, hace la primera grabación completa de la Quinta, con la Filarmónica de Nueva York."),
+ ],
  versiones=[
   dict(p="bernstein", det="Filarmónica de Viena, 1987 (Deutsche Grammophon)", nota="Su grabación en disco, en directo en la Alte Oper de Fráncfort, quince años después de esta película."),
   dict(p="bernstein", det="Filarmónica de Nueva York, 1963 (Sony)", nota="La de su primer ciclo, con el que fue el primero en grabar todas las sinfonías de Mahler."),
-  dict(quien="Willem Mengelberg", det="Orquesta del Concertgebouw, 1926", nota="De las más rápidas que existen: unos 7 minutos. Mengelberg era amigo de Mahler, y Mahler lo tocaba a un tempo parecido."),
-  dict(quien="Bernard Haitink", det="Filarmónica de Berlín, 1988", nota="Una de las más lentas en disco: casi 14 minutos."),
-  dict(quien="Andrés Orozco-Estrada", det="Orquesta Sinfónica de la Radio de Hesse (hr), en el canal de la orquesta", nota="Dentro de la sinfonía completa, para escucharlo en su contexto.", url="#x-mahler-5@2779"),
+  dict(quien="Willem Mengelberg", det="Orquesta del Concertgebouw, 1926", nota="De las más rápidas que existen: unos 7 minutos. Mengelberg era amigo de Mahler, y Mahler lo tocaba a un tempo parecido.", dur="7:04"),
+  dict(quien="Bernard Haitink", det="Filarmónica de Berlín, 1988", nota="Una de las más lentas en disco: casi 14 minutos.", dur="13:56"),
+  dict(quien="Simon Rattle", det="Filarmónica de Berlín (EMI)", nota="Grabada al empezar su etapa como titular en Berlín. Fluida y sin pesadez: no llega a los 10 minutos.", dur="9:32"),
+  dict(quien="Hermann Scherchen", det="1964", nota="De las más lentas que se conocen: más de un cuarto de hora.", dur="15:15"),
+  dict(quien="Andrés Orozco-Estrada", det="Orquesta Sinfónica de la Radio de Hesse", nota="Dentro de la sinfonía completa, en el canal de la orquesta: para escucharlo en su contexto. La duración sale de los capítulos del vídeo.", url="#x-mahler-5@2779", dur="10:34"),
  ],
  idagio="Mahler Symphony 5 Adagietto Bernstein",
  interpretes=["bernstein","wiener-philharmoniker"],

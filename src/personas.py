@@ -12,6 +12,20 @@ dict(id="vivaldi", tipo="compositor", nombre="Antonio Vivaldi", vida="1678–174
 <h2>Por qué importa</h2>
 <p>Fijó el modelo de concierto en tres movimientos con estribillo y episodios del solista. Su influencia llegó lejos: Bach copió y transcribió conciertos suyos para clave y para órgano en 1713–1714 para aprender el estilo italiano.</p>""",
  claves=[["Nació","Venecia, 1678"],["Murió","Viena, 1741"],["Apodo","<i lang=\"it\">Il prete rosso</i>"],["Trabajo","Ospedale della Pietà"],["Obra","Más de 400 conciertos, óperas, música sacra"],["Catálogo","RV (catálogo Ryom)"]],
+ bachtrack="vivaldi",
+ huella=[
+  "Un estribillo del grupo que vuelve una y otra vez y, entre medias, el solista se luce: es el <a href=\"#g-ritornello\">ritornello</a>. Escúchalo en <a href=\"#o-cuatro-estaciones@0\">la Primavera</a>.",
+  "Un pulso enérgico que no se detiene, como un motor. Escúchalo en <a href=\"#o-cuatro-estaciones@1066\">la tempestad del Verano</a>.",
+  "Imitaciones de la naturaleza: pájaros, perros, lluvia, viento. En <a href=\"#o-cuatro-estaciones@212\">el Largo de la Primavera</a>, la viola ladra.",
+  "Una melodía clara arriba y el <a href=\"#g-bajo-continuo\">bajo continuo</a> abajo, más que varias voces entrelazadas. Lo explica <a href=\"#a-vivaldi-barroco\">este artículo</a>.",
+ ],
+ especialistas=[
+  dict(p="il-giardino-armonico", nota="Sus Estaciones de 1994 cambiaron la forma de tocar a Vivaldi: contrastes extremos y efectos sin miedo."),
+  dict(p="europa-galante", nota="El conjunto de Fabio Biondi grabó las Estaciones en 1991 con instrumentos de época."),
+  dict(p="carmignola", nota="Uno de los grandes violinistas de Vivaldi con instrumentos de época."),
+  dict(p="kennedy", nota="Su disco de 1989 llevó las Estaciones a millones de personas."),
+  dict(p="voices-of-music", nota="Su vídeo es el de referencia en este diario.", url="#o-cuatro-estaciones"),
+ ],
  ruta=[
   dict(titulo="Las Cuatro Estaciones", obra="cuatro-estaciones", nota="Por donde empezar: cuatro conciertos con guion."),
   dict(titulo="Concierto para cuatro violines, RV 580", nota="De <i lang=\"it\">L'estro armonico</i> (1711). Cuatro solistas que se pasan la palabra.", url="https://youtu.be/fABaPU8e40c", enlace="Buscar en YouTube"),
@@ -27,9 +41,23 @@ dict(id="bach", tipo="compositor", nombre="Johann Sebastian Bach", vida="1685–
 <h2>El olvido y la vuelta</h2>
 <p>Tras su muerte lo apreciaban sobre todo los entendidos. El gran renacimiento de su música empezó en 1829, cuando Felix Mendelssohn dirigió la <i>Pasión según san Mateo</i> en Berlín.</p>""",
  claves=[["Nació","Eisenach, 1685"],["Murió","Leipzig, 1750"],["Cargos","Weimar, Köthen, Leipzig"],["Obra","Cantatas, pasiones, conciertos, suites, órgano, teclado"],["Catálogo","BWV (Bach-Werke-Verzeichnis)"],["Coincidencia","Murió un 28 de julio, como Vivaldi"]],
+ bachtrack="bach",
+ huella=[
+  "Varias voces a la vez que se persiguen y se responden: el <a href=\"#g-contrapunto\">contrapunto</a>. Hasta con un solo instrumento: el <a href=\"#o-suite-chelo-2@16\">preludio de la suite</a> suena a dos.",
+  "Danzas estilizadas en un orden fijo: allemande, courante, zarabanda… Escucha <a href=\"#o-suite-chelo-2@649\">la zarabanda</a>.",
+  "Todos los instrumentos importan, no hay solo un solista y un acompañamiento. Escúchalo en el <a href=\"#x-bwv-1048\">Concierto de Brandeburgo n.º 3</a>.",
+  "Adaptaba música ajena y propia: convirtió un concierto de Vivaldi para <a href=\"#x-rv-580\">cuatro violines</a> en uno para <a href=\"#x-bwv-1065\">cuatro claves</a>.",
+ ],
+ especialistas=[
+  dict(p="casals", nota="Rescató las suites para violonchelo y las grabó entre 1936 y 1939."),
+  dict(p="netherlands-bach-society", nota="Con All of Bach graba en vídeo toda la obra de Bach y la publica gratis."),
+  dict(quien="John Eliot Gardiner", det="Monteverdi Choir y English Baroque Soloists", nota="En el año 2000, 250 años después de la muerte de Bach, interpretó todas sus cantatas de iglesia, cada una en el día del año para el que se escribió, en iglesias de toda Europa."),
+  dict(p="maisky", nota="Un Bach libre y romántico. Su vídeo es el de referencia de la suite n.º 2 en este diario.", url="#o-suite-chelo-2"),
+  dict(p="fournier", nota="Un Bach noble y contenido: grabó las suites en 1961."),
+ ],
  ruta=[
   dict(titulo="Suite n.º 2 para violonchelo", obra="suite-chelo-2", nota="Un solo instrumento que suena a varias voces."),
-  dict(titulo="Concierto de Brandeburgo n.º 3, BWV 1048", nota="De la época de Köthen. Un concierto sin solista: todos los instrumentos son importantes.", url=ALLOFBACH+"1048", enlace="Ver en All of Bach"),
+  dict(titulo="Concierto de Brandeburgo n.º 3, BWV 1048", nota="De la época de Köthen. Un concierto sin solista: todos los instrumentos son importantes.", url="#x-bwv-1048"),
   dict(titulo="Concierto para cuatro claves, BWV 1065", nota="Su versión del concierto RV 580 de Vivaldi.", url="https://youtu.be/emkJ0A7IfkY", enlace="Ver en All of Bach"),
   dict(titulo="Tocata y fuga en re menor, BWV 565", nota="La pieza de órgano más famosa del mundo, aunque algunos expertos dudan de que sea suya.", url="https://youtu.be/Pi0IuyTS_ic", enlace="Ver en All of Bach"),
  ]),
@@ -43,10 +71,26 @@ dict(id="chopin", tipo="compositor", nombre="Frédéric Chopin", vida="1810–18
 <h2>Por qué importa</h2>
 <p>Todas sus obras incluyen el piano, y su música ayudó a convertirlo en el instrumento más popular del siglo XIX. Inventó o renovó géneros enteros, como la balada, el nocturno, el estudio de concierto, la mazurca y la polonesa, y fue el primer compositor que pidió de forma habitual el <a href="#g-rubato">rubato</a>. Robert Schumann lo saludó en 1831 con una frase famosa: «¡Quítense el sombrero, señores, un genio!».</p>""",
  claves=[["Nació","Żelazowa Wola (Polonia), 1810"],["Murió","París, 1849"],["Instrumento","El piano: todas sus obras lo incluyen"],["Vivió en","Varsovia, Viena, París y un invierno en Mallorca"],["Catálogo","Números de opus (Op.)"],["Su corazón","En la iglesia de la Santa Cruz de Varsovia"]],
+ bachtrack="chopin",
+ huella=[
+  "Casi todo es para piano solo, y el piano canta como una voz. Escúchalo en el <a href=\"#x-chopin-nocturno-postumo\">Nocturno en do sostenido menor</a>.",
+  "Un tempo que se estira y se recoge, el <a href=\"#g-rubato\">rubato</a>. Escúchalo en <a href=\"#o-balada-1-chopin\">la Balada n.º 1</a>.",
+  "Danzas de su Polonia natal, con acentos en sitios inesperados: escucha <a href=\"#x-chopin-op24@2815\">una mazurca</a>.",
+  "Piezas con nombre de género (nocturno, preludio, estudio, balada) y no con títulos que cuenten una historia. Escucha los <a href=\"#x-chopin-op28\">24 Preludios</a>.",
+ ],
+ especialistas_intro="El Concurso Chopin de Varsovia, que se celebra cada cinco años desde 1955, es la gran cantera de intérpretes de Chopin. Algunos de sus ganadores:",
+ especialistas=[
+  dict(quien="Maurizio Pollini", det="ganador en 1960"),
+  dict(quien="Martha Argerich", det="ganadora en 1965"),
+  dict(p="zimerman", det="ganador en 1975", nota="Su vídeo es el de referencia de la Balada en este diario.", url="#o-balada-1-chopin"),
+  dict(quien="Seong-Jin Cho", det="ganador en 2015", nota="Su Concierto n.º 1 de la final.", url="#x-chopin-concierto-1"),
+  dict(quien="Martín García García", det="tercer premio en 2021", nota="Pianista español."),
+  dict(quien="Eric Lu", det="ganador en 2025, la última edición"),
+ ],
  ruta=[
   dict(titulo="Balada n.º 1 en sol menor, Op. 23", obra="balada-1-chopin", nota="Su obra más querida, según él mismo."),
   dict(titulo="Preludio «Gota de agua», Op. 28 n.º 15", nota="De los Preludios que terminó en Valldemossa. Una nota que se repite como lluvia.", url="https://youtu.be/R2d2spnXyLA", enlace="Lang Lang (Steinway & Sons)"),
-  dict(titulo="Nocturno en do sostenido menor (póstumo)", nota="El que abre <i>El pianista</i> y el que Szpilman tocó de verdad para Hosenfeld.", url="https://www.youtube.com/results?search_query=Chopin+Nocturne+C+sharp+minor+posthumous", enlace="Buscar en YouTube"),
+  dict(titulo="Nocturno en do sostenido menor (póstumo)", nota="El que abre <i>El pianista</i> y el que Szpilman tocó de verdad para Hosenfeld.", url="#x-chopin-nocturno-postumo"),
  ]),
 dict(id="mahler", tipo="compositor", nombre="Gustav Mahler", vida="1860–1911", nace=1860, lugar="Kaliště (Bohemia) → Viena", epoca="romanticismo",
  entradilla="Director de orquesta famosísimo en vida y compositor de veranos. Sus sinfonías quieren abarcar un mundo entero.",
@@ -59,24 +103,38 @@ dict(id="mahler", tipo="compositor", nombre="Gustav Mahler", vida="1860–1911",
 <h2>Por qué importa</h2>
 <p>Hace de puente entre el Romanticismo y la música del siglo XX. Durante décadas se tocó poco, y en los años sesenta volvió con fuerza a las salas de concierto, en buena parte gracias a <a href="#i-bernstein">Leonard Bernstein</a>.</p>""",
  claves=[["Nació","Kaliště (Bohemia), 1860"],["Murió","Viena, 1911"],["Cargo","Director de la Ópera de la Corte de Viena desde 1897"],["Obra","Nueve sinfonías, una Décima inacabada y canciones con orquesta"],["Componía","En verano, en una cabaña junto al lago"]],
+ bachtrack="mahler",
+ huella=[
+  "Una orquesta enorme que de pronto se reduce a muy pocos instrumentos: <a href=\"#o-adagietto-mahler\">el Adagietto</a>, solo cuerda y arpa.",
+  "Mezcla lo solemne y lo popular: marchas fúnebres, fanfarrias, valses, danzas campesinas. Escucha <a href=\"#x-mahler-5@33\">la marcha fúnebre</a> y <a href=\"#x-mahler-5@1716\">el Scherzo</a> de la Quinta.",
+  "Canciones dentro de las sinfonías: el Adagietto termina con la melodía de su lied <a href=\"#x-mahler-ich-bin\">«Ich bin der Welt abhanden gekommen»</a>.",
+  "Melodías larguísimas y <a href=\"#g-crescendo\">crescendos</a> que tardan minutos en llegar arriba.",
+ ],
+ especialistas=[
+  dict(p="bernstein", nota="Lo devolvió a las salas en los años sesenta. Fue el primero en grabar todas sus sinfonías."),
+  dict(quien="Bruno Walter", nota="Fue ayudante de Mahler en Viena. Tras su muerte estrenó las dos últimas obras que Mahler terminó y, en 1947, hizo la primera grabación completa de la Quinta."),
+  dict(quien="Willem Mengelberg", nota="Amigo de Mahler. Grabó el Adagietto en 1926 con la Orquesta del Concertgebouw en unos 7 minutos."),
+  dict(quien="Claudio Abbado", nota="Su Mahler con la Orquesta del Festival de Lucerna, que ayudó a refundar en 2003, es de los más admirados de su tiempo."),
+  dict(p="wiener-philharmoniker", nota="La orquesta que Mahler dirigió entre 1898 y 1901."),
+ ],
  ruta=[
   dict(titulo="Adagietto de la Sinfonía n.º 5", obra="adagietto-mahler", nota="Su música más famosa: cuerda y arpa, unos diez minutos."),
   dict(titulo="Sinfonía n.º 5 completa", nota="Después del Adagietto, escúchala entera: de la marcha fúnebre del principio a la fiesta del final.", url="#x-mahler-5"),
   dict(titulo="«Ich bin der Welt abhanden gekommen», de los Rückert-Lieder", nota="La canción de 1901 cuya melodía cierra el Adagietto.", url="#x-mahler-ich-bin"),
  ]),
-dict(id="zimerman", tipo="solista", rol="Pianista", nombre="Krystian Zimerman", vida="Nacido en 1956", lugar="Zabrze (Polonia)",
+dict(id="zimerman", bachtrack="krystian-zimerman", tipo="solista", rol="Pianista", nombre="Krystian Zimerman", vida="Nacido en 1956", lugar="Zabrze (Polonia)",
  entradilla="Pianista polaco, ganador del Concurso Chopin con 18 años. Perfeccionista: viaja con sus propios pianos y graba muy poco.",
  h="""<p>Nació el 5 de diciembre de 1956 en Zabrze, en una familia de músicos. Empezó a tocar a los cinco años con su padre, pianista, y estudió en el conservatorio de Katowice con Andrzej Jasiński.</p>
 <p>En 1975, con 18 años, ganó el Concurso Chopin de Varsovia. Era el más joven de los participantes y se llevó todos los premios. Al año siguiente debutó en disco con Deutsche Grammophon, con quien tiene un contrato exclusivo de por vida. Ha tocado con directores como Bernstein, Giulini y Rattle.</p>
 <p>Es famoso por su exigencia. Toca siempre sus propios pianos Steinway, que él mismo afina, monta y modifica según el repertorio. Además limita mucho sus conciertos y graba poco, solo después de largos periodos de estudio.</p>""",
  claves=[["Instrumento","Piano"],["Premio clave","Concurso Chopin, 1975"],["Sello","Deutsche Grammophon"],["Manía","Viaja con sus propios pianos"]]),
-dict(id="maisky", tipo="solista", rol="Violonchelista", nombre="Mischa Maisky", vida="Nacido en 1948", lugar="Riga (Letonia)",
+dict(id="maisky", bachtrack="mischa-maisky", tipo="solista", rol="Violonchelista", nombre="Mischa Maisky", vida="Nacido en 1948", lugar="Riga (Letonia)",
  entradilla="Violonchelista de estilo extrovertido y romántico. El único que estudió con Rostropóvich y con Piatigorsky.",
  h="""<p>Nació en Riga el 10 de enero de 1948, cuando Letonia era parte de la Unión Soviética. Estudió con Mstislav Rostropóvich en el Conservatorio de Moscú entre 1966 y 1970. En 1970 lo detuvieron por comprar en el mercado negro una grabadora con la que quería grabar sus clases, y pasó 18 meses en prisión y en un campo de trabajo.</p>
 <p>En 1972 emigró a Israel. En 1974 estudió con Gregor Piatigorsky en Los Ángeles, y desde 1985 grabó en exclusiva para Deutsche Grammophon, incluidas dos versiones de las suites de Bach. Vive en Bélgica.</p>
 <p>Su Bach no busca el estilo de época: él mismo dice que Bach fue «el mayor de los románticos». Decidió regrabar las suites cuando, en una tienda de alta fidelidad, no reconoció su propia grabación de 1985.</p>""",
  claves=[["Instrumento","Violonchelo"],["Maestros","Rostropóvich, Piatigorsky"],["Estilo","Romántico, muy expresivo"],["Curiosidad","En 2000 tocó en Zúrich toda la obra de Bach para violonchelo en tres conciertos el mismo día"]]),
-dict(id="voices-of-music", tipo="conjunto", rol="Conjunto de música antigua · San Francisco", nombre="Voices of Music", dirige=["Hanneke van Proosdij","David Tayler"],
+dict(id="voices-of-music", bachtrack="voices-of-music", tipo="conjunto", rol="Conjunto de música antigua · San Francisco", nombre="Voices of Music", dirige=["Hanneke van Proosdij","David Tayler"],
  entradilla="Conjunto de San Francisco que toca con instrumentos de época y lleva sus conciertos a YouTube en alta definición.",
  h="""<p>Lo fundaron en 2007 Hanneke van Proosdij (clave y flauta de pico) y David Tayler (laúd), un matrimonio de músicos e investigadores que lo dirige desde entonces. Tocan música del Renacimiento y del Barroco con criterios históricos.</p>
 <p>Fueron pioneros en publicar sus conciertos en vídeo: fueron el primer conjunto de música antigua del mundo en recibir el premio Silver Creator de YouTube. Su vídeo de las Cuatro Estaciones lleva el soneto de Vivaldi como subtítulos.</p>"""),
@@ -85,22 +143,22 @@ dict(id="casals", tipo="solista", rol="Violonchelista y director", nombre="Pau C
  h="""<p>Nació en El Vendrell (Tarragona) el 29 de diciembre de 1876. En 1890, con 13 años, encontró en una tienda de Barcelona una edición antigua de las suites para violonchelo de Bach, que entonces se tenían por simples ejercicios. Él las convirtió en música de concierto y las grabó entre 1936 y 1939.</p>
 <p>Tras la victoria de Franco se exilió en 1939 en Prades, en el sur de Francia, donde organizó festivales entre 1950 y 1966. Desde 1956–1957 vivió en Puerto Rico, la tierra de su madre, y allí murió en 1973. Terminaba sus conciertos con la canción popular catalana <i lang="ca">El cant dels ocells</i>.</p>""",
  claves=[["Instrumento","Violonchelo"],["Grabación clave","Suites de Bach, 1936–1939"],["Exilio","Prades (1939) y Puerto Rico"]]),
-dict(id="il-giardino-armonico", tipo="conjunto", rol="Conjunto barroco · Milán", nombre="Il Giardino Armonico", dirige=["Giovanni Antonini"],
+dict(id="il-giardino-armonico", bachtrack="il-giardino-armonico", tipo="conjunto", rol="Conjunto barroco · Milán", nombre="Il Giardino Armonico", dirige=["Giovanni Antonini"],
  entradilla="Conjunto italiano fundado en 1985 que sacudió la forma de tocar a Vivaldi.",
  h="""<p>Lo fundaron en Milán en 1985 Giovanni Antonini, Luca Pianca y Paolo Beschi. Su grabación de las Cuatro Estaciones de 1994 rompió con las convenciones: pintaron cada escena al extremo, con un invierno helado, un verano asfixiante y un perro que ladra a lo bestia.</p>"""),
-dict(id="europa-galante", tipo="conjunto", rol="Conjunto barroco", nombre="Europa Galante", dirige=["Fabio Biondi"],
+dict(id="europa-galante", bachtrack="europa-galante", tipo="conjunto", rol="Conjunto barroco", nombre="Europa Galante", dirige=["Fabio Biondi"],
  entradilla="El conjunto del violinista Fabio Biondi. Sus Estaciones de 1991 marcaron el estilo de las que vinieron después.",
  h="""<p>Su grabación de las Cuatro Estaciones de 1991 fue la primera del grupo. Biondi fue de los primeros en recuperar un número de músicos parecido al que probablemente tenía Vivaldi, con instrumentos de época. Lo que entonces sonaba radical se convirtió después en la forma habitual de tocar a Vivaldi.</p>"""),
-dict(id="carmignola", tipo="solista", rol="Violinista", nombre="Giuliano Carmignola",
+dict(id="carmignola", bachtrack="giuliano-carmignola", tipo="solista", rol="Violinista", nombre="Giuliano Carmignola",
  entradilla="Violinista italiano, una de las grandes voces de Vivaldi con instrumentos de época.",
  h="""<p>Fue alumno de Luigi Ferro, uno de los violinistas estrella de los Virtuosi di Roma. Grabó las Cuatro Estaciones con la Venice Baroque Orchestra y Andrea Marcon, una versión muy elogiada por su energía y su poesía.</p>"""),
-dict(id="kennedy", tipo="solista", rol="Violinista", nombre="Nigel Kennedy",
+dict(id="kennedy", bachtrack="nigel-kennedy", tipo="solista", rol="Violinista", nombre="Nigel Kennedy",
  entradilla="Su grabación de 1989 convirtió las Cuatro Estaciones en un fenómeno de ventas.",
  h="""<p>Su disco de las Cuatro Estaciones, publicado en 1989, pasó casi dos años en lo más alto de la lista clásica británica y vendió más de dos millones de copias: fue el disco clásico más vendido de su tiempo. Toca con instrumentos modernos.</p>"""),
 dict(id="fournier", tipo="solista", rol="Violonchelista", nombre="Pierre Fournier",
  entradilla="Violonchelista de tradición romántica que, paradójicamente, tocaba a Bach con nobleza y contención clásica.",
  h="""<p>Grabó las suites de Bach para Deutsche Grammophon en 1961. Un crítico de BBC Music Magazine la prefiere a muchas otras por su nobleza, su concentración y su contención.</p>"""),
-dict(id="netherlands-bach-society", tipo="conjunto", rol="Conjunto barroco · Países Bajos", nombre="Netherlands Bach Society", dirige=["Shunske Sato"],
+dict(id="netherlands-bach-society", bachtrack="nederlandse-bachvereniging", tipo="conjunto", rol="Conjunto barroco · Países Bajos", nombre="Netherlands Bach Society", dirige=["Shunske Sato"],
  entradilla="Su proyecto All of Bach graba toda la obra de Bach en vídeo y la comparte gratis.",
  h="""<p>En 2013, como antesala de su centenario, la Nederlandse Bachvereniging lanzó <b>All of Bach</b>: grabar en vídeo todas las obras de Bach y publicarlas gratis. Sus vídeos están en su web y en su canal de YouTube (youtube.com/bach). Su director artístico es Shunske Sato.</p>
 <p>Para aprender, es un tesoro: casi cualquier obra de Bach que te encuentres en un concierto tiene allí una versión filmada.</p>"""),
@@ -111,7 +169,7 @@ dict(id="bernstein", tipo="director", rol="Director de orquesta y compositor", n
 <p>Mahler fue una de sus grandes causas. En 1960 dedicó una temporada al centenario de Mahler, fue el primero en grabar todas sus sinfonías en disco y, entre 1971 y 1985, las filmó casi todas con la Filarmónica de Viena, a la que dirigió durante 24 temporadas, de 1966 a 1990.</p>
 <p>Murió en Nueva York el 14 de octubre de 1990. Lo enterraron con una partitura de la Quinta de Mahler sobre el corazón.</p>""",
  claves=[["Nació","Lawrence (EE. UU.), 1918"],["Cargo","Director musical de la Filarmónica de Nueva York (1958–1969)"],["Con Viena","24 temporadas, de 1966 a 1990"],["Mahler","El primero en grabar todas sus sinfonías, en disco y en vídeo"]]),
-dict(id="wiener-philharmoniker", tipo="conjunto", rol="Orquesta · Viena", nombre="Filarmónica de Viena (Wiener Philharmoniker)", vida="Fundada en 1842", lugar="Viena",
+dict(id="wiener-philharmoniker", bachtrack="wiener-philharmoniker", tipo="conjunto", rol="Orquesta · Viena", nombre="Filarmónica de Viena (Wiener Philharmoniker)", vida="Fundada en 1842", lugar="Viena",
  entradilla="Una de las grandes orquestas del mundo, gobernada por sus propios músicos. Mahler la dirigió entre 1898 y 1901.",
  h="""<p>Su primer concierto fue el 28 de marzo de 1842, dirigido por Otto Nicolai. Desde entonces funciona con unas reglas muy particulares: solo puede ser miembro quien toca en la orquesta de la Ópera Estatal de Viena, y después de tres años en ella. Los músicos se gobiernan a sí mismos: deciden en asamblea qué tocan y a quién invitan, y eligen un comité que lleva el día a día.</p>
 <p>Desde 1870 su casa es la Sala Dorada del Musikverein de Viena. Hasta 1933 elegía un director para toda la temporada (Gustav Mahler lo fue entre 1898 y 1901, y con él hizo su primera gira al extranjero, a la Exposición Universal de París de 1900). Desde entonces trabaja solo con directores invitados. Admite mujeres desde 1997.</p>""",

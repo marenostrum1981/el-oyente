@@ -31,6 +31,100 @@ dict(id="siglo-xx", nombre="Siglo XX y XXI", fechas="1900–hoy", ini=1900, fin=
 ]
 
 ARTICULOS = [
+dict(id="tempo", tema="Interpretación", titulo="El tempo: por qué la misma obra dura 7 minutos o 15",
+ entradilla="El compositor escribe «lento» o «rápido», pero casi nunca dice cuánto. El resto lo decide el intérprete, y ahí empieza lo interesante.",
+ h="""<h2>Palabras, no números</h2>
+<p>Durante siglos, la velocidad se indicó con palabras, casi siempre en italiano: <i lang="it">largo</i> y <i lang="it">adagio</i> son lentos, <i lang="it">andante</i> va al paso, <i lang="it">allegro</i> es rápido y alegre, y <i lang="it">presto</i>, muy rápido. Más que una velocidad exacta, indican un carácter. Las tienes en el <a href="#g-tempo">glosario</a>.</p>
+<p>Compáralo dentro de una misma obra: el <a href="#o-cuatro-estaciones@0">Allegro</a> y el <a href="#o-cuatro-estaciones@212">Largo</a> de la Primavera de Vivaldi.</p>
+<h2>Llega el metrónomo</h2>
+<p>En 1815, Johann Nepomuk Maelzel patentó en París y en Londres el <a href="#g-metronomo">metrónomo</a>, un péndulo que marca golpes por minuto. La idea del doble péndulo era del holandés Dietrich Nikolaus Winkel, y una comisión de Ámsterdam le dio la razón, pero el aparato se quedó con el nombre de Maelzel: por eso en las partituras aparece «M. M.», metrónomo de Maelzel.</p>
+<p>Con él, un compositor puede escribir «negra = 60»: sesenta golpes por minuto, uno por segundo. Beethoven se entusiasmó y en diciembre de 1817 publicó las velocidades de metrónomo de sus ocho primeras sinfonías. Ni así se acabó la discusión: algunas de sus cifras parecen rapidísimas y todavía se debate si hay que seguirlas al pie de la letra.</p>
+<h2>La misma partitura, distintas velocidades</h2>
+<p>El mejor ejemplo del diario es el <a href="#o-adagietto-mahler">Adagietto de Mahler</a>. La partitura dice <i lang="de">Sehr langsam</i>, «muy lento», sin metrónomo. Willem Mengelberg, amigo de Mahler, lo grabó en 1926 en unos 7 minutos; Bernard Haitink, en 1988, en casi 14. En la ficha tienes un gráfico con varias versiones.</p>
+<p>Escucha dos y compara: la de <a href="#o-adagietto-mahler">Bernstein</a>, de unos 12 minutos, y la de <a href="#x-mahler-5@2779">Orozco-Estrada</a>, de unos 10 y medio. Más lento suena más a despedida; más ligero, más a carta de amor.</p>
+<h2>El tempo que respira</h2>
+<p>Además de la velocidad de partida, está la flexibilidad. En el Barroco el pulso suele ser constante, como un motor: escucha la <a href="#o-cuatro-estaciones@1066">tempestad del Verano</a>. En el Romanticismo, el tempo se estira y se recoge dentro de cada frase, el <a href="#g-rubato">rubato</a>: escucha <a href="#o-balada-1-chopin">la Balada de Chopin</a> y lee <a href="#a-rubato">el artículo sobre el rubato</a>.</p>
+<h2>Cómo escuchar el tempo</h2>
+<ul>
+<li>Marca el pulso con un dedo. ¿Te cuesta seguirlo porque se mueve? Eso es rubato.</li>
+<li>Compara dos versiones en el mismo punto, justo al empezar.</li>
+<li>Pregúntate qué gana y qué pierde la música cuando va más lenta: ¿más profundidad o más pesadez?</li>
+</ul>"""),
+dict(id="quien-pagaba", tema="Historia", titulo="¿Quién pagaba la música?",
+ entradilla="La iglesia, los príncipes, un orfanato, los editores, los salones y, al final, el público que paga entrada. Saber quién pagaba ayuda a entender por qué cada obra suena como suena.",
+ h="""<h2>La iglesia y la corte</h2>
+<p>Durante siglos, la mayoría de los músicos fueron empleados de alguien. Bach trabajó para los dos grandes patronos de su tiempo.</p>
+<p>En Köthen, entre 1717 y 1723, servía a un príncipe calvinista que no necesitaba música de iglesia elaborada, así que escribió sobre todo música instrumental, como las <a href="#o-suite-chelo-2">suites para violonchelo</a>. Cuando el príncipe se casó, en 1721, con una princesa a la que no le interesaba la música, la corte empezó a gastar menos en sus músicos.</p>
+<p>En Leipzig, desde 1723, trabajaba para la ciudad y sus iglesias, y tenía que dar música cada domingo. De ahí salen sus cantatas, como la <a href="#x-bwv-1">BWV 1</a>.</p>
+<p>Haydn pasó casi treinta años, desde 1761, al servicio de los príncipes Esterházy. Escribía lo que le pedían, incluidas unas doscientas piezas para el barítono, un instrumento de cuerda que era el favorito del príncipe Nikolaus.</p>
+<h2>Dedicar una obra era pedir protección</h2>
+<p>Un compositor podía dedicar una obra a un noble con la esperanza de recibir un regalo o un puesto. Vivaldi dedicó su Opus 8, el de <a href="#o-cuatro-estaciones">las Cuatro Estaciones</a>, al conde Wenzel von Morzin. Bach envió en 1721 seis conciertos al margrave de Brandeburgo, con una dedicatoria en francés llena de reverencias: hoy son los <a href="#x-bwv-1048">Conciertos de Brandeburgo</a>.</p>
+<h2>Un orfanato con orquesta</h2>
+<p>Vivaldi trabajó para el Ospedale della Pietà de Venecia, que acogía a niños abandonados. Sus alumnas formaban un conjunto famoso y buena parte de su música se escribió para ellas.</p>
+<h2>La imprenta</h2>
+<p>Vender partituras era otra fuente de ingresos. Los conciertos de Vivaldi se imprimían en Ámsterdam y desde allí llegaban a toda Europa: así los conoció Bach, que los copió y los adaptó (escucha un concierto de Vivaldi para <a href="#x-rv-580">cuatro violines</a> y la versión de Bach para <a href="#x-bwv-1065">cuatro claves</a>).</p>
+<h2>El público que paga entrada</h2>
+<p>En 1791, Haydn llegó a Londres contratado por el violinista y empresario Johann Peter Salomon, que organizaba conciertos por suscripción: el público pagaba por adelantado toda la temporada. Haydn ya no componía para un príncipe, sino para un público que tenía que salir contento y volver.</p>
+<p>Su Sinfonía n.º 94 se estrenó allí el 23 de marzo de 1792. El golpe fuerte que le da el apodo de «La sorpresa» lo añadió Haydn al revisar la partitura: un efecto pensado para un público. <a href="#x-haydn-94-ii">Escúchalo</a>.</p>
+<h2>Salones y alumnos</h2>
+<p>Chopin daba pocos conciertos públicos y prefería tocar ante poca gente. En París vivía sobre todo de las clases a la aristocracia, a unos 20 francos la lección, una tarifa muy alta, y de vender sus obras a los editores. Por eso su música está pensada para salones: piezas íntimas como el <a href="#x-chopin-nocturno-postumo">Nocturno en do sostenido menor</a>.</p>
+<h2>El sueldo de director</h2>
+<p>A finales del siglo XIX, muchos compositores vivían de dirigir. Mahler era director de la Ópera de la Corte de Viena y solo podía componer en verano: <a href="#o-adagietto-mahler">el Adagietto</a> nació en su cabaña junto al lago.</p>
+<h2>Llegan los discos</h2>
+<p>En 1902, Enrico Caruso grabó diez arias en un hotel de Milán, y los discos se vendieron muchísimo. Desde entonces, la grabación es otra manera de ganarse la vida con la música, y la que te permite escuchar este diario.</p>"""),
+dict(id="reconocer-compositores", tema="Estilos", titulo="Vivaldi, Bach, Chopin o Mahler: cómo distinguirlos de oído",
+ entradilla="Cuatro preguntas rápidas para adivinar quién suena, con ejemplos del diario para comprobarlo.",
+ h="""<h2>1. ¿Cuántos instrumentos hay?</h2>
+<ul>
+<li><b>Un piano solo</b> que canta: probablemente <a href="#c-chopin">Chopin</a>. Escucha el <a href="#x-chopin-nocturno-postumo">Nocturno en do sostenido menor</a>.</li>
+<li><b>Un grupo de cuerda con clave</b>: Barroco, probablemente <a href="#c-vivaldi">Vivaldi</a> o <a href="#c-bach">Bach</a>. Escucha <a href="#o-cuatro-estaciones@0">la Primavera</a>.</li>
+<li><b>Una orquesta enorme</b>, o una parte de ella que se queda sola: Romanticismo tardío, como <a href="#c-mahler">Mahler</a>. Escucha <a href="#x-mahler-5@33">la marcha fúnebre de la Quinta</a>.</li>
+</ul>
+<h2>2. ¿Una melodía o varias a la vez?</h2>
+<ul>
+<li><b>Una melodía clara arriba y un bajo abajo</b>: Vivaldi. Escucha <a href="#o-cuatro-estaciones@212">el Largo de la Primavera</a>.</li>
+<li><b>Varias voces que se persiguen</b>, incluso con un solo instrumento: Bach. Escucha <a href="#o-suite-chelo-2@16">el preludio de la suite</a> o el <a href="#x-bwv-1048">Concierto de Brandeburgo n.º 3</a>.</li>
+</ul>
+<p>Lo explica a fondo <a href="#a-vivaldi-barroco">este artículo</a>.</p>
+<h2>3. ¿El pulso es fijo o flexible?</h2>
+<ul>
+<li><b>Fijo, como un motor</b>: Barroco. Escucha <a href="#o-cuatro-estaciones@1066">la tempestad del Verano</a>.</li>
+<li><b>Flexible, que se estira y se recoge</b>: Romanticismo. Escucha <a href="#o-balada-1-chopin">la Balada de Chopin</a> (<a href="#g-rubato">rubato</a>).</li>
+<li><b>Muy lento y elástico, con frases que no acaban nunca</b>: Mahler. Escucha <a href="#o-adagietto-mahler">el Adagietto</a>.</li>
+</ul>
+<h2>4. ¿Cómo cambia el volumen?</h2>
+<ul>
+<li><b>Por bloques, sin crescendos largos</b>: Barroco. Escucha cómo entra y sale el grupo en <a href="#o-cuatro-estaciones@0">la Primavera</a>.</li>
+<li><b>Crece poco a poco, durante minutos, hasta extremos</b>: Romanticismo. Escucha <a href="#o-adagietto-mahler">el Adagietto</a> o la coda de <a href="#o-balada-1-chopin">la Balada</a>.</li>
+</ul>
+<h2>Ponte a prueba</h2>
+<p>Con estas cuatro preguntas, adivina de quién es cada una de estas obras antes de mirar el nombre en el reproductor:</p>
+<ol>
+<li><a href="#x-bwv-1065">Primera</a></li>
+<li><a href="#x-chopin-op24@2815">Segunda</a></li>
+<li><a href="#x-rv-580">Tercera</a></li>
+<li><a href="#x-mahler-ich-bin">Cuarta</a></li>
+</ol>
+<p>Soluciones: Bach (adaptando a Vivaldi), Chopin, Vivaldi y Mahler. En cada compositor del diario tienes una lista de rasgos para reconocerlo y los intérpretes que mejor lo tocan.</p>"""),
+dict(id="primer-concierto", tema="Conciertos", titulo="Tu primer concierto: guía práctica",
+ entradilla="Cómo encontrar conciertos de lo que escuchas en el diario, qué hacer antes, cuándo aplaudir y cómo sacarle más partido.",
+ h="""<h2>Elegir</h2>
+<p>Empieza por algo que ya conozcas. Si te ha gustado una obra del diario, mira si se toca cerca: en <a href="#conciertos">Conciertos</a> puedes buscar por compositor, intérprete, país, ciudad y fechas. Cada ficha y cada compositor tienen además un atajo, «¿Dónde se toca?».</p>
+<p>Un recital, con un solo intérprete, es más íntimo; un concierto de orquesta, más espectacular. Mira la web de la sala: muchas orquestas tienen precios reducidos para jóvenes, abonos y entradas de última hora.</p>
+<h2>Antes</h2>
+<ul>
+<li>Escucha en casa la obra principal del programa al menos una vez. Si está en el diario, usa su guía de escucha.</li>
+<li>Lee el programa de mano o la web: te dirá cuántos movimientos tiene cada obra.</li>
+<li>Llega con tiempo. Si llegas tarde, normalmente tendrás que esperar a una pausa para entrar.</li>
+</ul>
+<h2>Durante: cuándo aplaudir</h2>
+<p>Hoy la costumbre es aplaudir al final de la obra completa, no entre <a href="#g-movimiento">movimientos</a>. Si dudas, espera a que el director o el solista bajen los brazos, o a que aplaudan los demás. Nadie te va a reñir por equivocarte.</p>
+<p>Mientras tanto, usa las tres preguntas de <a href="#a-como-escuchar">Cómo escuchar una obra</a>: quién toca, qué gesto hace y dónde estamos.</p>
+<h2>Mira, además de escuchar</h2>
+<p>En directo puedes ver lo que el disco esconde: quién lleva la melodía, cómo se miran los músicos para entrar a la vez y qué hace el director con las manos. Busca el instrumento que más te guste y síguelo un rato.</p>
+<h2>Después</h2>
+<p>Vuelve a escuchar la grabación del diario y compárala con lo que oíste. ¿Más rápido? ¿Más fuerte? Así se aprende a escuchar <a href="#a-tempo">el tempo</a> y las decisiones de cada intérprete.</p>"""),
+
 dict(id="vivaldi-barroco", tema="Estilos", titulo="¿Por qué Vivaldi es barroco si parece tener una sola voz?",
  entradilla="La pregunta tiene trampa: el Barroco no se define por el número de voces. Lo que une a Vivaldi y a Bach está debajo: el bajo continuo.",
  h="""<h2>Lo que comparten: el bajo continuo</h2>
@@ -104,16 +198,16 @@ dict(id="rubato", tema="Interpretación", titulo="El rubato: por qué Chopin no 
 dict(id="titulos", tema="Método", titulo="Cómo leer el título de una obra",
  entradilla="«Ballade No. 1 in G minor, Op. 23». Parece un código, pero casi todos los títulos de música clásica se leen igual: tipo de obra, número, tonalidad y catálogo.",
  h="""<h2>Las cuatro piezas de un título</h2>
-<p>Desmontemos <b>Ballade No. 1 in G minor, Op. 23</b>, de Chopin:</p>
+<p>Desmontemos <b>Ballade No. 1 in G minor, Op. 23</b>, de Chopin (<a href="#o-balada-1-chopin">está en el diario</a>):</p>
 <ol>
 <li><b>Ballade</b> (balada): el <b>tipo de obra</b>, también llamado género. Sinfonía, concierto, sonata, suite, nocturno o balada te dicen qué esperar: cuántos movimientos, para quién, con qué carácter.</li>
 <li><b>No. 1</b> (n.º 1): el <b>número dentro de ese tipo</b>. Chopin escribió cuatro baladas y esta es la primera.</li>
 <li><b>in G minor</b> (en sol menor): la <b>tonalidad</b>, la nota «casa» y su modo, mayor o menor.</li>
 <li><b>Op. 23</b> (opus 23): el <b>número de catálogo</b>, para que no se confunda con ninguna otra obra.</li>
 </ol>
-<p>Algunas obras llevan además un <b>apodo</b>, como <i>Las cuatro estaciones</i> o la sonata «Claro de luna» de Beethoven (Op. 27 n.º 2). El apodo ayuda a recordarla; el catálogo, a encontrarla.</p>
+<p>Algunas obras llevan además un <b>apodo</b>, como <i>Las cuatro estaciones</i> o la sonata <a href="#x-beethoven-claro-de-luna">«Claro de luna»</a> de Beethoven (Op. 27 n.º 2). El apodo ayuda a recordarla; el catálogo, a encontrarla.</p>
 <h2>El número: no siempre es el orden en que se escribió</h2>
-<p>El n.º 1 suele ser la primera obra de ese tipo, pero no siempre la primera que se compuso. Los dos conciertos para piano de Chopin son el ejemplo clásico: el <b>n.º 2</b>, en fa menor (Op. 21), lo terminó en 1829–1830 y se publicó en 1836; el <b>n.º 1</b>, en mi menor (Op. 11), es de 1830 y se publicó antes, en 1833. Se numeraron según salieron de la imprenta.</p>
+<p>El n.º 1 suele ser la primera obra de ese tipo, pero no siempre la primera que se compuso. Los dos conciertos para piano de Chopin son el ejemplo clásico: el <b>n.º 2</b>, en fa menor (<a href="#x-chopin-concierto-2">Op. 21</a>), lo terminó en 1829–1830 y se publicó en 1836; el <b>n.º 1</b>, en mi menor (<a href="#x-chopin-concierto-1">Op. 11</a>), es de 1830 y se publicó antes, en 1833. Se numeraron según salieron de la imprenta.</p>
 <h2>La tonalidad y los nombres de las notas</h2>
 <p>La tonalidad es la nota a la que la música quiere volver para descansar, y el modo: <b>mayor</b> (más luminoso) o <b>menor</b> (más sombrío). Como las grabaciones y las plataformas suelen usar el inglés o el alemán, conviene saber los nombres:</p>
 <ul>
@@ -133,20 +227,20 @@ dict(id="titulos", tema="Método", titulo="Cómo leer el título de una obra",
 <h2>Opus y catálogos: qué significa el número</h2>
 <p><b>Opus</b> es «obra» en latín. Desde comienzos del siglo XIX, los compositores solían dar un número de opus a cada obra al publicarla. Ese número <b>no dice cuántas piezas hay</b>:</p>
 <ul>
-<li>El <b>Op. 23</b> de Chopin es una sola balada de unos diez minutos.</li>
-<li>Su <b>Op. 24</b> son cuatro mazurcas, y su <b>Op. 28</b>, veinticuatro preludios.</li>
-<li>El <b>Op. 8</b> de Vivaldi reúne doce conciertos. Por eso la Primavera es el <b>Op. 8 n.º 1</b>: el segundo número dice cuál de ellos es.</li>
+<li>El <b>Op. 23</b> de Chopin es <a href="#o-balada-1-chopin">una sola balada</a> de unos diez minutos.</li>
+<li>Su <b>Op. 24</b> son <a href="#x-chopin-op24@2815">cuatro mazurcas</a>, y su <b>Op. 28</b>, <a href="#x-chopin-op28">veinticuatro preludios</a>.</li>
+<li>El <b>Op. 8</b> de Vivaldi reúne doce conciertos. Por eso <a href="#o-cuatro-estaciones">la Primavera</a> es el <b>Op. 8 n.º 1</b>: el segundo número dice cuál de ellos es.</li>
 </ul>
 <p>Muchos compositores no numeraron sus obras, o dejaron muchas sin publicar. Para ellos, los estudiosos han hecho <b>catálogos</b>, y cada uno tiene sus siglas:</p>
 <ul>
-<li><b>BWV</b>, Bach: de Wolfgang Schmieder (1950). Ordena por géneros, no por fechas: BWV 1 no es la primera obra de Bach.</li>
+<li><b>BWV</b>, Bach: de Wolfgang Schmieder (1950). Ordena por géneros, no por fechas: <a href="#x-bwv-1">BWV 1</a> no es la primera obra de Bach, sino una cantata de 1725.</li>
 <li><b>RV</b>, Vivaldi: de Peter Ryom.</li>
-<li><b>K.</b> o <b>KV</b>, Mozart: de Ludwig von Köchel (1862). Se pensó en orden cronológico, de K. 1, un minueto de niño, a K. 626, el Réquiem que dejó sin terminar.</li>
+<li><b>K.</b> o <b>KV</b>, Mozart: de Ludwig von Köchel (1862). Se pensó en orden cronológico, de K. 1, un minueto de niño, a K. 626, el <a href="#x-mozart-requiem">Réquiem</a> que dejó sin terminar.</li>
 <li><b>Hob.</b>, Haydn: de Anthony van Hoboken.</li>
 <li><b>D.</b>, Schubert: de Otto Erich Deutsch.</li>
 </ul>
 <h2>Un truco para buscar</h2>
-<p>En Idagio o en YouTube, busca por <b>compositor y catálogo</b>: «Chopin Op. 23», «Bach BWV 1008» o «Vivaldi RV 269». Es la forma más segura de dar con esa obra exacta y no con otra de título parecido.</p>"""),
+<p>En Idagio o en YouTube, busca por <b>compositor y catálogo</b>: «Chopin Op. 23» (<a href="#o-balada-1-chopin">la balada</a>), «Bach BWV 1008» (<a href="#o-suite-chelo-2">la suite n.º 2</a>) o «Vivaldi RV 269» (<a href="#o-cuatro-estaciones">la Primavera</a>). Es la forma más segura de dar con esa obra exacta y no con otra de título parecido.</p>"""),
 dict(id="como-escuchar", tema="Método", titulo="Cómo escuchar una obra: tres preguntas",
  entradilla="No hace falta saber solfeo. Con tres preguntas mientras suena, ya no estás perdido en ningún movimiento.",
  h="""<h2>Antes</h2>
@@ -164,6 +258,13 @@ dict(id="como-escuchar", tema="Método", titulo="Cómo escuchar una obra: tres p
 ]
 
 GLOSARIO = [
+ ("metronomo","Metrónomo","Aparato que marca golpes regulares, tantos por minuto como se le pida, para fijar el tempo. Lo patentó Maelzel en 1815 a partir de una idea del holandés Winkel; por eso en las partituras aparece «M. M.», metrónomo de Maelzel."),
+ ("mecenas","Mecenas","Persona o institución que paga a un artista para que cree: la iglesia, un príncipe, un noble o, hoy, una fundación. Dedicarle una obra era una forma de agradecer o de pedir su protección."),
+ ("cantata","Cantata","Obra para voces e instrumentos en varios movimientos: coros, arias (cantos a solo) y recitativos (canto que casi habla). Bach escribió muchísimas para los domingos de Leipzig."),
+ ("mazurca","Mazurca","Danza popular polaca en compás de tres tiempos, con acentos que caen a menudo en el segundo o el tercero. Chopin la convirtió en pieza de concierto para piano."),
+ ("nocturno","Nocturno","Pieza para piano lenta y soñadora: una melodía que canta sobre un acompañamiento ondulante. Lo creó el irlandés John Field y Chopin lo hizo suyo."),
+ ("requiem","Réquiem","Misa de difuntos. Su texto en latín empieza con «Requiem aeternam», «descanso eterno», y por eso se llama así."),
+ ("sonata","Sonata","Obra instrumental en varios movimientos para un instrumento solo, o para un instrumento con piano. No hay que confundirla con la forma sonata, que es una manera de construir un movimiento."),
  ("sinfonia","Sinfonía","Obra grande para orquesta, dividida en varios movimientos. En el Clasicismo suele tener cuatro: rápido, lento, minueto o scherzo, y rápido. Los románticos la agrandaron: la Quinta de Mahler tiene cinco movimientos y dura más de una hora."),
  ("arpa","Arpa","Instrumento de cuerdas que se pellizcan con los dedos, tensadas en un marco triangular. En la orquesta suele acompañar con acordes desgranados (arpegios) y da un brillo suave."),
  ("cuerda","Cuerda","La familia de instrumentos de cuerda frotada con arco de la orquesta: violines, violas, violonchelos y contrabajos. Es el núcleo de casi toda orquesta."),
@@ -212,6 +313,10 @@ GLOSARIO = [
 ]
 
 CURIOSIDADES = [
+ dict(t="En la final del Concurso Chopin de 2015, nueve de los diez finalistas eligieron el Concierto n.º 1. Solo uno, Charles Richard-Hamelin, tocó el n.º 2, y quedó segundo.", l="#x-chopin-concierto-2"),
+ dict(t="El metrónomo lleva el nombre de Maelzel, pero el doble péndulo lo había ideado el holandés Winkel. Una comisión de Ámsterdam le dio la razón a Winkel.", l="#a-tempo"),
+ dict(t="Chopin cobraba unos 20 francos por clase, una tarifa altísima para su época. Vivía más de enseñar que de dar conciertos.", l="#a-quien-pagaba"),
+ dict(t="En 2021, el pianista español Martín García García ganó el tercer premio del Concurso Chopin de Varsovia.", l="#c-chopin"),
  dict(t="Leonard Bernstein fue enterrado con una partitura de la Quinta de Mahler sobre el corazón.", l="#i-bernstein"),
  dict(t="El Adagietto de Mahler se estrenó en el Reino Unido en 1909, 36 años antes que la sinfonía completa.", l="#o-adagietto-mahler"),
  dict(t="Chopin pasó el invierno de 1838–1839 en la Cartuja de Valldemossa, en Mallorca. El pequeño piano Pleyel en el que terminó sus Preludios todavía se conserva allí.", l="#c-chopin"),
@@ -227,4 +332,4 @@ CURIOSIDADES = [
  dict(t="Las Cuatro Estaciones se grabaron por primera vez en 1947. Hoy existe una cantidad enorme de versiones.", l="#o-cuatro-estaciones"),
 ]
 
-DESTACADO = "titulos"
+DESTACADO = "tempo"

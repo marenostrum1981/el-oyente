@@ -15,6 +15,32 @@ MA = "adagietto-mahler"    # Mahler, Bernstein (sin capítulos: solo t=0)
 AOB = "https://www.bachvereniging.nl/en/bwv/bwv-"
 
 EJEMPLOS = {
+ "metronomo": [
+  dict(o=SU, t=16, txt="El preludio de Bach avanza con un pulso regular, casi de metrónomo."),
+  dict(o=BA, t=0, txt="Compáralo con Chopin: el pulso se estira y se recoge, nada de metrónomo (rubato)."),
+ ],
+ "mecenas": [
+  dict(x="bwv-1048", txt="Bach envió este concierto y otros cinco al margrave de Brandeburgo, con una dedicatoria llena de reverencias."),
+  dict(o=CE, t=0, txt="Vivaldi dedicó el Opus 8, el de las Estaciones, al conde Wenzel von Morzin."),
+ ],
+ "cantata": [
+  dict(x="bwv-1", txt="Una cantata de Bach de 1725: empieza con un gran coro y sigue con recitativos y arias."),
+ ],
+ "mazurca": [
+  dict(x="chopin-op24", t=2815, txt="La primera de las cuatro mazurcas del Op. 24 de Chopin. Cuenta 1-2-3 y busca dónde cae el acento."),
+  dict(x="chopin-op24", t=3019, txt="La segunda, más animada."),
+ ],
+ "nocturno": [
+  dict(x="chopin-nocturno-postumo", txt="El nocturno que suena en «El pianista»: la mano derecha canta y la izquierda ondula."),
+ ],
+ "requiem": [
+  dict(x="mozart-requiem", t=79, txt="El comienzo del Réquiem de Mozart: «Requiem aeternam»."),
+  dict(x="mozart-requiem", t=1369, txt="El Lacrimosa, uno de sus fragmentos más conocidos."),
+ ],
+ "sonata": [
+  dict(x="beethoven-claro-de-luna", txt="Una sonata para piano en tres movimientos, aquí en un fortepiano como el de la época de Beethoven."),
+  dict(x="beethoven-claro-de-luna", t=418, txt="El tercer movimiento, rapidísimo: el contraste con el primero."),
+ ],
  "allemande": [
   dict(o=SU, t=278, txt="Paso moderado, en cuatro tiempos, que avanza con calma. Fíjate en las notas dobles que lo frenan de vez en cuando."),
  ],
@@ -112,6 +138,7 @@ EJEMPLOS = {
   dict(o=SU, t=16, txt="Una sola línea que salta entre notas graves y agudas. Al rato, tu oído la oye como dos voces."),
  ],
  "preludio": [
+  dict(x="chopin-op28", t=246, txt="Los preludios de Chopin son piezas cortas e independientes, uno en cada tonalidad. Este es el n.º 4, uno de los más famosos."),
   dict(o=SU, t=16, txt="Abre la suite antes de las danzas, con aire libre, como si el chelista pensara en voz alta. Al final, cinco acordes largos."),
  ],
  "ritornello": [

@@ -57,6 +57,18 @@ for gid, lista in EJEMPLOS.items():
         if "x" in e and (e["x"] not in X or (e.get("t") and e["t"] not in X[e["x"]]["caps"])): errs.append(("ejemplo: referencia", gid, e["x"], e.get("t")))
 for xid, seg in re.findall(r'#x-([a-z0-9-]+)(?:@([0-9]+))?', alltext2):
     if xid not in X or (seg and int(seg) not in X[xid]["caps"]): errs.append(("enlace a referencia", xid, seg))
+for xid, r in X.items():
+    if r.get("ini") and r["ini"] not in r["caps"]: errs.append(("referencia: ini sin capítulo", xid))
+for o in OBRAS:
+    for c in o.get("contexto", []):
+        if not c.get("anio") or not c.get("txt"): errs.append(("contexto incompleto", o["id"]))
+    for v in [o["grabacion"]] + o.get("versiones", []):
+        if v.get("dur") and not re.fullmatch(r"\d{1,2}:\d{2}", v["dur"]): errs.append(("duración mal escrita", o["id"], v["dur"]))
+for pe in PERSONAS:
+    for x in pe.get("especialistas", []):
+        if x.get("p") and x["p"] not in P: errs.append(("especialista", pe["id"], x["p"]))
+        if not x.get("p") and not x.get("quien"): errs.append(("especialista sin nombre", pe["id"]))
+    if pe.get("bachtrack") and not re.fullmatch(r"[a-z0-9-]+", pe["bachtrack"]): errs.append(("slug de Bachtrack", pe["id"]))
 if DESTACADO not in A: errs.append(("destacado", DESTACADO))
 if errs: print("ERRORES:", errs); sys.exit(1)
 (out/"obras.json").write_text(json.dumps(OBRAS, ensure_ascii=False, indent=0))

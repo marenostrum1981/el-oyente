@@ -35,6 +35,36 @@
 "RV (catálogo Ryom)"
 ]
 ],
+"bachtrack": "vivaldi",
+"huella": [
+"Un estribillo del grupo que vuelve una y otra vez y, entre medias, el solista se luce: es el <a href=\"#g-ritornello\">ritornello</a>. Escúchalo en <a href=\"#o-cuatro-estaciones@0\">la Primavera</a>.",
+"Un pulso enérgico que no se detiene, como un motor. Escúchalo en <a href=\"#o-cuatro-estaciones@1066\">la tempestad del Verano</a>.",
+"Imitaciones de la naturaleza: pájaros, perros, lluvia, viento. En <a href=\"#o-cuatro-estaciones@212\">el Largo de la Primavera</a>, la viola ladra.",
+"Una melodía clara arriba y el <a href=\"#g-bajo-continuo\">bajo continuo</a> abajo, más que varias voces entrelazadas. Lo explica <a href=\"#a-vivaldi-barroco\">este artículo</a>."
+],
+"especialistas": [
+{
+"p": "il-giardino-armonico",
+"nota": "Sus Estaciones de 1994 cambiaron la forma de tocar a Vivaldi: contrastes extremos y efectos sin miedo."
+},
+{
+"p": "europa-galante",
+"nota": "El conjunto de Fabio Biondi grabó las Estaciones en 1991 con instrumentos de época."
+},
+{
+"p": "carmignola",
+"nota": "Uno de los grandes violinistas de Vivaldi con instrumentos de época."
+},
+{
+"p": "kennedy",
+"nota": "Su disco de 1989 llevó las Estaciones a millones de personas."
+},
+{
+"p": "voices-of-music",
+"nota": "Su vídeo es el de referencia en este diario.",
+"url": "#o-cuatro-estaciones"
+}
+],
 "ruta": [
 {
 "titulo": "Las Cuatro Estaciones",
@@ -96,6 +126,37 @@
 "Murió un 28 de julio, como Vivaldi"
 ]
 ],
+"bachtrack": "bach",
+"huella": [
+"Varias voces a la vez que se persiguen y se responden: el <a href=\"#g-contrapunto\">contrapunto</a>. Hasta con un solo instrumento: el <a href=\"#o-suite-chelo-2@16\">preludio de la suite</a> suena a dos.",
+"Danzas estilizadas en un orden fijo: allemande, courante, zarabanda… Escucha <a href=\"#o-suite-chelo-2@649\">la zarabanda</a>.",
+"Todos los instrumentos importan, no hay solo un solista y un acompañamiento. Escúchalo en el <a href=\"#x-bwv-1048\">Concierto de Brandeburgo n.º 3</a>.",
+"Adaptaba música ajena y propia: convirtió un concierto de Vivaldi para <a href=\"#x-rv-580\">cuatro violines</a> en uno para <a href=\"#x-bwv-1065\">cuatro claves</a>."
+],
+"especialistas": [
+{
+"p": "casals",
+"nota": "Rescató las suites para violonchelo y las grabó entre 1936 y 1939."
+},
+{
+"p": "netherlands-bach-society",
+"nota": "Con All of Bach graba en vídeo toda la obra de Bach y la publica gratis."
+},
+{
+"quien": "John Eliot Gardiner",
+"det": "Monteverdi Choir y English Baroque Soloists",
+"nota": "En el año 2000, 250 años después de la muerte de Bach, interpretó todas sus cantatas de iglesia, cada una en el día del año para el que se escribió, en iglesias de toda Europa."
+},
+{
+"p": "maisky",
+"nota": "Un Bach libre y romántico. Su vídeo es el de referencia de la suite n.º 2 en este diario.",
+"url": "#o-suite-chelo-2"
+},
+{
+"p": "fournier",
+"nota": "Un Bach noble y contenido: grabó las suites en 1961."
+}
+],
 "ruta": [
 {
 "titulo": "Suite n.º 2 para violonchelo",
@@ -105,8 +166,7 @@
 {
 "titulo": "Concierto de Brandeburgo n.º 3, BWV 1048",
 "nota": "De la época de Köthen. Un concierto sin solista: todos los instrumentos son importantes.",
-"url": "https://www.bachvereniging.nl/en/bwv/bwv-1048",
-"enlace": "Ver en All of Bach"
+"url": "#x-bwv-1048"
 },
 {
 "titulo": "Concierto para cuatro claves, BWV 1065",
@@ -163,6 +223,45 @@
 "En la iglesia de la Santa Cruz de Varsovia"
 ]
 ],
+"bachtrack": "chopin",
+"huella": [
+"Casi todo es para piano solo, y el piano canta como una voz. Escúchalo en el <a href=\"#x-chopin-nocturno-postumo\">Nocturno en do sostenido menor</a>.",
+"Un tempo que se estira y se recoge, el <a href=\"#g-rubato\">rubato</a>. Escúchalo en <a href=\"#o-balada-1-chopin\">la Balada n.º 1</a>.",
+"Danzas de su Polonia natal, con acentos en sitios inesperados: escucha <a href=\"#x-chopin-op24@2815\">una mazurca</a>.",
+"Piezas con nombre de género (nocturno, preludio, estudio, balada) y no con títulos que cuenten una historia. Escucha los <a href=\"#x-chopin-op28\">24 Preludios</a>."
+],
+"especialistas_intro": "El Concurso Chopin de Varsovia, que se celebra cada cinco años desde 1955, es la gran cantera de intérpretes de Chopin. Algunos de sus ganadores:",
+"especialistas": [
+{
+"quien": "Maurizio Pollini",
+"det": "ganador en 1960"
+},
+{
+"quien": "Martha Argerich",
+"det": "ganadora en 1965"
+},
+{
+"p": "zimerman",
+"det": "ganador en 1975",
+"nota": "Su vídeo es el de referencia de la Balada en este diario.",
+"url": "#o-balada-1-chopin"
+},
+{
+"quien": "Seong-Jin Cho",
+"det": "ganador en 2015",
+"nota": "Su Concierto n.º 1 de la final.",
+"url": "#x-chopin-concierto-1"
+},
+{
+"quien": "Martín García García",
+"det": "tercer premio en 2021",
+"nota": "Pianista español."
+},
+{
+"quien": "Eric Lu",
+"det": "ganador en 2025, la última edición"
+}
+],
 "ruta": [
 {
 "titulo": "Balada n.º 1 en sol menor, Op. 23",
@@ -178,8 +277,7 @@
 {
 "titulo": "Nocturno en do sostenido menor (póstumo)",
 "nota": "El que abre <i>El pianista</i> y el que Szpilman tocó de verdad para Hosenfeld.",
-"url": "https://www.youtube.com/results?search_query=Chopin+Nocturne+C+sharp+minor+posthumous",
-"enlace": "Buscar en YouTube"
+"url": "#x-chopin-nocturno-postumo"
 }
 ],
 "imagen": {
@@ -220,6 +318,35 @@
 "En verano, en una cabaña junto al lago"
 ]
 ],
+"bachtrack": "mahler",
+"huella": [
+"Una orquesta enorme que de pronto se reduce a muy pocos instrumentos: <a href=\"#o-adagietto-mahler\">el Adagietto</a>, solo cuerda y arpa.",
+"Mezcla lo solemne y lo popular: marchas fúnebres, fanfarrias, valses, danzas campesinas. Escucha <a href=\"#x-mahler-5@33\">la marcha fúnebre</a> y <a href=\"#x-mahler-5@1716\">el Scherzo</a> de la Quinta.",
+"Canciones dentro de las sinfonías: el Adagietto termina con la melodía de su lied <a href=\"#x-mahler-ich-bin\">«Ich bin der Welt abhanden gekommen»</a>.",
+"Melodías larguísimas y <a href=\"#g-crescendo\">crescendos</a> que tardan minutos en llegar arriba."
+],
+"especialistas": [
+{
+"p": "bernstein",
+"nota": "Lo devolvió a las salas en los años sesenta. Fue el primero en grabar todas sus sinfonías."
+},
+{
+"quien": "Bruno Walter",
+"nota": "Fue ayudante de Mahler en Viena. Tras su muerte estrenó las dos últimas obras que Mahler terminó y, en 1947, hizo la primera grabación completa de la Quinta."
+},
+{
+"quien": "Willem Mengelberg",
+"nota": "Amigo de Mahler. Grabó el Adagietto en 1926 con la Orquesta del Concertgebouw en unos 7 minutos."
+},
+{
+"quien": "Claudio Abbado",
+"nota": "Su Mahler con la Orquesta del Festival de Lucerna, que ayudó a refundar en 2003, es de los más admirados de su tiempo."
+},
+{
+"p": "wiener-philharmoniker",
+"nota": "La orquesta que Mahler dirigió entre 1898 y 1901."
+}
+],
 "ruta": [
 {
 "titulo": "Adagietto de la Sinfonía n.º 5",
@@ -245,6 +372,7 @@
 },
 {
 "id": "zimerman",
+"bachtrack": "krystian-zimerman",
 "tipo": "solista",
 "rol": "Pianista",
 "nombre": "Krystian Zimerman",
@@ -273,6 +401,7 @@
 },
 {
 "id": "maisky",
+"bachtrack": "mischa-maisky",
 "tipo": "solista",
 "rol": "Violonchelista",
 "nombre": "Mischa Maisky",
@@ -301,6 +430,7 @@
 },
 {
 "id": "voices-of-music",
+"bachtrack": "voices-of-music",
 "tipo": "conjunto",
 "rol": "Conjunto de música antigua · San Francisco",
 "nombre": "Voices of Music",
@@ -337,6 +467,7 @@
 },
 {
 "id": "il-giardino-armonico",
+"bachtrack": "il-giardino-armonico",
 "tipo": "conjunto",
 "rol": "Conjunto barroco · Milán",
 "nombre": "Il Giardino Armonico",
@@ -348,6 +479,7 @@
 },
 {
 "id": "europa-galante",
+"bachtrack": "europa-galante",
 "tipo": "conjunto",
 "rol": "Conjunto barroco",
 "nombre": "Europa Galante",
@@ -359,6 +491,7 @@
 },
 {
 "id": "carmignola",
+"bachtrack": "giuliano-carmignola",
 "tipo": "solista",
 "rol": "Violinista",
 "nombre": "Giuliano Carmignola",
@@ -367,6 +500,7 @@
 },
 {
 "id": "kennedy",
+"bachtrack": "nigel-kennedy",
 "tipo": "solista",
 "rol": "Violinista",
 "nombre": "Nigel Kennedy",
@@ -383,6 +517,7 @@
 },
 {
 "id": "netherlands-bach-society",
+"bachtrack": "nederlandse-bachvereniging",
 "tipo": "conjunto",
 "rol": "Conjunto barroco · Países Bajos",
 "nombre": "Netherlands Bach Society",
@@ -422,6 +557,7 @@
 },
 {
 "id": "wiener-philharmoniker",
+"bachtrack": "wiener-philharmoniker",
 "tipo": "conjunto",
 "rol": "Orquesta · Viena",
 "nombre": "Filarmónica de Viena (Wiener Philharmoniker)",
