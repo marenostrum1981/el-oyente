@@ -2,7 +2,7 @@
 
 ## Qué es
 
-Un diario web para aprender a escuchar música clásica. Cada día entra una obra nueva con su ficha y, a la vez, crecen los índices de compositores, intérpretes y épocas, la escuela (artículos de fundamentos) y el glosario. Está publicado en Netlify, en `https://el-oyente.com` (dominio comprado en Netlify; `el-oyente.netlify.app` sigue funcionando y lleva al dominio principal), y Netlify vuelve a publicar la web sola con cada push a `main`, y se instala como app (PWA). Lo leen principiantes hispanohablantes.
+Un diario web para aprender a escuchar música clásica. Cada día entra una obra nueva con su ficha y, a la vez, crecen los índices de compositores, intérpretes y épocas, la escuela (artículos de fundamentos) y el glosario. Está publicado con GitHub Pages en `https://el-oyente.com` (el dominio se compró en Netlify y su DNS sigue allí), GitHub vuelve a publicar la web sola con cada push a `main`, y se instala como app (PWA). Lo leen principiantes hispanohablantes.
 
 ## Estructura
 
@@ -53,7 +53,7 @@ Un diario web para aprender a escuchar música clásica. Cada día entra una obr
    - El vídeo se incrusta solo en la ficha. Comprueba que se puede incrustar con `https://www.youtube.com/oembed?url=<url>&format=json` (si da error, la ficha mostrará solo el botón a YouTube).
 10. **Genera y valida:** `python3 src/build_data.py`. Tiene que terminar sin errores.
 11. **Comprueba en el navegador:** lanza `python3 -m http.server` y abre `#o-ID` y la portada, a ancho de móvil y de escritorio.
-12. **Publica:** `git add -A && git commit -m "N.º X: Título" && git push`. Netlify publica la web nueva en un minuto.
+12. **Publica una sola vez por sesión:** junta todos los cambios en un commit y un push al final: `git add -A && git commit -m "N.º X: Título [skip netlify]" && git push`. GitHub Pages publica la web nueva en unos minutos. Pon siempre `[skip netlify]` en el mensaje: mientras el proyecto de Netlify siga enlazado al repositorio, cada push sin esa marca gasta 15 créditos del plan gratuito (300 al mes) y, si se acaban, Netlify pausa todas las webs de la cuenta.
 13. **Responde en el chat** en 3 a 5 líneas: qué obra es, una idea clave para escucharla y qué se ha añadido al diario.
 
 ## Reglas de contenido
@@ -71,5 +71,7 @@ Un diario web para aprender a escuchar música clásica. Cada día entra una obr
 ## Publicación
 
 - Repositorio: `marenostrum1981/el-oyente`, rama `main`.
-- Netlify (proyecto `el-oyente`) está enlazado al repositorio: cada push a `main` publica `https://el-oyente.com`. El dominio y su DNS se gestionan en Netlify (Domains); el certificado HTTPS lo pone Netlify solo. No hay paso de build; `netlify.toml` publica la raíz tal cual.
+- GitHub Pages publica la raíz de `main` (sin Jekyll: hay un `.nojekyll`). El archivo `CNAME` contiene `el-oyente.com`; no se borra. El certificado HTTPS lo pone GitHub.
+- El dominio y su DNS se gestionan en Netlify (Domains): registros A de GitHub Pages (185.199.108.153, .109.153, .110.153 y .111.153) para `el-oyente.com` y un CNAME de `www` a `marenostrum1981.github.io`.
+- Netlify ya no aloja la web. Su plan gratuito cobra 15 créditos por cada publicación y para con 300 al mes, así que nada de publicar en Netlify.
 - `data/*.json` se sube al repositorio ya generado.
