@@ -7,6 +7,7 @@ from escuela import EPOCAS, ARTICULOS, GLOSARIO, CURIOSIDADES, DESTACADO
 from imagenes import IMAGENES
 from ejemplos import EJEMPLOS
 from referencias import REFERENCIAS
+from enlazar import enlazar_todo, PATRONES, NO_AUTO
 out = Path(__file__).resolve().parent.parent / "data"; out.mkdir(parents=True, exist_ok=True)
 # imágenes: se añaden a cada obra, persona y época por su id
 for lista, clave in ((OBRAS, "obras"), (PERSONAS, "personas"), (EPOCAS, "epocas")):
@@ -16,6 +17,7 @@ glos = [dict(id=i, termino=t, def_=d) for i,t,d in GLOSARIO]
 for g in glos: g["def"] = g.pop("def_")
 for g in glos:
     if g["id"] in EJEMPLOS: g["ejemplos"] = EJEMPLOS[g["id"]]
+print("términos enlazados automáticamente:", enlazar_todo(OBRAS, PERSONAS, EPOCAS, ARTICULOS, {g["id"] for g in glos}))
 # integridad: ids referenciados
 P = {p["id"] for p in PERSONAS}; G = {g["id"] for g in glos}; E = {e["id"] for e in EPOCAS}; A={a["id"] for a in ARTICULOS}; O={o["id"] for o in OBRAS}
 errs = []
@@ -48,6 +50,7 @@ for gid, lista in EJEMPLOS.items():
         if not e.get("txt"): errs.append(("ejemplo sin texto", gid))
 for g in glos:
     if g["id"] not in EJEMPLOS: print("aviso: término sin ejemplo:", g["id"])
+    if g["id"] not in {x for x, _ in PATRONES} | NO_AUTO: print("aviso: término sin patrón en src/enlazar.py:", g["id"])
 alltext2 = json.dumps([OBRAS, PERSONAS, EPOCAS, ARTICULOS, glos, CURIOSIDADES, EJEMPLOS], ensure_ascii=False)
 for oid, seg in re.findall(r'#o-([a-z0-9-]+)@([0-9]+)', alltext2):
     if oid not in O or int(seg) not in CAP[oid]: errs.append(("enlace de escucha sin capítulo", oid, seg))

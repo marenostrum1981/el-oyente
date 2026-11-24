@@ -10,6 +10,7 @@ Un diario web para aprender a escuchar música clásica. Cada día entra una obr
 - `src/obras.py`, `src/personas.py` y `src/escuela.py`: **la fuente de verdad** del contenido. Se edita aquí.
 - `src/build_data.py`: genera `data/*.json` y comprueba todos los enlaces internos (`#o-…`, `#c-…`, `#g-…`…). Si algo apunta a un id que no existe, falla.
 - `src/ejemplos.py`: ejemplos para escuchar cada término del glosario.
+- `src/enlazar.py`: al generar los datos, enlaza cada término del glosario la primera vez que aparece en cada página (ficha, artículo, época o persona), sin tocar títulos, enlaces ni textos en otro idioma. Cada término nuevo necesita su patrón en `PATRONES` (con plurales y solo en formas sin ambigüedad: «el clave», «director de orquesta»); si no, `build_data.py` avisa. «Concierto», «tema» y «cuerda» van en `NO_AUTO` y se enlazan a mano.
 - `src/referencias.py`: obras de fuera del diario que se mencionan, con su grabación comprobada.
 - `src/imagenes.py`: imágenes de obras, compositores y épocas (Wikimedia Commons). `build_data.py` las añade a cada ficha.
 - `data/*.json`: archivos generados. No se editan a mano.

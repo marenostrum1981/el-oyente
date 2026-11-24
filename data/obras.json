@@ -19,7 +19,7 @@
 {
 "p": "Le quattro stagioni",
 "es": "Las cuatro estaciones",
-"h": "Más que una obra, son <b>cuatro conciertos para violín</b>, uno por estación, de tres movimientos cada uno: doce en total. Ver <a href=\"#g-concierto\">concierto</a>."
+"h": "Más que una obra, son <b>cuatro conciertos para violín</b>, uno por estación, de tres <a href=\"#g-movimiento\">movimientos</a> cada uno: doce en total. Ver <a href=\"#g-concierto\">concierto</a>."
 },
 {
 "p": "Il cimento dell'armonia e dell'inventione",
@@ -34,7 +34,7 @@
 {
 "p": "RV 269, 315, 293, 297",
 "es": "Catálogo Ryom",
-"h": "Los números del <b>catálogo de Peter Ryom</b> (<i lang=\"de\">Ryom-Verzeichnis</i>), que identifica cada obra de Vivaldi. Primavera es RV 269; Verano, RV 315; Otoño, RV 293, e Invierno, RV 297. Fíjate en que no van en orden: el catálogo no sigue el de las estaciones."
+"h": "Los números del <b><a href=\"#g-catalogo\">catálogo</a> de Peter Ryom</b> (<i lang=\"de\">Ryom-Verzeichnis</i>), que identifica cada obra de Vivaldi. Primavera es RV 269; Verano, RV 315; Otoño, RV 293, e Invierno, RV 297. Fíjate en que no van en orden: el catálogo no sigue el de las estaciones."
 },
 {
 "p": "E major · G minor · F major · F minor",
@@ -54,7 +54,7 @@
 {
 "mov": "Primavera · I. Allegro",
 "t": 0,
-"txt": "Llega la primavera: estribillo alegre del grupo y, entre medias, pájaros con trinos, fuentes que murmuran y una tormenta. Después de la tormenta, el estribillo vuelve en menor."
+"txt": "Llega la primavera: estribillo alegre del grupo y, entre medias, pájaros con <a href=\"#g-trino\">trinos</a>, fuentes que murmuran y una tormenta. Después de la tormenta, el estribillo vuelve en menor."
 },
 {
 "mov": "Primavera · II. Largo",
@@ -89,7 +89,7 @@
 {
 "mov": "Otoño · II. Adagio molto",
 "t": 1574,
-"txt": "Los borrachos duermen. Cuerdas con sordina y el clave desgranando acordes."
+"txt": "Los borrachos duermen. Cuerdas con <a href=\"#g-sordina\">sordina</a> y el <a href=\"#g-clave\">clave</a> desgranando acordes."
 },
 {
 "mov": "Otoño · III. Allegro",
@@ -104,7 +104,7 @@
 {
 "mov": "Invierno · II. Largo",
 "t": 2129,
-"txt": "Junto al fuego mientras llueve: los violines en pizzicato son la lluvia y el solista, la calma de casa."
+"txt": "Junto al fuego mientras llueve: los violines en <a href=\"#g-pizzicato\">pizzicato</a> son la lluvia y el solista, la calma de casa."
 },
 {
 "mov": "Invierno · III. Allegro",
@@ -123,7 +123,7 @@
 },
 {
 "t": "Quién la toca",
-"h": "<p>Un <b>violín solista</b> frente a un grupo de cuerda (violines primeros y segundos, violas) y, debajo de todo, el <b>bajo continuo</b>: violonchelo y contrabajo con un instrumento de acordes, normalmente el clave. El continuo no para nunca: es el suelo armónico de toda la música barroca.</p>\n<p>En el vídeo de referencia tocan con instrumentos de época. Cómo reconocerlos a simple vista, en el artículo <a href=\"#a-instrumentos-epoca\">Instrumentos de época</a>.</p>"
+"h": "<p>Un <b>violín solista</b> frente a un grupo de cuerda (violines primeros y segundos, violas) y, debajo de todo, el <b><a href=\"#g-bajo-continuo\">bajo continuo</a></b>: violonchelo y contrabajo con un instrumento de acordes, normalmente el clave. El continuo no para nunca: es el suelo armónico de toda la música barroca.</p>\n<p>En el vídeo de referencia tocan con instrumentos de época. Cómo reconocerlos a simple vista, en el artículo <a href=\"#a-instrumentos-epoca\">Instrumentos de época</a>.</p>"
 },
 {
 "t": "Cómo está hecha",
@@ -135,7 +135,7 @@
 },
 {
 "t": "Cómo reconocer aquí el Barroco",
-"h": "<ul>\n<li><b>El continuo:</b> si escuchas con atención, el clave está siempre ahí, rellenando acordes.</li>\n<li><b>El ritmo que no se detiene:</b> los movimientos rápidos avanzan como un motor.</li>\n<li><b>Solo contra tutti:</b> todo el grupo con el estribillo, el solista con las escenas.</li>\n<li><b>Dinámica en bloques:</b> pasa de fuerte a suave de golpe, como un eco, más que con crescendos largos.</li>\n</ul>\n<p>Si te parece que Vivaldi «tiene una sola voz» y eso no casa con el Barroco, lee <a href=\"#a-vivaldi-barroco\">¿Por qué Vivaldi es barroco?</a></p>"
+"h": "<ul>\n<li><b>El continuo:</b> si escuchas con atención, el clave está siempre ahí, rellenando acordes.</li>\n<li><b>El ritmo que no se detiene:</b> los movimientos rápidos avanzan como un motor.</li>\n<li><b>Solo contra <a href=\"#g-tutti\">tutti</a>:</b> todo el grupo con el estribillo, el solista con las escenas.</li>\n<li><b>Dinámica en bloques:</b> pasa de fuerte a suave de golpe, como un eco, más que con <a href=\"#g-crescendo\">crescendos</a> largos.</li>\n</ul>\n<p>Si te parece que Vivaldi «tiene una sola voz» y eso no casa con el Barroco, lee <a href=\"#a-vivaldi-barroco\">¿Por qué Vivaldi es barroco?</a></p>"
 },
 {
 "t": "Curiosidades",
@@ -245,12 +245,12 @@
 {
 "p": "Suite",
 "es": "Suite",
-"h": "El <b>tipo de obra</b>: una serie de danzas, con un preludio delante. Por eso la guía de escucha va danza a danza. Ver <a href=\"#g-suite\">suite</a>."
+"h": "El <b>tipo de obra</b>: una serie de danzas, con un <a href=\"#g-preludio\">preludio</a> delante. Por eso la guía de escucha va danza a danza. Ver <a href=\"#g-suite\">suite</a>."
 },
 {
 "p": "No. 2",
 "es": "n.º 2",
-"h": "La <b>segunda de las seis suites</b> para violonchelo de Bach. En su catálogo van seguidas, de BWV 1007 a 1012."
+"h": "La <b>segunda de las seis suites</b> para violonchelo de Bach. En su <a href=\"#g-catalogo\">catálogo</a> van seguidas, de BWV 1007 a 1012."
 },
 {
 "p": "in D minor",
@@ -260,7 +260,7 @@
 {
 "p": "BWV 1008",
 "es": "Catálogo de las obras de Bach",
-"h": "El número del <b>catálogo de las obras de Bach</b> (<i lang=\"de\">Bach-Werke-Verzeichnis</i>), que publicó Wolfgang Schmieder en 1950, dos siglos después de la muerte del compositor. No va por fechas sino <b>por géneros</b>: primero las cantatas (BWV 1 a 224) y, mucho más adelante, la música de cámara (BWV 1001 a 1040), donde están estas suites. Un número BWV bajo no quiere decir que la obra sea antigua."
+"h": "El número del <b>catálogo de las obras de Bach</b> (<i lang=\"de\">Bach-Werke-Verzeichnis</i>), que publicó Wolfgang Schmieder en 1950, dos siglos después de la muerte del compositor. No va por fechas sino <b>por géneros</b>: primero las <a href=\"#g-cantata\">cantatas</a> (BWV 1 a 224) y, mucho más adelante, la música de cámara (BWV 1001 a 1040), donde están estas suites. Un número BWV bajo no quiere decir que la obra sea antigua."
 }
 ],
 "duracion": "Entre 20 y 25 minutos, según el intérprete",
@@ -285,7 +285,7 @@
 {
 "mov": "Courante",
 "t": 527,
-"txt": "Rápida y nerviosa: la tensión de la allemande se convierte en energía inquieta."
+"txt": "Rápida y nerviosa: la tensión de la <a href=\"#g-allemande\">allemande</a> se convierte en energía inquieta."
 },
 {
 "mov": "Zarabanda",
@@ -295,12 +295,12 @@
 {
 "mov": "Minueto I",
 "t": 1048,
-"txt": "La danza de moda en la época. Se toca Minueto I, luego Minueto II y se vuelve al I."
+"txt": "La danza de moda en la época. Se toca <a href=\"#g-minueto\">Minueto</a> I, luego Minueto II y se vuelve al I."
 },
 {
 "mov": "Minueto II",
 "t": 1127,
-"txt": "Un respiro antes del final. Es uno de los pocos movimientos de las seis suites sin ningún acorde: solo una línea."
+"txt": "Un respiro antes del final. Es uno de los pocos <a href=\"#g-movimiento\">movimientos</a> de las seis suites sin ningún acorde: solo una línea."
 },
 {
 "mov": "Giga",
@@ -315,7 +315,7 @@
 },
 {
 "t": "Cómo nos han llegado",
-"h": "<p>El manuscrito original de Bach se ha perdido. Las conocemos por copias, sobre todo la de su segunda mujer, <b>Anna Magdalena Bach</b>, titulada <i lang=\"fr\">Suites à Violoncello Solo senza Basso</i> («suites para violonchelo solo sin bajo»). Hay otra copia, algo anterior, de Johann Peter Kellner.</p>\n<p>Esas copias apenas indican ligaduras, articulación ni matices. Por eso no hay una versión «correcta» y cada violonchelista las toca a su manera, como vas a comprobar con la zarabanda.</p>"
+"h": "<p>El manuscrito original de Bach se ha perdido. Las conocemos por copias, sobre todo la de su segunda mujer, <b>Anna Magdalena Bach</b>, titulada <i lang=\"fr\">Suites à Violoncello Solo senza Basso</i> («suites para violonchelo solo sin bajo»). Hay otra copia, algo anterior, de Johann Peter Kellner.</p>\n<p>Esas copias apenas indican ligaduras, articulación ni matices. Por eso no hay una versión «correcta» y cada violonchelista las toca a su manera, como vas a comprobar con la <a href=\"#g-zarabanda\">zarabanda</a>.</p>"
 },
 {
 "t": "La idea clave: una línea que suena a varias voces",
@@ -323,11 +323,11 @@
 },
 {
 "t": "Cómo está hecha",
-"h": "<p>Una <a href=\"#g-suite\">suite</a> es un preludio seguido de danzas estilizadas, que ya no eran para bailar. Las seis suites tienen el mismo orden: preludio, allemande, courante, zarabanda, una pareja de danzas «de moda» (aquí, dos minuetos) y giga.</p>\n<p>Cada danza viene de un sitio: la courante es francesa, la zarabanda española y la giga inglesa (de la <i>jig</i>). Así, una suite es también un pequeño viaje por Europa.</p>"
+"h": "<p>Una <a href=\"#g-suite\">suite</a> es un preludio seguido de danzas estilizadas, que ya no eran para bailar. Las seis suites tienen el mismo orden: preludio, allemande, <a href=\"#g-courante\">courante</a>, zarabanda, una pareja de danzas «de moda» (aquí, dos minuetos) y <a href=\"#g-giga\">giga</a>.</p>\n<p>Cada danza viene de un sitio: la courante es francesa, la zarabanda española y la giga inglesa (de la <i>jig</i>). Así, una suite es también un pequeño viaje por Europa.</p>"
 },
 {
 "t": "Maisky y la interpretación",
-"h": "<p>Mischa Maisky toca un Bach romántico a propósito: suele decir que Bach fue «el mayor de los románticos». Se nota en los tempos. En este vídeo la zarabanda dura unos 6 minutos y medio; Yo-Yo Ma la graba en 5:08 y Alexander Kniazev se va a 8:15. La misma partitura da tres músicas distintas.</p>\n<p>Ejercicio: escucha la zarabanda de Maisky y luego la de una versión con instrumentos de época, como la de la Netherlands Bach Society. Pregúntate qué cambia: ¿el tempo, el vibrato, el peso en el segundo tiempo?</p>"
+"h": "<p>Mischa Maisky toca un Bach romántico a propósito: suele decir que Bach fue «el mayor de los románticos». Se nota en los <a href=\"#g-tempo\">tempos</a>. En este vídeo la zarabanda dura unos 6 minutos y medio; Yo-Yo Ma la graba en 5:08 y Alexander Kniazev se va a 8:15. La misma partitura da tres músicas distintas.</p>\n<p>Ejercicio: escucha la zarabanda de Maisky y luego la de una versión con instrumentos de época, como la de la Netherlands Bach Society. Pregúntate qué cambia: ¿el tempo, el vibrato, el peso en el segundo tiempo?</p>"
 },
 {
 "t": "Curiosidades",
@@ -451,7 +451,7 @@
 {
 "p": "Op. 23",
 "es": "Opus 23",
-"h": "<b>Opus</b> significa «obra» en latín. Es el número que recibió la balada <b>al publicarse</b>, en 1836: el 23 de la lista de obras publicadas de Chopin. <b>No indica cuántas piezas hay.</b> El Op. 23 es una sola balada de unos diez minutos; en cambio, el Op. 24 son cuatro mazurcas, y el Op. 28, veinticuatro preludios. Ver <a href=\"#g-opus\">opus</a>."
+"h": "<b>Opus</b> significa «obra» en latín. Es el número que recibió la balada <b>al publicarse</b>, en 1836: el 23 de la lista de obras publicadas de Chopin. <b>No indica cuántas piezas hay.</b> El Op. 23 es una sola balada de unos diez minutos; en cambio, el Op. 24 son cuatro <a href=\"#g-mazurca\">mazurcas</a>, y el Op. 28, veinticuatro <a href=\"#g-preludio\">preludios</a>. Ver <a href=\"#g-opus\">opus</a>."
 }
 ],
 "duracion": "Entre 9 y 10 minutos, en un solo movimiento",
@@ -466,7 +466,7 @@
 {
 "mov": "Introducción · Largo",
 "cuando": "1",
-"txt": "Siete compases lentos. Una frase sola que sube tanteando, como quien empieza a contar una historia, y un acorde final que se queda en el aire, sin resolver."
+"txt": "Siete <a href=\"#g-compas\">compases</a> lentos. Una frase sola que sube tanteando, como quien empieza a contar una historia, y un acorde final que se queda en el aire, sin resolver."
 },
 {
 "mov": "Primer tema · Moderato",
@@ -514,15 +514,15 @@
 },
 {
 "t": "El instrumento",
-"h": "<p>Todas las obras de Chopin incluyen el piano, y su música ayudó a convertirlo en el instrumento más popular del siglo XIX. El piano romántico permite lo que el clave barroco no podía: tocar suave o fuerte según la fuerza del dedo y alargar el sonido con el pedal.</p>\n<p>El piano de Chopin era un Pleyel, de sonido más ligero e íntimo que el de un piano de concierto moderno. Zimerman toca siempre sus propios Steinway, que él mismo afina, monta y modifica según el repertorio.</p>"
+"h": "<p>Todas las obras de Chopin incluyen el piano, y su música ayudó a convertirlo en el instrumento más popular del siglo XIX. El piano romántico permite lo que el <a href=\"#g-clave\">clave</a> barroco no podía: tocar suave o fuerte según la fuerza del dedo y alargar el sonido con el <a href=\"#g-pedal\">pedal</a>.</p>\n<p>El piano de Chopin era un Pleyel, de sonido más ligero e íntimo que el de un piano de concierto moderno. Zimerman toca siempre sus propios Steinway, que él mismo afina, monta y modifica según el repertorio.</p>"
 },
 {
 "t": "Cómo está hecha",
-"h": "<p>La obra se construye con <b>dos temas</b>, uno en sol menor y otro en mi bemol mayor, que se alternan y se transforman. Hay tres compases distintos: la introducción va en 4/4, el cuerpo de la obra en 6/4 y la coda en 2/2.</p>\n<p>Chopin mezcla ideas de la <a href=\"#g-forma-sonata\">forma sonata</a> y de las variaciones, pero con un truco propio: cuando los temas vuelven al final, lo hacen <b>en espejo</b>, primero el segundo y luego el primero. Y la coda es casi una pieza nueva.</p>"
+"h": "<p>La obra se construye con <b>dos temas</b>, uno en sol menor y otro en mi bemol mayor, que se alternan y se transforman. Hay tres compases distintos: la introducción va en 4/4, el cuerpo de la obra en 6/4 y la <a href=\"#g-coda\">coda</a> en 2/2.</p>\n<p>Chopin mezcla ideas de la <a href=\"#g-forma-sonata\">forma sonata</a> y de las variaciones, pero con un truco propio: cuando los temas vuelven al final, lo hacen <b>en espejo</b>, primero el segundo y luego el primero. Y la coda es casi una pieza nueva.</p>"
 },
 {
 "t": "Cómo reconocer aquí el Romanticismo",
-"h": "<p>Compárala con la suite de Bach, que también es para un solo instrumento:</p>\n<ul>\n<li><b>El tiempo respira.</b> En Bach el pulso de la danza es firme. Aquí el pianista se adelanta y se retrasa a propósito: es el <a href=\"#g-rubato\">rubato</a>.</li>\n<li><b>Contrastes enormes de volumen</b>, de un susurro a un estruendo, y el pedal dejando resonar el sonido.</li>\n<li><b>Una historia, no una danza.</b> La obra va a algún sitio y llega a un clímax. No es una forma con estribillo ni una serie de danzas.</li>\n<li><b>Sin bajo continuo.</b> Un solo piano hace de orquesta.</li>\n</ul>\n<p>Más en <a href=\"#e-romanticismo\">Romanticismo</a> y en el artículo <a href=\"#a-rubato\">El rubato</a>.</p>"
+"h": "<p>Compárala con la <a href=\"#g-suite\">suite</a> de Bach, que también es para un solo instrumento:</p>\n<ul>\n<li><b>El tiempo respira.</b> En Bach el pulso de la danza es firme. Aquí el pianista se adelanta y se retrasa a propósito: es el <a href=\"#g-rubato\">rubato</a>.</li>\n<li><b>Contrastes enormes de volumen</b>, de un susurro a un estruendo, y el pedal dejando resonar el sonido.</li>\n<li><b>Una historia, no una danza.</b> La obra va a algún sitio y llega a un clímax. No es una forma con estribillo ni una serie de danzas.</li>\n<li><b>Sin <a href=\"#g-bajo-continuo\">bajo continuo</a>.</b> Un solo piano hace de orquesta.</li>\n</ul>\n<p>Más en <a href=\"#e-romanticismo\">Romanticismo</a> y en el artículo <a href=\"#a-rubato\">El rubato</a>.</p>"
 },
 {
 "t": "Zimerman y esta grabación",
@@ -534,11 +534,11 @@
 },
 {
 "t": "Cómo saborearla: cuatro escuchas",
-"h": "<p>Es una sola pieza de unos diez minutos que cuenta una historia. Para no perderse, conviene ir paso a paso.</p>\n<ol>\n<li><b>Primera escucha: los dos temas.</b> Escucha solo hasta que aparezca el segundo tema, el suave, en mayor (pasos 1 a 4 de la guía). Tararea los dos.</li>\n<li><b>Segunda escucha: síguelos.</b> Escúchala entera buscando esos dos temas. Fíjate en cómo el segundo vuelve convertido en grito y en cómo al final regresan en orden inverso.</li>\n<li><b>Tercera escucha: el tempo.</b> Fíjate solo en cómo se estira y se recoge la velocidad, sobre todo en el primer tema. Eso es el <a href=\"#g-rubato\">rubato</a>.</li>\n<li><b>Cuarta escucha: compara.</b> Pon la coda de Zimerman y la de otra versión. ¿Quién arriesga más?</li>\n</ol>\n<p>Después, escucha algo más íntimo de Chopin, el <a href=\"#x-chopin-nocturno-postumo\">Nocturno en do sostenido menor</a>, y piensa en qué se parecen y en qué no.</p>"
+"h": "<p>Es una sola pieza de unos diez minutos que cuenta una historia. Para no perderse, conviene ir paso a paso.</p>\n<ol>\n<li><b>Primera escucha: los dos temas.</b> Escucha solo hasta que aparezca el segundo tema, el suave, en mayor (pasos 1 a 4 de la guía). Tararea los dos.</li>\n<li><b>Segunda escucha: síguelos.</b> Escúchala entera buscando esos dos temas. Fíjate en cómo el segundo vuelve convertido en grito y en cómo al final regresan en orden inverso.</li>\n<li><b>Tercera escucha: el <a href=\"#g-tempo\">tempo</a>.</b> Fíjate solo en cómo se estira y se recoge la velocidad, sobre todo en el primer tema. Eso es el <a href=\"#g-rubato\">rubato</a>.</li>\n<li><b>Cuarta escucha: compara.</b> Pon la coda de Zimerman y la de otra versión. ¿Quién arriesga más?</li>\n</ol>\n<p>Después, escucha algo más íntimo de Chopin, el <a href=\"#x-chopin-nocturno-postumo\">Nocturno en do sostenido menor</a>, y piensa en qué se parecen y en qué no.</p>"
 },
 {
 "t": "Para el concierto",
-"h": "<ol>\n<li>No esperes movimientos: es una sola pieza de unos diez minutos.</li>\n<li>Quédate con el primer tema, el del vals lento. Toda la obra gira alrededor de él.</li>\n<li>Espera el segundo tema, suave y en mayor, y fíjate en cómo vuelve después convertido en grito.</li>\n<li>La coda es el momento de máxima tensión. Se aplaude cuando el pianista levanta las manos.</li>\n</ol>"
+"h": "<ol>\n<li>No esperes <a href=\"#g-movimiento\">movimientos</a>: es una sola pieza de unos diez minutos.</li>\n<li>Quédate con el primer tema, el del vals lento. Toda la obra gira alrededor de él.</li>\n<li>Espera el segundo tema, suave y en mayor, y fíjate en cómo vuelve después convertido en grito.</li>\n<li>La coda es el momento de máxima tensión. Se aplaude cuando el pianista levanta las manos.</li>\n</ol>"
 }
 ],
 "contexto": [
@@ -737,7 +737,7 @@
 },
 {
 "t": "Cómo saborearla: cuatro escuchas",
-"h": "<p>Es música lenta y sin sobresaltos, así que la clave es escuchar con atención sin dejar que se convierta en música de fondo.</p>\n<ol>\n<li><b>Primera escucha: a oscuras.</b> Pon el vídeo, baja la luz y no hagas nada más durante sus doce minutos.</li>\n<li><b>Segunda escucha: el arpa.</b> Fíjate solo en el arpa del principio. ¿Cuándo calla y cuándo vuelve?</li>\n<li><b>Tercera escucha: la canción.</b> Escucha antes el lied <a href=\"#x-mahler-ich-bin\">«Ich bin der Welt abhanden gekommen»</a> y luego el final del Adagietto. ¿Reconoces la melodía?</li>\n<li><b>Cuarta escucha: dentro de la sinfonía.</b> Escúchalo en su sitio: desde el final del <a href=\"#x-mahler-5@1716\">Scherzo</a> hasta el <a href=\"#x-mahler-5@3413\">Rondo-Finale</a>. Después del ruido, el silencio pesa más.</li>\n</ol>\n<p>Y compara el tempo. La misma partitura dura 7 minutos con Mengelberg y casi 14 con Haitink: lo ves en el gráfico de duraciones de esta ficha y en el artículo <a href=\"#a-tempo\">sobre el tempo</a>.</p>"
+"h": "<p>Es música lenta y sin sobresaltos, así que la clave es escuchar con atención sin dejar que se convierta en música de fondo.</p>\n<ol>\n<li><b>Primera escucha: a oscuras.</b> Pon el vídeo, baja la luz y no hagas nada más durante sus doce minutos.</li>\n<li><b>Segunda escucha: el arpa.</b> Fíjate solo en el arpa del principio. ¿Cuándo calla y cuándo vuelve?</li>\n<li><b>Tercera escucha: la canción.</b> Escucha antes el <a href=\"#g-lied\">lied</a> <a href=\"#x-mahler-ich-bin\">«Ich bin der Welt abhanden gekommen»</a> y luego el final del Adagietto. ¿Reconoces la melodía?</li>\n<li><b>Cuarta escucha: dentro de la sinfonía.</b> Escúchalo en su sitio: desde el final del <a href=\"#x-mahler-5@1716\">Scherzo</a> hasta el <a href=\"#x-mahler-5@3413\">Rondo-Finale</a>. Después del ruido, el silencio pesa más.</li>\n</ol>\n<p>Y compara el tempo. La misma partitura dura 7 minutos con Mengelberg y casi 14 con Haitink: lo ves en el gráfico de duraciones de esta ficha y en el artículo <a href=\"#a-tempo\">sobre el tempo</a>.</p>"
 },
 {
 "t": "Para el concierto",
