@@ -244,6 +244,17 @@ button.btn[aria-pressed=true]{border-color:var(--ren);color:var(--ren)}
 .prog i{display:block;height:100%;background:var(--acc)}
 .hecho{color:var(--ren);font:700 16px var(--ui);margin-left:6px}
 .toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--ink);color:var(--on);padding:10px 18px;border-radius:999px;font:600 15px var(--ui);z-index:30;max-width:90vw}
+/* ventanita del glosario */
+#pop{position:absolute;z-index:25;width:min(400px,calc(100vw - 24px));max-height:min(60vh,520px);overflow:auto;background:var(--bg);border:1.5px solid var(--ink);border-radius:12px;box-shadow:0 10px 30px rgb(0 0 0/.25);padding:10px 16px 12px}
+#pop[hidden]{display:none}
+#pop .ph{display:flex;justify-content:space-between;gap:10px;align-items:start}
+#pop .ph small{display:block;font:700 13px var(--ui);color:var(--acc);letter-spacing:.03em;text-transform:uppercase;margin-top:6px}
+#pop h3{font-size:24px;margin:2px 0 6px}
+#pop-x{flex:none;min-width:40px;min-height:40px;border:0;border-radius:50%;background:var(--card);color:var(--ink);font:700 22px/1 var(--ui);cursor:pointer}
+#pop-b{font-size:16px}
+#pop .more{font:600 14px var(--ui);margin:8px 0 0}
+@media(max-width:600px){#pop{position:fixed;left:8px!important;right:8px;top:auto!important;bottom:8px;width:auto;max-height:62vh}
+ body.mini-on #pop{bottom:calc((100vw - 38px)*9/16 + 92px);max-height:calc(100vh - (100vw - 38px)*9/16 - 110px)}}
 footer{border-top:3px double var(--ink);padding:18px 0 40px;font:14px var(--ui);color:var(--mute)}
 </style>
 </head>
@@ -259,6 +270,7 @@ footer{border-top:3px double var(--ink);padding:18px 0 40px;font:14px var(--ui);
  </nav>
  <main id="app"><p class="ui mute">Cargando el diario…</p></main>
  <aside id="mini" hidden aria-label="Ejemplo sonando"><div class="mh"><span id="mini-t"></span><button type="button" id="mini-x" aria-label="Cerrar el reproductor">×</button></div><div class="player"><iframe id="mini-f" title="Ejemplo" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div></aside>
+ <div id="pop" hidden role="dialog" aria-labelledby="pop-t"><div class="ph"><div><small>Glosario</small><h3 id="pop-t"></h3></div><button type="button" id="pop-x" aria-label="Cerrar">×</button></div><div id="pop-b"></div><p class="more"><a id="pop-g" href="#glosario">Ver en el glosario</a></p></div>
  <footer><p>Cada ficha se escribe a partir de fuentes consultadas (biografías, notas de programa, análisis y la descripción de los vídeos). Los minutos de escucha salen de los capítulos del vídeo de referencia: al tocarlos, el reproductor de la ficha salta a ese punto. Las imágenes son obras de dominio público tomadas de Wikimedia Commons; cada pie enlaza a su ficha original. Los conciertos se buscan en la agenda de Bachtrack. Las visitas se cuentan de forma anónima con GoatCounter, sin cookies.</p></footer>
 </div>
 <script>
@@ -301,6 +313,9 @@ function miniPlay(vid,t,lbl,auto=true){miniF.src=YTE(vid,`${auto?'&autoplay=1':'
 function oirX(xid,t){const r=XR[xid];if(!r)return;contar(`escucha/x-${xid}`,r.compositor+' · '+r.titulo,true);t=t||r.ini||0;const c=t&&r.caps?.[t];miniPlay(ytId(r.url),t,`${esc(r.compositor)} · ${esc(r.titulo)}${c?' · '+esc(c):''}${t?' · '+mmss(t):''}<br><span class="mute">${esc(r.fuente)}</span>`)}
 document.getElementById('mini-x').addEventListener('click',()=>{mini.hidden=true;miniF.src='about:blank';document.body.classList.remove('mini-on')});
 document.addEventListener('click',ev=>{
+  const ga=ev.target.closest('a[href^="#g-"]');
+  if(ga&&ga.id!=='pop-g'&&!ev.ctrlKey&&!ev.metaKey&&!ev.shiftKey&&!/^#(glosario|g-)/.test(location.hash)&&G[ga.getAttribute('href').slice(3)]){ev.preventDefault();abreTermino(ga.getAttribute('href').slice(3),ga);return}
+  if(!pop.hidden&&!ev.target.closest('#pop')&&!ev.target.closest('#mini'))cierraPop();
   const sh=ev.target.closest('[data-share]');if(sh){ev.preventDefault();compartir(sh.dataset.share);return}
   const bt=ev.target.closest('a[href^="https://bachtrack.com"]');if(bt){contar('conciertos/'+bt.getAttribute('href').split('/').slice(5).join('/'),'Bachtrack',true);return}
   const y=ev.target.closest('a[data-yt]');if(y){ev.preventDefault();contar('escucha/yt-'+y.dataset.yt,y.dataset.lbl||'',true);miniPlay(y.dataset.yt,0,esc(y.dataset.lbl||''));return}
@@ -322,6 +337,22 @@ const epo=id=>EP[id]||{nombre:id,color:'var(--ink)'};
 const ST={get(){try{return JSON.parse(localStorage.getItem('oyente')||'{}')||{}}catch(e){return {}}},set(v){try{localStorage.setItem('oyente',JSON.stringify(v))}catch(e){}}};
 function marca(k,id,on=true){const s=ST.get(),l=new Set(s[k]||[]);on?l.add(id):l.delete(id);s[k]=[...l];ST.set(s);return s}
 const tiene=(k,id)=>(ST.get()[k]||[]).includes(id);
+const pop=document.getElementById('pop'),popB=document.getElementById('pop-b'),popT=document.getElementById('pop-t'),popG=document.getElementById('pop-g');let popDe=null;
+function abreTermino(id,a){
+  const g=G[id];if(!g)return false;
+  popT.textContent=g.termino;popB.innerHTML=`<p>${g.def}</p>${ejemplos(g.ejemplos)}`;popG.href='#g-'+id;pop.hidden=false;pop.scrollTop=0;popDe=a;
+  if(innerWidth>600&&a){
+    const r=a.getBoundingClientRect(),w=pop.offsetWidth,hp=pop.offsetHeight;
+    let x=Math.max(scrollX+12,Math.min(r.left+scrollX,scrollX+innerWidth-w-12));
+    let y=r.bottom+scrollY+8;if(r.bottom+8+hp>innerHeight&&r.top-8-hp>0)y=r.top+scrollY-8-hp;
+    pop.style.left=x+'px';pop.style.top=y+'px';
+  }
+  document.getElementById('pop-x').focus({preventScroll:true});
+  contar('glosario/'+id,g.termino,true);return true;
+}
+function cierraPop(){if(pop.hidden)return;pop.hidden=true;if(popDe&&document.contains(popDe))popDe.focus({preventScroll:true});popDe=null}
+document.getElementById('pop-x').addEventListener('click',cierraPop);
+addEventListener('keydown',e=>{if(e.key==='Escape')cierraPop()});
 function toast(t){const d=document.createElement('div');d.className='toast';d.setAttribute('role','status');d.textContent=t;document.body.appendChild(d);setTimeout(()=>d.remove(),2400)}
 function compartir(txt){
   const url=CONTAR?location.href:'https://el-oyente.com/'+location.hash;
@@ -580,6 +611,7 @@ const V={
 };
 
 function route(){
+  cierraPop();
   const h0=decodeURIComponent(location.hash.slice(1))||'portada';
   const[h,qs]=h0.split('?');
   let html,sec=h,hl=null;
