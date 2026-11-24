@@ -231,7 +231,7 @@ footer{border-top:3px double var(--ink);padding:18px 0 40px;font:14px var(--ui);
  </nav>
  <main id="app"><p class="ui mute">Cargando el diario…</p></main>
  <aside id="mini" hidden aria-label="Ejemplo sonando"><div class="mh"><span id="mini-t"></span><button type="button" id="mini-x" aria-label="Cerrar el reproductor">×</button></div><div class="player"><iframe id="mini-f" title="Ejemplo" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div></aside>
- <footer><p>Cada ficha se escribe a partir de fuentes consultadas (biografías, notas de programa, análisis y la descripción de los vídeos). Los minutos de escucha salen de los capítulos del vídeo de referencia: al tocarlos, el reproductor de la ficha salta a ese punto. Las imágenes son obras de dominio público tomadas de Wikimedia Commons; cada pie enlaza a su ficha original. Los conciertos se buscan en la agenda de Bachtrack.</p></footer>
+ <footer><p>Cada ficha se escribe a partir de fuentes consultadas (biografías, notas de programa, análisis y la descripción de los vídeos). Los minutos de escucha salen de los capítulos del vídeo de referencia: al tocarlos, el reproductor de la ficha salta a ese punto. Las imágenes son obras de dominio público tomadas de Wikimedia Commons; cada pie enlaza a su ficha original. Los conciertos se buscan en la agenda de Bachtrack. Las visitas se cuentan de forma anónima con GoatCounter, sin cookies.</p></footer>
 </div>
 <script>
 {
@@ -264,21 +264,30 @@ function ejemplos(list){
 }
 const mini=document.getElementById('mini'),miniF=document.getElementById('mini-f'),miniT=document.getElementById('mini-t');
 function oir(oid,t){
-  const o=O[oid];if(!o)return;const vid=ytId(o.grabacion.url);if(!vid){location.hash='#o-'+oid;return}
+  const o=O[oid];if(!o)return;contar(`escucha/o-${oid}@${t}`,momento(oid,t),true);const vid=ytId(o.grabacion.url);if(!vid){location.hash='#o-'+oid;return}
   const yt=document.getElementById('yt');
   if(yt&&yt.dataset.id===vid){yt.src=YTE(vid,`&autoplay=1&start=${t}`);yt.closest('.player').scrollIntoView({behavior:'smooth',block:'nearest'});return}
   miniF.src=YTE(vid,`&autoplay=1&start=${t}`);miniT.innerHTML=`<b>Escuchando</b><br>${esc(momento(oid,t))} · <a href="#o-${oid}">ficha</a>`;mini.hidden=false;document.body.classList.add('mini-on');
 }
 function miniPlay(vid,t,lbl,auto=true){miniF.src=YTE(vid,`${auto?'&autoplay=1':''}${t?`&start=${t}`:''}`);miniT.innerHTML=`<b>Escuchando</b><br>${lbl}`;mini.hidden=false;document.body.classList.add('mini-on')}
-function oirX(xid,t){const r=XR[xid];if(!r)return;t=t||r.ini||0;const c=t&&r.caps?.[t];miniPlay(ytId(r.url),t,`${esc(r.compositor)} · ${esc(r.titulo)}${c?' · '+esc(c):''}${t?' · '+mmss(t):''}<br><span class="mute">${esc(r.fuente)}</span>`)}
+function oirX(xid,t){const r=XR[xid];if(!r)return;contar(`escucha/x-${xid}`,r.compositor+' · '+r.titulo,true);t=t||r.ini||0;const c=t&&r.caps?.[t];miniPlay(ytId(r.url),t,`${esc(r.compositor)} · ${esc(r.titulo)}${c?' · '+esc(c):''}${t?' · '+mmss(t):''}<br><span class="mute">${esc(r.fuente)}</span>`)}
 document.getElementById('mini-x').addEventListener('click',()=>{mini.hidden=true;miniF.src='about:blank';document.body.classList.remove('mini-on')});
 document.addEventListener('click',ev=>{
-  const y=ev.target.closest('a[data-yt]');if(y){ev.preventDefault();miniPlay(y.dataset.yt,0,esc(y.dataset.lbl||''));return}
+  const bt=ev.target.closest('a[href^="https://bachtrack.com"]');if(bt){contar('conciertos/'+bt.getAttribute('href').split('/').slice(5).join('/'),'Bachtrack',true);return}
+  const y=ev.target.closest('a[data-yt]');if(y){ev.preventDefault();contar('escucha/yt-'+y.dataset.yt,y.dataset.lbl||'',true);miniPlay(y.dataset.yt,0,esc(y.dataset.lbl||''));return}
   const a=ev.target.closest('a[href^="#o-"],a[href^="#x-"]');if(!a)return;const h=a.getAttribute('href');
   let m=h.match(/^#o-([a-z0-9-]+)@(\d+)$/);if(m){ev.preventDefault();oir(m[1],+m[2]);return}
   m=h.match(/^#x-([a-z0-9-]+)(?:@(\d+))?$/);if(m){ev.preventDefault();oirX(m[1],m[2]?+m[2]:0)}
 });
 function ytAt(url,t){if(!t)return url;const id=(url.match(/(?:youtu\.be\/|v=)([\w-]{11})/)||[])[1];return id?`https://youtu.be/${id}?t=${t}`:url}
+/* visitas anónimas con GoatCounter (sin cookies). Solo cuenta en el dominio publicado. */
+const CONTAR=/(^|\.)el-oyente\.com$/.test(location.hostname);
+function contar(path,title,event=false,n=0){
+  if(!CONTAR)return;
+  const gc=window.goatcounter;
+  if(gc&&gc.count){try{gc.count({path,title,event})}catch(e){}return}
+  if(n<40)setTimeout(()=>contar(path,title,event,n+1),250);
+}
 const epo=id=>EP[id]||{nombre:id,color:'var(--ink)'};
 /* conciertos: búsquedas en Bachtrack con filtros en la URL (comprobados: composer, performer, country, city, datefrom/datespan, medium=2) */
 const PAISES=[['','Cualquier país'],['spain','España'],['portugal','Portugal'],['france','Francia'],['italy','Italia'],['germany','Alemania'],['austria','Austria'],['netherlands','Países Bajos'],['united-kingdom','Reino Unido']];
@@ -470,6 +479,9 @@ function route(){
     else html=V.nada();
   } else html=V.nada();
   app.innerHTML=html;
+  const h1=app.querySelector('h1');
+  document.title=(h!=='portada'&&h1?h1.textContent.trim()+' · ':'')+'El Oyente';
+  contar('/'+(h==='portada'?'':h.split('@')[0]),document.title);
   app.querySelectorAll('a[href^="#o-"],a[href^="#x-"]').forEach(x=>{const h=x.getAttribute('href');if((/@\d+$/.test(h)||h.startsWith('#x-'))&&!x.classList.contains('ej'))x.classList.add('oir')});
   document.querySelectorAll('nav.sec a').forEach(a=>a.setAttribute('aria-current',a.getAttribute('href')==='#'+sec?'page':'false'));
   if(hl){const t=document.getElementById('g-'+hl);if(t)t.scrollIntoView({block:'start'})}else window.scrollTo(0,0);
@@ -509,5 +521,6 @@ Promise.all(['data/obras.json','data/personas.json','data/escuela.json'].map(u=>
 .catch(err=>{app.innerHTML=`<p class="err">No se han podido cargar los datos del diario (${esc(err.message)}). Recarga la página.</p>`;console.error(err)});
 }
 </script>
+<script data-goatcounter="https://el-oyente.goatcounter.com/count" data-goatcounter-settings='{"no_onload": true}' async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>

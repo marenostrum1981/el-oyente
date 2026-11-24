@@ -14,6 +14,7 @@ Un diario web para aprender a escuchar música clásica. Cada día entra una obr
 - `src/imagenes.py`: imágenes de obras, compositores y épocas (Wikimedia Commons). `build_data.py` las añade a cada ficha.
 - `data/*.json`: archivos generados. No se editan a mano.
 - Conciertos: la app no guarda conciertos; construye búsquedas en la agenda de Bachtrack (`https://bachtrack.com/es_ES/search-events/…`) con filtros comprobados: `composer=`, `performer=`, `country=` (nombre en inglés: `spain`, `united-kingdom`…), `city=` (en inglés: `seville`, `palma-de-mallorca`…), `datefrom=AAAAMMDD;datespan=N` y `medium=2` (vídeo). Los filtros se separan con `;`.
+- Visitas: GoatCounter (`https://el-oyente.goatcounter.com`, sin cookies). El script no cuenta solo (`no_onload`): la app llama a `contar()` en cada ruta (`/o-ID`, `/c-ID`, `/conciertos`…; la portada es `/`) y solo en el dominio `el-oyente.com`, nunca en local. También cuenta eventos: `escucha/o-ID@SEG`, `escucha/x-ID`, `escucha/yt-ID` y `conciertos/<filtros>` al abrir Bachtrack. El título de la pestaña es el `h1` de cada página.
 - `manifest.webmanifest`, `sw.js` e `icons/`: la parte de app instalable. Si cambias `index.html` o los iconos, sube la versión de `CACHE` en `sw.js` (`oyente-v1` → `oyente-v2`…).
 
 ## Flujo diario: «Obra del día: <enlace o título>»
