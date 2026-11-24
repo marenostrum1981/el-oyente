@@ -208,6 +208,10 @@ aside .fig img{width:100%;max-height:none}
 .durs .bar{display:block;height:8px;border-radius:4px;background:var(--card);margin-top:6px;overflow:hidden}
 .durs .bar i{display:block;height:100%;background:var(--ink);border-radius:4px}
 .durs li.me .bar i{background:var(--acc)}
+.durs a.durl{display:block;color:inherit;text-decoration:none;cursor:pointer}
+.durs a.durl .pl{display:inline-grid;place-items:center;width:20px;height:20px;border-radius:50%;background:var(--acc);color:#fff;margin-right:7px;vertical-align:-4px}
+.durs a.durl .pl svg{width:9px;height:9px;fill:currentColor}
+.durs a.durl:hover b,.durs a.durl:focus-visible b{text-decoration:underline}
 .ctx{list-style:none;margin:0;padding:0}
 .ctx li{display:grid;grid-template-columns:3.4em minmax(0,1fr);gap:10px;padding:9px 0;border-bottom:1px solid var(--line);font-size:15.5px;line-height:1.45}
 .ctx b{font:700 15px var(--ui);color:var(--acc)}
@@ -442,10 +446,14 @@ const btA=(f,txt,small='')=>`<li><a class="ext" href="${btUrl(f)}" target="_blan
 function dondeBox(k,sl,tit,mas){return `<section><p class="aside-h">${tit}</p><ul class="mini">${btA({[k]:sl,pais:'spain'},'En España','Próximos conciertos y óperas')}${btA({[k]:sl},'En todo el mundo')}${btA({[k]:sl,tipo:'video'},'En vídeo o por internet')}</ul><p class="ui" style="margin-top:8px"><a href="#conciertos?${k}=${sl}">${mas||'Más filtros: ciudad, fechas…'}</a></p></section>`}
 const segs=d=>{const[m,x]=String(d).split(':').map(Number);return m*60+x};
 function tempos(o){
-  const it=[...(o.grabacion.dur?[{n:o.grabacion.titulo,d:'la de esta ficha',t:o.grabacion.dur,me:1}]:[]),...(o.versiones||[]).filter(v=>v.dur).map(v=>({n:v.p?P[v.p]?.nombre:v.quien,d:v.det||'',t:v.dur}))];
+  const it=[...(o.grabacion.dur?[{n:o.grabacion.titulo,d:'la de esta ficha',t:o.grabacion.dur,me:1,u:o.grabacion.url}]:[]),...(o.versiones||[]).filter(v=>v.dur).map(v=>({n:v.p?P[v.p]?.nombre:v.quien,d:v.det||'',t:v.dur,u:v.url}))];
   if(it.length<3)return '';
-  const mx=Math.max(...it.map(x=>segs(x.t)));
-  return `<section><p class="aside-h">La misma música, distinto tempo</p><ul class="durs">${it.sort((a,b)=>segs(a.t)-segs(b.t)).map(x=>`<li${x.me?' class="me"':''}><div class="dh"><span><b>${esc(x.n)}</b>${x.d?' · '+esc(x.d):''}</span><span class="dt">${esc(x.t)}</span></div><span class="bar"><i style="width:${(segs(x.t)/mx*100).toFixed(1)}%"></i></span></li>`).join('')}</ul><p class="note">Duración de este movimiento en cada grabación. <a href="#a-tempo">¿Por qué cambia tanto?</a></p></section>`;
+  const mx=Math.max(...it.map(x=>segs(x.t)));let algun=0;
+  const fila=x=>{const y=x.u&&x.u[0]!=='#'?ytId(x.u):null,href=x.u&&(x.u[0]==='#'||y)?x.u:null;if(href)algun=1;
+    const dentro=`<div class="dh"><span>${href?`<span class="pl">${PLAY}</span>`:''}<b>${esc(x.n)}</b>${x.d?' · '+esc(x.d):''}</span><span class="dt">${esc(x.t)}</span></div><span class="bar"><i style="width:${(segs(x.t)/mx*100).toFixed(1)}%"></i></span>`;
+    return `<li${x.me?' class="me"':''}>${href?`<a class="durl" href="${esc(href)}"${y?` data-yt="${y}" data-lbl="${esc(x.n+' · '+o.titulo)}"`:''} aria-label="Escuchar ${esc(x.n)} (${esc(x.t)})">${dentro}</a>`:dentro}</li>`};
+  const filas=it.sort((a,b)=>segs(a.t)-segs(b.t)).map(fila).join('');
+  return `<section><p class="aside-h">La misma música, distinto tempo</p><ul class="durs">${filas}</ul><p class="note">Duración de este movimiento en cada grabación.${algun?' Toca una para escucharla aquí y compara.':''} <a href="#a-tempo">¿Por qué cambia tanto?</a></p></section>`;
 }
 const pLink=id=>P[id]?`<a href="#${P[id].tipo==='compositor'?'c':'i'}-${id}">${esc(P[id].nombre)}</a>`:esc(id);
 const gLink=id=>G[id]?`<a class="chip" href="#g-${id}">${esc(G[id].termino)}</a>`:'';

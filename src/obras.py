@@ -427,9 +427,9 @@ dict(
   dict(anio="1905", txt="Mijaíl Fokin crea en San Petersburgo, para Anna Pávlova, el solo <a href=\"#x-cisne-ballet\">La muerte del cisne</a>, con esta música."),
  ],
  versiones=[
-  dict(quien="Sheku Kanneh-Mason", det="Con Katherine Thomas, arpa, y los violonchelos de la CBSO · 2017 (Decca, disco Inspiration)", nota="Un arreglo con arpa en lugar de piano. De las versiones más fluidas.", dur="2:33"),
-  dict(quien="Jacqueline du Pré", det="Con Osian Ellis, arpa · 1962 (hoy en Warner Classics)", nota="La gran violonchelista británica, también con arpa.", dur="2:52"),
-  dict(p="maisky", det="Con la Orpheus Chamber Orchestra · disco de 1998 (Deutsche Grammophon)", nota="Con orquesta de cámara y un tempo muy lento: más de cuatro minutos.", dur="4:08"),
+  dict(quien="Sheku Kanneh-Mason", det="Con Katherine Thomas, arpa, y los violonchelos de la CBSO · 2017 (Decca, disco Inspiration)", nota="Un arreglo con arpa en lugar de piano. De las versiones más fluidas.", dur="2:33", url="https://youtu.be/dalneyUG9w8"),
+  dict(quien="Jacqueline du Pré", det="Con Osian Ellis, arpa · 1962 (hoy en Warner Classics)", nota="La gran violonchelista británica, también con arpa.", dur="2:52", url="https://youtu.be/iNzQUtB3HjA"),
+  dict(p="maisky", det="Con la Orpheus Chamber Orchestra · disco de 1998 (Deutsche Grammophon)", nota="Con orquesta de cámara y un tempo muy lento: más de cuatro minutos.", dur="4:08", url="https://youtu.be/tLQ8ULYUIuc"),
   dict(p="maisky", det="Festival de Verbier, 2015", nota="En directo, como propina, con la Verbier Festival Chamber Orchestra y Gábor Takács-Nagy: arpa y cuerda.", url="https://youtu.be/xPsOt6fLDFY"),
   dict(quien="Steven Isserlis", det="Con Connie Shih, piano · Wigmore Hall, 2021", nota="Propina de un recital, con piano, como en esta grabación.", url="https://youtu.be/xEwxIkW9SWo"),
   dict(quien="Sheku e Isata Kanneh-Mason", det="Violonchelo y piano · Festival de Verbier", nota="Los hermanos Kanneh-Mason, con piano, como Ma y Stott.", url="https://youtu.be/RdayR1NN83A"),
