@@ -6,6 +6,10 @@
 <title>El Oyente · Diario</title>
 <meta name="description" content="Un diario para aprender a escuchar música clásica: una obra al día, compositores, épocas y glosario.">
 <meta name="theme-color" content="#141414">
+<meta property="og:type" content="website"><meta property="og:site_name" content="El Oyente">
+<meta property="og:title" content="El Oyente · Un diario para aprender a escuchar música clásica">
+<meta property="og:description" content="Una obra al día con guía de escucha, compositores, épocas, glosario y un juego para entrenar el oído.">
+<meta property="og:url" content="https://el-oyente.com/"><meta property="og:image" content="https://el-oyente.com/icons/icon-512.png"><meta name="twitter:card" content="summary">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icons/icon-192.png">
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
@@ -216,6 +220,30 @@ aside .fig img{width:100%;max-height:none}
 .atajos li{display:flex;flex-wrap:wrap;gap:4px 14px;align-items:baseline}
 .atajos li>b{min-width:9em}
 .atajos a{font:600 15px var(--ui)}
+/* juego, recorrido y navegación */
+button.btn{background:var(--bg);color:var(--ink);cursor:pointer}
+button.btn.solid{background:var(--ink);color:var(--on)}
+button.btn[aria-pressed=true]{border-color:var(--ren);color:var(--ren)}
+.sigue{margin-top:34px;border-top:3px solid var(--ink);padding-top:12px}
+.quiz{max-width:720px}
+.quiz .player{margin-top:10px}
+.tapa{position:absolute;inset:0;pointer-events:none;background:var(--ink);color:var(--on);display:grid;place-items:center;text-align:center;font:700 22px var(--ui);padding:12px}
+.tapa small{display:block;font:400 14px var(--ui);opacity:.8;margin-top:6px}
+.eq{display:flex;gap:5px;height:34px;align-items:flex-end;justify-content:center;margin-bottom:10px}
+.eq i{width:7px;background:var(--acc);border-radius:2px;animation:eq 1.1s ease-in-out infinite}
+.eq i:nth-child(2){animation-delay:.2s}.eq i:nth-child(3){animation-delay:.4s}.eq i:nth-child(4){animation-delay:.1s}.eq i:nth-child(5){animation-delay:.3s}
+@keyframes eq{0%,100%{height:20%}50%{height:100%}}
+@media (prefers-reduced-motion:reduce){.eq i{animation:none;height:60%}}
+.opciones{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:16px 0}
+.opciones button{min-height:54px;font:700 18px var(--ui);border:1.5px solid var(--ink);border-radius:10px;background:var(--bg);color:var(--ink);cursor:pointer}
+.opciones button:disabled{cursor:default}
+.opciones button.ok{background:var(--ren);border-color:var(--ren);color:var(--on)}
+.opciones button.ko{background:var(--acc);border-color:var(--acc);color:var(--on)}
+.marcador{font:700 15px var(--ui);color:var(--mute);margin:0}
+.prog{height:8px;background:var(--card);border-radius:4px;overflow:hidden}
+.prog i{display:block;height:100%;background:var(--acc)}
+.hecho{color:var(--ren);font:700 16px var(--ui);margin-left:6px}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--ink);color:var(--on);padding:10px 18px;border-radius:999px;font:600 15px var(--ui);z-index:30;max-width:90vw}
 footer{border-top:3px double var(--ink);padding:18px 0 40px;font:14px var(--ui);color:var(--mute)}
 </style>
 </head>
@@ -227,7 +255,7 @@ footer{border-top:3px double var(--ink);padding:18px 0 40px;font:14px var(--ui);
   <p class="sub">Un diario para aprender a escuchar música clásica</p>
  </header>
  <nav class="sec" aria-label="Secciones">
-  <a href="#portada">Portada</a><a href="#obras">Obras</a><a href="#compositores">Compositores</a><a href="#interpretes">Intérpretes</a><a href="#epocas">Épocas</a><a href="#escuela">Escuela</a><a href="#glosario">Glosario</a><a href="#conciertos">Conciertos</a>
+  <a href="#portada">Portada</a><a href="#obras">Obras</a><a href="#compositores">Compositores</a><a href="#interpretes">Intérpretes</a><a href="#epocas">Épocas</a><a href="#escuela">Escuela</a><a href="#glosario">Glosario</a><a href="#juego">Juega</a><a href="#conciertos">Conciertos</a>
  </nav>
  <main id="app"><p class="ui mute">Cargando el diario…</p></main>
  <aside id="mini" hidden aria-label="Ejemplo sonando"><div class="mh"><span id="mini-t"></span><button type="button" id="mini-x" aria-label="Cerrar el reproductor">×</button></div><div class="player"><iframe id="mini-f" title="Ejemplo" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div></aside>
@@ -273,6 +301,7 @@ function miniPlay(vid,t,lbl,auto=true){miniF.src=YTE(vid,`${auto?'&autoplay=1':'
 function oirX(xid,t){const r=XR[xid];if(!r)return;contar(`escucha/x-${xid}`,r.compositor+' · '+r.titulo,true);t=t||r.ini||0;const c=t&&r.caps?.[t];miniPlay(ytId(r.url),t,`${esc(r.compositor)} · ${esc(r.titulo)}${c?' · '+esc(c):''}${t?' · '+mmss(t):''}<br><span class="mute">${esc(r.fuente)}</span>`)}
 document.getElementById('mini-x').addEventListener('click',()=>{mini.hidden=true;miniF.src='about:blank';document.body.classList.remove('mini-on')});
 document.addEventListener('click',ev=>{
+  const sh=ev.target.closest('[data-share]');if(sh){ev.preventDefault();compartir(sh.dataset.share);return}
   const bt=ev.target.closest('a[href^="https://bachtrack.com"]');if(bt){contar('conciertos/'+bt.getAttribute('href').split('/').slice(5).join('/'),'Bachtrack',true);return}
   const y=ev.target.closest('a[data-yt]');if(y){ev.preventDefault();contar('escucha/yt-'+y.dataset.yt,y.dataset.lbl||'',true);miniPlay(y.dataset.yt,0,esc(y.dataset.lbl||''));return}
   const a=ev.target.closest('a[href^="#o-"],a[href^="#x-"]');if(!a)return;const h=a.getAttribute('href');
@@ -289,6 +318,84 @@ function contar(path,title,event=false,n=0){
   if(n<40)setTimeout(()=>contar(path,title,event,n+1),250);
 }
 const epo=id=>EP[id]||{nombre:id,color:'var(--ink)'};
+/* recorrido de cada lector: solo en este navegador */
+const ST={get(){try{return JSON.parse(localStorage.getItem('oyente')||'{}')||{}}catch(e){return {}}},set(v){try{localStorage.setItem('oyente',JSON.stringify(v))}catch(e){}}};
+function marca(k,id,on=true){const s=ST.get(),l=new Set(s[k]||[]);on?l.add(id):l.delete(id);s[k]=[...l];ST.set(s);return s}
+const tiene=(k,id)=>(ST.get()[k]||[]).includes(id);
+function toast(t){const d=document.createElement('div');d.className='toast';d.setAttribute('role','status');d.textContent=t;document.body.appendChild(d);setTimeout(()=>d.remove(),2400)}
+function compartir(txt){
+  const url=CONTAR?location.href:'https://el-oyente.com/'+location.hash;
+  contar('compartir/'+(location.hash.slice(1).split('?')[0]||'portada'),document.title,true);
+  if(navigator.share)navigator.share({title:document.title,text:txt||document.title,url}).catch(()=>{});
+  else if(navigator.clipboard)navigator.clipboard.writeText(url).then(()=>toast('Enlace copiado')).catch(()=>toast(url));
+  else toast(url);
+}
+/* fragmentos con inicio comprobado: capítulos de las obras del diario y de las referencias */
+function clips(){
+  const L=[];
+  D.obras.forEach(o=>{const vid=ytId(o.grabacion.url);if(!vid)return;o.escucha.filter(x=>x.t!=null).forEach(x=>L.push({vid,t:x.t,quien:apellido(o.compositor),href:`#o-${o.id}@${x.t}`,tit:momento(o.id,x.t)}))});
+  Object.entries(XR).forEach(([k,r])=>{const vid=ytId(r.url);if(!vid)return;Object.keys(r.caps||{}).map(Number).forEach(t=>L.push({vid,t,quien:r.compositor,href:`#x-${k}${t?'@'+t:''}`,tit:`${r.compositor} · ${r.titulo} · ${r.caps[t]}`}))});
+  return L;
+}
+function azar(){
+  const L=clips(),c=L[Math.floor(Math.random()*L.length)];if(!c)return;
+  let m=c.href.match(/^#o-([a-z0-9-]+)@(\d+)$/);if(m)oir(m[1],+m[2]);else{m=c.href.match(/^#x-([a-z0-9-]+)(?:@(\d+))?$/);if(m)oirX(m[1],m[2]?+m[2]:0)}
+  contar('azar','Algo al azar',true);
+}
+let J=null;
+const mezcla=a=>a.map(x=>[Math.random(),x]).sort((p,q)=>p[0]-q[0]).map(x=>x[1]);
+function juegoNuevo(){
+  const by={};clips().forEach(c=>(by[c.quien]=by[c.quien]||[]).push(c));
+  const qs=Object.keys(by),usados=new Set(),rondas=[];
+  for(let i=0;i<5;i++){
+    let c=null;for(let k=0;k<40&&!c;k++){const q=qs[Math.floor(Math.random()*qs.length)],x=by[q][Math.floor(Math.random()*by[q].length)];if(!usados.has(x.href))c=x}
+    if(!c)break;usados.add(c.href);
+    rondas.push({c,op:mezcla([c.quien,...mezcla(qs.filter(q=>q!==c.quien)).slice(0,3)])});
+  }
+  J={rondas,i:0,ok:0};contar('juego/empieza','¿Quién suena?',true);pintaRonda();
+}
+const srcJ=c=>YTE(c.vid,`&autoplay=1&controls=0&start=${c.t}&end=${c.t+35}`);
+function pintaRonda(){
+  const z=document.getElementById('jz');if(!z||!J)return;const r=J.rondas[J.i];
+  mini.hidden=true;miniF.src='about:blank';document.body.classList.remove('mini-on');
+  z.innerHTML=`<p class="marcador">Ronda ${J.i+1} de ${J.rondas.length} · Aciertos: ${J.ok}</p>
+   <div class="player"><iframe id="jf" title="Fragmento misterioso" allow="autoplay; encrypted-media" referrerpolicy="strict-origin-when-cross-origin" src="${srcJ(r.c)}"></iframe><div class="tapa"><div><div class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>¿Quién suena?<small>Si no oyes nada, toca aquí para empezar.</small></div></div></div>
+   <div class="opciones">${r.op.map(q=>`<button type="button" data-q="${esc(q)}">${esc(q)}</button>`).join('')}</div>
+   <p><button type="button" class="btn" id="j-otra">Volver a oír</button></p><div id="j-res" aria-live="polite"></div>`;
+  z.querySelectorAll('.opciones button').forEach(b=>b.addEventListener('click',()=>responde(b.dataset.q)));
+  document.getElementById('j-otra').addEventListener('click',()=>{document.getElementById('jf').src=srcJ(r.c)});
+}
+function responde(q){
+  const r=J.rondas[J.i];if(r.hecha)return;r.hecha=1;const bien=q===r.c.quien;if(bien)J.ok++;
+  document.querySelectorAll('.opciones button').forEach(b=>{b.disabled=true;if(b.dataset.q===r.c.quien)b.classList.add('ok');else if(b.dataset.q===q)b.classList.add('ko')});
+  document.querySelector('#jz .tapa')?.remove();
+  const cp=D.personas.find(p=>p.tipo==='compositor'&&apellido(p.id)===r.c.quien);
+  document.getElementById('j-res').innerHTML=`<p class="stand"><b>${bien?'¡Bien!':'Casi.'}</b> Era ${esc(r.c.tit)}.</p><p class="ui">${cp?`<a href="#c-${cp.id}">Cómo reconocer a ${esc(r.c.quien)}</a> · `:''}<a class="j-sitio" href="${r.c.href}">Escucharlo en su sitio</a></p><p><button type="button" class="btn solid" id="j-sig">${J.i+1<J.rondas.length?'Siguiente':'Ver el resultado'}</button></p>`;
+  document.querySelector('.j-sitio').addEventListener('click',()=>{const f=document.getElementById('jf');if(f)f.src='about:blank'});
+  document.getElementById('j-sig').addEventListener('click',()=>{J.i++;J.i<J.rondas.length?pintaRonda():finJuego()});
+  contar('juego/'+(bien?'acierto':'fallo')+'/'+slug(r.c.quien),'¿Quién suena?',true);
+}
+function finJuego(){
+  const z=document.getElementById('jz'),s=ST.get(),n=J.rondas.length;s.mejor=Math.max(s.mejor||0,J.ok);s.partidas=(s.partidas||0)+1;ST.set(s);
+  contar('juego/fin/'+J.ok,'¿Quién suena?',true);
+  z.innerHTML=`<p class="kick">Resultado</p><h2>${J.ok} de ${n}</h2><p class="stand">${J.ok===n?'Oído de director de orquesta.':J.ok>=3?'Vas muy bien: ya distingues estilos.':'Es normal al principio. Con cada obra del diario se nota más la diferencia.'}</p>
+   <p class="ui mute">Tu mejor resultado: ${s.mejor} de ${n}.</p>
+   <div class="btns"><button type="button" class="btn solid" id="j-de-nuevo">Jugar otra vez</button><button type="button" class="btn" data-share="He acertado ${J.ok} de ${n} en «¿Quién suena?», el juego de El Oyente. ¿Cuántos aciertas tú?">Compartir</button></div>
+   <p class="ui"><a href="#a-reconocer-compositores">Trucos para distinguirlos de oído</a></p>`;
+  document.getElementById('j-de-nuevo').addEventListener('click',juegoNuevo);
+}
+function sigue(o){
+  const os=[...D.obras].sort((a,b)=>a.n-b.n),i=os.findIndex(x=>x.id===o.id),pr=os[i-1],nx=os[i+1];
+  const ep=D.obras.find(x=>x.id!==o.id&&x.epoca===o.epoca&&x!==pr&&x!==nx);
+  const card=(k,h,t,txt,c)=>`<article class="card" style="--c:${c||'var(--ink)'}"><small>${k}</small><h3><a href="${h}">${t}</a></h3>${txt?`<p>${txt}</p>`:''}</article>`;
+  const cs=[];
+  if(nx)cs.push(card(`Siguiente · N.º ${nx.n}`,'#o-'+nx.id,esc(nx.titulo),esc(P[nx.compositor]?.nombre||''),epo(nx.epoca).color));
+  if(pr)cs.push(card(`Anterior · N.º ${pr.n}`,'#o-'+pr.id,esc(pr.titulo),esc(P[pr.compositor]?.nombre||''),epo(pr.epoca).color));
+  if(ep)cs.push(card(`También del ${esc(epo(o.epoca).nombre)}`,'#o-'+ep.id,esc(ep.titulo),esc(P[ep.compositor]?.nombre||''),epo(ep.epoca).color));
+  cs.push(card('Compositor','#c-'+o.compositor,esc(P[o.compositor]?.nombre||''),'Cómo reconocerlo de oído y qué escuchar después.',epo(o.epoca).color));
+  cs.push(card('Juega','#juego','¿Quién suena?','Pon a prueba tu oído con fragmentos de grabaciones reales.'));
+  return `<section class="sigue"><h2>Sigue explorando</h2><div class="grid">${cs.join('')}</div></section>`;
+}
 /* conciertos: búsquedas en Bachtrack con filtros en la URL (comprobados: composer, performer, country, city, datefrom/datespan, medium=2) */
 const PAISES=[['','Cualquier país'],['spain','España'],['portugal','Portugal'],['france','Francia'],['italy','Italia'],['germany','Alemania'],['austria','Austria'],['netherlands','Países Bajos'],['united-kingdom','Reino Unido']];
 const CIUDADES=[['','Cualquier ciudad'],['madrid','Madrid'],['barcelona','Barcelona'],['valencia','Valencia'],['seville','Sevilla'],['bilbao','Bilbao'],['palma-de-mallorca','Palma de Mallorca'],['paris','París'],['london','Londres'],['new-york-city','Nueva York'],['otra','Otra (escríbela en inglés)']];
@@ -330,13 +437,14 @@ const V={
   const os=[...D.obras].sort((x,y)=>y.n-x.n),o=os[0],c=P[o.compositor],e=epo(o.epoca);
   const doy=Math.floor((Date.now()-new Date(new Date().getFullYear(),0,0))/864e5),cur=D.curiosidades[doy%D.curiosidades.length];
   const art=A[D.destacado]||D.articulos[0];
+  const st=ST.get(),N=D.obras.length,vis=(st.vistas||[]).filter(id=>O[id]).length,hec=(st.escuchadas||[]).filter(id=>O[id]).length,nueva=[...os].reverse().find(x=>!(st.vistas||[]).includes(x.id));
   return `<div class="front"><section class="lead">
     <p class="kick"><span class="dot" style="--c:${e.color}"></span>${esc(o.origen)} · N.º ${o.n}</p>
     <h1><a href="#o-${o.id}">${esc(o.titulo)}</a></h1>
     <p class="meta">${pLink(o.compositor)} · ${esc(o.fechaComp)} · ${esc(e.nombre)}</p>
     ${fig(imgObra(o))}
     <p class="stand">${o.entradilla}</p>
-    <div class="btns"><a class="btn solid" href="#o-${o.id}">Leer la ficha</a><a class="btn" href="${o.grabacion.url}" rel="noopener">${PLAY}Escuchar</a></div>
+    <div class="btns"><a class="btn solid" href="#o-${o.id}">Leer la ficha</a><a class="btn" href="${o.grabacion.url}" rel="noopener">${PLAY}Escuchar</a><button type="button" class="btn" id="azar">Escuchar algo al azar</button></div>
     <hr class="rule">
     <p class="kick">Las obras del diario en la historia</p>
     ${timeline()}
@@ -345,6 +453,8 @@ const V={
     <div class="grid">${os.slice(1,7).map(x=>`<article class="card" style="--c:${epo(x.epoca).color}">${thumb(imgObra(x),'#o-'+x.id)}<small>N.º ${x.n} · ${esc(P[x.compositor]?.nombre||'')}</small><h3><a href="#o-${x.id}">${esc(x.titulo)}</a></h3><p>${x.entradilla}</p></article>`).join('')||'<p class="mute">Aquí aparecerán las obras anteriores.</p>'}</div>
    </section>
    <aside class="side">
+    <section class="box"><p class="kick">Juega</p><h3><a href="#juego">¿Quién suena?</a></h3><p>Cinco fragmentos de grabaciones reales y cuatro compositores posibles. ¿Cuántos aciertas?</p>${st.mejor!=null?`<p class="ui mute">Tu mejor resultado: ${st.mejor} de 5.</p>`:''}<p><a class="btn solid" href="#juego">Jugar</a></p></section>
+    <section class="box"><p class="kick">Tu recorrido</p><p>Has abierto ${vis} de ${N} fichas y has marcado ${hec} como escuchada${hec===1?'':'s'}.</p><div class="prog" role="img" aria-label="${hec} de ${N} obras escuchadas"><i style="width:${N?(hec/N*100).toFixed(0):0}%"></i></div>${nueva?`<p class="ui" style="margin-top:10px">Por descubrir: <a href="#o-${nueva.id}">${esc(nueva.titulo)}</a></p>`:''}<p class="note">Se guarda solo en este navegador.</p></section>
     <section class="box"><p class="kick">La pregunta</p><h3><a href="#a-${art.id}">${esc(art.titulo)}</a></h3><p>${art.entradilla}</p></section>
     <section class="box"><p class="kick">Curiosidad del día</p><p>${cur.t}</p>${cur.l?`<p class="ui"><a href="${cur.l}">Seguir leyendo</a></p>`:''}</section>
     <section class="box"><p class="kick">En directo</p><h3><a href="#conciertos">¿Dónde se toca?</a></h3><p>Busca conciertos de lo que escuchas en el diario, con filtros por compositor, intérprete, ciudad y fechas.</p>${c?.bachtrack?`<ul class="mini">${btA({c:c.bachtrack,pais:'spain'},esc(apellido(o.compositor))+' en España')}</ul>`:''}</section>
@@ -355,7 +465,7 @@ const V={
  obras(){
   const os=[...D.obras].sort((x,y)=>y.n-x.n);
   return `<p class="kick">Archivo</p><h1>Obras</h1><input class="search" id="q" type="search" placeholder="Buscar por obra, compositor o intérprete" aria-label="Buscar obras">
-   <ul class="olist" id="ol">${os.map(o=>`<li data-s="${esc((o.titulo+' '+o.catalogo+' '+(P[o.compositor]?.nombre||'')+' '+(o.interpretes||[]).map(i=>P[i]?.nombre||'').join(' ')).toLowerCase())}"><span class="n">${o.n}</span><div><a href="#o-${o.id}">${esc(o.titulo)}</a><small><span class="dot" style="--c:${epo(o.epoca).color}"></span>${esc(P[o.compositor]?.nombre||'')} · ${esc(o.catalogo)} · ${esc(o.origen)} · ${fecha(o.fecha)}</small></div></li>`).join('')}</ul>`;
+   <ul class="olist" id="ol">${os.map(o=>`<li data-s="${esc((o.titulo+' '+o.catalogo+' '+(P[o.compositor]?.nombre||'')+' '+(o.interpretes||[]).map(i=>P[i]?.nombre||'').join(' ')).toLowerCase())}"><span class="n">${o.n}</span><div><a href="#o-${o.id}">${esc(o.titulo)}</a>${tiene('escuchadas',o.id)?'<span class="hecho" title="La has marcado como escuchada">✓</span>':''}<small><span class="dot" style="--c:${epo(o.epoca).color}"></span>${esc(P[o.compositor]?.nombre||'')} · ${esc(o.catalogo)} · ${esc(o.origen)} · ${fecha(o.fecha)}</small></div></li>`).join('')}</ul>`;
  },
  obra(id,t0){
   const o=O[id];if(!o)return V.nada();
@@ -364,6 +474,7 @@ const V={
   return `<p class="kick"><span class="dot" style="--c:${e.color}"></span>${esc(o.origen)} · ${esc(e.nombre)} · ${esc(o.genero)}</p>
    <h1>${esc(o.titulo)}</h1><p class="ui mute" style="margin-top:-4px">${pLink(o.compositor)}${o.subtitulo?' · '+esc(o.subtitulo):''}</p>
    <p class="stand read">${o.entradilla}</p>
+   <div class="btns" style="margin-top:0"><button type="button" class="btn" id="ya" aria-pressed="${tiene('escuchadas',o.id)}">${tiene('escuchadas',o.id)?'✓ Escuchada':'Marcar como escuchada'}</button><button type="button" class="btn" data-share="${esc(o.titulo)}, en El Oyente: una obra para aprender a escuchar.">Compartir</button></div>
    ${o.partes?.length?`<details class="decode" open><summary>Cómo leer el título</summary><p class="orig" lang="en">${esc(o.titulo_original)}</p><dl>${o.partes.map(x=>`<div><dt><span class="tok">${esc(x.p)}</span>${x.es&&x.es!==x.p?`<small>${esc(x.es)}</small>`:''}</dt><dd><p>${x.h}</p></dd></div>`).join('')}</dl><p class="more"><a href="#a-titulos">Cómo leer el título de cualquier obra</a></p></details>`:''}
    <div class="ficha"><div>
     <dl class="facts m-only">${facts.map(([k,v])=>`<div><dt>${k}</dt><dd>${v}</dd></div>`).join('')}</dl>
@@ -375,6 +486,7 @@ const V={
      <p class="note">${g.nota||''}</p></section>
     ${fig(im,'m-only')}
     <article class="body read">${o.secciones.map(s=>`<h2>${esc(s.t)}</h2>${s.h}`).join('')}</article>
+    ${sigue(o)}
    </div>
    <aside>
     <dl class="facts d-only">${facts.map(([k,v])=>`<div><dt>${k}</dt><dd>${v}</dd></div>`).join('')}</dl>
@@ -436,6 +548,11 @@ const V={
   const gs=[...D.glosario].sort((a,b)=>a.termino.localeCompare(b.termino,'es'));
   return `<p class="kick">Fundamentos</p><h1>Glosario</h1><p class="mute ui">${gs.length} términos. Cada obra nueva añade los suyos.</p><dl class="gl read">${gs.map(g=>`<dt id="g-${g.id}"${g.id===hl?' class="hl"':''}>${esc(g.termino)}</dt><dd>${g.def}${ejemplos(g.ejemplos)}</dd>`).join('')}</dl>`;
  },
+ juego(){
+  const s=ST.get();
+  return `<p class="kick">Juega</p><h1>¿Quién suena?</h1><p class="stand read">Cinco fragmentos de grabaciones reales, de las obras del diario y de las que se citan en él. Escucha sin mirar y adivina el compositor: ¿distingues a Vivaldi de Bach, o a Chopin de Mahler?</p>
+   <div class="quiz" id="jz"><p class="ui mute">${s.mejor!=null?`Tu mejor resultado: ${s.mejor} de 5.`:'Sube el volumen.'}</p><p><button type="button" class="btn solid" id="j-go">Empezar</button></p><p class="note">Cada fragmento dura medio minuto. Si quieres prepararte, lee <a href="#a-reconocer-compositores">cómo distinguirlos de oído</a>.</p></div>`;
+ },
  conciertos(q){
   const cs=D.personas.filter(p=>p.tipo==='compositor'&&p.bachtrack),is=D.personas.filter(p=>p.tipo!=='compositor'&&p.bachtrack);
   const opt=(l,v)=>l.map(([k,t])=>`<option value="${k}"${k===v?' selected':''}>${esc(t)}</option>`).join('');
@@ -469,7 +586,7 @@ function route(){
   const m=h.match(/^([a-z])-(.+)$/);
   if(V[h]&&!['obra','persona','epoca','articulo','nada'].includes(h))html=V[h](new URLSearchParams(qs||''));
   else if(m){const[,k,id]=m;
-    if(k==='o'){const[oid,tt]=id.split('@');html=V.obra(oid,tt?+tt:0);sec='obras'}
+    if(k==='o'){const[oid,tt]=id.split('@');html=V.obra(oid,tt?+tt:0);sec='obras';if(O[oid])marca('vistas',oid)}
     else if(k==='c'){html=V.persona(id);sec='compositores'}
     else if(k==='i'){html=V.persona(id);sec='interpretes'}
     else if(k==='e'){html=V.epoca(id);sec='epocas'}
@@ -491,6 +608,10 @@ function route(){
     document.querySelectorAll('.tracks a.on').forEach(x=>x.classList.remove('on'));a.classList.add('on');
     yt.closest('.player').scrollIntoView({behavior:'smooth',block:'nearest'});
   }));
+  document.getElementById('j-go')?.addEventListener('click',juegoNuevo);
+  document.getElementById('azar')?.addEventListener('click',azar);
+  const ya=document.getElementById('ya');
+  if(ya)ya.addEventListener('click',()=>{const oid=h.slice(2).split('@')[0],on=ya.getAttribute('aria-pressed')!=='true';marca('escuchadas',oid,on);ya.setAttribute('aria-pressed',on);ya.textContent=on?'✓ Escuchada':'Marcar como escuchada';if(on){toast('Anotada en tu recorrido');contar('recorrido/escuchada/'+oid,document.title,true)}});
   const cf=document.getElementById('cf');
   if(cf){
     const go=document.getElementById('cf-go'),sum=document.getElementById('cf-sum');

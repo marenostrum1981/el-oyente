@@ -1037,6 +1037,7 @@
 "titulo": "Sinfonía n.º 5",
 "url": "https://youtu.be/fEGNNuEM3Fc",
 "fuente": "Orquesta Sinfónica de la Radio de Hesse · Andrés Orozco-Estrada",
+"ini": 33,
 "caps": {
 "33": "I. Marcha fúnebre",
 "782": "II. Tempestuoso",
@@ -1050,14 +1051,18 @@
 "titulo": "«Ich bin der Welt abhanden gekommen» (Rückert-Lieder)",
 "url": "https://youtu.be/KNcx6iPT9GA",
 "fuente": "Janet Baker y John Barbirolli (Warner Classics)",
-"caps": {}
+"caps": {
+"0": "Janet Baker"
+}
 },
 "chopin-nocturno-postumo": {
 "compositor": "Chopin",
 "titulo": "Nocturno en do sostenido menor (póstumo)",
 "url": "https://youtu.be/6xQ0QnbpTi4",
 "fuente": "Janusz Olejniczak, banda sonora de «El pianista» (Sony Classical)",
-"caps": {}
+"caps": {
+"0": "Lento con gran espressione"
+}
 },
 "bwv-1048": {
 "compositor": "Bach",
@@ -1079,6 +1084,7 @@
 "url": "https://youtu.be/mAJ9Ifcfqew",
 "fuente": "Eric Zivian, fortepiano (Voices of Music)",
 "caps": {
+"0": "I. Adagio sostenuto",
 "284": "II. Allegretto",
 "418": "III. Presto agitato"
 }
@@ -1116,6 +1122,7 @@
 "url": "https://youtu.be/QWFR9joxbpc",
 "fuente": "Seong-Jin Cho (Gilmore Piano Festival)",
 "caps": {
+"0": "n.º 1, Agitato",
 "246": "n.º 4, Largo",
 "1194": "n.º 15, «Gota de agua»",
 "2284": "n.º 24, Allegro appassionato"
@@ -1126,6 +1133,7 @@
 "titulo": "Réquiem en re menor, K. 626",
 "url": "https://youtu.be/Dp2SJN4UiE4",
 "fuente": "Orquesta Nacional de Francia y Coro de Radio Francia · James Gaffigan (France Musique)",
+"ini": 79,
 "caps": {
 "79": "Introito",
 "493": "Dies irae",
