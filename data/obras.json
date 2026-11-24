@@ -327,7 +327,7 @@
 },
 {
 "t": "Maisky y la interpretación",
-"h": "<p>Mischa Maisky toca un Bach romántico a propósito: suele decir que Bach fue «el mayor de los románticos». Se nota en los <a href=\"#g-tempo\">tempos</a>. En este vídeo la zarabanda dura unos 6 minutos y medio; Yo-Yo Ma la graba en 5:08 y Alexander Kniazev se va a 8:15. La misma partitura da tres músicas distintas.</p>\n<p>Ejercicio: escucha la zarabanda de Maisky y luego la de una versión con instrumentos de época, como la de la Netherlands Bach Society. Pregúntate qué cambia: ¿el tempo, el vibrato, el peso en el segundo tiempo?</p>"
+"h": "<p>Mischa Maisky toca un Bach romántico a propósito: suele decir que Bach fue «el mayor de los románticos». Se nota en los <a href=\"#g-tempo\">tempos</a>. En este vídeo la zarabanda dura unos 6 minutos y medio; Yo-Yo Ma la graba en 5:08 y Alexander Kniazev se va a 8:15. La misma partitura da tres músicas distintas.</p>\n<p>Ejercicio: escucha la zarabanda de Maisky y luego la de una versión con instrumentos de época, como la de la Netherlands Bach Society. Pregúntate qué cambia: ¿el tempo, el <a href=\"#g-vibrato\">vibrato</a>, el peso en el segundo tiempo?</p>"
 },
 {
 "t": "Curiosidades",
@@ -826,6 +826,222 @@
 "archivo": "Mahler_conducting_caricature.jpg",
 "alt": "Serie de dibujos caricaturescos de un director de orquesta en posturas exageradas",
 "pie": "Mahler dirigiendo, según el caricaturista Hans Schließmann, en la revista <i lang=\"de\">Fliegende Blätter</i> (marzo de 1901), el año en que empezó la Quinta. Entonces era director de la Ópera de la Corte de Viena."
+}
+},
+{
+"id": "el-cisne",
+"n": 5,
+"fecha": "2026-11-24",
+"origen": "Obra del día",
+"titulo": "El cisne (Le Cygne)",
+"subtitulo": "N.º 13 de El carnaval de los animales · Andantino grazioso",
+"compositor": "saint-saens",
+"fechaComp": "1886",
+"anio": 1886,
+"epoca": "romanticismo",
+"genero": "Pieza breve para violonchelo, dentro de una serie humorística",
+"plantilla": "Violonchelo y piano (el original: violonchelo y dos pianos)",
+"tonalidad": "Sol mayor",
+"catalogo": "R. 125, n.º 13",
+"titulo_original": "The Carnival of the Animals, R. 125: XIII. The Swan (Arr. for Cello and Piano)",
+"partes": [
+{
+"p": "The Carnival of the Animals",
+"es": "El carnaval de los animales",
+"h": "El nombre de la <b>obra completa</b>: catorce piezas breves, casi todas con un animal, que Saint-Saëns escribió en febrero de 1886 para una fiesta de Carnaval. En francés, <i lang=\"fr\">Le Carnaval des animaux</i>; en su partitura la llamó «gran fantasía zoológica»."
+},
+{
+"p": "R. 125",
+"es": "catálogo Ratner, n.º 125",
+"h": "El número de la obra en el <a href=\"#g-catalogo\">catálogo</a> de Saint-Saëns de la musicóloga Sabina Teller Ratner: por eso la R. <b>El número es del Carnaval entero</b>, con sus catorce piezas; El cisne es una de ellas."
+},
+{
+"p": "XIII.",
+"es": "n.º 13",
+"h": "Es la <b>pieza 13 de las 14</b>, la penúltima: va justo después de «Fósiles» y antes del «Final»."
+},
+{
+"p": "The Swan",
+"es": "El cisne",
+"h": "En francés, <i lang=\"fr\">Le Cygne</i>. Está en <b>sol mayor</b> (en inglés, <i lang=\"en\">G major</i>: G es sol). Es la única pieza del Carnaval que Saint-Saëns dejó publicar en vida. Ojo: su cisne no se muere. Eso lo añadió años después el ballet <i>La muerte del cisne</i>."
+},
+{
+"p": "(Arr. for Cello and Piano)",
+"es": "arreglo para violonchelo y piano",
+"h": "Un <a href=\"#g-arreglo\">arreglo</a> es una adaptación para otros instrumentos. En el original, el violonchelo canta sobre <b>dos pianos</b>. En 1887 se publicó para violonchelo y un solo piano, y así se toca casi siempre fuera del Carnaval. Hay arreglos para muchos más instrumentos: flauta, viola, contrabajo, cuarteto de cuerda, guitarra…"
+}
+],
+"duracion": "Unos 3 minutos (aquí, 2:54 en el disco)",
+"entradilla": "Tres minutos de melodía lenta sobre un piano que ondula como el agua. Es la pieza más seria de una broma musical, y la única que Saint-Saëns dejó publicar en vida.",
+"grabacion": {
+"titulo": "Yo-Yo Ma, violonchelo · Kathryn Stott, piano",
+"fuente": "Vídeo oficial del disco Songs from the Arc of Life (Sony Classical, 2015), en el canal YoYoMaVEVO",
+"url": "https://youtu.be/3qrKjywjo7Q",
+"nota": "El vídeo no tiene capítulos, así que la guía va por pasos, en orden. En el disco, la pista dura 2:54.",
+"dur": "2:54"
+},
+"escucha": [
+{
+"mov": "El agua",
+"cuando": "1",
+"txt": "Empieza el piano solo, apenas un instante, con notas que ondulan sin parar: es el agua. En el original había dos pianos: uno desgranaba los acordes nota a nota (<a href=\"#g-arpegio\">arpegios</a>) y el otro tocaba acordes arpegiados."
+},
+{
+"mov": "Entra el cisne",
+"cuando": "2",
+"txt": "El violonchelo canta una melodía larga y lenta, sin cortes entre las notas (<a href=\"#g-legato\">legato</a>): empieza bajando y luego sube despacio. El cisne se desliza sin esfuerzo, y por debajo el agua no se detiene."
+},
+{
+"mov": "El canto",
+"cuando": "3",
+"txt": "Fíjate en las notas largas del violonchelo: tiemblan un poco. Es el <a href=\"#g-vibrato\">vibrato</a>, que le da calor a la voz. Saint-Saëns pidió <i lang=\"it\">Andantino grazioso</i>: al paso, sin prisa y con gracia."
+},
+{
+"mov": "Sombras",
+"cuando": "4",
+"txt": "La melodía se aleja de casa: aparecen acordes menores, más nostálgicos, y algún giro inesperado antes de volver a sol mayor. Es el momento más melancólico."
+},
+{
+"mov": "Vuelve el tema",
+"cuando": "5",
+"txt": "Regresa la melodía del principio. Esta vez crece (<a href=\"#g-crescendo\">crescendo</a>) y se tiñe de menor antes de calmarse."
+},
+{
+"mov": "Se aleja",
+"cuando": "6",
+"txt": "La música se apaga poco a poco hasta quedarse en sol mayor, en calma, como si el cisne se perdiera de vista."
+}
+],
+"secciones": [
+{
+"t": "Quién era Saint-Saëns cuando la escribió",
+"h": "<p>En febrero de 1886, Camille Saint-Saëns tenía 50 años y era uno de los músicos más famosos de Francia: niño prodigio del piano, organista de la Madeleine de París durante veinte años y autor de éxitos como la <a href=\"#x-danza-macabra\">Danza macabra</a>. Estaba de gira con su Cuarto concierto para piano, pero en Alemania lo acusaron de antialemán y le cancelaron todos los conciertos.</p>\n<p>Después de tocar en Viena y en Praga, se retiró a un pueblecito de Austria (no se sabe cuál) y allí, en pocos días, escribió <i>El carnaval de los animales</i>. A la vez tenía entre manos algo muy serio: la <a href=\"#x-saint-saens-3\">Sinfonía n.º 3, «con órgano»</a>, un encargo de la Sociedad Filarmónica de Londres. El 9 de febrero le escribió a su editor, Durand, que sabía que debía estar con la <a href=\"#g-sinfonia\">sinfonía</a>, «pero es tan divertido» (<i lang=\"fr\">mais c'est si amusant!</i>).</p>\n<p>La sinfonía se estrenó en Londres el 19 de mayo de 1886, dirigida por él. Las dos obras nacieron casi a la vez: la más solemne y la más traviesa de su vida.</p>"
+},
+{
+"t": "Para quién: una broma de Carnaval",
+"h": "<p>El Carnaval se estrenó el 9 de marzo de 1886, martes de Carnaval, en el concierto que el violonchelista Charles Lebouc organizaba cada año por esas fechas en París. Saint-Saëns escribió solos pensando en los músicos de aquella noche: Lebouc al violonchelo, el flautista Paul Taffanel, el clarinetista Charles Turban… Él mismo y Louis Diémer tocaron los dos pianos. <i>El cisne</i> está dedicado a Lebouc.</p>\n<p>Gustó tanto que se repitió varias veces. El 2 de abril se tocó en privado en el salón de la cantante Pauline Viardot, a petición de Franz Liszt, que quería oírlo. Pero a Saint-Saëns el éxito le preocupaba: temía que una obra de broma le quitara crédito como compositor serio. No dejó publicarla y, desde mediados de la década de 1890, tampoco tocarla.</p>\n<p>Hizo una sola excepción: <i>El cisne</i>, que la editorial Durand publicó en 1887 para violonchelo y un solo piano. En su testamento dejó escrito que el Carnaval podría publicarse cuando él muriera. Murió en diciembre de 1921, y el 25 de febrero de 1922 Gabriel Pierné dirigió en París la primera audición pública de la obra completa.</p>"
+},
+{
+"t": "Quién la toca",
+"h": "<p>Ya conoces el violonchelo de la <a href=\"#o-suite-chelo-2\">suite de Bach</a>, donde toca solo y tiene que hacer a la vez la melodía y la armonía. Aquí es al revés: el violonchelo solo canta, y el piano se encarga de todo lo demás.</p>\n<p>En el original, el agua la ponían dos pianos: uno con <a href=\"#g-arpegio\">arpegios</a> casi continuos y el otro con acordes arpegiados. En la versión para un piano, la que escuchas, todo ese acompañamiento cabe en dos manos.</p>\n<p>Como es breve y muy cantable, se ha arreglado para casi todo: flauta y piano, contrabajo y orquesta, cuarteto de cuerda, flauta de Pan y guitarra, piano solo… Jacqueline du Pré y Sheku Kanneh-Mason lo grabaron con <a href=\"#g-arpa\">arpa</a>; <a href=\"#i-maisky\">Mischa Maisky</a>, con orquesta de cámara.</p>"
+},
+{
+"t": "Cómo está hecha",
+"h": "<ul>\n<li><b>Brevísima:</b> unos tres minutos.</li>\n<li><b>Compás de 6/4:</b> seis pulsos en dos grupos de tres, que dan un balanceo lento, como el de una barca. Ver <a href=\"#g-compas\">compás</a>.</li>\n<li><b>Sol mayor</b>, con pasos por acordes menores que le dan nostalgia.</li>\n<li><b>Dos capas que no se mezclan:</b> arriba, la melodía larga del violonchelo; abajo, el piano, que no deja de ondular.</li>\n<li><b>Forma sencilla:</b> el tema, un pasaje que se aleja hacia acordes menores y la vuelta del tema, que crece y se apaga.</li>\n</ul>\n<p>Dentro del Carnaval, justo antes suena «Fósiles», donde Saint-Saëns se ríe de sí mismo citando su Danza macabra con un xilófono (<a href=\"#x-carnaval@973\">escúchalo</a>), y justo después llega el «Final», con todos los animales (<a href=\"#x-carnaval@1218\">escúchalo</a>). Entre dos bromas, <a href=\"#x-carnaval@1058\">El cisne</a> es un momento de calma total.</p>"
+},
+{
+"t": "Cómo reconocer aquí el Romanticismo",
+"h": "<ul>\n<li><b>Una melodía que canta</b>, larga y expresiva, por encima de todo: un instrumento que habla como una voz. Compáralo con el <a href=\"#x-chopin-nocturno-postumo\">Nocturno póstumo de Chopin</a>: también una melodía sobre un acompañamiento que ondula.</li>\n<li><b>Música que pinta algo:</b> un cisne sobre el agua. Es pariente de la <a href=\"#g-musica-programatica\">música programática</a>, como la <a href=\"#x-danza-macabra\">Danza macabra</a>, que cuenta una noche de esqueletos.</li>\n<li><b>Acordes desgranados por debajo:</b> el piano hace aquí lo mismo que el arpa en el <a href=\"#o-adagietto-mahler\">Adagietto de Mahler</a>, quince años después.</li>\n<li><b>Claridad francesa:</b> frente a la orquesta gigante de Mahler, Saint-Saëns dice mucho con poco: tres minutos, dos instrumentos y nada de más. Defendía la tradición clásica: la forma y el oficio por encima del desbordamiento.</li>\n</ul>"
+},
+{
+"t": "Yo-Yo Ma, Kathryn Stott y esta grabación",
+"h": "<p><a href=\"#i-yo-yo-ma\">Yo-Yo Ma</a> y <a href=\"#i-kathryn-stott\">Kathryn Stott</a> se conocieron por casualidad en el verano de 1978, en Londres: ella volvió de vacaciones al piso que compartía con el violinista <a href=\"#i-kennedy\">Nigel Kennedy</a> y se encontró a un joven tocando el violonchelo: por lo visto, Kennedy les había subarrendado el piso a él y a su mujer. Desde 1985 tocaron juntos durante cuarenta años.</p>\n<p>Esta grabación es del disco <i lang=\"en\">Songs from the Arc of Life</i> («Canciones del arco de la vida»), publicado por Sony Classical en 2015 para celebrar sus treinta años de colaboración. Lo grabaron en el Mechanics Hall de Worcester (Massachusetts). Según Ma, la idea era reunir piezas que pudieran ser la banda sonora de una vida, de la infancia a la vejez: piezas que llevaban años tocando juntos en concierto y nunca habían grabado.</p>\n<p>Fíjate en el <a href=\"#g-tempo\">tempo</a>: 2:54. Sheku Kanneh-Mason, con arpa, lo toca en 2:33; Mischa Maisky, con orquesta, se toma más de cuatro minutos. Lo ves en el gráfico de duraciones.</p>"
+},
+{
+"t": "Curiosidades",
+"h": "<ul>\n<li>El cisne de Saint-Saëns no muere. La muerte la puso el coreógrafo Mijaíl Fokin, que en 1905, en San Petersburgo, creó con esta música un solo para la bailarina Anna Pávlova: <a href=\"#x-cisne-ballet\">La muerte del cisne</a>. Saint-Saëns dio su permiso.</li>\n<li>Pávlova bailó ese solo unas 4.000 veces por todo el mundo. Cuenta la leyenda que, en su lecho de muerte, en La Haya, en 1931, pidió que le prepararan el traje de cisne.</li>\n<li>En vida de Saint-Saëns, el Carnaval se tocaba casi siempre en privado, y a menudo los músicos llevaban máscaras de los animales que representaban.</li>\n<li>En «Tortugas», Saint-Saëns toma el cancán de Offenbach, una música endiabladamente rápida, y lo pone a cámara lenta (<a href=\"#x-carnaval@226\">escúchalo</a>).</li>\n</ul>"
+},
+{
+"t": "Cómo saborearla: cuatro escuchas",
+"h": "<ol>\n<li><b>Primera escucha: déjate llevar.</b> Son tres minutos. Cierra los ojos y no hagas nada más.</li>\n<li><b>Segunda escucha: solo el agua.</b> Olvídate del violonchelo y sigue al piano. ¿Se detiene alguna vez?</li>\n<li><b>Tercera escucha: en su sitio.</b> Escúchalo dentro del Carnaval, con los dos pianos del original: empieza en <a href=\"#x-carnaval@973\">«Fósiles»</a> y sigue hasta el <a href=\"#x-carnaval@1218\">«Final»</a>. Después de la broma, la calma pesa más.</li>\n<li><b>Cuarta escucha: con baile.</b> Mira <a href=\"#x-cisne-ballet\">La muerte del cisne</a> con Natalia Osipova y el Royal Ballet. La misma música se convierte en una despedida.</li>\n</ol>\n<p>Compara también las versiones de esta ficha: con arpa, con orquesta o con piano, y a tempos muy distintos. Después, sigue con la <a href=\"#x-danza-macabra\">Danza macabra</a>: el otro Saint-Saëns, el de los esqueletos que bailan a medianoche.</p>"
+},
+{
+"t": "Para el concierto",
+"h": "<ul>\n<li>Es una propina clásica de los violonchelistas: Maisky e Isserlis la han tocado así, al final de un concierto. Si suena como propina, se aplaude al acabar.</li>\n<li>Si va dentro del Carnaval completo, es la pieza 13 de 14: espera al final para aplaudir. Fíjate en si hay dos pianos.</li>\n<li>Fuera del Carnaval se toca casi siempre con un piano, pero a veces con arpa o con orquesta.</li>\n</ul>"
+}
+],
+"contexto": [
+{
+"anio": "1886",
+"txt": "El 29 de enero, Carl Benz solicita en Berlín la patente de su vehículo con motor de gasolina, la n.º 37435. Se considera el acta de nacimiento del automóvil."
+},
+{
+"anio": "1886",
+"txt": "El 19 de mayo, Saint-Saëns dirige en Londres el estreno de su <a href=\"#x-saint-saens-3\">Sinfonía n.º 3, «con órgano»</a>."
+},
+{
+"anio": "1886",
+"txt": "El 31 de julio muere Franz Liszt, amigo y gran defensor de Saint-Saëns. Al publicar la sinfonía, Saint-Saëns la dedica a su memoria."
+},
+{
+"anio": "1886",
+"txt": "El 28 de octubre se inaugura en Nueva York la Estatua de la Libertad, un regalo de Francia a Estados Unidos."
+},
+{
+"anio": "1905",
+"txt": "Mijaíl Fokin crea en San Petersburgo, para Anna Pávlova, el solo <a href=\"#x-cisne-ballet\">La muerte del cisne</a>, con esta música."
+}
+],
+"versiones": [
+{
+"quien": "Sheku Kanneh-Mason",
+"det": "Con Katherine Thomas, arpa, y los violonchelos de la CBSO · 2017 (Decca, disco Inspiration)",
+"nota": "Un arreglo con arpa en lugar de piano. De las versiones más fluidas.",
+"dur": "2:33"
+},
+{
+"quien": "Jacqueline du Pré",
+"det": "Con Osian Ellis, arpa · 1962 (hoy en Warner Classics)",
+"nota": "La gran violonchelista británica, también con arpa.",
+"dur": "2:52"
+},
+{
+"p": "maisky",
+"det": "Con la Orpheus Chamber Orchestra · disco de 1998 (Deutsche Grammophon)",
+"nota": "Con orquesta de cámara y un tempo muy lento: más de cuatro minutos.",
+"dur": "4:08"
+},
+{
+"p": "maisky",
+"det": "Festival de Verbier, 2015",
+"nota": "En directo, como propina, con la Verbier Festival Chamber Orchestra y Gábor Takács-Nagy: arpa y cuerda.",
+"url": "https://youtu.be/xPsOt6fLDFY"
+},
+{
+"quien": "Steven Isserlis",
+"det": "Con Connie Shih, piano · Wigmore Hall, 2021",
+"nota": "Propina de un recital, con piano, como en esta grabación.",
+"url": "https://youtu.be/xEwxIkW9SWo"
+},
+{
+"quien": "Sheku e Isata Kanneh-Mason",
+"det": "Violonchelo y piano · Festival de Verbier",
+"nota": "Los hermanos Kanneh-Mason, con piano, como Ma y Stott.",
+"url": "https://youtu.be/RdayR1NN83A"
+},
+{
+"quien": "Gautier Capuçon",
+"det": "Disco Intuition (2018)",
+"nota": "Vídeo oficial con una bailarina, la coreógrafa Fanny Sage.",
+"url": "https://youtu.be/IpWoSDsUJu8"
+},
+{
+"quien": "Orquesta Sinfónica aMuz (Academia de Música de Gdansk)",
+"det": "Sylwia Janiak-Kobylińska · 2024",
+"nota": "Dentro del Carnaval completo, con los dos pianos del original.",
+"url": "#x-carnaval@1058"
+}
+],
+"idagio": "Saint-Saëns The Swan Yo-Yo Ma Kathryn Stott",
+"interpretes": [
+"yo-yo-ma",
+"kathryn-stott"
+],
+"conceptos": [
+"arreglo",
+"arpegio",
+"legato",
+"vibrato",
+"compas",
+"tonalidad",
+"crescendo",
+"musica-programatica",
+"catalogo"
+],
+"imagen": {
+"archivo": "Sir_John_Lavery,_Anna_Pavlova_as_'The_Dying_Swan',_1911.jpg",
+"alt": "Retrato pintado de la bailarina Anna Pávlova con el traje blanco de cisne",
+"pie": "John Lavery, <i>Anna Pávlova en «La muerte del cisne»</i> (hacia 1911). Victoria and Albert Museum, Londres. Pávlova convirtió esta música en uno de los solos más famosos del ballet."
 }
 }
 ]

@@ -271,6 +271,10 @@ GLOSARIO = [
  ("tempo","Tempo","La velocidad de la música. Se indica con palabras, casi siempre en italiano: <i lang=\"it\">largo</i> y <i lang=\"it\">adagio</i> (lentos), <i lang=\"it\">andante</i> (al paso), <i lang=\"it\">allegro</i> y <i lang=\"it\">presto</i> (rápidos). Los diminutivos suavizan: un <i lang=\"it\">adagietto</i> es algo menos lento que un adagio. Mahler escribía sus indicaciones en alemán: <i lang=\"de\">sehr langsam</i>, «muy lento»."),
  ("lied","Lied (en plural, lieder)","«Canción» en alemán. Una canción de concierto, casi siempre sobre un poema, para voz y piano o para voz y orquesta. Schubert, Schumann, Brahms y Mahler escribieron muchos."),
  ("director","Director de orquesta","Quien dirige a la orquesta: decide el tempo, el equilibrio entre los instrumentos y el carácter, y lo transmite con gestos en los ensayos y en el concierto. La partitura es la misma, pero cada director la hace sonar distinta."),
+ ("arreglo","Arreglo","Adaptar una obra para instrumentos distintos de los que escribió el compositor: por ejemplo, un violonchelo con un piano en lugar de con dos, o con arpa, o con orquesta. La música es la misma; cambia quién la toca."),
+ ("arpegio","Arpegio","Tocar las notas de un acorde una detrás de otra, en lugar de todas a la vez. Es el acompañamiento típico del arpa y del piano: crea un fondo que ondula."),
+ ("legato","Legato","«Ligado» en italiano: tocar o cantar las notas unidas, sin cortes entre ellas, como una línea continua. Lo contrario es el staccato: notas cortas y separadas."),
+ ("vibrato","Vibrato","Una oscilación pequeña y rápida de la altura de una nota, que la hace temblar y le da calor. En los instrumentos de cuerda se consigue balanceando el dedo que pisa la cuerda; en el canto, con la voz."),
  ("allemande","Allemande","Danza de origen alemán, de paso moderado y compás binario. Abre la serie de danzas en las suites de Bach."),
  ("bajo-continuo","Bajo continuo","El cimiento de la música barroca: una línea de bajo (violonchelo, contrabajo, fagot…) más un instrumento de acordes (clave, órgano, laúd o tiorba) que improvisa la armonía a partir de esa línea. Desaparece hacia 1800."),
  ("catalogo","Catálogo (BWV, RV, K., Op.)","Los números que identifican una obra. <b>BWV</b> es el catálogo de las obras de Bach (Bach-Werke-Verzeichnis), de Wolfgang Schmieder; <b>RV</b>, el de Vivaldi, de Peter Ryom; <b>K.</b> o <b>KV</b>, el de Mozart, de Ludwig von Köchel; <b>Hob.</b>, el de Haydn, de Anthony van Hoboken, y <b>D.</b>, el de Schubert, de Otto Erich Deutsch. <b>Op.</b> (<a href=\"#g-opus\">opus</a>) es el número de publicación. Más en <a href=\"#a-titulos\">Cómo leer el título de una obra</a>."),
@@ -313,6 +317,8 @@ GLOSARIO = [
 ]
 
 CURIOSIDADES = [
+ dict(t="Saint-Saëns no quiso publicar <i>El carnaval de los animales</i> en vida: solo dejó salir <i>El cisne</i>, en 1887. El resto se publicó en 1922, tras su muerte, porque así lo dejó escrito en su testamento.", l="#o-el-cisne"),
+ dict(t="La bailarina Anna Pávlova bailó <i>La muerte del cisne</i>, con la música de Saint-Saëns, unas 4.000 veces.", l="#x-cisne-ballet"),
  dict(t="En la final del Concurso Chopin de 2015, nueve de los diez finalistas eligieron el Concierto n.º 1. Solo uno, Charles Richard-Hamelin, tocó el n.º 2, y quedó segundo.", l="#x-chopin-concierto-2"),
  dict(t="El metrónomo lleva el nombre de Maelzel, pero el doble péndulo lo había ideado el holandés Winkel. Una comisión de Ámsterdam le dio la razón a Winkel.", l="#a-tempo"),
  dict(t="Chopin cobraba unos 20 francos por clase, una tarifa altísima para su época. Vivía más de enseñar que de dar conciertos.", l="#a-quien-pagaba"),

@@ -153,7 +153,7 @@
 "tema": "Instrumentos",
 "titulo": "Instrumentos de época: cómo reconocerlos en un vídeo",
 "entradilla": "Muchas grabaciones de música barroca usan instrumentos antiguos o copias de ellos. Se distinguen a simple vista y suenan distinto.",
-"h": "<h2>Qué son</h2>\n<p>Se llaman instrumentos de época los que se construyeron en el pasado o las réplicas modernas hechas según los modelos del Renacimiento y el Barroco. A tocar con ellos, y con la forma de tocar de entonces, se le llama interpretación historicista.</p>\n<h2>Cómo reconocerlos a simple vista</h2>\n<ul>\n<li><b>Violines sin barbada:</b> el violín barroco no lleva la pieza donde hoy se apoya la barbilla. La barbada se inventó en tiempos de Beethoven.</li>\n<li><b>Violonchelos sin pica:</b> el violonchelo barroco no tiene la punta metálica que hoy se apoya en el suelo. El músico lo sujeta entre las piernas.</li>\n<li><b>Arcos distintos:</b> más cortos y ligeros, curvados hacia fuera, al revés que los modernos.</li>\n<li><b>Instrumentos de acordes en el continuo:</b> clave, órgano pequeño, laúd o tiorba (un laúd enorme de mástil muy largo).</li>\n</ul>\n<h2>Cómo suenan</h2>\n<ul>\n<li><b>Cuerdas de tripa</b> en vez de metal: un sonido más suave, cálido y ágil, con menos potencia. Las cuerdas de tripa no se sustituyeron hasta el siglo XX.</li>\n<li><b>Afinación más baja:</b> muchos grupos afinan aproximadamente un semitono por debajo del diapasón moderno.</li>\n<li><b>Vibrato como adorno:</b> se usa en momentos concretos, no de forma continua como en el violín moderno.</li>\n</ul>\n<h2>Compáralo tú</h2>\n<p>En el diario tienes los dos mundos: Voices of Music toca las Cuatro Estaciones con instrumentos de época, y Mischa Maisky toca a Bach con una sonoridad moderna y romántica. Mira los instrumentos y escucha la diferencia de sonido.</p>"
+"h": "<h2>Qué son</h2>\n<p>Se llaman instrumentos de época los que se construyeron en el pasado o las réplicas modernas hechas según los modelos del Renacimiento y el Barroco. A tocar con ellos, y con la forma de tocar de entonces, se le llama interpretación historicista.</p>\n<h2>Cómo reconocerlos a simple vista</h2>\n<ul>\n<li><b>Violines sin barbada:</b> el violín barroco no lleva la pieza donde hoy se apoya la barbilla. La barbada se inventó en tiempos de Beethoven.</li>\n<li><b>Violonchelos sin pica:</b> el violonchelo barroco no tiene la punta metálica que hoy se apoya en el suelo. El músico lo sujeta entre las piernas.</li>\n<li><b>Arcos distintos:</b> más cortos y ligeros, curvados hacia fuera, al revés que los modernos.</li>\n<li><b>Instrumentos de acordes en el continuo:</b> clave, órgano pequeño, laúd o tiorba (un laúd enorme de mástil muy largo).</li>\n</ul>\n<h2>Cómo suenan</h2>\n<ul>\n<li><b>Cuerdas de tripa</b> en vez de metal: un sonido más suave, cálido y ágil, con menos potencia. Las cuerdas de tripa no se sustituyeron hasta el siglo XX.</li>\n<li><b>Afinación más baja:</b> muchos grupos afinan aproximadamente un semitono por debajo del diapasón moderno.</li>\n<li><b><a href=\"#g-vibrato\">Vibrato</a> como adorno:</b> se usa en momentos concretos, no de forma continua como en el violín moderno.</li>\n</ul>\n<h2>Compáralo tú</h2>\n<p>En el diario tienes los dos mundos: Voices of Music toca las Cuatro Estaciones con instrumentos de época, y Mischa Maisky toca a Bach con una sonoridad moderna y romántica. Mira los instrumentos y escucha la diferencia de sonido.</p>"
 },
 {
 "id": "rubato",
@@ -377,6 +377,83 @@
 "x": "mahler-5",
 "t": 2779,
 "txt": "El mismo Adagietto con otro director y otra orquesta: compara el tempo y el carácter."
+}
+]
+},
+{
+"id": "arreglo",
+"termino": "Arreglo",
+"def": "Adaptar una obra para instrumentos distintos de los que escribió el compositor: por ejemplo, un violonchelo con un piano en lugar de con dos, o con arpa, o con orquesta. La música es la misma; cambia quién la toca.",
+"ejemplos": [
+{
+"o": "el-cisne",
+"t": 0,
+"txt": "El cisne en su arreglo para violonchelo y un solo piano, el que se publicó en 1887."
+},
+{
+"x": "carnaval",
+"t": 1058,
+"txt": "El original, dentro del Carnaval, con dos pianos. Compara los dos acompañamientos."
+},
+{
+"x": "bwv-1065",
+"txt": "Bach también hacía arreglos: convirtió un concierto de Vivaldi para cuatro violines en este para cuatro claves."
+}
+]
+},
+{
+"id": "arpegio",
+"termino": "Arpegio",
+"def": "Tocar las notas de un acorde una detrás de otra, en lugar de todas a la vez. Es el acompañamiento típico del arpa y del piano: crea un fondo que ondula.",
+"ejemplos": [
+{
+"o": "el-cisne",
+"t": 0,
+"txt": "El piano desgrana acordes nota a nota, sin parar, por debajo del violonchelo: es el agua."
+},
+{
+"o": "adagietto-mahler",
+"t": 0,
+"txt": "En el Adagietto de Mahler, el arpa hace lo mismo bajo la melodía de la cuerda."
+},
+{
+"x": "carnaval",
+"t": 500,
+"txt": "En «Acuario», los pianos ondulan con arpegios rapidísimos: otra vez agua."
+}
+]
+},
+{
+"id": "legato",
+"termino": "Legato",
+"def": "«Ligado» en italiano: tocar o cantar las notas unidas, sin cortes entre ellas, como una línea continua. Lo contrario es el staccato: notas cortas y separadas.",
+"ejemplos": [
+{
+"o": "el-cisne",
+"t": 0,
+"txt": "La melodía del violonchelo, sin un solo corte entre nota y nota."
+},
+{
+"x": "carnaval",
+"t": 973,
+"txt": "Lo contrario: en «Fósiles», el xilófono toca notas cortas y secas, como huesos que chocan."
+}
+]
+},
+{
+"id": "vibrato",
+"termino": "Vibrato",
+"def": "Una oscilación pequeña y rápida de la altura de una nota, que la hace temblar y le da calor. En los instrumentos de cuerda se consigue balanceando el dedo que pisa la cuerda; en el canto, con la voz.",
+"ejemplos": [
+{
+"o": "el-cisne",
+"t": 0,
+"txt": "Escucha las notas largas del violonchelo: tiemblan un poco. Ese temblor es el vibrato."
+},
+{
+"url": "https://youtu.be/xPsOt6fLDFY",
+"quien": "Mischa Maisky",
+"txt": "Otro violonchelista, otro vibrato: compara cómo hace temblar Maisky las notas largas."
 }
 ]
 },
@@ -924,6 +1001,14 @@
 ],
 "curiosidades": [
 {
+"t": "Saint-Saëns no quiso publicar <i>El carnaval de los animales</i> en vida: solo dejó salir <i>El cisne</i>, en 1887. El resto se publicó en 1922, tras su muerte, porque así lo dejó escrito en su testamento.",
+"l": "#o-el-cisne"
+},
+{
+"t": "La bailarina Anna Pávlova bailó <i>La muerte del cisne</i>, con la música de Saint-Saëns, unas 4.000 veces.",
+"l": "#x-cisne-ballet"
+},
+{
 "t": "En la final del Concurso Chopin de 2015, nueve de los diez finalistas eligieron el Concierto n.º 1. Solo uno, Charles Richard-Hamelin, tocó el n.º 2, y quedó segundo.",
 "l": "#x-chopin-concierto-2"
 },
@@ -1139,6 +1224,53 @@
 "493": "Dies irae",
 "1369": "Lacrimosa"
 }
+},
+"carnaval": {
+"compositor": "Saint-Saëns",
+"titulo": "El carnaval de los animales, R. 125",
+"url": "https://youtu.be/Ygoewq44jEw",
+"fuente": "Orquesta Sinfónica aMuz de la Academia de Música de Gdansk · Sylwia Janiak-Kobylińska; pianos: Klara Jachimczak y Bartosz Wiśniewski (Akademia Filmu i Telewizji)",
+"caps": {
+"0": "I. Introducción y marcha real del león",
+"130": "II. Gallinas y gallos",
+"181": "III. Hemiones (animales veloces)",
+"226": "IV. Tortugas",
+"344": "V. El elefante",
+"442": "VI. Canguros",
+"500": "VII. Acuario",
+"629": "VIII. Personajes de orejas largas",
+"681": "IX. El cuco en el fondo del bosque",
+"808": "X. Pajarera",
+"898": "XI. Pianistas",
+"973": "XII. Fósiles",
+"1058": "XIII. El cisne",
+"1218": "XIV. Final"
+}
+},
+"danza-macabra": {
+"compositor": "Saint-Saëns",
+"titulo": "Danza macabra, Op. 40",
+"url": "https://youtu.be/ZDWMoJz8OYU",
+"fuente": "WDR Funkhausorchester (ARD Klassik)",
+"caps": {}
+},
+"saint-saens-3": {
+"compositor": "Saint-Saëns",
+"titulo": "Sinfonía n.º 3 en do menor, Op. 78, «con órgano»",
+"url": "https://youtu.be/5GrO47WJKTI",
+"fuente": "Orquesta Sinfónica de la Radio de Hesse · Iveta Apkalna, órgano · Riccardo Minasi (hr-Sinfonieorchester)",
+"ini": 30,
+"caps": {
+"30": "I. Adagio – Allegro moderato – Poco adagio",
+"1360": "II. Allegro moderato – Presto – Maestoso"
+}
+},
+"cisne-ballet": {
+"compositor": "Saint-Saëns",
+"titulo": "La muerte del cisne (solo de ballet de Mijaíl Fokin sobre El cisne)",
+"url": "https://youtu.be/kJ4uowripdw",
+"fuente": "Natalia Osipova · The Royal Ballet (Royal Ballet and Opera)",
+"caps": {}
 }
 }
 }

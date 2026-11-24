@@ -12,9 +12,28 @@ CE = "cuatro-estaciones"   # Vivaldi, Voices of Music
 SU = "suite-chelo-2"       # Bach, Maisky
 BA = "balada-1-chopin"     # Chopin, Zimerman (sin capítulos: solo t=0)
 MA = "adagietto-mahler"    # Mahler, Bernstein (sin capítulos: solo t=0)
+CI = "el-cisne"            # Saint-Saëns, Yo-Yo Ma y Kathryn Stott (sin capítulos: solo t=0)
 AOB = "https://www.bachvereniging.nl/en/bwv/bwv-"
 
 EJEMPLOS = {
+ "arreglo": [
+  dict(o=CI, t=0, txt="El cisne en su arreglo para violonchelo y un solo piano, el que se publicó en 1887."),
+  dict(x="carnaval", t=1058, txt="El original, dentro del Carnaval, con dos pianos. Compara los dos acompañamientos."),
+  dict(x="bwv-1065", txt="Bach también hacía arreglos: convirtió un concierto de Vivaldi para cuatro violines en este para cuatro claves."),
+ ],
+ "arpegio": [
+  dict(o=CI, t=0, txt="El piano desgrana acordes nota a nota, sin parar, por debajo del violonchelo: es el agua."),
+  dict(o=MA, t=0, txt="En el Adagietto de Mahler, el arpa hace lo mismo bajo la melodía de la cuerda."),
+  dict(x="carnaval", t=500, txt="En «Acuario», los pianos ondulan con arpegios rapidísimos: otra vez agua."),
+ ],
+ "legato": [
+  dict(o=CI, t=0, txt="La melodía del violonchelo, sin un solo corte entre nota y nota."),
+  dict(x="carnaval", t=973, txt="Lo contrario: en «Fósiles», el xilófono toca notas cortas y secas, como huesos que chocan."),
+ ],
+ "vibrato": [
+  dict(o=CI, t=0, txt="Escucha las notas largas del violonchelo: tiemblan un poco. Ese temblor es el vibrato."),
+  dict(url="https://youtu.be/xPsOt6fLDFY", quien="Mischa Maisky", txt="Otro violonchelista, otro vibrato: compara cómo hace temblar Maisky las notas largas."),
+ ],
  "metronomo": [
   dict(o=SU, t=16, txt="El preludio de Bach avanza con un pulso regular, casi de metrónomo."),
   dict(o=BA, t=0, txt="Compáralo con Chopin: el pulso se estira y se recoge, nada de metrónomo (rubato)."),

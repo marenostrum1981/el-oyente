@@ -122,6 +122,38 @@ dict(id="mahler", tipo="compositor", nombre="Gustav Mahler", vida="1860–1911",
   dict(titulo="Sinfonía n.º 5 completa", nota="Después del Adagietto, escúchala entera: de la marcha fúnebre del principio a la fiesta del final.", url="#x-mahler-5"),
   dict(titulo="«Ich bin der Welt abhanden gekommen», de los Rückert-Lieder", nota="La canción de 1901 cuya melodía cierra el Adagietto.", url="#x-mahler-ich-bin"),
  ]),
+dict(id="saint-saens", tipo="compositor", nombre="Camille Saint-Saëns", vida="1835–1921", nace=1835, lugar="París → Argel", epoca="romanticismo",
+ entradilla="Niño prodigio, organista, pianista, viajero y sabio curioso. Escribió de todo, y su obra más famosa es la que no quiso publicar.",
+ h="""<h2>Vida</h2>
+<p>Nació en París el 9 de octubre de 1835. Su padre murió a los pocos meses, y lo criaron su madre y una tía abuela, Charlotte Masson, que le dio las primeras clases de piano. Fue un niño prodigio: en mayo de 1846, con diez años, dio su primer concierto público con orquesta, con conciertos de Mozart y de Beethoven tocados de memoria.</p>
+<p>Estudió órgano y composición en el Conservatorio de París. En 1857, con 22 años, lo nombraron organista de la Madeleine, la parroquia más prestigiosa de París, y lo fue durante veinte años. Liszt, gran amigo suyo, decía que era el mejor organista del mundo. Entre 1861 y 1865 enseñó piano en la Escuela Niedermeyer, donde tuvo como alumno a Gabriel Fauré.</p>
+<p>En 1871 fundó con Fauré, Franck y otros la Société nationale de musique, para dar a conocer la música francesa nueva. Viajó muchísimo como pianista y director, y desde 1873 pasó largas temporadas en Argelia y en Egipto. Murió en Argel el 16 de diciembre de 1921, con 86 años.</p>
+<h2>Su música</h2>
+<p>Escribió en todos los géneros: doce óperas (la más famosa, <i>Sansón y Dalila</i>), cinco conciertos para piano, tres para violín y dos para violonchelo, poemas sinfónicos como la <a href="#x-danza-macabra">Danza macabra</a> y la <a href="#x-saint-saens-3">Sinfonía n.º 3, «con órgano»</a>. En 1908 fue el primer compositor de renombre que escribió música para una película, <i lang="fr">L'Assassinat du duc de Guise</i>.</p>
+<p>Su estilo es claro, elegante y muy bien construido: defendía la tradición clásica, la forma y el oficio. De joven apoyó a los músicos más avanzados de su tiempo, como Schumann, Wagner y Liszt; de mayor despreciaba la música de Debussy o de Stravinski.</p>
+<h2>Por qué importa</h2>
+<p>Fue el primer francés que escribió poemas sinfónicos y uno de los grandes impulsores de la música instrumental francesa. Además era un sabio curioso: le interesaban la astronomía, la arqueología, la botánica y la geología, y escribió crítica, poesía, ensayos y teatro.</p>""",
+ claves=[["Nació","París, 1835"],["Murió","Argel, 1921"],["Cargo","Organista de la Madeleine de París (1857–1877)"],["Obra","Doce óperas, conciertos, poemas sinfónicos y la Sinfonía «con órgano»"],["Primicia","Primer compositor de renombre que escribió música para el cine (1908)"]],
+ bachtrack="saint-saens",
+ huella=[
+  "Melodías claras y cantables sobre un acompañamiento que fluye: <a href=\"#o-el-cisne\">El cisne</a>.",
+  "Humor y citas de otros compositores: en <a href=\"#x-carnaval@226\">«Tortugas»</a>, el cancán de Offenbach a cámara lenta; en <a href=\"#x-carnaval@973\">«Fósiles»</a>, se cita a sí mismo.",
+  "Colores nuevos en la orquesta: el xilófono como huesos de esqueleto y un violín desafinado a propósito en la <a href=\"#x-danza-macabra\">Danza macabra</a>.",
+  "Sus instrumentos, el órgano y el piano, dentro de la orquesta: escucha la <a href=\"#x-saint-saens-3@1360\">segunda parte de la Sinfonía «con órgano»</a>.",
+ ],
+ especialistas=[
+  dict(quien="Stephen Hough", det="Obras completas para piano y orquesta (Hyperion, 2001)", nota="Con la Orquesta Sinfónica de la Ciudad de Birmingham y Sakari Oramo. Premio Gramophone a la grabación del año en 2002."),
+  dict(quien="Alexandre Kantorow", det="Los cinco conciertos para piano (BIS)", nota="Con la Tapiola Sinfonietta, dirigida por su padre, Jean-Jacques Kantorow. Diapason d'Or del año en 2019 y en 2022."),
+  dict(quien="Charles Munch", det="Sinfonía n.º 3, Orquesta Sinfónica de Boston (RCA, 1959)", nota="Con Berj Zamkochian al órgano. Grabada en abril de 1959, sigue reeditándose."),
+  dict(p="maisky", nota="En 1998 publicó en Deutsche Grammophon un disco con su música para violonchelo: el Concierto n.º 1, la Sonata n.º 1 y El cisne."),
+  dict(p="yo-yo-ma", nota="Saint-Saëns estuvo entre sus primeros discos para CBS Masterworks. Su Cisne con Kathryn Stott es la obra del día."),
+ ],
+ ruta=[
+  dict(titulo="El cisne", obra="el-cisne", nota="Tres minutos: la puerta de entrada."),
+  dict(titulo="El carnaval de los animales completo", nota="Catorce piezas y muchas bromas: busca el cancán de Offenbach en «Tortugas».", url="#x-carnaval"),
+  dict(titulo="Danza macabra, Op. 40", nota="Medianoche: la Muerte toca el violín y bailan los esqueletos.", url="#x-danza-macabra"),
+  dict(titulo="Sinfonía n.º 3 «con órgano», Op. 78", nota="Su obra más grandiosa, del mismo año que El cisne. En la segunda parte, el órgano irrumpe con el tema final.", url="#x-saint-saens-3@1360"),
+ ]),
 dict(id="zimerman", bachtrack="krystian-zimerman", tipo="solista", rol="Pianista", nombre="Krystian Zimerman", vida="Nacido en 1956", lugar="Zabrze (Polonia)",
  entradilla="Pianista polaco, ganador del Concurso Chopin con 18 años. Perfeccionista: viaja con sus propios pianos y graba muy poco.",
  h="""<p>Nació el 5 de diciembre de 1956 en Zabrze, en una familia de músicos. Empezó a tocar a los cinco años con su padre, pianista, y estudió en el conservatorio de Katowice con Andrzej Jasiński.</p>
@@ -174,4 +206,16 @@ dict(id="wiener-philharmoniker", bachtrack="wiener-philharmoniker", tipo="conjun
  h="""<p>Su primer concierto fue el 28 de marzo de 1842, dirigido por Otto Nicolai. Desde entonces funciona con unas reglas muy particulares: solo puede ser miembro quien toca en la orquesta de la Ópera Estatal de Viena, y después de tres años en ella. Los músicos se gobiernan a sí mismos: deciden en asamblea qué tocan y a quién invitan, y eligen un comité que lleva el día a día.</p>
 <p>Desde 1870 su casa es la Sala Dorada del Musikverein de Viena. Hasta 1933 elegía un director para toda la temporada (Gustav Mahler lo fue entre 1898 y 1901, y con él hizo su primera gira al extranjero, a la Exposición Universal de París de 1900). Desde entonces trabaja solo con directores invitados. Admite mujeres desde 1997.</p>""",
  claves=[["Fundación","1842, con Otto Nicolai"],["Sala","Musikverein de Viena"],["Director titular","Ninguno desde 1933: trabaja con invitados"],["Mahler","Su director entre 1898 y 1901"]]),
+dict(id="yo-yo-ma", bachtrack="yo-yo-ma", tipo="solista", rol="Violonchelista", nombre="Yo-Yo Ma", vida="Nacido en 1955", lugar="París → Estados Unidos",
+ entradilla="Probablemente el violonchelista más conocido del mundo. Niño prodigio y curioso sin fronteras: de Bach al tango, al bluegrass y a la Ruta de la Seda.",
+ h="""<p>Nació en París el 7 de octubre de 1955, hijo de padres chinos. Empezó a estudiar violonchelo con su padre a los cuatro años y, a los siete, se mudó con su familia a Nueva York. Ese mismo año, 1962, tocó en un concierto benéfico televisado ante los presidentes Kennedy y Eisenhower, presentado por <a href="#i-bernstein">Leonard Bernstein</a>.</p>
+<p>Estudió en la Juilliard School con Leonard Rose y después, en lugar de quedarse solo en la música, estudió humanidades en Harvard, donde se graduó en 1976. Entre medias tocó en el festival de Marlboro (Vermont) a las órdenes de su ídolo de infancia, <a href="#i-casals">Pau Casals</a>.</p>
+<p>Su disco de las suites de Bach, de 1983, le dio el primero de sus más de quince premios Grammy. En 1998 fundó Silkroad, un colectivo de músicos de tradiciones de todo el mundo, y desde 2018 llevó las suites de Bach a 36 lugares de seis continentes. Entre sus violonchelos hay un Montagnana de 1733 y el Stradivarius «Davidoff» de 1712.</p>""",
+ claves=[["Instrumento","Violonchelo"],["Nació","París, 1955"],["Formación","Juilliard (con Leonard Rose) y Harvard"],["Proyecto","Silkroad, desde 1998"],["Con siete años","Tocó ante Kennedy y Eisenhower"]]),
+dict(id="kathryn-stott", tipo="solista", rol="Pianista", nombre="Kathryn Stott", lugar="Lancashire (Inglaterra)",
+ entradilla="Pianista británica enamorada de la música francesa. Durante cuarenta años fue la compañera de escenario de Yo-Yo Ma.",
+ h="""<p>Nació en Lancashire. A los ocho años entró en la Yehudi Menuhin School, un internado para jóvenes músicos, y después estudió en el Royal College of Music de Londres. Entre sus maestros estuvieron Nadia Boulanger y Vlado Perlemuter, de quienes le viene la pasión por la música francesa; el gran amor de su vida musical, dice, es Fauré. En 1978 fue premiada en el Concurso Internacional de Piano de Leeds.</p>
+<p>Ese mismo año conoció por casualidad a <a href="#i-yo-yo-ma">Yo-Yo Ma</a>, y desde 1985 tocaron juntos durante cuarenta años por Europa, Estados Unidos, Sudamérica y Asia. Tocó en sus discos de tango (<i lang="en">Soul of the Tango</i>) y de música brasileña (<i lang="pt">Obrigado Brazil</i>), que ganaron premios Grammy. En 2020 preparó con él <i lang="en">Songs of Comfort and Hope</i>, como respuesta a la pandemia, y su último disco juntos, <i lang="fr">Merci</i>, es un homenaje a Fauré.</p>
+<p>En diciembre de 2024 se despidió de los escenarios, tras 46 años de carrera, para dedicarse a enseñar en el Royal Northern College of Music de Mánchester.</p>""",
+ claves=[["Instrumento","Piano"],["Formación","Yehudi Menuhin School y Royal College of Music"],["Con Yo-Yo Ma","Desde 1985, durante cuarenta años"],["Pasión","La música francesa, sobre todo Fauré"]]),
 ]

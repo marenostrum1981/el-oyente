@@ -24,6 +24,11 @@ IMAGENES = {
             alt="Serie de dibujos caricaturescos de un director de orquesta en posturas exageradas",
             pie="Mahler dirigiendo, según el caricaturista Hans Schließmann, en la revista <i lang=\"de\">Fliegende Blätter</i> (marzo de 1901), el año en que empezó la Quinta. Entonces era director de la Ópera de la Corte de Viena.",
         ),
+        "el-cisne": dict(
+            archivo="Sir_John_Lavery,_Anna_Pavlova_as_'The_Dying_Swan',_1911.jpg",
+            alt="Retrato pintado de la bailarina Anna Pávlova con el traje blanco de cisne",
+            pie="John Lavery, <i>Anna Pávlova en «La muerte del cisne»</i> (hacia 1911). Victoria and Albert Museum, Londres. Pávlova convirtió esta música en uno de los solos más famosos del ballet.",
+        ),
     },
     "personas": {
         "vivaldi": dict(
@@ -45,6 +50,11 @@ IMAGENES = {
             archivo="Gustav_Mahler_Emil_Orlik_1902.jpg",
             alt="Retrato grabado de Mahler, de perfil, con gafas",
             pie="Gustav Mahler en un aguafuerte de Emil Orlik (1902), el año en que terminó la Quinta y se casó con Alma.",
+        ),
+        "saint-saens": dict(
+            archivo="Saint-Saëns-circa-1880.jpg",
+            alt="Fotografía antigua de Saint-Saëns, un hombre de mediana edad con barba",
+            pie="Camille Saint-Saëns hacia 1880, en una fotografía del estudio de Charles Reutlinger en París (Biblioteca Nacional de Francia). Pocos años antes de escribir <i>El cisne</i>.",
         ),
     },
     "epocas": {
