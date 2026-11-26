@@ -98,13 +98,15 @@
 "fin": 2000,
 "color": "var(--xx)",
 "entradilla": "Se rompen las reglas: nuevos colores, nuevos ritmos y nuevas formas de ordenar los sonidos.",
-"h": "<p>Esta sección se completará cuando llegue la primera obra del siglo XX al diario.</p>",
+"h": "<p>En los primeros años del siglo XX, varios compositores rompen a la vez con las reglas heredadas. En 1909, Arnold Schönberg escribe sus <a href=\"#x-schoenberg-farben\">Cinco piezas para orquesta</a>, sin una <a href=\"#g-tonalidad\">tonalidad</a> que haga de casa; cuando se estrenan en Londres, en 1912, el programa las presenta como «experimentos de disonancia» y parte del público silba. En 1913, <a href=\"#x-sacre\">La consagración de la primavera</a> de Stravinski, con sus ritmos salvajes, provoca un escándalo en París.</p>\n<p>No hay un solo estilo, sino muchos caminos a la vez. Unos abandonan la tonalidad; otros la estiran o la mezclan con escalas antiguas y exóticas; otros vuelven a la canción popular de su país. Lo que casi todos comparten es que el ritmo y el color de los instrumentos (el <a href=\"#g-timbre\">timbre</a>) ganan un protagonismo que antes tenía la melodía.</p>\n<p>La primera obra de esta época en el diario es <a href=\"#o-venus-holst\">Venus</a>, de Los planetas de Gustav Holst (1914): un inglés que conocía la música de Schönberg y de Stravinski y que mezcló sus novedades con melodías que se pueden cantar.</p>",
 "rasgos": [
-"Armonías que ya no giran en torno a una <a href=\"#g-tonalidad\">tonalidad</a> clara.",
-"Ritmos irregulares y protagonismo de la percusión.",
-"El timbre, el color de cada instrumento, como protagonista."
+"El timbre, el color de cada instrumento, como protagonista: a veces importa más que la melodía. Ejemplo: <a href=\"#x-schoenberg-farben\">Schönberg, «Colores»</a>, donde los acordes casi no cambian pero sí los instrumentos que los tocan; y <a href=\"#o-venus-holst\">Holst, Venus</a>, con <a href=\"#g-trompa\">trompa</a>, <a href=\"#g-arpa\">arpas</a> y <a href=\"#g-celesta\">celesta</a>.",
+"Ritmos que golpean y se repiten como una máquina, a menudo en <a href=\"#g-compas\">compases</a> irregulares. Ejemplo: <a href=\"#x-planetas@0\">Holst, Marte</a>, en cinco tiempos, y <a href=\"#x-sacre\">Stravinski, La consagración de la primavera</a>.",
+"Armonías que ya no giran en torno a una tonalidad clara: acordes que flotan o se alternan sin llegar a ningún sitio. Ejemplo: <a href=\"#x-planetas@2561\">Holst, Neptuno</a>.",
+"Efectos nuevos de espacio y sonido: voces escondidas, finales que se desvanecen. Ejemplo: el coro de mujeres entre bastidores al final de <a href=\"#x-planetas@2561\">Neptuno</a>.",
+"La melodía no desaparece del todo: muchos mezclan lo nuevo con himnos y canciones populares. Ejemplo: la melodía central de <a href=\"#x-planetas@1182\">Holst, Júpiter</a>."
 ],
-"nombres": "Claude Debussy, Maurice Ravel, Manuel de Falla, Ígor Stravinski, Dmitri Shostakóvich",
+"nombres": "Claude Debussy, Maurice Ravel, Gustav Holst, Arnold Schönberg, Ígor Stravinski, Manuel de Falla, Dmitri Shostakóvich",
 "imagen": {
 "archivo": "Vassily_Kandinsky,_1913_-_Composition_7.jpg",
 "alt": "Cuadro abstracto de colores y formas que se arremolinan",
@@ -458,6 +460,88 @@
 ]
 },
 {
+"id": "trompa",
+"termino": "Trompa",
+"def": "Instrumento de metal con el tubo enrollado en círculo y una gran campana (el pabellón), en la que el músico mete la mano para matizar el sonido. Suena redondo y cálido, y puede sonar lejano y noble. En inglés se llama <i lang=\"en\">horn</i>, y en italiano, <i lang=\"it\">corno</i>.",
+"ejemplos": [
+{
+"o": "venus-holst",
+"t": 0,
+"txt": "Venus empieza con la trompa sola, muy suave: cuatro notas que suben."
+},
+{
+"x": "mahler-5",
+"t": 1716,
+"txt": "En el Scherzo de la Quinta de Mahler, una trompa solista lleva la voz cantante de principio a fin."
+},
+{
+"x": "planetas",
+"t": 0,
+"txt": "La otra cara: en Marte, las seis trompas de Holst suenan como un ejército."
+}
+]
+},
+{
+"id": "celesta",
+"termino": "Celesta",
+"def": "Instrumento de teclado con aspecto de piano pequeño: sus macillos golpean láminas de metal y da un sonido de campanitas, suave y brillante. La patentó en París Auguste Mustel en 1886, y Chaikovski la hizo famosa en <a href=\"#x-cascanueces-hada\"><i>El cascanueces</i></a> (1892).",
+"ejemplos": [
+{
+"o": "venus-holst",
+"t": 0,
+"txt": "En Venus, la celesta salpica notas de campanita sobre los acordes de flautas y arpas (paso 2 de la guía)."
+},
+{
+"x": "cascanueces-hada",
+"txt": "La Danza del hada de azúcar de El cascanueces: aquí la celesta lleva la melodía."
+},
+{
+"x": "planetas",
+"t": 2561,
+"txt": "En Neptuno, la celesta y las arpas crean un brillo misterioso."
+}
+]
+},
+{
+"id": "timbre",
+"termino": "Timbre",
+"def": "El color del sonido: lo que distingue una flauta de un violín aunque toquen la misma nota y con el mismo volumen. Elegir y mezclar timbres es el arte de la orquestación, y en el siglo XX el timbre pasa a ser tan importante como la melodía.",
+"ejemplos": [
+{
+"x": "schoenberg-farben",
+"t": 0,
+"txt": "«Colores», de Schönberg: los acordes casi no cambian; lo que cambia es el color de los instrumentos que los tocan."
+},
+{
+"o": "venus-holst",
+"t": 0,
+"txt": "Venus está hecha de colores: trompa, flautas, arpas, celesta y violín solo."
+},
+{
+"x": "carnaval",
+"t": 973,
+"txt": "En «Fósiles», el xilófono suena a huesos que chocan: el timbre cuenta la broma."
+}
+]
+},
+{
+"id": "ostinato",
+"termino": "Ostinato",
+"def": "«Obstinado» en italiano: una figura breve (un ritmo, una melodía, un bajo) que se repite una y otra vez mientras lo demás cambia por encima. Da insistencia, tensión o, al revés, una sensación de vaivén.",
+"ejemplos": [
+{
+"x": "planetas",
+"t": 0,
+"txt": "Marte: el mismo ritmo de cinco tiempos, una y otra vez, como una máquina."
+},
+{
+"x": "st-paul",
+"t": 253,
+"txt": "El segundo movimiento de la St Paul's Suite de Holst se llama así, «Ostinato»: una figura que gira sin parar."
+}
+]
+},
+{
 "id": "allemande",
 "termino": "Allemande",
 "def": "Danza de origen alemán, de paso moderado y compás binario. Abre la serie de danzas en las suites de Bach.",
@@ -785,12 +869,17 @@
 {
 "id": "suite",
 "termino": "Suite",
-"def": "Serie de danzas en la misma tonalidad, a menudo con un preludio delante. En las de Bach: preludio, allemande, courante, zarabanda, galanterías y giga.",
+"def": "Serie de danzas en la misma tonalidad, a menudo con un preludio delante. En las de Bach: preludio, allemande, courante, zarabanda, galanterías y giga. Desde el siglo XIX, «suite» también es una serie de piezas para orquesta, cada una con su carácter: Los planetas de Holst es una «suite para gran orquesta».",
 "ejemplos": [
 {
 "o": "suite-chelo-2",
 "t": 16,
 "txt": "La suite entera: un preludio y luego las danzas seguidas, todas girando en torno a la misma nota, el re."
+},
+{
+"x": "planetas",
+"t": 0,
+"txt": "Una suite del siglo XX: Los planetas de Holst, siete piezas para orquesta, cada una con su carácter."
 }
 ]
 },
@@ -836,6 +925,11 @@
 "o": "balada-1-chopin",
 "t": 0,
 "txt": "Tras la introducción lenta, la balada se mece en 6/4: dos grupos de tres, como una barca."
+},
+{
+"x": "planetas",
+"t": 0,
+"txt": "Marte, de Holst, en 5/4: cinco tiempos, 1-2-3-4-5. Intenta marchar al paso: no se puede."
 }
 ]
 },
@@ -1000,6 +1094,14 @@
 }
 ],
 "curiosidades": [
+{
+"t": "El hermano pequeño de Gustav Holst, Emil, fue actor en Hollywood con el nombre de Ernest Cossart. Su especialidad: los mayordomos.",
+"l": "#c-holst"
+},
+{
+"t": "Holst dejó de llamarse «von Holst» el 25 de septiembre de 1918, cuatro días antes de que sonara por primera vez Los planetas.",
+"l": "#o-venus-holst"
+},
 {
 "t": "Saint-Saëns no quiso publicar <i>El carnaval de los animales</i> en vida: solo dejó salir <i>El cisne</i>, en 1887. El resto se publicó en 1922, tras su muerte, porque así lo dejó escrito en su testamento.",
 "l": "#o-el-cisne"
@@ -1270,6 +1372,91 @@
 "titulo": "La muerte del cisne (solo de ballet de Mijaíl Fokin sobre El cisne)",
 "url": "https://youtu.be/kJ4uowripdw",
 "fuente": "Natalia Osipova · The Royal Ballet (Royal Ballet and Opera)",
+"caps": {}
+},
+"planetas": {
+"compositor": "Holst",
+"titulo": "Los planetas, Op. 32",
+"url": "https://youtu.be/HP5xhyPn58U",
+"fuente": "Orquesta Sinfónica de la Radio de Hesse y Vokalensemble · Hugh Wolff · Alte Oper de Fráncfort, 2023 (hr-Sinfonieorchester)",
+"caps": {
+"0": "I. Marte, el que trae la guerra",
+"462": "II. Venus, la que trae la paz",
+"928": "III. Mercurio, el mensajero alado",
+"1182": "IV. Júpiter, el que trae la alegría",
+"1681": "V. Saturno, el que trae la vejez",
+"2213": "VI. Urano, el mago",
+"2561": "VII. Neptuno, el místico"
+}
+},
+"planetas-galicia": {
+"compositor": "Holst",
+"titulo": "Los planetas, Op. 32",
+"url": "https://youtu.be/Av0trc_Fzt4",
+"fuente": "Orquesta Sinfónica de Galicia, Coro y Coro Joven de la OSG · Dima Slobodeniouk · Palacio de la Ópera de A Coruña, 2016 (SinfonicadeGalicia)",
+"ini": 40,
+"caps": {
+"40": "I. Marte",
+"508": "II. Venus",
+"981": "III. Mercurio",
+"1226": "IV. Júpiter",
+"1730": "V. Saturno",
+"2294": "VI. Urano",
+"2655": "VII. Neptuno"
+}
+},
+"pluto": {
+"compositor": "Colin Matthews",
+"titulo": "Plutón, el renovador (Pluto, the Renewer)",
+"url": "https://youtu.be/daWZHKoH9KM",
+"fuente": "Orquesta y Coro Hallé · Mark Elder (Hyperion, 2001)",
+"caps": {
+"0": "Pluto, the Renewer"
+}
+},
+"i-vow": {
+"compositor": "Holst",
+"titulo": "«I Vow to Thee, My Country» (himno sobre la melodía central de Júpiter)",
+"url": "https://youtu.be/XNZGUgGrBUE",
+"fuente": "Della Jones, Royal Choral Society y BBC Concert Orchestra · Barry Wordsworth (Decca)",
+"caps": {
+"0": "I Vow to Thee, My Country"
+}
+},
+"st-paul": {
+"compositor": "Holst",
+"titulo": "St Paul's Suite, Op. 29 n.º 2, para orquesta de cuerda",
+"url": "https://youtu.be/GBjkb9bBTU4",
+"fuente": "Orquesta Sinfónica Nacional de Escuelas de Música de Polonia (Akademia Filmu i Telewizji)",
+"ini": 28,
+"caps": {
+"28": "I. Jig",
+"253": "II. Ostinato",
+"383": "III. Intermezzo",
+"655": "IV. Finale («The Dargason»)"
+}
+},
+"schoenberg-farben": {
+"compositor": "Schönberg",
+"titulo": "Cinco piezas para orquesta, Op. 16: n.º 3, «Farben» («Colores»)",
+"url": "https://youtu.be/d4cpMepVZyc",
+"fuente": "Orquesta Sinfónica de Chicago · Daniel Barenboim (Teldec, hoy Warner Classics)",
+"caps": {
+"0": "n.º 3, Farben"
+}
+},
+"sacre": {
+"compositor": "Stravinski",
+"titulo": "La consagración de la primavera",
+"url": "https://youtu.be/EkwqPJZe8ms",
+"fuente": "Orquesta Sinfónica de Londres · Simon Rattle · Barbican, 2017 (London Symphony Orchestra)",
+"caps": {}
+},
+"cascanueces-hada": {
+"compositor": "Chaikovski",
+"titulo": "El cascanueces: Danza del hada de azúcar",
+"url": "https://youtu.be/gFjveJ5sgeQ",
+"fuente": "Filarmónica de Berlín · Simon Rattle, concierto de gala en directo (Warner Classics)",
 "caps": {}
 }
 }

@@ -29,8 +29,18 @@ IMAGENES = {
             alt="Retrato pintado de la bailarina Anna Pávlova con el traje blanco de cisne",
             pie="John Lavery, <i>Anna Pávlova en «La muerte del cisne»</i> (hacia 1911). Victoria and Albert Museum, Londres. Pávlova convirtió esta música en uno de los solos más famosos del ballet.",
         ),
+        "venus-holst": dict(
+            archivo="The-Planets-score-cover.jpg",
+            alt="Portada antigua de partitura con orla decorada: THE PLANETS by GUSTAV HOLST y la lista de los siete planetas",
+            pie="Portada de la partitura de orquesta de Los planetas publicada en 1921 por Goodwin & Tabb, de la que se hicieron doscientos ejemplares. Bajo el título, los siete planetas con sus subtítulos: «VENUS, the bringer of peace» es el segundo. Arriba, escrito a mano, «Holst».",
+        ),
     },
     "personas": {
+        "holst": dict(
+            archivo="Gustav_Holst.jpg",
+            alt="Fotografía en blanco y negro de un hombre con gafas redondas que apoya la cabeza en la mano",
+            pie="Gustav Holst hacia 1921, fotografiado por Herbert Lambert. National Portrait Gallery, Londres.",
+        ),
         "vivaldi": dict(
             archivo="Vivaldi.jpg",
             alt="Retrato al óleo de un violinista con peluca y una partitura en la mano",

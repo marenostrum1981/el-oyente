@@ -13,9 +13,29 @@ SU = "suite-chelo-2"       # Bach, Maisky
 BA = "balada-1-chopin"     # Chopin, Zimerman (sin capítulos: solo t=0)
 MA = "adagietto-mahler"    # Mahler, Bernstein (sin capítulos: solo t=0)
 CI = "el-cisne"            # Saint-Saëns, Yo-Yo Ma y Kathryn Stott (sin capítulos: solo t=0)
+VE = "venus-holst"         # Holst, Karajan y la Filarmónica de Berlín (sin capítulos: solo t=0)
 AOB = "https://www.bachvereniging.nl/en/bwv/bwv-"
 
 EJEMPLOS = {
+ "trompa": [
+  dict(o=VE, t=0, txt="Venus empieza con la trompa sola, muy suave: cuatro notas que suben."),
+  dict(x="mahler-5", t=1716, txt="En el Scherzo de la Quinta de Mahler, una trompa solista lleva la voz cantante de principio a fin."),
+  dict(x="planetas", t=0, txt="La otra cara: en Marte, las seis trompas de Holst suenan como un ejército."),
+ ],
+ "celesta": [
+  dict(o=VE, t=0, txt="En Venus, la celesta salpica notas de campanita sobre los acordes de flautas y arpas (paso 2 de la guía)."),
+  dict(x="cascanueces-hada", txt="La Danza del hada de azúcar de El cascanueces: aquí la celesta lleva la melodía."),
+  dict(x="planetas", t=2561, txt="En Neptuno, la celesta y las arpas crean un brillo misterioso."),
+ ],
+ "timbre": [
+  dict(x="schoenberg-farben", t=0, txt="«Colores», de Schönberg: los acordes casi no cambian; lo que cambia es el color de los instrumentos que los tocan."),
+  dict(o=VE, t=0, txt="Venus está hecha de colores: trompa, flautas, arpas, celesta y violín solo."),
+  dict(x="carnaval", t=973, txt="En «Fósiles», el xilófono suena a huesos que chocan: el timbre cuenta la broma."),
+ ],
+ "ostinato": [
+  dict(x="planetas", t=0, txt="Marte: el mismo ritmo de cinco tiempos, una y otra vez, como una máquina."),
+  dict(x="st-paul", t=253, txt="El segundo movimiento de la St Paul's Suite de Holst se llama así, «Ostinato»: una figura que gira sin parar."),
+ ],
  "arreglo": [
   dict(o=CI, t=0, txt="El cisne en su arreglo para violonchelo y un solo piano, el que se publicó en 1887."),
   dict(x="carnaval", t=1058, txt="El original, dentro del Carnaval, con dos pianos. Compara los dos acompañamientos."),
@@ -168,6 +188,7 @@ EJEMPLOS = {
  ],
  "suite": [
   dict(o=SU, t=16, txt="La suite entera: un preludio y luego las danzas seguidas, todas girando en torno a la misma nota, el re."),
+  dict(x="planetas", t=0, txt="Una suite del siglo XX: Los planetas de Holst, siete piezas para orquesta, cada una con su carácter."),
  ],
  "balada": [
   dict(o=BA, t=0, txt="Diez minutos que suenan a historia contada: un comienzo que duda, dos temas que se transforman y un final desbocado."),
@@ -179,6 +200,7 @@ EJEMPLOS = {
   dict(o=SU, t=1048, txt="Minueto: compás de tres. Cuenta 1-2-3, con el apoyo en el 1."),
   dict(o=SU, t=1256, txt="Giga: también de tres (3/8), pero mucho más rápido y saltarín."),
   dict(o=BA, t=0, txt="Tras la introducción lenta, la balada se mece en 6/4: dos grupos de tres, como una barca."),
+  dict(x="planetas", t=0, txt="Marte, de Holst, en 5/4: cinco tiempos, 1-2-3-4-5. Intenta marchar al paso: no se puede."),
  ],
  "pedal": [
   dict(o=BA, t=0, txt="Desde la introducción, fíjate en cómo las notas siguen sonando unas sobre otras después de soltar las teclas."),

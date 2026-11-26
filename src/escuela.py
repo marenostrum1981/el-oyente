@@ -25,9 +25,11 @@ dict(id="romanticismo", nombre="Romanticismo", fechas="c. 1820–1900", ini=1820
  nombres="Franz Schubert, Frédéric Chopin, Robert Schumann, Franz Liszt, Richard Wagner, Giuseppe Verdi, Johannes Brahms, Piotr Chaikovski, Gustav Mahler"),
 dict(id="siglo-xx", nombre="Siglo XX y XXI", fechas="1900–hoy", ini=1900, fin=2000, color="var(--xx)",
  entradilla="Se rompen las reglas: nuevos colores, nuevos ritmos y nuevas formas de ordenar los sonidos.",
- h="""<p>Esta sección se completará cuando llegue la primera obra del siglo XX al diario.</p>""",
- rasgos=["Armonías que ya no giran en torno a una tonalidad clara.","Ritmos irregulares y protagonismo de la percusión.","El timbre, el color de cada instrumento, como protagonista."],
- nombres="Claude Debussy, Maurice Ravel, Manuel de Falla, Ígor Stravinski, Dmitri Shostakóvich"),
+ h="""<p>En los primeros años del siglo XX, varios compositores rompen a la vez con las reglas heredadas. En 1909, Arnold Schönberg escribe sus <a href="#x-schoenberg-farben">Cinco piezas para orquesta</a>, sin una tonalidad que haga de casa; cuando se estrenan en Londres, en 1912, el programa las presenta como «experimentos de disonancia» y parte del público silba. En 1913, <a href="#x-sacre">La consagración de la primavera</a> de Stravinski, con sus ritmos salvajes, provoca un escándalo en París.</p>
+<p>No hay un solo estilo, sino muchos caminos a la vez. Unos abandonan la tonalidad; otros la estiran o la mezclan con escalas antiguas y exóticas; otros vuelven a la canción popular de su país. Lo que casi todos comparten es que el ritmo y el color de los instrumentos (el <a href="#g-timbre">timbre</a>) ganan un protagonismo que antes tenía la melodía.</p>
+<p>La primera obra de esta época en el diario es <a href="#o-venus-holst">Venus</a>, de Los planetas de Gustav Holst (1914): un inglés que conocía la música de Schönberg y de Stravinski y que mezcló sus novedades con melodías que se pueden cantar.</p>""",
+ rasgos=["El timbre, el color de cada instrumento, como protagonista: a veces importa más que la melodía. Ejemplo: <a href=\"#x-schoenberg-farben\">Schönberg, «Colores»</a>, donde los acordes casi no cambian pero sí los instrumentos que los tocan; y <a href=\"#o-venus-holst\">Holst, Venus</a>, con trompa, arpas y celesta.","Ritmos que golpean y se repiten como una máquina, a menudo en compases irregulares. Ejemplo: <a href=\"#x-planetas@0\">Holst, Marte</a>, en cinco tiempos, y <a href=\"#x-sacre\">Stravinski, La consagración de la primavera</a>.","Armonías que ya no giran en torno a una tonalidad clara: acordes que flotan o se alternan sin llegar a ningún sitio. Ejemplo: <a href=\"#x-planetas@2561\">Holst, Neptuno</a>.","Efectos nuevos de espacio y sonido: voces escondidas, finales que se desvanecen. Ejemplo: el coro de mujeres entre bastidores al final de <a href=\"#x-planetas@2561\">Neptuno</a>.","La melodía no desaparece del todo: muchos mezclan lo nuevo con himnos y canciones populares. Ejemplo: la melodía central de <a href=\"#x-planetas@1182\">Holst, Júpiter</a>."],
+ nombres="Claude Debussy, Maurice Ravel, Gustav Holst, Arnold Schönberg, Ígor Stravinski, Manuel de Falla, Dmitri Shostakóvich"),
 ]
 
 ARTICULOS = [
@@ -275,6 +277,10 @@ GLOSARIO = [
  ("arpegio","Arpegio","Tocar las notas de un acorde una detrás de otra, en lugar de todas a la vez. Es el acompañamiento típico del arpa y del piano: crea un fondo que ondula."),
  ("legato","Legato","«Ligado» en italiano: tocar o cantar las notas unidas, sin cortes entre ellas, como una línea continua. Lo contrario es el staccato: notas cortas y separadas."),
  ("vibrato","Vibrato","Una oscilación pequeña y rápida de la altura de una nota, que la hace temblar y le da calor. En los instrumentos de cuerda se consigue balanceando el dedo que pisa la cuerda; en el canto, con la voz."),
+ ("trompa","Trompa","Instrumento de metal con el tubo enrollado en círculo y una gran campana (el pabellón), en la que el músico mete la mano para matizar el sonido. Suena redondo y cálido, y puede sonar lejano y noble. En inglés se llama <i lang=\"en\">horn</i>, y en italiano, <i lang=\"it\">corno</i>."),
+ ("celesta","Celesta","Instrumento de teclado con aspecto de piano pequeño: sus macillos golpean láminas de metal y da un sonido de campanitas, suave y brillante. La patentó en París Auguste Mustel en 1886, y Chaikovski la hizo famosa en <a href=\"#x-cascanueces-hada\"><i>El cascanueces</i></a> (1892)."),
+ ("timbre","Timbre","El color del sonido: lo que distingue una flauta de un violín aunque toquen la misma nota y con el mismo volumen. Elegir y mezclar timbres es el arte de la orquestación, y en el siglo XX el timbre pasa a ser tan importante como la melodía."),
+ ("ostinato","Ostinato","«Obstinado» en italiano: una figura breve (un ritmo, una melodía, un bajo) que se repite una y otra vez mientras lo demás cambia por encima. Da insistencia, tensión o, al revés, una sensación de vaivén."),
  ("allemande","Allemande","Danza de origen alemán, de paso moderado y compás binario. Abre la serie de danzas en las suites de Bach."),
  ("bajo-continuo","Bajo continuo","El cimiento de la música barroca: una línea de bajo (violonchelo, contrabajo, fagot…) más un instrumento de acordes (clave, órgano, laúd o tiorba) que improvisa la armonía a partir de esa línea. Desaparece hacia 1800."),
  ("catalogo","Catálogo (BWV, RV, K., Op.)","Los números que identifican una obra. <b>BWV</b> es el catálogo de las obras de Bach (Bach-Werke-Verzeichnis), de Wolfgang Schmieder; <b>RV</b>, el de Vivaldi, de Peter Ryom; <b>K.</b> o <b>KV</b>, el de Mozart, de Ludwig von Köchel; <b>Hob.</b>, el de Haydn, de Anthony van Hoboken, y <b>D.</b>, el de Schubert, de Otto Erich Deutsch. <b>Op.</b> (<a href=\"#g-opus\">opus</a>) es el número de publicación. Más en <a href=\"#a-titulos\">Cómo leer el título de una obra</a>."),
@@ -298,7 +304,7 @@ GLOSARIO = [
  ("preludio","Preludio","Pieza de introducción, a menudo libre, que abre una suite o va delante de una fuga."),
  ("ritornello","Ritornello","El estribillo de los movimientos rápidos del concierto barroco: el grupo lo repite, a veces solo un trozo, entre las intervenciones del solista."),
  ("sordina","Sordina","Pieza que se coloca sobre el puente de un instrumento de cuerda para velar su sonido."),
- ("suite","Suite","Serie de danzas en la misma tonalidad, a menudo con un preludio delante. En las de Bach: preludio, allemande, courante, zarabanda, galanterías y giga."),
+ ("suite","Suite","Serie de danzas en la misma tonalidad, a menudo con un preludio delante. En las de Bach: preludio, allemande, courante, zarabanda, galanterías y giga. Desde el siglo XIX, «suite» también es una serie de piezas para orquesta, cada una con su carácter: Los planetas de Holst es una «suite para gran orquesta»."),
  ("balada","Balada","En literatura, un poema que cuenta una historia. Chopin fue el primero en dar el nombre a una pieza solo instrumental, sin palabras, de carácter narrativo."),
  ("coda","Coda","«Cola»: la sección final que cierra una obra o un movimiento, a menudo con un último arranque de energía."),
  ("compas","Compás","La forma en que se agrupan los pulsos. En 3/4 se cuenta 1-2-3, como en un vals; en 6/4 o 6/8, en dos grupos de tres, con un balanceo que suena a narración."),
@@ -317,6 +323,8 @@ GLOSARIO = [
 ]
 
 CURIOSIDADES = [
+ dict(t="El hermano pequeño de Gustav Holst, Emil, fue actor en Hollywood con el nombre de Ernest Cossart. Su especialidad: los mayordomos.", l="#c-holst"),
+ dict(t="Holst dejó de llamarse «von Holst» el 25 de septiembre de 1918, cuatro días antes de que sonara por primera vez Los planetas.", l="#o-venus-holst"),
  dict(t="Saint-Saëns no quiso publicar <i>El carnaval de los animales</i> en vida: solo dejó salir <i>El cisne</i>, en 1887. El resto se publicó en 1922, tras su muerte, porque así lo dejó escrito en su testamento.", l="#o-el-cisne"),
  dict(t="La bailarina Anna Pávlova bailó <i>La muerte del cisne</i>, con la música de Saint-Saëns, unas 4.000 veces.", l="#x-cisne-ballet"),
  dict(t="En la final del Concurso Chopin de 2015, nueve de los diez finalistas eligieron el Concierto n.º 1. Solo uno, Charles Richard-Hamelin, tocó el n.º 2, y quedó segundo.", l="#x-chopin-concierto-2"),

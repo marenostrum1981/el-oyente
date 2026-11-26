@@ -154,6 +154,40 @@ dict(id="saint-saens", tipo="compositor", nombre="Camille Saint-Saëns", vida="1
   dict(titulo="Danza macabra, Op. 40", nota="Medianoche: la Muerte toca el violín y bailan los esqueletos.", url="#x-danza-macabra"),
   dict(titulo="Sinfonía n.º 3 «con órgano», Op. 78", nota="Su obra más grandiosa, del mismo año que El cisne. En la segunda parte, el órgano irrumpe con el tema final.", url="#x-saint-saens-3@1360"),
  ]),
+dict(id="holst", tipo="compositor", nombre="Gustav Holst", vida="1874–1934", nace=1874, lugar="Cheltenham → Londres", epoca="siglo-xx",
+ entradilla="Profesor de música en una escuela de chicas, trombonista y estudioso del sánscrito. Componía los fines de semana, y una de esas obras, Los planetas, le hizo famoso de golpe.",
+ h="""<h2>Vida</h2>
+<p>Nació en Cheltenham (Inglaterra) el 21 de septiembre de 1874, en una familia de músicos; su padre tenía raíces suecas, letonas y alemanas. Le bautizaron Gustavus Theodore von Holst. De niño estudió piano, pero una neuritis en el brazo derecho le cerró el camino de pianista, y aprendió el trombón, que además le ayudaba con el asma.</p>
+<p>En 1893 entró en el Royal College of Music de Londres, donde estudió composición con Charles Villiers Stanford. Allí conoció en 1895 a Ralph Vaughan Williams, su gran amigo de por vida. Para ganarse la vida tocó el trombón en orquestas de teatro y en la compañía de ópera Carl Rosa. Por esos años tomó clases de sánscrito en el University College de Londres para traducir él mismo textos de la India y ponerles música.</p>
+<p>En 1905 le nombraron director de música de la St Paul's Girls' School, una escuela de chicas de Hammersmith (Londres), y lo fue hasta su muerte. Desde 1907 llevó también la música del Morley College, un centro para adultos. Como enseñaba toda la semana, componía los fines de semana y en vacaciones, en una sala insonorizada de la escuela.</p>
+<p>Con <a href="#o-venus-holst">Los planetas</a> le llegó una fama repentina que no le gustaba: era tímido y le molestaba la atención de la prensa. En 1918 dejó de usar el «von» de su apellido. Murió en Londres el 25 de mayo de 1934, dos días después de una operación.</p>
+<h2>Su música</h2>
+<p>Bebió de fuentes muy distintas: la canción popular y la música coral inglesas, que recuperó en sus clases; la literatura de la India, en obras como la ópera de cámara <i>Sāvitri</i>; y la música europea más nueva, la de Stravinski y Schönberg. Para la orquesta de sus alumnas escribió la <a href="#x-st-paul">St Paul's Suite</a> (1913), para cuerda.</p>
+<p>Su obra más famosa es <a href="#x-planetas">Los planetas</a> (1914–1916): siete piezas, una por planeta, para una orquesta gigantesca. En 1921 convirtió la melodía central de Júpiter en un himno, <a href="#x-i-vow">«I Vow to Thee, My Country»</a>.</p>
+<h2>Por qué importa</h2>
+<p>Su música, abierta a lo que pasaba en el resto de Europa, era algo raro en la Inglaterra de su tiempo. Como profesor, sus métodos se extendieron a muchas escuelas inglesas. Y Los planetas ha marcado la música de cine: muchas bandas sonoras de películas del espacio, como las de <i>La guerra de las galaxias</i>, le deben mucho.</p>""",
+ claves=[["Nació","Cheltenham (Inglaterra), 1874"],["Murió","Londres, 1934"],["Trabajo","Director de música de la St Paul's Girls' School (1905–1934)"],["Obra","Los planetas, la St Paul's Suite, música coral y canciones"],["Catálogo","H. (el de su hija, Imogen Holst, de 1974)"]],
+ bachtrack="holst",
+ huella=[
+  "Ritmos obstinados que no sueltan, a veces en compases raros: los cinco tiempos de <a href=\"#x-planetas@0\">Marte</a>, repetidos como una máquina (<a href=\"#g-ostinato\">ostinato</a>).",
+  "Colores de orquesta nuevos: trompa, arpas, celesta y glockenspiel en <a href=\"#o-venus-holst\">Venus</a>, y un coro de mujeres escondido al final de <a href=\"#x-planetas@2561\">Neptuno</a>.",
+  "Melodías anchas y solemnes, como un himno: la del centro de <a href=\"#x-planetas@1182\">Júpiter</a>, que luego fue <a href=\"#x-i-vow\">«I Vow to Thee, My Country»</a>.",
+  "Música práctica para sus alumnas, sin perder el ingenio: la <a href=\"#x-st-paul\">St Paul's Suite</a>, cuyo segundo movimiento se llama precisamente <a href=\"#x-st-paul@253\">«Ostinato»</a>.",
+ ],
+ especialistas_intro="Los directores que más han hecho por Los planetas:",
+ especialistas=[
+  dict(quien="Adrian Boult", nota="Dirigió el primer Planetas, en privado, en 1918. Holst le escribió en su partitura que había sido el primero en hacer «brillar» a los planetas en público. Lo grabó varias veces; entre ellas, con la Filarmónica de Londres, en un disco publicado en 1979.", url="https://youtu.be/87mKZsk-eJw"),
+  dict(p="karajan", nota="Lo grabó dos veces: con la Filarmónica de Viena en 1961 y con la de Berlín en 1981, la grabación de la ficha de Venus."),
+  dict(quien="Simon Rattle", nota="Lo grabó con la Philharmonia en 1981 y con la Filarmónica de Berlín en 2006.", url="https://youtu.be/TXvKVjE-BpM"),
+  dict(quien="John Eliot Gardiner", nota="Sobrino nieto de Balfour Gardiner, el amigo que pagó el primer Planetas en 1918. También lo ha grabado."),
+  dict(quien="Orquesta Sinfónica de Londres", nota="Dio el primer Planetas completo en público, en 1920, y tocó en las dos grabaciones que dirigió el propio Holst.", url="https://youtu.be/ztFGryBKONM"),
+ ],
+ ruta=[
+  dict(titulo="Venus, la que trae la paz", obra="venus-holst", nota="Ocho minutos de calma: la puerta de entrada."),
+  dict(titulo="Los planetas completos", nota="Cincuenta minutos, del 5/4 de Marte al final de Neptuno, que se pierde en el silencio.", url="#x-planetas"),
+  dict(titulo="St Paul's Suite", nota="Para la orquesta de cuerda de sus alumnas, en 1913, justo antes de Los planetas.", url="#x-st-paul"),
+  dict(titulo="«I Vow to Thee, My Country»", nota="La melodía de Júpiter convertida en himno, con coro y orquesta.", url="#x-i-vow"),
+ ]),
 dict(id="zimerman", bachtrack="krystian-zimerman", tipo="solista", rol="Pianista", nombre="Krystian Zimerman", vida="Nacido en 1956", lugar="Zabrze (Polonia)",
  entradilla="Pianista polaco, ganador del Concurso Chopin con 18 años. Perfeccionista: viaja con sus propios pianos y graba muy poco.",
  h="""<p>Nació el 5 de diciembre de 1956 en Zabrze, en una familia de músicos. Empezó a tocar a los cinco años con su padre, pianista, y estudió en el conservatorio de Katowice con Andrzej Jasiński.</p>
@@ -218,4 +252,16 @@ dict(id="kathryn-stott", tipo="solista", rol="Pianista", nombre="Kathryn Stott",
 <p>Ese mismo año conoció por casualidad a <a href="#i-yo-yo-ma">Yo-Yo Ma</a>, y desde 1985 tocaron juntos durante cuarenta años por Europa, Estados Unidos, Sudamérica y Asia. Tocó en sus discos de tango (<i lang="en">Soul of the Tango</i>) y de música brasileña (<i lang="pt">Obrigado Brazil</i>), que ganaron premios Grammy. En 2020 preparó con él <i lang="en">Songs of Comfort and Hope</i>, como respuesta a la pandemia, y su último disco juntos, <i lang="fr">Merci</i>, es un homenaje a Fauré.</p>
 <p>En diciembre de 2024 se despidió de los escenarios, tras 46 años de carrera, para dedicarse a enseñar en el Royal Northern College of Music de Mánchester.</p>""",
  claves=[["Instrumento","Piano"],["Formación","Yehudi Menuhin School y Royal College of Music"],["Con Yo-Yo Ma","Desde 1985, durante cuarenta años"],["Pasión","La música francesa, sobre todo Fauré"]]),
+dict(id="karajan", tipo="director", rol="Director de orquesta", nombre="Herbert von Karajan", vida="1908–1989", lugar="Salzburgo → Anif (Austria)",
+ entradilla="El director más famoso de su tiempo y uno de los que más grabaron. Durante 34 años hizo de la Filarmónica de Berlín una marca mundial, con un sonido pulido y brillante.",
+ h="""<p>Nació en Salzburgo el 5 de abril de 1908. Fue un niño prodigio del piano y estudió en el Mozarteum de su ciudad. Debutó como director en Salzburgo en 1929, ese mismo año entró en el teatro de Ulm y de 1934 a 1941 trabajó en Aquisgrán. Fue miembro del partido nazi entre 1933 y 1942; después de la guerra, un tribunal aliado lo exoneró.</p>
+<p>Su primer concierto con la <a href="#i-berliner-philharmoniker">Filarmónica de Berlín</a>, en abril de 1938, fue un éxito sensacional. Muerto Furtwängler, en 1955 lo nombraron director titular, y desde 1956 de por vida. Dirigió también la Ópera Estatal de Viena (1957–1964) y el Festival de Salzburgo, y en 1967 fundó el Festival de Pascua de Salzburgo.</p>
+<p>Le apasionaba la técnica: grabó muchísimo, en disco y en película, y en abril de 1981 presentó en Salzburgo el disco compacto. Dejó Berlín en abril de 1989, tras varios choques con la orquesta, y murió tres meses después, el 16 de julio, en Anif, junto a Salzburgo.</p>""",
+ claves=[["Nació","Salzburgo, 1908"],["Murió","Anif (Austria), 1989"],["Cargo","Director titular de la Filarmónica de Berlín (1955–1989)"],["Fundó","El Festival de Pascua de Salzburgo (1967)"]]),
+dict(id="berliner-philharmoniker", bachtrack="berliner-philharmoniker", tipo="conjunto", rol="Orquesta · Berlín", nombre="Filarmónica de Berlín (Berliner Philharmoniker)", vida="Fundada en 1882", lugar="Berlín", dirige=["Kirill Petrenko"],
+ entradilla="Una de las grandes orquestas del mundo. Se gobierna a sí misma: sus músicos eligen a su director.",
+ h="""<p>Nació en 1882, cuando 54 de los 70 músicos de la orquesta de Benjamin Bilse se marcharon para tocar por su cuenta. Desde entonces se gobierna a sí misma, y son sus músicos quienes eligen al director titular. La han dirigido Hans von Bülow, Arthur Nikisch, Wilhelm Furtwängler, <a href="#i-karajan">Herbert von Karajan</a> (1955–1989), Claudio Abbado (1989–2002) y Simon Rattle (2002–2018). Desde 2019, Kirill Petrenko.</p>
+<p>Su sala, la Philharmonie, es un edificio amarillo con forma de tienda de campaña, obra del arquitecto Hans Scharoun, con la orquesta en el centro y el público alrededor. Se inauguró el 15 de octubre de 1963 con la Novena de Beethoven, dirigida por Karajan.</p>
+<p>Con Karajan se hizo famosa en todo el mundo por la belleza de su sonido, sus giras y sus grabaciones. En 1982 entró en la orquesta la primera mujer, la violinista Madeleine Carruzzo. Desde 2009 emite sus conciertos por internet en su Digital Concert Hall, y desde 2014 tiene su propio sello discográfico.</p>""",
+ claves=[["Fundación","1882"],["Sala","Philharmonie de Berlín (1963)"],["Director titular","Kirill Petrenko, desde 2019"],["Con Karajan","De 1955 a 1989"]]),
 ]

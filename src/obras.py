@@ -440,4 +440,101 @@ dict(
  interpretes=["yo-yo-ma","kathryn-stott"],
  conceptos=["arreglo","arpegio","legato","vibrato","compas","tonalidad","crescendo","musica-programatica","catalogo"],
 ),
+dict(
+ id="venus-holst", n=6, fecha="2026-11-26", origen="Obra del día",
+ titulo="Venus, la que trae la paz", subtitulo="N.º 2 de Los planetas, Op. 32 · Adagio – Andante – Animato – Tempo I",
+ compositor="holst", fechaComp="1914", anio=1914, epoca="siglo-xx",
+ genero="Movimiento de una suite para gran orquesta", plantilla="Gran orquesta. En Venus destacan la trompa solista, flautas y oboes, dos arpas, celesta, glockenspiel y un violín solo",
+ tonalidad="No figura en el título", catalogo="Op. 32 · H. 125",
+ titulo_original="Holst: The Planets, Op. 32: II. Venus, the Bringer of Peace",
+ partes=[
+  dict(p="Holst:", es="Holst", h="El compositor: el inglés <b>Gustav Holst</b> (1874–1934). En las plataformas de música el apellido va delante, para ordenar."),
+  dict(p="The Planets", es="Los planetas", h="El nombre de la <b>obra completa</b>: siete piezas, una por planeta. Holst la llamó primero «Siete piezas para gran orquesta», a imitación de las «Cinco piezas para orquesta» de Schönberg, y la publicó como «<a href=\"#g-suite\">suite</a> para gran orquesta». Falta la Tierra, y Plutón no se descubrió hasta 1930."),
+  dict(p="Op. 32", es="opus 32", h="El número de <a href=\"#g-opus\">opus</a> de la obra entera: <b>las siete piezas comparten el Op. 32</b>, y Venus es una de ellas. A veces verás también «H. 125»: su número en el <a href=\"#g-catalogo\">catálogo</a> de las obras de Holst que publicó en 1974 su hija, Imogen Holst."),
+  dict(p="II.", es="n.º 2", h="Es el <b>segundo <a href=\"#g-movimiento\">movimiento</a> de siete</b>, justo después de Marte. Holst no siguió el orden de los planetas alrededor del Sol (Mercurio, el más cercano, va tercero): los colocó para que cada pieza contrastara con la anterior."),
+  dict(p="Venus", es="Venus", h="El planeta visto por la <b>astrología</b>, no por la astronomía ni por la mitología: no es la diosa del amor, sino el carácter que los astrólogos daban a Venus. En el librito de Alan Leo que leía Holst, Venus era de carácter sereno y amante de todo lo bello."),
+  dict(p="the Bringer of Peace", es="la que trae la paz", h="Cada planeta lleva un subtítulo con su carácter: Marte trae la guerra; Venus, la paz; Júpiter, la alegría; Saturno, la vejez. A diferencia de una sinfonía o una sonata clásicas, el título <b>no indica tonalidad</b>: no hay un «en mi bemol» ni nada parecido."),
+ ],
+ duracion="Unos 8 minutos (aquí, 8:37)",
+ entradilla="Después del estruendo de Marte, una trompa sola, unos acordes que se mecen y una celesta que brilla como un cielo estrellado. Es la respuesta de Holst a la guerra: ocho minutos de calma.",
+ grabacion=dict(titulo="Filarmónica de Berlín · Herbert von Karajan", fuente="Disco Holst: The Planets (Deutsche Grammophon, 1981), en el canal oficial «Berliner Philharmoniker - Topic»", url="https://youtu.be/nK47lebKTXY",
+   nota="Es una pista de audio sin capítulos, así que la guía va por pasos, en orden. Dura 8:37.", dur="8:37"),
+ escucha=[
+  dict(mov="La llamada", cuando="1", txt="Empieza la <a href=\"#g-trompa\">trompa</a> sola, muy suave: cuatro notas que suben. Le contestan flautas y oboes con acordes que bajan y se juntan. Después del estruendo de Marte, es como abrir una ventana."),
+  dict(mov="El vaivén", cuando="2", txt="Flautas y <a href=\"#g-arpa\">arpas</a> se mecen con acordes que van y vienen, sin prisa, y la <a href=\"#g-celesta\">celesta</a> salpica notas de campanita por encima. Casi todo suena en la zona media y aguda de los instrumentos: nada pesa."),
+  dict(mov="El violín solo", cuando="3", txt="Un violín solo canta una melodía nueva, delicada, por encima de la orquesta. Es la segunda idea de la pieza."),
+  dict(mov="Andante", cuando="4", txt="La música fluye un poco más, en tres tiempos (<a href=\"#g-compas\">compás</a> de 3/4). Se van pasando la melodía los solistas: el violín, el oboe y el violonchelo."),
+  dict(mov="Animato", cuando="5", txt="La orquesta se anima y crece, más cálida y sensual, pero sin estallar nunca."),
+  dict(mov="Vuelve la calma", cuando="6", txt="Regresa el principio (Tempo I): la llamada de la trompa y los acordes que se mecen. La pieza se apaga poco a poco, serena."),
+ ],
+ secciones=[
+  dict(t="Quién era Holst cuando la escribió", h="""<p>En 1914, <a href="#c-holst">Gustav Holst</a> tenía 40 años y no era famoso. Se ganaba la vida como profesor de música en la St Paul's Girls' School, una escuela de chicas de Londres, y en el Morley College. Componía cuando podía: su hija Imogen contó que solo los fines de semana y las vacaciones le dejaban avanzar de verdad, y por eso tardó más de dos años en terminar <a href="#x-planetas">Los planetas</a>.</p>
+<p>La idea nació en un viaje. En la primavera de 1913, desanimado porque su música no despegaba, se fue de vacaciones a Mallorca con su amigo y mecenas, el compositor Balfour Gardiner, y con los hermanos Arnold y Clifford Bax. Holst ya había empezado a leer sobre astrología, y Clifford Bax, escritor y gran aficionado a los horóscopos, le habló del tema durante todo el viaje, desde el tren. Holst acabó siendo, según Bax, un intérprete de horóscopos muy hábil.</p>
+<p>Poco después escribió a un amigo que solo estudiaba lo que le sugería música, y que el carácter de cada planeta le sugería mucho. En 1914 compuso Marte, Venus y Júpiter; en 1915, Saturno, Urano y Neptuno; y en 1916, Mercurio. Marte ya estaba en su cabeza antes de que estallara la guerra, en agosto de 1914, y en la segunda mitad de ese año pensaba en Venus, la que trae la paz.</p>"""),
+  dict(t="Para quién: una obra sin encargo", h="""<p>Nadie se la pidió. Holst la escribió para sí mismo, y las primeras en oírla fueron sus ayudantes de la escuela, Vally Lasker y Nora Day, que se la tocaban en una versión para dos pianos a medida que la terminaba. La neuritis del brazo le hacía difícil escribir: la partitura de orquesta de 1918 es solo en parte de su mano.</p>
+<p>En septiembre de 1918, poco antes de que Holst se marchara a Salónica a organizar música para las tropas, Balfour Gardiner le regaló una orquesta: pagó un ensayo con público. El 29 de septiembre de 1918, en el Queen's Hall de Londres, Adrian Boult dirigió Los planetas ante unos 250 invitados. Los músicos habían visto la partitura dos horas antes, y el coro de Neptuno lo formaban alumnas de Holst.</p>
+<p>Holst escribió después en la partitura de Boult que había sido el primero en hacer «brillar» a los planetas en público. Venus no se oyó en un concierto público hasta el 22 de noviembre de 1919, dirigida por el propio Holst. La obra completa llegó el 15 de noviembre de 1920, con la Sinfónica de Londres y Albert Coates, y fue un éxito inmediato.</p>"""),
+  dict(t="Quién la toca", h="""<p>Los planetas pide una orquesta gigantesca: seis <a href="#g-trompa">trompas</a>, cuatro trompetas, dos tubas, seis timbales, dos <a href="#g-arpa">arpas</a>, celesta, órgano, instrumentos raros como el oboe bajo y la flauta alto, y un coro de mujeres escondido para el final. En Marte suena todo ese ejército.</p>
+<p>Venus hace lo contrario: usa solo una parte, y casi siempre en voz baja. La abre una trompa sola; siguen flautas y oboes; brillan las arpas, el glockenspiel (láminas de metal que se golpean con macillos) y la <a href="#g-celesta">celesta</a>, un teclado con sonido de campanitas que se había inventado en París en 1886. Las melodías se las reparten solistas: un violín, el oboe y el violonchelo.</p>
+<p>Aquí la toca la <a href="#i-berliner-philharmoniker">Filarmónica de Berlín</a>, dirigida por <a href="#i-karajan">Herbert von Karajan</a>. La orquesta tocó Los planetas por primera vez, probablemente, en diciembre de 1922, con Eugène Goossens.</p>"""),
+  dict(t="Cómo está hecha", h="""<ul>
+<li><b>Unos ocho minutos</b>, en cuatro tramos: <i lang="it">Adagio</i> (lento), <i lang="it">Andante</i> (al paso), <i lang="it">Animato</i> (animado) y vuelta al tempo del principio. Ver <a href="#g-tempo">tempo</a>.</li>
+<li><b>Una respuesta a Marte.</b> Según Imogen Holst, Venus tiene que dar «la respuesta correcta» a Marte. Escucha los dos seguidos: <a href="#x-planetas@0">Marte</a> y luego <a href="#x-planetas@462">Venus</a>.</li>
+<li><b>Estados de ánimo, no historias.</b> Holst llamaba a sus planetas «cuadros de estados de ánimo», pensados para contrastar entre sí, con poco contraste dentro de cada uno. No escribió notas al programa y le dijo a Boult que nada de sus planetas se podía expresar con palabras. No es <a href="#g-musica-programatica">música programática</a>: no cuenta nada.</li>
+<li><b>Color antes que desarrollo.</b> Según su hija, a Holst le costaban las grandes formas como la <a href="#g-sinfonia">sinfonía</a>, y la idea de una suite con un carácter distinto en cada pieza le liberó. Venus no desarrolla sus temas: los deja flotar y juega sobre todo con el <a href="#g-timbre">timbre</a>, el color de los instrumentos.</li>
+<li><b>Dos ideas:</b> la llamada de la trompa, con los acordes que contestan, y la melodía del violín solo. Entre medias, acordes que se mecen una y otra vez, casi un <a href="#g-ostinato">ostinato</a>.</li>
+</ul>"""),
+  dict(t="Cómo reconocer aquí el siglo XX", h="""<p>Es la primera obra del siglo XX en este diario, y se nota aunque suene tan tranquila:</p>
+<ul>
+<li><b>El color manda.</b> La celesta, las arpas y el glockenspiel no acompañan: son el centro de la música. Holst había oído en Londres las <a href="#x-schoenberg-farben">Cinco piezas para orquesta de Schönberg</a>, donde una pieza entera, «Colores», casi solo cambia de instrumentos.</li>
+<li><b>Acordes que se mecen.</b> Flautas y arpas repiten un vaivén de acordes que no avanza hacia ninguna meta: crea un ambiente. En <a href="#x-planetas@2561">Neptuno</a>, Holst lleva la idea al extremo, con dos acordes que se alternan hasta perderse en el silencio.</li>
+<li><b>El contraste con Marte.</b> Justo antes, <a href="#x-planetas@0">Marte</a> machaca un ritmo de cinco tiempos como una máquina de guerra. Ritmo y color: dos grandes novedades del siglo XX, en dos piezas seguidas.</li>
+<li><b>La melodía no desaparece.</b> A diferencia de Schönberg, Holst sigue escribiendo melodías cantables. Compara con <a href="#o-el-cisne">El cisne</a>: allí la melodía lo es todo; aquí comparte el protagonismo con el color.</li>
+</ul>"""),
+  dict(t="Karajan, la Filarmónica de Berlín y esta grabación", h="""<p><a href="#i-karajan">Karajan</a> descubrió Los planetas en Viena. En 1959, siendo director de la Ópera Estatal, invitó a Adrian Boult, el director del primer Planetas, a grabarlos con la orquesta de la Ópera, algo poco habitual entonces: la música inglesa se conocía poco en Europa. En septiembre de 1961 los grabó él mismo con la Filarmónica de Viena para Decca. A los músicos vieneses les costaron los cinco tiempos de Marte, pero el disco fue un éxito, e Imogen Holst, la hija del compositor, dijo que era la mejor versión que había oído. A finales de ese año dirigió además en la Ópera un ballet con esta música, el único ballet que dirigió en directo en Viena.</p>
+<p>Esta es su segunda grabación, con la <a href="#i-berliner-philharmoniker">Filarmónica de Berlín</a>, en la Philharmonie, entre enero y marzo de 1981, para Deutsche Grammophon. Es una grabación digital: Karajan había hecho la primera en Berlín un año antes. En Neptuno canta el coro de cámara RIAS. Fue el año en que el propio Karajan presentó el disco compacto en Salzburgo.</p>
+<p>Fíjate en el tempo: aquí Venus dura 8:37; en Viena, veinte años antes, 8:20; y cuando la dirigió el propio Holst, en 1926, 7:18. Lo ves en el gráfico de duraciones.</p>"""),
+  dict(t="Curiosidades", h="""<ul>
+<li>¿Fue su hermano quien le habló de astrología en Mallorca? No: fue Clifford Bax, el hermano del compositor Arnold Bax. Holst sí tenía un hermano pequeño, Emil, que hizo carrera de actor en Hollywood con el nombre de Ernest Cossart, casi siempre de mayordomo.</li>
+<li>Plutón se descubrió el 18 de febrero de 1930, cuando Los planetas ya era famosa. Holst nunca le puso música. En 2000, el compositor Colin Matthews escribió <a href="#x-pluto">«Plutón, el renovador»</a> como octavo planeta, por encargo de la Orquesta Hallé.</li>
+<li>Holst no quería que se tocaran planetas sueltos, y menos terminar en Júpiter para tener un final feliz: decía que el final no es feliz en absoluto. Aun así, autorizó que la melodía central de Júpiter se convirtiera en un himno, <a href="#x-i-vow">«I Vow to Thee, My Country»</a>.</li>
+<li>Neptuno, el último planeta, fue de los primeros finales de orquesta que se desvanecen: el coro de mujeres canta en una sala aparte cuya puerta se cierra despacio, hasta que el sonido se pierde (<a href="#x-planetas@2561">escúchalo</a>).</li>
+</ul>"""),
+  dict(t="Cómo saborearla: cuatro escuchas", h="""<ol>
+<li><b>Primera escucha: déjate llevar.</b> Ocho minutos, sin hacer nada más.</li>
+<li><b>Segunda escucha: después de Marte.</b> Escucha <a href="#x-planetas@0">Marte</a> entero y deja que siga <a href="#x-planetas@462">Venus</a>, como en el concierto. El cambio es lo que Holst buscaba.</li>
+<li><b>Tercera escucha: cuenta los colores.</b> Ve nombrando lo que suena: trompa, flautas, oboes, arpas, celesta, violín solo, violonchelo. ¿Cuándo suena la orquesta entera?</li>
+<li><b>Cuarta escucha: el tempo.</b> Compara la versión de Holst de 1926 con esta de Karajan: tienen más de un minuto de diferencia. Están en el gráfico de duraciones y suenan aquí mismo.</li>
+</ol>
+<p>Si quieres verla tocar, mira a la <a href="#x-planetas-galicia@508">Sinfónica de Galicia</a> o a la de la <a href="#x-planetas@462">Radio de Hesse</a>. Y después sigue con <a href="#x-planetas@2561">Neptuno</a>, el planeta que se pierde en el silencio.</p>"""),
+  dict(t="Para el concierto", h="""<ul>
+<li>Lo normal es oír Los planetas completos: unos cincuenta minutos y siete movimientos. No se aplaude entre ellos: espera al final.</li>
+<li>Busca en el escenario las seis trompas, las dos arpas, la celesta y el órgano. El coro no lo verás: canta escondido.</li>
+<li>Al final de Neptuno, el sonido se pierde poco a poco. Espera al silencio total antes de aplaudir: es parte de la obra.</li>
+<li>Venus llega justo después de Marte. Después de siete minutos de estruendo, fíjate en cómo cambia la sala cuando entra la trompa sola.</li>
+</ul>"""),
+ ],
+ contexto=[
+  dict(anio="1912", txt="El 3 de septiembre se estrenan en Londres las <a href=\"#x-schoenberg-farben\">Cinco piezas para orquesta de Schönberg</a>. Parte del público silba y otra parte se ríe. Holst irá a una de sus primeras audiciones y tendrá la partitura en su sala de música hasta su muerte."),
+  dict(anio="1913", txt="El 29 de mayo se estrena en París <a href=\"#x-sacre\">La consagración de la primavera</a>, de Stravinski. La reacción del público roza el motín."),
+  dict(anio="1914", txt="El 4 de agosto, el Reino Unido declara la guerra a Alemania. Holst tenía Marte en la cabeza desde antes; en la segunda mitad del año se puso con Venus."),
+  dict(anio="1918", txt="El 29 de septiembre suena por primera vez Los planetas, en privado. El 11 de noviembre, el armisticio pone fin a la Primera Guerra Mundial."),
+  dict(anio="1930", txt="El 18 de febrero, Clyde Tombaugh descubre Plutón en el Observatorio Lowell de Flagstaff (Arizona). En 2000, Colin Matthews le pondrá música: <a href=\"#x-pluto\">«Plutón, el renovador»</a>."),
+ ],
+ versiones=[
+  dict(p="holst", det="Dirige el compositor · Sinfónica de Londres (reedición de Beulah)", nota="Holst grabó Los planetas dos veces, en 1922–1923 y en 1926; por la duración, esta es la de 1926. La más rápida de todas.", dur="7:18", url="https://youtu.be/ztFGryBKONM"),
+  dict(quien="William Steinberg", det="Sinfónica de Boston · 1971 (Deutsche Grammophon)", nota="Casi tan rápida como la de Holst.", dur="7:25", url="https://youtu.be/faAyUUagyXw"),
+  dict(quien="Adrian Boult", det="Filarmónica de Londres · EMI, publicada en 1979 (hoy Warner Classics)", nota="El director del primer Planetas, en 1918, sesenta años después.", dur="7:27", url="https://youtu.be/87mKZsk-eJw"),
+  dict(quien="Colin Davis", det="Filarmónica de Berlín · grabada en 1988 (Philips)", nota="La misma orquesta que en esta ficha, siete años después y con otro director.", dur="8:06", url="https://youtu.be/j-R7lQtI1WA"),
+  dict(p="karajan", det="Filarmónica de Viena · 1961 (Decca)", nota="Su primera grabación. Imogen Holst dijo que era la mejor que había oído.", dur="8:20", url="https://youtu.be/hiNndnKVecU"),
+  dict(quien="Simon Rattle", det="Philharmonia · 1981 (EMI, hoy Warner Classics)", nota="La más lenta de este gráfico: casi nueve minutos.", dur="8:58", url="https://youtu.be/TXvKVjE-BpM"),
+  dict(quien="Orquesta Sinfónica de Galicia", det="Dima Slobodeniouk · A Coruña, 2016", nota="Una orquesta española, en vídeo, dentro de Los planetas completos.", url="#x-planetas-galicia@508"),
+  dict(quien="Orquesta Sinfónica de la Radio de Hesse", det="Hugh Wolff · Fráncfort, 2023", nota="En vídeo, dentro de la obra completa: puedes ver la celesta y las arpas.", url="#x-planetas@462"),
+  dict(quien="Orquesta Sinfónica Nacional de Dinamarca", det="Jonathon Heyward · en directo (DR Koncerthuset)", nota="Vídeo de Venus sola, en concierto.", url="https://youtu.be/tawgYqPbAZ0"),
+  dict(quien="Orquesta Sinfónica de Londres", det="Antonio Pappano · vídeo oficial de la orquesta", nota="La orquesta que dio el primer Planetas completo en público, en 1920.", url="https://youtu.be/lvQS68kjYyw"),
+ ],
+ idagio="Holst The Planets Venus Karajan Berliner Philharmoniker",
+ interpretes=["karajan","berliner-philharmoniker"],
+ conceptos=["trompa","celesta","timbre","ostinato","arpa","suite","movimiento","opus","catalogo","compas","musica-programatica"],
+),
 ]
