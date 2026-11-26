@@ -101,11 +101,13 @@ main{padding:28px 0 56px}
 .rec{font:15px var(--ui);margin-bottom:12px}
 .tracks{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
 .tracks li{border-bottom:1px solid var(--line)}
-.tracks a,.tracks .row{display:grid;grid-template-columns:3.6em minmax(0,1fr);gap:12px;padding:12px 2px;text-decoration:none;align-items:baseline}
+.tracks .row{display:grid;grid-template-columns:3.6em minmax(0,1fr);gap:12px;padding:12px 2px;text-decoration:none;align-items:baseline}
 .tracks .t{font:700 16px var(--ui);color:var(--acc);font-variant-numeric:tabular-nums;white-space:nowrap}
 .tracks b{font-family:var(--ui)}
 .tracks span.x{display:block;font-size:16px;color:var(--ink);margin-top:2px}
-.tracks a:hover span.x{color:var(--ink)}
+.tracks a.t{text-decoration:none}
+.tracks .row[data-t]{cursor:pointer}
+.tracks .row[data-t]:hover b,.tracks a.t:focus-visible+span b{text-decoration:underline}
 .note{font:14px var(--ui);color:var(--mute);margin:10px 0 0}
 article.body h2{margin-top:1.4em;padding-top:.5em;border-top:1px solid var(--ink)}
 article.body h2:first-child{margin-top:0}
@@ -195,7 +197,7 @@ aside .fig img{width:100%;max-height:none}
 .player{position:relative;aspect-ratio:16/9;background:#000;border-radius:8px;overflow:hidden;margin:6px 0 12px}
 .player iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .hint{font:600 14px var(--ui);color:var(--mute);margin:4px 0 8px}
-.tracks a.on{background:color-mix(in srgb,var(--acc) 9%,transparent)}
+.tracks .row.on{background:color-mix(in srgb,var(--acc) 9%,transparent)}
 .card .thumb{display:block;aspect-ratio:3/2;overflow:hidden;border-radius:4px;margin:0 0 10px;background:var(--card)}
 .card .thumb img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 22%}
 /* duraciones, contexto y conciertos */
@@ -521,7 +523,7 @@ const V={
      ${vid?`<div class="player"><iframe id="yt" data-id="${vid}" src="${YTE(vid,t0?`&start=${t0}`:'')}" title="Vídeo: ${esc(g.titulo)}" loading="lazy" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen referrerpolicy="strict-origin-when-cross-origin"></iframe></div>`:''}
      <p><a class="btn${vid?'':' solid'}" href="${g.url}" rel="noopener">${PLAY}${vid?'Ver en YouTube':'Abrir el vídeo'}</a></p>
      ${vid&&o.escucha.some(x=>x.t!=null)?'<p class="hint">Toca un minuto de la guía y el vídeo salta a ese punto.</p>':''}
-     <ul class="tracks">${o.escucha.map(x=>x.t!=null?`<li><a href="${ytAt(g.url,x.t)}" data-t="${x.t}" rel="noopener"><span class="t">${mmss(x.t)}</span><span><b>${esc(x.mov)}</b><span class="x">${x.txt}</span></span></a></li>`:`<li><div class="row"><span class="t">${esc(x.cuando||'')}</span><span><b>${esc(x.mov)}</b><span class="x">${x.txt}</span></span></div></li>`).join('')}</ul>
+     <ul class="tracks">${o.escucha.map(x=>x.t!=null?`<li><div class="row" data-t="${x.t}"><a class="t" href="${ytAt(g.url,x.t)}" data-t="${x.t}" rel="noopener" aria-label="Escuchar desde ${mmss(x.t)}: ${esc(x.mov)}">${mmss(x.t)}</a><span><b>${esc(x.mov)}</b><span class="x">${x.txt}</span></span></div></li>`:`<li><div class="row"><span class="t">${esc(x.cuando||'')}</span><span><b>${esc(x.mov)}</b><span class="x">${x.txt}</span></span></div></li>`).join('')}</ul>
      <p class="note">${g.nota||''}</p></section>
     ${fig(im,'m-only')}
     <article class="body read">${o.secciones.map(s=>`<h2>${esc(s.t)}</h2>${s.h}`).join('')}</article>
@@ -643,9 +645,10 @@ function route(){
   document.querySelectorAll('nav.sec a').forEach(a=>a.setAttribute('aria-current',a.getAttribute('href')==='#'+sec?'page':'false'));
   if(hl){const t=document.getElementById('g-'+hl);if(t)t.scrollIntoView({block:'start'})}else window.scrollTo(0,0);
   const yt=document.getElementById('yt');
-  if(yt)document.querySelectorAll('.tracks a[data-t]').forEach(a=>a.addEventListener('click',ev=>{
+  document.querySelectorAll('.tracks .row[data-t]').forEach(r=>r.addEventListener('click',ev=>{if(!ev.target.closest('a'))r.querySelector('a.t').click()}));
+  if(yt)document.querySelectorAll('.tracks a.t[data-t]').forEach(a=>a.addEventListener('click',ev=>{
     ev.preventDefault();yt.src=YTE(yt.dataset.id,`&autoplay=1&start=${a.dataset.t}`);
-    document.querySelectorAll('.tracks a.on').forEach(x=>x.classList.remove('on'));a.classList.add('on');
+    document.querySelectorAll('.tracks .row.on').forEach(x=>x.classList.remove('on'));a.closest('.row').classList.add('on');
     yt.closest('.player').scrollIntoView({behavior:'smooth',block:'nearest'});
   }));
   document.getElementById('j-go')?.addEventListener('click',juegoNuevo);
